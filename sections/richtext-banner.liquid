@@ -1,0 +1,145 @@
+<style>
+  .section-{{ section.id }}{
+    padding-top: {{ section.settings.st }}px;
+    padding-bottom: {{ section.settings.sb }}px;
+    background: {{ section.settings.bg_color }};
+  }
+
+  @media screen and (max-width: 768px){
+    .section-{{ section.id }}{
+      padding-top: {{ section.settings.stm }}px;
+      padding-bottom: {{ section.settings.sbm }}px;
+    }
+  }
+</style>
+<style>
+  .richtext_banner-wrapper{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .richtext_banner p {
+    margin: 0;
+  }
+  .richtext_banner-title{
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin-bottom: 13px;
+    margin-top: 0;
+  }
+  .richtext_banner-text a,
+  .richtext_banner-text{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    margin-bottom: 13px;
+    margin-top: 0;
+    color: #171719;
+    transition-duration: 300ms;
+  }
+  .richtext_banner-text a:hover{
+    color: #d0672a;
+    transition-duration: 300ms;
+
+  }
+
+  @media screen and (max-width: 1000px) {
+    .richtext_banner-title{
+      font-size: calc(2.4rem + 4.0vw);
+    }
+  }
+</style>
+
+<div class="richtext_banner section-{{ section.id }}">
+  <div class="richtext_banner-wrapper page-width">
+    <h1 class="richtext_banner-title">
+      {{ section.settings.title }}
+    </h1>
+    <div class="richtext_banner-text">
+      {{ section.settings.text }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Richtext banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "default": "<p>Some text</p>",
+      "label": "Text"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "default": "#fff",
+      "label": "Background color"
+    },
+    {
+      "type": "header",
+      "content": "Space desktop"
+    },
+    {
+      "type": "range",
+      "id": "st",
+      "label": "Space top",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "sb",
+      "label": "Space bottom",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 90
+    },
+    {
+      "type": "header",
+      "content": "Space mobile"
+    },
+    {
+      "type": "range",
+      "id": "stm",
+      "label": "Space top",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "sbm",
+      "label": "Space bottom",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 70
+    }
+  ],
+  "presets": [
+    {
+      "name": "Richtext banner"
+    }
+  ]
+}
+{% endschema %}

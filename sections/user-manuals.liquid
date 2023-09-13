@@ -1,0 +1,209 @@
+<style>
+    .section-{{ section.id }} {
+        padding-top: {{ section.settings.st }}px;
+        padding-bottom: {{ section.settings.sb }}px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .section-{{ section.id }} {
+            padding-top: {{ section.settings.stm }}px;
+            padding-bottom: {{ section.settings.sbm }}px;
+        }
+    }
+
+</style>
+<style>
+  .user-manuals-title{
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.56rem;
+    margin: 0;
+    text-align: center;
+    padding: 1.6rem;
+  }
+  .user-manuals-list{
+    display: flex;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+  }
+  .user-manuals-item{
+    position: relative;
+    width: calc(25% - (3 * 1.6rem)/4);
+    padding: 48px;
+  }
+
+  .user-manuals-item-image{
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
+  .user-manuals-item-image img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  .user-manuals-item-title{
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    text-align: center;
+    transition-duration: 300ms;
+  }
+  .user-manuals-item:hover .user-manuals-item-title{
+    transition-duration: 300ms;
+    color: #d0672a;
+  }
+  .user-manuals-item-link{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @media screen and (max-width: 1000px) {
+    .user-manuals-title{
+      font-size: calc(2.4rem + 4.0vw);
+    }
+  }
+  @media screen and (max-width: 990px) {
+    .user-manuals-item{
+      width: calc(50% - 1.6rem/2);
+    }
+    .user-manuals-item-title{
+      font-size: calc(1.6rem + 1.0vw)!important;
+    }
+  }
+
+
+</style>
+
+
+<div class="user-manuals section-{{ section.id }}">
+    <div class="user-manuals-wrapper page-width">
+        <h2 class="user-manuals-title">
+            {{ section.settings.title }}
+        </h2>
+        <div class="user-manuals-list">
+            {% for block in section.blocks %}
+              {% if block.settings.image != blank %}
+                <div style="background: {{ block.settings.bg_color }}" class="user-manuals-item">
+                  <div class="user-manuals-item-image">
+                    <img src="{{ block.settings.image.src | img_url: "master" }}" alt="{{ block.settings.image.alt }}">
+                  </div>
+                  <div class="user-manuals-item-title">
+                    {{ block.settings.title }}
+                  </div>
+                  {% if block.settings.url != blank %}
+                    <a class="user-manuals-item-link" href="{{ block.settings.url }}"> </a>
+                  {% endif %}
+                </div>
+              {% endif %}
+            {% endfor %}
+        </div>
+
+
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "User manuals",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Title",
+      "label": "Title"
+    },
+    {
+      "type": "header",
+      "content": "Space desktop"
+    },
+    {
+      "type": "range",
+      "id": "st",
+      "label": "Space top",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "sb",
+      "label": "Space bottom",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Space mobile"
+    },
+    {
+      "type": "range",
+      "id": "stm",
+      "label": "Space top",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "sbm",
+      "label": "Space bottom",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 16
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "default": "#F4F4F6",
+          "label": "Background color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "User manuals"
+    }
+  ]
+}
+{% endschema %}
