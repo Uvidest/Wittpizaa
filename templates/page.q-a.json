@@ -2,13 +2,26 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "ca00e8f9-10a6-40b2-acd6-130cde51163c": {
+      "type": "banner-text-over-lay",
+      "settings": {
+        "title": "QUESTIONS & ANSWERS",
+        "background-image": "shopify:\/\/shop_images\/2202_08_03_WITT_PIZZA1488.jpg",
+        "st": 74,
+        "sb": 54,
+        "stm": 74,
+        "sbm": 54
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "ca00e8f9-10a6-40b2-acd6-130cde51163c"
   ]
 }
