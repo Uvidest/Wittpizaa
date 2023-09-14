@@ -1,0 +1,119 @@
+<style>
+    .section-{{ section.id }} {
+        padding-top: {{ section.settings.st }}px;
+        padding-bottom: {{ section.settings.sb }}px;
+    {% if section.settings.background-image != blank %}
+      background-image: linear-gradient(0deg,rgba(0, 0, 0,0.75), rgba(34, 34, 35,0.75)),url("{{ section.settings.background-image.src | img_url: 'large' }}");
+    {% else %}
+      background: #8c8a8a;
+    {% endif %}
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media screen and (max-width: 768px) {
+        .section-{{ section.id }} {
+            padding-top: {{ section.settings.stm }}px;
+            padding-bottom: {{ section.settings.sbm }}px;
+        }
+    }
+
+
+</style>
+<style>
+  .banner-text-overlay-title{
+    text-align: center;
+    font-size: 8rem !important;
+    color: #fff;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 990px) {
+    .banner-text-overlay-title{
+      font-size: calc(2.56rem + 4.5vw)!important;
+    }
+  }
+</style>
+
+<div class="banner-text-overlay section-{{ section.id }}">
+    <div class="banner-text-overlay-wrapper">
+        <h1 class="banner-text-overlay-title h1 page-width">
+            {{ section.settings.title }}
+        </h1>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Banner text overlay",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "background-image",
+      "label": "Background image"
+    },
+    {
+      "type": "header",
+      "content": "Space desktop"
+    },
+    {
+      "type": "range",
+      "id": "st",
+      "label": "Space top",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "sb",
+      "label": "Space bottom",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Space mobile"
+    },
+    {
+      "type": "range",
+      "id": "stm",
+      "label": "Space top",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "sbm",
+      "label": "Space bottom",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner text overlay"
+    }
+  ]
+}
+{% endschema %}

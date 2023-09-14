@@ -1,0 +1,63 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "27e4fb17-3943-4e0b-9e2d-41f3bd4e4c86": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16239425847489__27e4fb17-3943-4e0b-9e2d-41f3bd4e4c86-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "ABOUT WITT",
+            "heading_size": "h2"
+          }
+        },
+        "template--16239425847489__27e4fb17-3943-4e0b-9e2d-41f3bd4e4c86-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Witt A\/S was formed back in 1993, as a distributor for white goods appliances in Denmark, but has, over time, expanded and developed into a large brand house, with distribution of products within a wide range of product categories from respected brands all around the world.<\/p><p>Today the products are still being sold to the largest home appliance- and kitchen stores and this has expanded to the entire Nordic region, UK, Ireland and from 2020 also The Benelux countries.<\/p><p>As Witt has been built on the foundation as a professional distribution Brandhouse it is no wonder that the next step has been to simultaneously build a large portfolio of co-branded and selfbranded products within many of the business units in-house.<\/p><p>Witt’s latest expansion plan, has been the development of the Witt ETNA Pizza oven with an innovative 360 degrees rotating plate and booster burner. The ovens are now being sold worldwide through a distributor network.<\/p><p>Witt currently employs more than 160 enthusiastic and skilled employees who service customers at a highly professional level. The entire foundation of the company is set-up inhouse and now has more than 26,000 square meters of stock- and showrooms.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16239425847489__27e4fb17-3943-4e0b-9e2d-41f3bd4e4c86-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16239425847489__27e4fb17-3943-4e0b-9e2d-41f3bd4e4c86-heading-1",
+        "template--16239425847489__27e4fb17-3943-4e0b-9e2d-41f3bd4e4c86-text-1",
+        "template--16239425847489__27e4fb17-3943-4e0b-9e2d-41f3bd4e4c86-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/witt-side-sm.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "27e4fb17-3943-4e0b-9e2d-41f3bd4e4c86"
+  ]
+}
