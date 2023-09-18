@@ -411,11 +411,13 @@
       "cancel": "Cancel",
       "create_account": "Create account",
       "email": "Email",
-      "forgot_password": "Forgot your password?",
+      "your_email": "Your email",
+      "your_password": "Your password",
+      "forgot_password": "Forgot password?",
       "guest_continue": "Continue",
       "guest_title": "Continue as a guest",
       "password": "Password",
-      "title": "Login",
+      "title": "Log in",
       "sign_in": "Sign in",
       "submit": "Submit"
     },
@@ -509,3 +511,4 @@
     }
   }
 }
+

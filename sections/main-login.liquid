@@ -2,15 +2,15 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
   }
 {%- endstyle -%}
 
@@ -27,19 +27,19 @@
       {% assign recover_success = form.posted_successfully? %}
       <div class="field">
         <input
-          type="email"
-          value=""
-          name="email"
-          id="RecoverEmail"
-          autocorrect="off"
-          autocapitalize="off"
-          autocomplete="email"
-          {% if form.errors %}
-            aria-invalid="true"
-            aria-describedby="RecoverEmail-email-error"
-            autofocus
-          {% endif %}
-          placeholder="{{ 'customer.login_page.email' | t }}"
+                type="email"
+                value=""
+                name="email"
+                id="RecoverEmail"
+                autocorrect="off"
+                autocapitalize="off"
+                autocomplete="email"
+                {% if form.errors %}
+                  aria-invalid="true"
+                  aria-describedby="RecoverEmail-email-error"
+                  autofocus
+                {% endif %}
+                placeholder="{{ 'customer.login_page.email' | t }}"
         >
         <label for="RecoverEmail">
           {{ 'customer.login_page.email' | t }}
@@ -67,9 +67,16 @@
     {%- endform -%}
   </div>
 
-  <h1 id="login" tabindex="-1">
+  <h1 class="h3" id="login" tabindex="-1">
     {{ 'customer.login_page.title' | t }}
   </h1>
+  <div class="regular bottom_line" style="line-height: 1">
+    <span>Don't have an account yet?</span>
+    <a class="regular" style="display: inline-block" href="{{ routes.account_register_url }}">
+      {{ 'customer.login_page.create_account' | t }}
+    </a>
+  </div>
+
   <div>
     {%- if recover_success == true -%}
       <h3 class="form__message" tabindex="-1" autofocus>
@@ -95,19 +102,21 @@
         </h2>
         {{ form.errors | default_errors }}
       {%- endif -%}
-
+      <div class="flied_label" style="text-align: left">
+        {{ 'customer.login_page.your_email' | t }}
+      </div>
       <div class="field">
         <input
-          type="email"
-          name="customer[email]"
-          id="CustomerEmail"
-          autocomplete="email"
-          autocorrect="off"
-          autocapitalize="off"
-          {% if form.errors contains 'form' %}
-            aria-invalid="true"
-          {% endif %}
-          placeholder="{{ 'customer.login_page.email' | t }}"
+                type="email"
+                name="customer[email]"
+                id="CustomerEmail"
+                autocomplete="email"
+                autocorrect="off"
+                autocapitalize="off"
+                {% if form.errors contains 'form' %}
+                  aria-invalid="true"
+                {% endif %}
+                placeholder="{{ 'customer.login_page.email' | t }}"
         >
         <label for="CustomerEmail">
           {{ 'customer.login_page.email' | t }}
@@ -115,24 +124,33 @@
       </div>
 
       {%- if form.password_needed -%}
+        <div style="display: flex; justify-content: space-between" class="label_box">
+          <div class="flied_label" style="text-align: left">
+            {{ 'customer.login_page.your_password' | t }}
+          </div>
+          <a class="flied_label" href="#recover">
+            {{ 'customer.login_page.forgot_password' | t }}
+          </a>
+        </div>
+
         <div class="field">
           <input
-            type="password"
-            value=""
-            name="customer[password]"
-            id="CustomerPassword"
-            autocomplete="current-password"
-            {% if form.errors contains 'form' %}
-              aria-invalid="true"
-            {% endif %}
-            placeholder="{{ 'customer.login_page.password' | t }}"
+                  type="password"
+                  value=""
+                  name="customer[password]"
+                  id="CustomerPassword"
+                  autocomplete="current-password"
+                  {% if form.errors contains 'form' %}
+                    aria-invalid="true"
+                  {% endif %}
+                  placeholder="{{ 'customer.login_page.password' | t }}"
           >
           <label for="CustomerPassword">
             {{ 'customer.login_page.password' | t }}
           </label>
         </div>
 
-        <a href="#recover">
+        <a class="hidden" href="#recover">
           {{ 'customer.login_page.forgot_password' | t }}
         </a>
       {%- endif -%}
@@ -141,7 +159,7 @@
         {{ 'customer.login_page.sign_in' | t }}
       </button>
 
-      <a href="{{ routes.account_register_url }}">
+      <a class="hidden" href="{{ routes.account_register_url }}">
         {{ 'customer.login_page.create_account' | t }}
       </a>
     {%- endform -%}
@@ -192,3 +210,5 @@
   ]
 }
 {% endschema %}
+
+
