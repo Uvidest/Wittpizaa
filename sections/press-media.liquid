@@ -55,7 +55,11 @@
         object-fit: cover;
         transition-duration: 300ms;
     }
+<<<<<<< HEAD
     .press-media-item-image.zoom_hover img:hover{
+=======
+    .press-media-item-image.hover_zoom img:hover{
+>>>>>>> 24a7d9ef598a7f5c843caf01f3828adaa8f323ce
         transform: scale(1.2);
         transition-duration: 300ms;
     }
@@ -221,7 +225,11 @@
                     {%- when 'image_with_text' -%}
                         <div class="press-media-item image_with_text-block">
                             {% if block.settings.image != blank %}
+<<<<<<< HEAD
                                 <div class="press-media-item-image zoom_hover">
+=======
+                                <div class="press-media-item-image hover_zoom">
+>>>>>>> 24a7d9ef598a7f5c843caf01f3828adaa8f323ce
                                     <img src="{{ block.settings.image.src | img_url: "master" }}"
                                          alt="{{ block.settings.image.alt }}">
                                 </div>
