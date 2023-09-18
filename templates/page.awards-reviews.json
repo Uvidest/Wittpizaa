@@ -2,13 +2,27 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "91ede3d6-4c02-44e1-9159-b7f1d830b3f9": {
+      "type": "richtext-banner",
+      "settings": {
+        "title": "AWARDS, REVIEWS & MENTIONS",
+        "text": "<p>The Witt ETNA pizza ovens are receiving global recognition as design, functionality and sublime taste all comes together as a crispier whole. This is resulting in prestigious awards as well as top ratings and reviews.<\/p>",
+        "bg_color": "#fff",
+        "st": 48,
+        "sb": 24,
+        "stm": 48,
+        "sbm": 16
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "91ede3d6-4c02-44e1-9159-b7f1d830b3f9"
   ]
 }
