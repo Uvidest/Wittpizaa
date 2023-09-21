@@ -227,11 +227,17 @@
                             {% endif %}
                             {% if block.settings.title != blank %}
                                 {% if block.settings.url != blank %}
-                                    <a href="{{ block.settings.url }}" class="press-media-item-title">
+                                  {% if block.settings.own_url != blank %}
+                                    <a href="{{ block.settings.own_url }}" class="press-media-item-title">
                                         {{ block.settings.title }}
                                     </a>
                                     {% else %}
-                                    <div href="{{ block.settings.url }}" class="press-media-item-title">
+                                    <a href="{{ block.settings.url }}" class="press-media-item-title">
+                                        {{ block.settings.title }}
+                                    </a>
+                                    {% endif %}
+                                    {% else %}
+                                    <div class="press-media-item-title">
                                         {{ block.settings.title }}
                                     </div>
                                 {% endif %}
@@ -450,6 +456,11 @@
           "id": "url",
           "default": false,
           "label": "Image url"
+        },
+        {
+          "type": "url",
+          "id": "own_url",
+          "label": "Own url"
         }
       ]
     }
