@@ -227,15 +227,10 @@
                             {% endif %}
                             {% if block.settings.title != blank %}
                                 {% if block.settings.url != blank %}
-                                  {% if block.settings.own_url != blank %}
-                                    <a href="{{ block.settings.own_url }}" class="press-media-item-title">
+                                  <a href="{{ block.settings.url }}" class="press-media-item-title">
                                         {{ block.settings.title }}
                                     </a>
-                                    {% else %}
-                                    <a href="{{ block.settings.url }}" class="press-media-item-title">
-                                        {{ block.settings.title }}
-                                    </a>
-                                    {% endif %}
+                              
                                     {% else %}
                                     <div class="press-media-item-title">
                                         {{ block.settings.title }}
