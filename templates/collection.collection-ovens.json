@@ -38,7 +38,7 @@
         "d4bec3a0-0e03-4b72-810a-0e71a38675f4": {
           "type": "item",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Frame_17.svg",
+            "logo": "shopify:\/\/shop_images\/Frame_22.svg",
             "text": "“..the new Witt Etna Fermo is a brilliant investment for families and pizza lovers alike.\""
           }
         },
@@ -55,13 +55,21 @@
             "logo": "shopify:\/\/shop_images\/Mask_group_1.svg",
             "text": "\"It's a game-changing idea, brilliantly executed, and consistently produced the best fresh pizza we've eaten all year at home.\""
           }
+        },
+        "514aa702-22ce-4062-a390-0c7436037708": {
+          "type": "item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Mask_group.svg",
+            "text": "\"We've tested lots of pizza ovens and without doubt, the Witt Rotante is the easiest model in which to cook a pizza\""
+          }
         }
       },
       "block_order": [
         "5870453c-833f-4aaf-81d9-6655cc143738",
         "d4bec3a0-0e03-4b72-810a-0e71a38675f4",
         "9a99d3e1-888d-4443-b216-ce54da825ed2",
-        "daa28f37-9dd9-4573-87a9-7d28fe1e9bcb"
+        "daa28f37-9dd9-4573-87a9-7d28fe1e9bcb",
+        "514aa702-22ce-4062-a390-0c7436037708"
       ],
       "settings": {
         "title": "Don’t just take our word for it",
