@@ -12,6 +12,7 @@
       "type": "banner-text-over-lay",
       "settings": {
         "title": "QUESTIONS & ANSWERS",
+        "background-image": "shopify:\/\/shop_images\/2202_08_03_WITT_PIZZA1488.jpg",
         "st": 74,
         "sb": 54,
         "stm": 74,
@@ -87,6 +88,7 @@
         "fce4a479-4da1-428d-84dc-f67de102551e": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/witt-pizza_oven-front-large-230111_1.webp",
             "width": 1,
             "image_ratio": "contain"
           }
