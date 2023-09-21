@@ -40,7 +40,7 @@
     justify-content: space-between;
 }
 .image-with-text__content{
-    padding: 16px;
+    padding: 16px !impotart;
 }
 .grid--2-col-tablet .grid__item{
     max-width: calc(50% - 1.6rem / 2);
