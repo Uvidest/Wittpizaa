@@ -975,6 +975,7 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
+
     }
   }
 
@@ -1078,76 +1079,152 @@ class VariantSelects extends HTMLElement {
   renderProductInfo() {
     const requestedVariantId = this.currentVariant.id;
     const sectionId = this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section;
+    if (this.dataset.type == "card"){
 
-    fetch(
-      `${this.dataset.url}?variant=${requestedVariantId}&section_id=${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section
-      }`
-    )
-      .then((response) => response.text())
-      .then((responseText) => {
-        // prevent unnecessary ui changes from abandoned selections
-        if (this.currentVariant.id !== requestedVariantId) return;
+      fetch(
+          `${this.dataset.url}?variant=${requestedVariantId}`
+      )
+          .then((response) => response.text())
+          .then((responseText) => {
+            // prevent unnecessary ui changes from abandoned selections
+            if (this.currentVariant.id !== requestedVariantId) return;
 
-        const html = new DOMParser().parseFromString(responseText, 'text/html');
-        const destination = document.getElementById(`price-${this.dataset.section}`);
-        const source = html.getElementById(
-          `price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
-        );
-        const skuSource = html.getElementById(
-          `Sku-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
-        );
-        const skuDestination = document.getElementById(`Sku-${this.dataset.section}`);
-        const inventorySource = html.getElementById(
-          `Inventory-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
-        );
-        const inventoryDestination = document.getElementById(`Inventory-${this.dataset.section}`);
+            const html = new DOMParser().parseFromString(responseText, 'text/html').querySelector(".product__info-wrapper");
 
-        const volumePricingSource = html.getElementById(
-          `Volume-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
-        );
+            const destination = document.getElementById(`price-${this.dataset.section}`);
+            const price = html.querySelector('.price');
+            console.log('price', price)
+            console.log(`#price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`)
+            const current_price = document.querySelector(`#price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section} .price`);
+            console.log('current_price', current_price)
 
-        const pricePerItemDestination = document.getElementById(`Price-Per-Item-${this.dataset.section}`);
-        const pricePerItemSource = html.getElementById(`Price-Per-Item-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+            current_price.innerHTML = price.innerHTML
+            // const inventorySource = html.getElementById(
+            //     `Inventory-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
+            // );
+            // const inventoryDestination = document.getElementById(`Inventory-${this.dataset.section}`);
 
-        const volumePricingDestination = document.getElementById(`Volume-${this.dataset.section}`);
+            // const volumePricingSource = html.getElementById(
+            //     `Volume-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
+            // );
 
-        if (source && destination) destination.innerHTML = source.innerHTML;
-        if (inventorySource && inventoryDestination) inventoryDestination.innerHTML = inventorySource.innerHTML;
-        if (skuSource && skuDestination) {
-          skuDestination.innerHTML = skuSource.innerHTML;
-          skuDestination.classList.toggle('visibility-hidden', skuSource.classList.contains('visibility-hidden'));
-        }
+            // const pricePerItemDestination = document.getElementById(`Price-Per-Item-${this.dataset.section}`);
+            // const pricePerItemSource = html.getElementById(`Price-Per-Item-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+            //
+            // const volumePricingDestination = document.getElementById(`Volume-${this.dataset.section}`);
+            //
+            // if (source && destination) destination.innerHTML = source.innerHTML;
+            // if (inventorySource && inventoryDestination) inventoryDestination.innerHTML = inventorySource.innerHTML;
+            // if (skuSource && skuDestination) {
+            //   skuDestination.innerHTML = skuSource.innerHTML;
+            //   skuDestination.classList.toggle('visibility-hidden', skuSource.classList.contains('visibility-hidden'));
+            // }
+            //
+            // if (volumePricingSource && volumePricingDestination) {
+            //   volumePricingDestination.innerHTML = volumePricingSource.innerHTML;
+            // }
+            //
+            // if (pricePerItemSource && pricePerItemDestination) {
+            //   pricePerItemDestination.innerHTML = pricePerItemSource.innerHTML;
+            //   pricePerItemDestination.classList.toggle('visibility-hidden', pricePerItemSource.classList.contains('visibility-hidden'));
+            // }
+            //
+            // const price = document.getElementById(`price-${this.dataset.section}`);
+            // console.log("pirce", price)
+            //
+            // if (price) price.classList.remove('visibility-hidden');
+            //
+            // if (inventoryDestination)
+            //   inventoryDestination.classList.toggle('visibility-hidden', inventorySource.innerText === '');
+            //
+            // const addButtonUpdated = html.getElementById(`ProductSubmitButton-${sectionId}`);
+            // this.toggleAddButton(
+            //     addButtonUpdated ? addButtonUpdated.hasAttribute('disabled') : true,
+            //     window.variantStrings.soldOut
+            // );
+            //
+            // publish(PUB_SUB_EVENTS.variantChange, {
+            //   data: {
+            //     sectionId,
+            //     html,
+            //     variant: this.currentVariant,
+            //   },
+            // });
+          });
+    }
+    else {
+      fetch(
+          `${this.dataset.url}?variant=${requestedVariantId}&section_id=${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section
+          }`
+      )
+          .then((response) => response.text())
+          .then((responseText) => {
+            // prevent unnecessary ui changes from abandoned selections
+            if (this.currentVariant.id !== requestedVariantId) return;
 
-        if (volumePricingSource && volumePricingDestination) {
-          volumePricingDestination.innerHTML = volumePricingSource.innerHTML;
-        }
+            const html = new DOMParser().parseFromString(responseText, 'text/html');
+            console.log(html)
+            const destination = document.getElementById(`price-${this.dataset.section}`);
+            const source = html.getElementById(
+                `price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
+            );
+            const skuSource = html.getElementById(
+                `Sku-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
+            );
+            const skuDestination = document.getElementById(`Sku-${this.dataset.section}`);
+            const inventorySource = html.getElementById(
+                `Inventory-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
+            );
+            const inventoryDestination = document.getElementById(`Inventory-${this.dataset.section}`);
 
-        if (pricePerItemSource && pricePerItemDestination) {
-          pricePerItemDestination.innerHTML = pricePerItemSource.innerHTML;
-          pricePerItemDestination.classList.toggle('visibility-hidden', pricePerItemSource.classList.contains('visibility-hidden'));
-        }
+            const volumePricingSource = html.getElementById(
+                `Volume-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
+            );
 
-        const price = document.getElementById(`price-${this.dataset.section}`);
+            const pricePerItemDestination = document.getElementById(`Price-Per-Item-${this.dataset.section}`);
+            const pricePerItemSource = html.getElementById(`Price-Per-Item-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
 
-        if (price) price.classList.remove('visibility-hidden');
+            const volumePricingDestination = document.getElementById(`Volume-${this.dataset.section}`);
 
-        if (inventoryDestination)
-          inventoryDestination.classList.toggle('visibility-hidden', inventorySource.innerText === '');
+            if (source && destination) destination.innerHTML = source.innerHTML;
+            if (inventorySource && inventoryDestination) inventoryDestination.innerHTML = inventorySource.innerHTML;
+            if (skuSource && skuDestination) {
+              skuDestination.innerHTML = skuSource.innerHTML;
+              skuDestination.classList.toggle('visibility-hidden', skuSource.classList.contains('visibility-hidden'));
+            }
 
-        const addButtonUpdated = html.getElementById(`ProductSubmitButton-${sectionId}`);
-        this.toggleAddButton(
-          addButtonUpdated ? addButtonUpdated.hasAttribute('disabled') : true,
-          window.variantStrings.soldOut
-        );
+            if (volumePricingSource && volumePricingDestination) {
+              volumePricingDestination.innerHTML = volumePricingSource.innerHTML;
+            }
 
-        publish(PUB_SUB_EVENTS.variantChange, {
-          data: {
-            sectionId,
-            html,
-            variant: this.currentVariant,
-          },
-        });
-      });
+            if (pricePerItemSource && pricePerItemDestination) {
+              pricePerItemDestination.innerHTML = pricePerItemSource.innerHTML;
+              pricePerItemDestination.classList.toggle('visibility-hidden', pricePerItemSource.classList.contains('visibility-hidden'));
+            }
+
+            const price = document.getElementById(`price-${this.dataset.section}`);
+            console.log("pirce", price)
+
+            if (price) price.classList.remove('visibility-hidden');
+
+            if (inventoryDestination)
+              inventoryDestination.classList.toggle('visibility-hidden', inventorySource.innerText === '');
+
+            const addButtonUpdated = html.getElementById(`ProductSubmitButton-${sectionId}`);
+            this.toggleAddButton(
+                addButtonUpdated ? addButtonUpdated.hasAttribute('disabled') : true,
+                window.variantStrings.soldOut
+            );
+
+            publish(PUB_SUB_EVENTS.variantChange, {
+              data: {
+                sectionId,
+                html,
+                variant: this.currentVariant,
+              },
+            });
+          });
+    }
   }
 
   toggleAddButton(disable = true, text, modifyClass = true) {
