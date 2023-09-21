@@ -226,8 +226,13 @@
                                 </div>
                             {% endif %}
                             {% if block.settings.title != blank %}
+                                
                                 {% if block.settings.url != blank %}
-                                  <a href="{{ block.settings.url }}" class="press-media-item-title">
+                                  {% assign url = block.settings.url  %}
+                                  {% if block.settings.own_url != blank %}
+                                    {% assign url = block.settings.own_url  %}
+                                    {% endif %}
+                                  <a href="{{ url }}" class="press-media-item-title">
                                         {{ block.settings.title }}
                                     </a>
                               
