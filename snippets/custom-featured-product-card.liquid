@@ -169,7 +169,7 @@
                                 {% endfor %}
                                 <label class="option__color"
                                        for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ index }}"
-                                       style="background: {% if bgType == "color" %}{{ mainColor }}{% elsif bgType == "image" %}url({{ images[mainColor] | img_url }}){% endif %}"
+                                       style="background: {% if bgType == "color" %}{{ mainColor }}{% elsif bgType == "image" %}url({{ images[mainColor] | img_url }}){% endif %} !important"
                                 >
                                     <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
                                 </label>
