@@ -3,18 +3,26 @@
     "banner": {
       "type": "main-collection-banner",
       "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "background-1"
+        "background-image": "shopify:\/\/shop_images\/image_1.png",
+        "st": 120,
+        "sb": 120,
+        "stm": 50,
+        "sbm": 50
       }
     },
     "product-grid": {
       "type": "custom-collection-grid-ovens",
       "settings": {
+        "title": "Title",
+        "back_color": "",
         "image_shape": "default",
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false
+        "enable_quick_add": false,
+        "st": 16,
+        "sb": 16,
+        "stm": 16,
+        "sbm": 16
       }
     }
   },
