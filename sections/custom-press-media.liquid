@@ -226,8 +226,14 @@
                                 </div>
                             {% endif %}
                             {% if block.settings.title != blank %}
-                                
-                                {% if block.settings.url != blank %}
+                              {% assign url = ""  %}
+                              {% if block.settings.url != blank %}
+                                    {% assign url = block.settings.url  %}
+                                    {% endif %}
+                                  {% if block.settings.own_url != blank %}
+                                    {% assign url = block.settings.own_url  %}
+                                    {% endif %}
+                                {% if url != "" %}
                                   {% assign url = block.settings.url  %}
                                   {% if block.settings.own_url != blank %}
                                     {% assign url = block.settings.own_url  %}
