@@ -226,20 +226,8 @@
                                 </div>
                             {% endif %}
                             {% if block.settings.title != blank %}
-                              qwe{{ block.settings.own_url }}
-                              {% assign url = ""  %}
-                              {% if block.settings.url != blank %}
-                                    {% assign url = block.settings.url  %}
-                                    {% endif %}
-                                  {% if block.settings.own_url != blank %}
-                                    {% assign url = block.settings.own_url  %}
-                                    {% endif %}
-                                {% if url != "" %}
-                                  {% assign url = block.settings.url  %}
-                                  {% if block.settings.own_url != blank %}
-                                    {% assign url = block.settings.own_url  %}
-                                    {% endif %}
-                                  <a href="{{ url }}" class="press-media-item-title">
+                                {% if block.settings.url != blank %}
+                                  <a href="{{ block.settings.url }}" class="press-media-item-title">
                                         {{ block.settings.title }}
                                     </a>
                               
@@ -275,7 +263,11 @@
                                         </div>
                                     {% endif %}
                                     {% if block.settings.url == true %}
-                                        <a href="{{ block.settings.image.src | img_url: "master" }}" class="press-media-item-image_url">
+                                      {% assign url = block.settings.image.src | img_url: "master" %}
+                                      {% if block.settings.own_url != blank %}
+                                        {% assign url = block.settings.own_url %}
+                                        {% endif %}
+                                        <a href="{{ url }}" class="press-media-item-image_url">
 
                                         </a>
                                     {% endif %}
