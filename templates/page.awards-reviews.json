@@ -2,125 +2,13 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "91ede3d6-4c02-44e1-9159-b7f1d830b3f9": {
-      "type": "richtext-banner",
-      "settings": {
-        "title": "AWARDS, REVIEWS & MENTIONS",
-        "text": "<p>The Witt ETNA pizza ovens are receiving global recognition as design, functionality and sublime taste all comes together as a crispier whole. This is resulting in prestigious awards as well as top ratings and reviews.<\/p>",
-        "bg_color": "#ffffff",
-        "st": 48,
-        "sb": 24,
-        "stm": 48,
-        "sbm": 16
-      }
-    },
-    "071aa2f2-5520-4811-9d9f-1d12fb3c6ada": {
-      "type": "awards-reviews",
-      "blocks": {
-        "b43a179c-7cf8-4e3e-b088-ffb58dbb5acb": {
-          "type": "block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-the_independant-logo_block-001c.webp",
-            "title": "Title",
-            "title_url": true,
-            "title_size": "h2",
-            "date": "11\/09\/2023",
-            "text": "<p>Connery.dk has tested the Witt ETNA Rotante, and the results speak for themselves. The rotating pizza stone is an absolute game-changer, ensuring even baking and simplifying the process, which is a great advantage, especially for those new to pizza baking. Additionally, the Rotante impresses with its incredibly fast heating time, reaching 500°C in just 15 minutes. These innovative features make the Witt ETNA Rotante the ideal pizza oven for both beginners and those looking to upgrade their current model.<\/p>",
-            "add_text": "",
-            "bg_color": "#f4f4f6",
-            "text_color": "#000000",
-            "button_text": "Read more",
-            "button_url": "shopify:\/\/collections"
-          }
-        },
-        "bc32b46c-5bc6-4052-9e35-bce8642ec890": {
-          "type": "block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-the_independant-logo_block-001c.webp",
-            "title": "Title",
-            "title_url": true,
-            "title_size": "h2",
-            "date": "11\/09\/2023",
-            "text": "<p>Connery.dk has tested the Witt ETNA Rotante, and the results speak for themselves. The rotating pizza stone is an absolute game-changer, ensuring even baking and simplifying the process, which is a great advantage, especially for those new to pizza baking. Additionally, the Rotante impresses with its incredibly fast heating time, reaching 500°C in just 15 minutes. These innovative features make the Witt ETNA Rotante the ideal pizza oven for both beginners and those looking to upgrade their current model.<\/p>",
-            "add_text": "",
-            "bg_color": "#f4f4f6",
-            "text_color": "#000000",
-            "button_text": "Read more",
-            "button_url": ""
-          }
-        },
-        "2cfc473d-63b5-4554-af7c-f317da59497b": {
-          "type": "block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/wp-mgy-2347md.webp",
-            "title": "Title",
-            "title_url": true,
-            "title_size": "h2",
-            "date": "11\/09\/2023",
-            "text": "<p>Connery.dk has tested the Witt ETNA Rotante, and the results speak for themselves. The rotating pizza stone is an absolute game-changer, ensuring even baking and simplifying the process, which is a great advantage, especially for those new to pizza baking. Additionally, the Rotante impresses with its incredibly fast heating time, reaching 500°C in just 15 minutes. These innovative features make the Witt ETNA Rotante the ideal pizza oven for both beginners and those looking to upgrade their current model.<\/p>",
-            "add_text": "",
-            "bg_color": "#121212",
-            "text_color": "#ffffff",
-            "button_text": "Read more",
-            "button_url": "shopify:\/\/collections"
-          }
-        },
-        "6ee04800-11de-422b-a7cf-bbacb23ceac8": {
-          "type": "block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-the_independant-logo_block-001c.webp",
-            "title": "Title",
-            "title_url": true,
-            "title_size": "h2",
-            "date": "11\/09\/2023",
-            "text": "<p>Connery.dk has tested the Witt ETNA Rotante, and the results speak for themselves. The rotating pizza stone is an absolute game-changer, ensuring even baking and simplifying the process, which is a great advantage, especially for those new to pizza baking. Additionally, the Rotante impresses with its incredibly fast heating time, reaching 500°C in just 15 minutes. These innovative features make the Witt ETNA Rotante the ideal pizza oven for both beginners and those looking to upgrade their current model.Read the 6\/6 star review here <\/p>",
-            "add_text": "",
-            "bg_color": "#f4f4f6",
-            "text_color": "#000000",
-            "button_text": "Read more",
-            "button_url": ""
-          }
-        },
-        "a9184c3e-149d-4212-857d-1f25649a5ae6": {
-          "type": "block",
-          "settings": {
-            "title": "Title",
-            "title_url": true,
-            "title_size": "h2",
-            "date": "11\/09\/2023",
-            "text": "<p>text<\/p>",
-            "add_text": "",
-            "bg_color": "#f4f4f6",
-            "text_color": "#000000",
-            "button_text": "Read more",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "b43a179c-7cf8-4e3e-b088-ffb58dbb5acb",
-        "bc32b46c-5bc6-4052-9e35-bce8642ec890",
-        "2cfc473d-63b5-4554-af7c-f317da59497b",
-        "6ee04800-11de-422b-a7cf-bbacb23ceac8",
-        "a9184c3e-149d-4212-857d-1f25649a5ae6"
-      ],
-      "settings": {
-        "st": 16,
-        "sb": 16,
-        "stm": 16,
-        "sbm": 16
-      }
     }
   },
   "order": [
-    "main",
-    "91ede3d6-4c02-44e1-9159-b7f1d830b3f9",
-    "071aa2f2-5520-4811-9d9f-1d12fb3c6ada"
+    "main"
   ]
 }
