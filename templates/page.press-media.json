@@ -64,7 +64,8 @@
             "main_image": true,
             "image": "shopify:\/\/shop_images\/1_main_witt-pizza2606.webp",
             "image_ratio": "normal",
-            "url": true
+            "url": true,
+            "own_url": ""
           }
         },
         "94380441-09cb-4827-8157-8e30db4f26d5": {
@@ -73,7 +74,8 @@
             "main_image": false,
             "image": "shopify:\/\/shop_images\/2_witt-pizza2304-thumb.webp",
             "image_ratio": "normal",
-            "url": true
+            "url": true,
+            "own_url": ""
           }
         },
         "ab63b052-d2ee-4d2b-8f79-11234f7c8796": {
@@ -82,7 +84,8 @@
             "main_image": false,
             "image": "shopify:\/\/shop_images\/3_witt-pizza3263-thumb.webp",
             "image_ratio": "normal",
-            "url": false
+            "url": false,
+            "own_url": ""
           }
         },
         "5f17683c-8d06-44fd-a721-05e822e2395c": {
@@ -91,7 +94,8 @@
             "main_image": false,
             "image": "shopify:\/\/shop_images\/4_witt_pizza1638-thumb.webp",
             "image_ratio": "normal",
-            "url": true
+            "url": true,
+            "own_url": ""
           }
         },
         "c21a9165-378e-4490-98b2-d406b29d8576": {
@@ -100,7 +104,8 @@
             "main_image": false,
             "image": "shopify:\/\/shop_images\/5_witt-pizza2041-thumb.webp",
             "image_ratio": "normal",
-            "url": false
+            "url": false,
+            "own_url": ""
           }
         }
       },
@@ -129,7 +134,8 @@
             "main_image": false,
             "image": "shopify:\/\/shop_images\/witt_pizza_rotante_badge_black.webp",
             "image_ratio": "normal",
-            "url": false
+            "url": false,
+            "own_url": ""
           }
         }
       },
@@ -138,7 +144,7 @@
       ],
       "settings": {
         "title": "Logos",
-        "bg_color": "#F4F4F6",
+        "bg_color": "#f4f4f6",
         "st": 16,
         "sb": 16,
         "stm": 16,
@@ -154,7 +160,8 @@
             "main_image": false,
             "image": "shopify:\/\/shop_images\/witt_pizza-design-typography-helvetica-black1_1.webp",
             "image_ratio": "small",
-            "url": true
+            "url": true,
+            "own_url": "https:\/\/www.facebook.com\/shopify"
           }
         },
         "c5aecd7b-2987-46d7-8391-71f8b5fed12a": {
@@ -163,7 +170,8 @@
             "main_image": false,
             "image": "shopify:\/\/shop_images\/witt_pizza-design-typography-open_sans-black.webp",
             "image_ratio": "small",
-            "url": false
+            "url": false,
+            "own_url": ""
           }
         }
       },
@@ -206,8 +214,8 @@
           "settings": {
             "title": "BLACK",
             "text": "<p><strong>RAL<\/strong>9004<br\/><strong>HEX<\/strong>#0D0D0F<br\/><strong>RGB<\/strong>23 23 25<br\/><strong>CMYK<\/strong>0 0 0 100<br\/><strong>Pantone<\/strong>Black<\/p>",
-            "bg_color": "#000",
-            "text_color": "#fff"
+            "bg_color": "#000000",
+            "text_color": "#ffffff"
           }
         },
         "b16c1a09-5da4-4f69-be99-9f86285ea0f5": {
@@ -216,7 +224,7 @@
             "title": "MATTE ORANGE",
             "text": "<p><strong>RAL<\/strong>2004<br\/><strong>HEX<\/strong>#d0672a<br\/><strong>RGB<\/strong>225 106 44<br\/><strong>CMYK<\/strong>8 71 97 0<br\/><strong>Pantone<\/strong>7578c<\/p>",
             "bg_color": "#d0672a",
-            "text_color": "#fff"
+            "text_color": "#ffffff"
           }
         }
       },
