@@ -103,9 +103,10 @@
                     data-update-url="false"
                     {{ block.shopify_attributes }}
             >
-                <fieldset class="js product-form__input">
+                
                     <legend class="form__label">{{ option.name }}</legend>
                     {%- for option in product.options_with_values -%}
+                      <fieldset class="js product-form__input">
                         {%- liquid
                             assign variants_available_arr = product.variants | map: 'available'
                             assign variants_option1_arr = product.variants | map: 'option1'
@@ -180,8 +181,9 @@
                             {% endif %}
 
                         {%- endfor -%}
+                      </fieldset>
                     {%- endfor -%}
-                </fieldset>
+                
                 <script type="application/json">
                             {{ product.variants | json }}
 
