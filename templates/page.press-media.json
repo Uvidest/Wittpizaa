@@ -26,7 +26,7 @@
         "7abdf955-eb4f-4869-b9b3-075e12d1f096": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/witt_pizza-etna_series-award-2212-gda-gold_mockup3.webp",
+            "image": "shopify:\/\/shop_images\/witt_pizza-etna_series-award-2212-gda-gold_mockup3_1.webp",
             "title": "AWARD-WINNING PIZZA OVENS ARE THE NEW BLACK FROM WITT!",
             "text": "Design, functionality and sublime taste all comes together as a crispier whole with the new pizza ovens from Witt, and now the ETNA series have won both the Good Design and German Design Award!",
             "url": ""
@@ -35,10 +35,10 @@
         "2c2ae304-bf37-4875-8f70-68393e6e71d2": {
           "type": "image_with_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/witt_pizza-etna_series-award-2212-gda-gold_mockup3.webp",
-            "title": "Title",
-            "text": "text",
-            "url": ""
+            "image": "shopify:\/\/shop_images\/1_main_witt-pizza2606.webp",
+            "title": "THE ERA OF WAITING IS OVER...",
+            "text": "Witt pizza oven with a rotating stone and double burner keeps the heat going and bakes pizza after pizza in no time!",
+            "url": "shopify:\/\/collections"
           }
         }
       },
@@ -62,7 +62,7 @@
           "type": "image",
           "settings": {
             "main_image": true,
-            "image": "shopify:\/\/shop_images\/witt_pizza-etna_series-award-2212-gda-gold_mockup3.webp",
+            "image": "shopify:\/\/shop_images\/1_main_witt-pizza2606.webp",
             "image_ratio": "normal",
             "url": true
           }
@@ -71,7 +71,16 @@
           "type": "image",
           "settings": {
             "main_image": false,
-            "image": "shopify:\/\/shop_images\/wp-accessorie-temperature_gun-lifestyle-001a.webp",
+            "image": "shopify:\/\/shop_images\/2_witt-pizza2304-thumb.webp",
+            "image_ratio": "normal",
+            "url": true
+          }
+        },
+        "ab63b052-d2ee-4d2b-8f79-11234f7c8796": {
+          "type": "image",
+          "settings": {
+            "main_image": false,
+            "image": "shopify:\/\/shop_images\/3_witt-pizza3263-thumb.webp",
             "image_ratio": "normal",
             "url": false
           }
@@ -80,25 +89,16 @@
           "type": "image",
           "settings": {
             "main_image": false,
-            "image": "shopify:\/\/shop_images\/Rectangle7_91985e67-7a1e-424a-a706-3e644704dfa0.png",
+            "image": "shopify:\/\/shop_images\/4_witt_pizza1638-thumb.webp",
             "image_ratio": "normal",
-            "url": false
-          }
-        },
-        "ab63b052-d2ee-4d2b-8f79-11234f7c8796": {
-          "type": "image",
-          "settings": {
-            "main_image": false,
-            "image": "shopify:\/\/shop_images\/123_8c2ea5ca-9bd5-421e-bced-f6f7bb11fd18.png",
-            "image_ratio": "normal",
-            "url": false
+            "url": true
           }
         },
         "c21a9165-378e-4490-98b2-d406b29d8576": {
           "type": "image",
           "settings": {
             "main_image": false,
-            "image": "shopify:\/\/shop_images\/witt_pizza-accessory-temperature_gun-4_3.webp",
+            "image": "shopify:\/\/shop_images\/5_witt-pizza2041-thumb.webp",
             "image_ratio": "normal",
             "url": false
           }
@@ -107,13 +107,38 @@
       "block_order": [
         "d06f0fb8-7f89-4318-bc34-74101d116bcb",
         "94380441-09cb-4827-8157-8e30db4f26d5",
-        "5f17683c-8d06-44fd-a721-05e822e2395c",
         "ab63b052-d2ee-4d2b-8f79-11234f7c8796",
+        "5f17683c-8d06-44fd-a721-05e822e2395c",
         "c21a9165-378e-4490-98b2-d406b29d8576"
       ],
       "settings": {
-        "title": "logos",
+        "title": "Images",
         "bg_color": "#ffffff",
+        "st": 16,
+        "sb": 16,
+        "stm": 16,
+        "sbm": 16
+      }
+    },
+    "bf6d993a-308b-4667-a63a-f7cc072dd0b4": {
+      "type": "custom-press-media",
+      "blocks": {
+        "dc9e4858-008f-40ed-847a-a86e33b9b614": {
+          "type": "image",
+          "settings": {
+            "main_image": false,
+            "image": "shopify:\/\/shop_images\/witt_pizza_rotante_badge_black.webp",
+            "image_ratio": "normal",
+            "url": false
+          }
+        }
+      },
+      "block_order": [
+        "dc9e4858-008f-40ed-847a-a86e33b9b614"
+      ],
+      "settings": {
+        "title": "Logos",
+        "bg_color": "#F4F4F6",
         "st": 16,
         "sb": 16,
         "stm": 16,
@@ -127,14 +152,24 @@
           "type": "image",
           "settings": {
             "main_image": false,
-            "image": "shopify:\/\/shop_images\/witt_pizza-design-typography-helvetica-black1.webp",
+            "image": "shopify:\/\/shop_images\/witt_pizza-design-typography-helvetica-black1_1.webp",
+            "image_ratio": "small",
+            "url": true
+          }
+        },
+        "c5aecd7b-2987-46d7-8391-71f8b5fed12a": {
+          "type": "image",
+          "settings": {
+            "main_image": false,
+            "image": "shopify:\/\/shop_images\/witt_pizza-design-typography-open_sans-black.webp",
             "image_ratio": "small",
             "url": false
           }
         }
       },
       "block_order": [
-        "930fa854-031c-4fc5-bae2-bf1d1eaf7937"
+        "930fa854-031c-4fc5-bae2-bf1d1eaf7937",
+        "c5aecd7b-2987-46d7-8391-71f8b5fed12a"
       ],
       "settings": {
         "title": "Fonts",
@@ -156,10 +191,40 @@
             "bg_color": "#3f444a",
             "text_color": "#ffffff"
           }
+        },
+        "fa259d88-d381-4c13-9329-ea4784c9d60e": {
+          "type": "text_block",
+          "settings": {
+            "title": "MATTE STONE",
+            "text": "<p><strong>RAL<\/strong>9002<br\/><strong>HEX<\/strong>#E0DED4<br\/><strong>RGB<\/strong>224 222 212<br\/><strong>CMYK<\/strong>11 9 15 0<br\/><strong>Pantone<\/strong>7527c<\/p>",
+            "bg_color": "#e0ded4",
+            "text_color": "#000000"
+          }
+        },
+        "decd139c-c22d-4d7b-abc8-71e8f2f9ba2c": {
+          "type": "text_block",
+          "settings": {
+            "title": "BLACK",
+            "text": "<p><strong>RAL<\/strong>9004<br\/><strong>HEX<\/strong>#0D0D0F<br\/><strong>RGB<\/strong>23 23 25<br\/><strong>CMYK<\/strong>0 0 0 100<br\/><strong>Pantone<\/strong>Black<\/p>",
+            "bg_color": "#000",
+            "text_color": "#fff"
+          }
+        },
+        "b16c1a09-5da4-4f69-be99-9f86285ea0f5": {
+          "type": "text_block",
+          "settings": {
+            "title": "MATTE ORANGE",
+            "text": "<p><strong>RAL<\/strong>2004<br\/><strong>HEX<\/strong>#d0672a<br\/><strong>RGB<\/strong>225 106 44<br\/><strong>CMYK<\/strong>8 71 97 0<br\/><strong>Pantone<\/strong>7578c<\/p>",
+            "bg_color": "#d0672a",
+            "text_color": "#fff"
+          }
         }
       },
       "block_order": [
-        "eb66c23c-977f-498b-ae0d-bee2ff7eadb7"
+        "eb66c23c-977f-498b-ae0d-bee2ff7eadb7",
+        "fa259d88-d381-4c13-9329-ea4784c9d60e",
+        "decd139c-c22d-4d7b-abc8-71e8f2f9ba2c",
+        "b16c1a09-5da4-4f69-be99-9f86285ea0f5"
       ],
       "settings": {
         "title": "Colors",
@@ -176,6 +241,7 @@
     "e55f1bbd-ce2d-4701-8830-9dedc4b72889",
     "fe8033ac-4621-437d-8ac0-069f136bede9",
     "a4fb180c-8793-4024-a82f-fea7ebdfdef1",
+    "bf6d993a-308b-4667-a63a-f7cc072dd0b4",
     "1c858473-42de-4afa-92c3-04794822a87a",
     "f3f17fdc-e329-4053-bd2b-cd78de1fdacd"
   ]
