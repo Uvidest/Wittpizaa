@@ -2,13 +2,79 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "754366dc-25d8-42ee-b77e-ff9f8b86e1ce": {
+      "type": "custom-user-manuals",
+      "blocks": {
+        "f0265eba-f079-4188-9223-44dae34b6f99": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/united-kingdom-vector-sq.webp",
+            "title": "Enlish",
+            "url": "",
+            "bg_color": "#F4F4F6"
+          }
+        },
+        "ebc5f8a1-6f2b-4e80-87a4-04f2ee4fe775": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/witt_pizza-etna_series-award-2212-gda-gold_mockup3.webp",
+            "title": "Title",
+            "url": "",
+            "bg_color": "#F4F4F6"
+          }
+        },
+        "bf3ffc2f-39cc-49d6-83bf-42b31f2b04b4": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mainimage_a68b3017-1fb3-40cc-ba8b-46c3c2795984.png",
+            "title": "Title",
+            "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0517\/8248\/4161\/files\/80650010_manual_cz_ee_es_it_pt_he_si_is.pdf?v=1694512494",
+            "bg_color": "#F4F4F6"
+          }
+        },
+        "45771305-f7f0-476b-94a1-15f54dd83c2e": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/united-kingdom-vector-sq.webp",
+            "title": "Title",
+            "url": "",
+            "bg_color": "#F4F4F6"
+          }
+        },
+        "e6d40f34-6ca3-4834-add0-abd5031e09c1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle7_59e0307a-954b-4f90-aa1f-fdf7cd56035d.png",
+            "title": "Title",
+            "url": "",
+            "bg_color": "#F4F4F6"
+          }
+        }
+      },
+      "block_order": [
+        "f0265eba-f079-4188-9223-44dae34b6f99",
+        "ebc5f8a1-6f2b-4e80-87a4-04f2ee4fe775",
+        "bf3ffc2f-39cc-49d6-83bf-42b31f2b04b4",
+        "45771305-f7f0-476b-94a1-15f54dd83c2e",
+        "e6d40f34-6ca3-4834-add0-abd5031e09c1"
+      ],
+      "settings": {
+        "title": "Title",
+        "st": 0,
+        "sb": 16,
+        "stm": 32,
+        "sbm": 16
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "754366dc-25d8-42ee-b77e-ff9f8b86e1ce"
   ]
 }
