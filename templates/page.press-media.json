@@ -170,7 +170,7 @@
             "main_image": false,
             "image": "shopify:\/\/shop_images\/witt_pizza-design-typography-open_sans-black.webp",
             "image_ratio": "small",
-            "url": false,
+            "url": true,
             "own_url": ""
           }
         }
