@@ -2,118 +2,13 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "ca00e8f9-10a6-40b2-acd6-130cde51163c": {
-      "type": "banner-text-over-lay",
-      "settings": {
-        "title": "QUESTIONS & ANSWERS",
-        "background-image": "shopify:\/\/shop_images\/2202_08_03_WITT_PIZZA1488.jpg",
-        "st": 74,
-        "sb": 54,
-        "stm": 74,
-        "sbm": 54
-      }
-    },
-    "b033b7f5-a2f1-4cd8-a7a0-c6d1c5c09757": {
-      "type": "q-a-blocks",
-      "blocks": {
-        "3363af3d-bf90-4f3f-9bba-33ceb51b7f9a": {
-          "type": "text_block",
-          "settings": {
-            "title": "HOW HOT DOES IT GET?",
-            "text": "<p>The pizza stone in the ETNA pizza ovens from Witt Pizza will warm up superfast – within 15 minutes – and conduct heat at 500 °C (950 °F)!¹ The extra booster burner ensures even heat distribution throughout the entire pizza stone when it turns. Placing the pizza on the stone to cook will therefor create perfectly crisp crust without overcooking the topping – the latter being the saddening result if the pizza stone is not hot enough.<\/p>",
-            "add_text": "",
-            "bg_color": "#d0672a",
-            "text_color": "#fff",
-            "width": 1
-          }
-        },
-        "e723b86d-c167-4131-81f1-3f12246c1647": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/wp-mgy-2347md.webp",
-            "width": 1,
-            "image_ratio": "cover"
-          }
-        },
-        "c019009b-71e0-4fd9-b20b-89ad34cd6d05": {
-          "type": "text_block",
-          "settings": {
-            "title": "HOW LONG DOES IT TAKE TO HEAT UP?",
-            "text": "<p>Witt ETNA pizza ovens heat the pizza stone up to 500 °C (950 °F) in just 15 minutes.¹<\/p><p>Sliding a pizza into a traditional pizza oven results in the pizza stone temperature dropping significantly. This means that the pizza oven must reheat the pizza stone once again. Witt ETNA Rotante is equipped with a booster burner that continuous heats the rotating pizza stone from the bottom and keeps it ready for use.<\/p>",
-            "add_text": "",
-            "bg_color": "#f4f4f6",
-            "text_color": "#121212",
-            "width": 1
-          }
-        },
-        "24d04b7b-8577-4b50-a07d-4c541e15b986": {
-          "type": "text_block",
-          "settings": {
-            "title": "VITREOUS ENAMEL COATING",
-            "text": "<h3>WHAT IS VITREOUS ENAMEL?<\/h3><p>Vitreous enamel (porcelain enamel) is a smooth, glassy, and durable surface fused to a metal substrate at temperatures over 800 °C. Used for a wide range of applications from cookware, BBQs, and appliances.<\/p><h3>IS VITREOUS ENAMEL SAFE?<\/h3><p>Vitreous enamel is a safe non-toxic coating and the optimum material for a variety of uses. It offers superior heat resistance. It is non-porous which makes it more hygienic, easier to clean and well-suited in cookware, BBQs, and appliances.<\/p><h3>CARE FOR VITREOUS ENAMEL<\/h3><ul><li>Make sure your Witt ETNA Pizza Oven has cooled down and is safe to touch before cleaning the inside.<\/li><li>The pizza oven can be cleaned inside with a little mild soapy water and a soft cloth or sponge.<\/li><li>To clean any stubborn dirt or grease, use a little baking soda on a wet sponge.<\/li><li>Do not use steel utensils or scouring agents.<\/li><\/ul><h3>GOT A QUESTION OR A CONCERN?<\/h3><p>Please contact our customer service team who you will be able to assist in answering any questions or quires.<\/p>",
-            "add_text": "",
-            "bg_color": "#f4f4f6",
-            "text_color": "#121212",
-            "width": 2
-          }
-        },
-        "4de6a163-b5ef-4f36-bc7d-4dbadc796125": {
-          "type": "text_block",
-          "settings": {
-            "title": "HOW LONG DOES IT TAKE TO COOL DOWN?",
-            "text": "<p>The cooldown time varies due to the ambient temperatures. The ETNA Pizza Ovens is one of the most temperature-consistent pizza ovens on the market with effective insulation, taking approximately one and a half hour to cool down completely.<\/p>",
-            "add_text": "Never touch the surface or store the oven before it has cooled down!",
-            "bg_color": "#e0ded4",
-            "text_color": "#121212",
-            "width": 1
-          }
-        },
-        "8ca8c609-6896-4e29-9fe5-b430aca63dea": {
-          "type": "text_block",
-          "settings": {
-            "title": "WHAT ARE THE DIMENSIONS?",
-            "text": "<p>The Witt ETNA Pizza Oven (Rotante & Fermo) has the following dimensions:<\/p><ul><li>Height: <strong>436mm<\/strong><\/li><li>Width: <strong>663mm<\/strong><\/li><li>Depth: <strong>761mm<\/strong><\/li><li>Loading height: <strong>143mm<\/strong><\/li><li>Footprint: <strong>633x603mm<\/strong><\/li><\/ul>",
-            "add_text": "",
-            "bg_color": "#3f444a",
-            "text_color": "#fff",
-            "width": 1
-          }
-        },
-        "fce4a479-4da1-428d-84dc-f67de102551e": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/witt-pizza_oven-front-large-230111.webp",
-            "width": 1,
-            "image_ratio": "contain"
-          }
-        }
-      },
-      "block_order": [
-        "3363af3d-bf90-4f3f-9bba-33ceb51b7f9a",
-        "e723b86d-c167-4131-81f1-3f12246c1647",
-        "c019009b-71e0-4fd9-b20b-89ad34cd6d05",
-        "24d04b7b-8577-4b50-a07d-4c541e15b986",
-        "4de6a163-b5ef-4f36-bc7d-4dbadc796125",
-        "8ca8c609-6896-4e29-9fe5-b430aca63dea",
-        "fce4a479-4da1-428d-84dc-f67de102551e"
-      ],
-      "settings": {
-        "st": 16,
-        "sb": 16,
-        "stm": 16,
-        "sbm": 16
-      }
     }
   },
   "order": [
-    "main",
-    "ca00e8f9-10a6-40b2-acd6-130cde51163c",
-    "b033b7f5-a2f1-4cd8-a7a0-c6d1c5c09757"
+    "main"
   ]
 }
