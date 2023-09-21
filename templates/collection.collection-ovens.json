@@ -24,10 +24,23 @@
         "stm": 34,
         "sbm": 48
       }
+    },
+    "b8cbf3fc-d380-4376-aab3-fef012f17402": {
+      "type": "custom-slider",
+      "settings": {
+        "title": "Title",
+        "bg_color": "#000",
+        "text_color": "#fff",
+        "st": 52,
+        "sb": 44,
+        "stm": 24,
+        "sbm": 24
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "b8cbf3fc-d380-4376-aab3-fef012f17402"
   ]
 }
