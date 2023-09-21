@@ -26,7 +26,7 @@
         "b43a179c-7cf8-4e3e-b088-ffb58dbb5acb": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-the_independant-logo_block-001c.webp",
+            "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-connery_dk-logo_block-001c.webp",
             "title": "Title",
             "title_url": true,
             "title_size": "h2",
@@ -35,14 +35,14 @@
             "add_text": "",
             "bg_color": "#f4f4f6",
             "text_color": "#000000",
-            "button_text": "Read more",
+            "button_text": "Read the 6\/6 star review here",
             "button_url": "shopify:\/\/collections"
           }
         },
         "bc32b46c-5bc6-4052-9e35-bce8642ec890": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-the_independant-logo_block-001c.webp",
+            "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-the_independant-logo_block-001c_1.webp",
             "title": "Title",
             "title_url": true,
             "title_size": "h2",
@@ -58,7 +58,7 @@
         "2cfc473d-63b5-4554-af7c-f317da59497b": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/wp-mgy-2347md.webp",
+            "image": "shopify:\/\/shop_images\/wp-etna_series-award-if_design_award-001b.webp",
             "title": "Title",
             "title_url": true,
             "title_size": "h2",
@@ -74,7 +74,7 @@
         "6ee04800-11de-422b-a7cf-bbacb23ceac8": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-the_independant-logo_block-001c.webp",
+            "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-the_independant-logo_block-001c_1.webp",
             "title": "Title",
             "title_url": true,
             "title_size": "h2",
@@ -90,6 +90,7 @@
         "a9184c3e-149d-4212-857d-1f25649a5ae6": {
           "type": "block",
           "settings": {
+            "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-connery_dk-logo_block-001c.webp",
             "title": "Title",
             "title_url": true,
             "title_size": "h2",
