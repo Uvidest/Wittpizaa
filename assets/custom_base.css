@@ -145,5 +145,8 @@
     font-size: 1.6rem;
 
 }
+.thumbnail-list__item.slider__slide:nth-child(3){
+  display: none
+}
 
 
