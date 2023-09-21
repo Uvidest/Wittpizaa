@@ -202,6 +202,17 @@
     ]
   },
   {
+    "name": "Color Swatch",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "config_color_swatch",
+        "label": "Configurations",
+        "info": "Add comma separated values, see example below: \n White: #fff, \n Black: #000, \n Black: black.png"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.animations.name",
     "settings": [
       {
