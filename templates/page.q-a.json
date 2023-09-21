@@ -12,7 +12,6 @@
       "type": "banner-text-over-lay",
       "settings": {
         "title": "QUESTIONS & ANSWERS",
-        "background-image": "shopify:\/\/shop_images\/2202_08_03_WITT_PIZZA1488.jpg",
         "st": 74,
         "sb": 54,
         "stm": 74,
@@ -29,14 +28,14 @@
             "text": "<p>The pizza stone in the ETNA pizza ovens from Witt Pizza will warm up superfast – within 15 minutes – and conduct heat at 500 °C (950 °F)!¹ The extra booster burner ensures even heat distribution throughout the entire pizza stone when it turns. Placing the pizza on the stone to cook will therefor create perfectly crisp crust without overcooking the topping – the latter being the saddening result if the pizza stone is not hot enough.<\/p>",
             "add_text": "",
             "bg_color": "#d0672a",
-            "text_color": "#fff",
+            "text_color": "#ffffff",
             "width": 1
           }
         },
         "e723b86d-c167-4131-81f1-3f12246c1647": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/wp-mgy-2347md.webp",
+            "image": "shopify:\/\/shop_images\/wp-mgy-2347md_1.webp",
             "width": 1,
             "image_ratio": "cover"
           }
@@ -81,14 +80,13 @@
             "text": "<p>The Witt ETNA Pizza Oven (Rotante & Fermo) has the following dimensions:<\/p><ul><li>Height: <strong>436mm<\/strong><\/li><li>Width: <strong>663mm<\/strong><\/li><li>Depth: <strong>761mm<\/strong><\/li><li>Loading height: <strong>143mm<\/strong><\/li><li>Footprint: <strong>633x603mm<\/strong><\/li><\/ul>",
             "add_text": "",
             "bg_color": "#3f444a",
-            "text_color": "#fff",
+            "text_color": "#ffffff",
             "width": 1
           }
         },
         "fce4a479-4da1-428d-84dc-f67de102551e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/witt-pizza_oven-front-large-230111.webp",
             "width": 1,
             "image_ratio": "contain"
           }
