@@ -92,6 +92,17 @@
             "width": 1,
             "image_ratio": "contain"
           }
+        },
+        "79a75fe6-2014-4f79-90d6-a11dfe69db8b": {
+          "type": "text_block",
+          "settings": {
+            "title": "MY WITT ETNA PIZZA OVEN HAS BLACK CHIPS THAT HAS FALLEN ONTO MY PIZZA STONE AFTER I HAVE FINISHED USING THE OVEN OR BEFORE THE NEXT TIME, I USE MY OVEN.",
+            "text": "<p>The black chips are a carbon deposit built up from cooking, please brush off these from the stone using your Witt ETNA Pizza Oven brush and wipe down with a cloth from the interior housing of the oven. (Please refer to page 16 of your owner’s manual for further cleaning and maintenance of your Witt ETNA Pizza Oven).<\/p>",
+            "add_text": "",
+            "bg_color": "#e0ded4",
+            "text_color": "#171719",
+            "width": 1
+          }
         }
       },
       "block_order": [
@@ -101,7 +112,8 @@
         "24d04b7b-8577-4b50-a07d-4c541e15b986",
         "4de6a163-b5ef-4f36-bc7d-4dbadc796125",
         "8ca8c609-6896-4e29-9fe5-b430aca63dea",
-        "fce4a479-4da1-428d-84dc-f67de102551e"
+        "fce4a479-4da1-428d-84dc-f67de102551e",
+        "79a75fe6-2014-4f79-90d6-a11dfe69db8b"
       ],
       "settings": {
         "st": 16,
