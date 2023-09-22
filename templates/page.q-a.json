@@ -148,6 +148,17 @@
             "width": 1
           }
         },
+        "cffe347b-8910-4a75-8d0f-42f4e2cab817": {
+          "type": "text_block",
+          "settings": {
+            "title": "WHAT ARE THE DIMENSIONS?",
+            "text": "<p>The Witt ETNA Pizza Oven (Rotante & Fermo) has the following dimensions:<\/p><ul><li>Height: <strong>436mm<\/strong><\/li><li>Width: <strong>663mm<\/strong><\/li><li>Depth: <strong>761mm<\/strong><\/li><li>Loading height: <strong>143mm<\/strong><\/li><li>Footprint: <strong>633x603mm<\/strong><\/li><\/ul>",
+            "add_text": "",
+            "bg_color": "#3f444a",
+            "text_color": "#fff",
+            "width": 1
+          }
+        },
         "24d04b7b-8577-4b50-a07d-4c541e15b986": {
           "type": "text_block",
           "settings": {
@@ -189,15 +200,12 @@
             "image_ratio": "contain"
           }
         },
-        "cffe347b-8910-4a75-8d0f-42f4e2cab817": {
-          "type": "text_block",
+        "3f816fd6-d2e1-4928-94bd-a5757f863ab8": {
+          "type": "image",
           "settings": {
-            "title": "WHAT ARE THE DIMENSIONS?",
-            "text": "<p>The Witt ETNA Pizza Oven (Rotante & Fermo) has the following dimensions:<\/p><ul><li>Height: <strong>436mm<\/strong><\/li><li>Width: <strong>663mm<\/strong><\/li><li>Depth: <strong>761mm<\/strong><\/li><li>Loading height: <strong>143mm<\/strong><\/li><li>Footprint: <strong>633x603mm<\/strong><\/li><\/ul>",
-            "add_text": "",
-            "bg_color": "#3f444a",
-            "text_color": "#fff",
-            "width": 1
+            "image": "shopify:\/\/shop_images\/witt-pizza_oven-front-large-230111.webp",
+            "width": 1,
+            "image_ratio": "cover"
           }
         }
       },
@@ -214,11 +222,12 @@
         "fbdc1434-75a0-49f7-afce-2a2a6d33571d",
         "20aa02cd-c8d8-4390-a8fa-f425a7fb1077",
         "313c2c34-bacb-4011-8f68-0c7a4f4a7b56",
+        "cffe347b-8910-4a75-8d0f-42f4e2cab817",
         "24d04b7b-8577-4b50-a07d-4c541e15b986",
         "4de6a163-b5ef-4f36-bc7d-4dbadc796125",
         "8ca8c609-6896-4e29-9fe5-b430aca63dea",
         "fce4a479-4da1-428d-84dc-f67de102551e",
-        "cffe347b-8910-4a75-8d0f-42f4e2cab817"
+        "3f816fd6-d2e1-4928-94bd-a5757f863ab8"
       ],
       "settings": {
         "st": 16,
