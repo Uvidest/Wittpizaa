@@ -58,17 +58,17 @@
         "2cfc473d-63b5-4554-af7c-f317da59497b": {
           "type": "block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/wp-etna_series-award-if_design_award-001b.webp",
-            "title": "Title",
+            "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-t3-uk-logo_block-001c.webp",
+            "title": "T3",
             "title_url": true,
-            "title_size": "h2",
-            "date": "11\/09\/2023",
-            "text": "<p>Connery.dk has tested the Witt ETNA Rotante, and the results speak for themselves. The rotating pizza stone is an absolute game-changer, ensuring even baking and simplifying the process, which is a great advantage, especially for those new to pizza baking. Additionally, the Rotante impresses with its incredibly fast heating time, reaching 500°C in just 15 minutes. These innovative features make the Witt ETNA Rotante the ideal pizza oven for both beginners and those looking to upgrade their current model.<\/p>",
+            "title_size": "h3",
+            "date": "17\/04\/2023",
+            "text": "<p>“In the crowded arena of outdoor pizza ovens, the new Witt ETNA Rotante is a game changer that may alter your pizza-making life forever. Aside from various innovations like a revolving pizza stone and a second gas burner beneath said stone, this model is easy to use and produces amazing results time after time. It is, quite justifiably, fully deserving of a monumental high five.”<\/p>",
             "add_text": "",
-            "bg_color": "#121212",
-            "text_color": "#ffffff",
-            "button_text": "Read more",
-            "button_url": "shopify:\/\/collections"
+            "bg_color": "#f4f4f6",
+            "text_color": "#171719",
+            "button_text": "Read the 5\/5 star review",
+            "button_url": "https:\/\/www.t3.com\/reviews\/witt-etna-rotante-pizza-oven"
           }
         },
         "6ee04800-11de-422b-a7cf-bbacb23ceac8": {
