@@ -91,6 +91,15 @@
             "url": "",
             "bg_color": "#F4F4F6"
           }
+        },
+        "33513f9f-ffd3-4cc1-99e3-569ca34927d1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/iceland-vector-sq.webp",
+            "title": "Icelandic",
+            "url": "",
+            "bg_color": "#F4F4F6"
+          }
         }
       },
       "block_order": [
@@ -102,7 +111,8 @@
         "54229bd2-cc6c-419d-9f30-e9c7067f4d6a",
         "9f2f4e22-26d3-4a3b-97d9-830bd946c076",
         "f47402ae-19d5-43f1-ac77-410332915199",
-        "78830420-ad40-405e-af9b-b9619b7abb5b"
+        "78830420-ad40-405e-af9b-b9619b7abb5b",
+        "33513f9f-ffd3-4cc1-99e3-569ca34927d1"
       ],
       "settings": {
         "title": "USER MANUALS",
