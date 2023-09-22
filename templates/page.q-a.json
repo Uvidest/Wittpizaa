@@ -74,6 +74,17 @@
             "width": 1
           }
         },
+        "6c7ca56f-88d0-4f10-af60-f3904835698e": {
+          "type": "text_block",
+          "settings": {
+            "title": "THERE IS A WHITE POWDER RESIDUE ON THE INSIDE HOUSING OF MY WITT ETNA PIZZA OVEN, ON THE BURNER AND GUARD RAIL OF THE OVEN.",
+            "text": "<p>This is common and is from the burning of LP Gas. Please use a cloth to wipe away this white powder residue prior to using or after the pizza oven has cooled down. (Please refer to page 16 of your owner’s manual for further cleaning and maintenance of your Witt ETNA Pizza Oven).<\/p><p>The white powder is a result of the high temperatures, in the same way as pyrolysis in a regular.<\/p>",
+            "add_text": "",
+            "bg_color": "#3f444a",
+            "text_color": "#fff",
+            "width": 1
+          }
+        },
         "24d04b7b-8577-4b50-a07d-4c541e15b986": {
           "type": "text_block",
           "settings": {
@@ -115,15 +126,12 @@
             "image_ratio": "contain"
           }
         },
-        "6c7ca56f-88d0-4f10-af60-f3904835698e": {
-          "type": "text_block",
+        "8b38e4b2-d45c-4e26-8739-ad63a5d38d44": {
+          "type": "image",
           "settings": {
-            "title": "THERE IS A WHITE POWDER RESIDUE ON THE INSIDE HOUSING OF MY WITT ETNA PIZZA OVEN, ON THE BURNER AND GUARD RAIL OF THE OVEN.",
-            "text": "<p>This is common and is from the burning of LP Gas. Please use a cloth to wipe away this white powder residue prior to using or after the pizza oven has cooled down. (Please refer to page 16 of your owner’s manual for further cleaning and maintenance of your Witt ETNA Pizza Oven).<\/p><p>The white powder is a result of the high temperatures, in the same way as pyrolysis in a regular.<\/p>",
-            "add_text": "",
-            "bg_color": "#3f444a",
-            "text_color": "#fff",
-            "width": 1
+            "image": "shopify:\/\/shop_images\/2202_08_03_witt_pizza1448_1.webp",
+            "width": 1,
+            "image_ratio": "cover"
           }
         }
       },
@@ -133,11 +141,12 @@
         "c019009b-71e0-4fd9-b20b-89ad34cd6d05",
         "79a75fe6-2014-4f79-90d6-a11dfe69db8b",
         "d5845085-d071-4ba9-9504-b0304e848dbf",
+        "6c7ca56f-88d0-4f10-af60-f3904835698e",
         "24d04b7b-8577-4b50-a07d-4c541e15b986",
         "4de6a163-b5ef-4f36-bc7d-4dbadc796125",
         "8ca8c609-6896-4e29-9fe5-b430aca63dea",
         "fce4a479-4da1-428d-84dc-f67de102551e",
-        "6c7ca56f-88d0-4f10-af60-f3904835698e"
+        "8b38e4b2-d45c-4e26-8739-ad63a5d38d44"
       ],
       "settings": {
         "st": 16,
