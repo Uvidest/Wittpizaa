@@ -93,6 +93,17 @@
             "image_ratio": "cover"
           }
         },
+        "e3a5377b-348d-4554-88bf-a6b56c979f83": {
+          "type": "text_block",
+          "settings": {
+            "title": "AFTER COOKING ",
+            "text": "<p>Once you have cooked that great pizza, just before you eat, and if you are continuing to cook more pizzas, please turn the Witt ETNA Pizza Oven main burner down to a low setting. If you have finished cooking in your oven, please turn both the main and boost burner off.  Running the oven for an extended period with the main burner on high setting could result in damaging your Witt ETNA Pizza Oven.   <\/p>",
+            "add_text": "",
+            "bg_color": "#d0672a",
+            "text_color": "#fff",
+            "width": 1
+          }
+        },
         "24d04b7b-8577-4b50-a07d-4c541e15b986": {
           "type": "text_block",
           "settings": {
@@ -134,14 +145,14 @@
             "image_ratio": "contain"
           }
         },
-        "e3a5377b-348d-4554-88bf-a6b56c979f83": {
+        "843a5e58-fa2a-4697-b604-287fe8760a01": {
           "type": "text_block",
           "settings": {
-            "title": "AFTER COOKING ",
-            "text": "<p>Once you have cooked that great pizza, just before you eat, and if you are continuing to cook more pizzas, please turn the Witt ETNA Pizza Oven main burner down to a low setting. If you have finished cooking in your oven, please turn both the main and boost burner off.  Running the oven for an extended period with the main burner on high setting could result in damaging your Witt ETNA Pizza Oven.   <\/p>",
+            "title": "WHAT KIND OF GAS SHOULD I USE?",
+            "text": "<p>F-gas, LPG, Bottled gas, liquefied gas, propane gas - different names, same product. LPG stands for Liquified Petroleum Gas, which covers a collective term for the hydrocarbons propane and butane. It's standard bottled gas used for both cooking and barbequing in general.<\/p><p>You can get LPG bottled gas at gas stations, hardware stores, campsites, etc.<\/p>",
             "add_text": "",
-            "bg_color": "#d0672a",
-            "text_color": "#fff",
+            "bg_color": "#b4b4b6",
+            "text_color": "#171719",
             "width": 1
           }
         }
@@ -154,11 +165,12 @@
         "d5845085-d071-4ba9-9504-b0304e848dbf",
         "6c7ca56f-88d0-4f10-af60-f3904835698e",
         "8b38e4b2-d45c-4e26-8739-ad63a5d38d44",
+        "e3a5377b-348d-4554-88bf-a6b56c979f83",
         "24d04b7b-8577-4b50-a07d-4c541e15b986",
         "4de6a163-b5ef-4f36-bc7d-4dbadc796125",
         "8ca8c609-6896-4e29-9fe5-b430aca63dea",
         "fce4a479-4da1-428d-84dc-f67de102551e",
-        "e3a5377b-348d-4554-88bf-a6b56c979f83"
+        "843a5e58-fa2a-4697-b604-287fe8760a01"
       ],
       "settings": {
         "st": 16,
