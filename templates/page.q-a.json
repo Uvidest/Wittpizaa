@@ -70,7 +70,7 @@
             "text": "<p>It is highly recommended prior to cooking in your Witt ETNA Pizza Oven for the first time that you conduct a burn off. Turn the main burner on high for 30 minutes. Then please turn off the main burner and let the oven cool down naturally. Once the oven has cooled, please use a paper towel to wipe the inside of the oven to remove any soot from the burn off.  Be careful; the pizza oven may still be hot in some places.<\/p>",
             "add_text": "",
             "bg_color": "#171719",
-            "text_color": "#fff",
+            "text_color": "#ffffff",
             "width": 1
           }
         },
@@ -81,7 +81,7 @@
             "text": "<p>This is common and is from the burning of LP Gas. Please use a cloth to wipe away this white powder residue prior to using or after the pizza oven has cooled down. (Please refer to page 16 of your owner’s manual for further cleaning and maintenance of your Witt ETNA Pizza Oven).<\/p><p>The white powder is a result of the high temperatures, in the same way as pyrolysis in a regular.<\/p>",
             "add_text": "",
             "bg_color": "#3f444a",
-            "text_color": "#fff",
+            "text_color": "#ffffff",
             "width": 1
           }
         },
@@ -100,7 +100,7 @@
             "text": "<p>Once you have cooked that great pizza, just before you eat, and if you are continuing to cook more pizzas, please turn the Witt ETNA Pizza Oven main burner down to a low setting. If you have finished cooking in your oven, please turn both the main and boost burner off.  Running the oven for an extended period with the main burner on high setting could result in damaging your Witt ETNA Pizza Oven.   <\/p>",
             "add_text": "",
             "bg_color": "#d0672a",
-            "text_color": "#fff",
+            "text_color": "#ffffff",
             "width": 1
           }
         },
@@ -122,7 +122,7 @@
             "text": "<p>No. The brush can melt and as a result damage the pizza stone. We recommend only to use the brush in the oven once it has cooled completely.<\/p>",
             "add_text": "",
             "bg_color": "#d0672a",
-            "text_color": "#fff",
+            "text_color": "#ffffff",
             "width": 1
           }
         },
@@ -155,7 +155,7 @@
             "text": "<p>The Witt ETNA Pizza Oven (Rotante & Fermo) has the following dimensions:<\/p><ul><li>Height: <strong>436mm<\/strong><\/li><li>Width: <strong>663mm<\/strong><\/li><li>Depth: <strong>761mm<\/strong><\/li><li>Loading height: <strong>143mm<\/strong><\/li><li>Footprint: <strong>633x603mm<\/strong><\/li><\/ul>",
             "add_text": "",
             "bg_color": "#3f444a",
-            "text_color": "#fff",
+            "text_color": "#ffffff",
             "width": 1
           }
         },
@@ -201,7 +201,7 @@
             "text": "<p>The ETNA Rotante and Fermo Pizza Ovens does not include a gas regulator and hose. These must be purchased separately and can be found in <a href=\"https:\/\/www.wittpizza.com\/accessories\">the accessory shop<\/a>.<\/p>",
             "add_text": "",
             "bg_color": "#171719",
-            "text_color": "#fff",
+            "text_color": "#ffffff",
             "width": 1
           }
         },
@@ -211,6 +211,17 @@
             "image": "shopify:\/\/shop_images\/wp-mgy-1643c1.webp",
             "width": 1,
             "image_ratio": "cover"
+          }
+        },
+        "990eef3c-0e01-4c29-a56a-9ab6e78121dc": {
+          "type": "text_block",
+          "settings": {
+            "title": "IF YOU HAVE ANY OTHER QUESTIONS ON THE INTERIOR MAINTENANCE OF YOUR WITT ETNA PIZZA OVEN.",
+            "text": "<p>Please contact our customer service team who you will be able to assist you further. <\/p>",
+            "add_text": "",
+            "bg_color": "#f4f4f6",
+            "text_color": "#171719",
+            "width": 1
           }
         }
       },
@@ -233,7 +244,8 @@
         "24d04b7b-8577-4b50-a07d-4c541e15b986",
         "d74e08fa-9db2-4021-9351-fecd95123f64",
         "69279e86-3b8a-4cf5-bdfa-ea3b99352ca5",
-        "eefb25d2-89d6-4191-be21-a20709964c9a"
+        "eefb25d2-89d6-4191-be21-a20709964c9a",
+        "990eef3c-0e01-4c29-a56a-9ab6e78121dc"
       ],
       "settings": {
         "st": 16,
