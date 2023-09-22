@@ -27,16 +27,16 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-connery_dk-logo_block-001c.webp",
-            "title": "Title",
+            "title": "CONNERY.DK",
             "title_url": true,
-            "title_size": "h2",
-            "date": "11\/09\/2023",
+            "title_size": "h3",
+            "date": "23\/05\/2023",
             "text": "<p>Connery.dk has tested the Witt ETNA Rotante, and the results speak for themselves. The rotating pizza stone is an absolute game-changer, ensuring even baking and simplifying the process, which is a great advantage, especially for those new to pizza baking. Additionally, the Rotante impresses with its incredibly fast heating time, reaching 500°C in just 15 minutes. These innovative features make the Witt ETNA Rotante the ideal pizza oven for both beginners and those looking to upgrade their current model.<\/p>",
             "add_text": "",
             "bg_color": "#f4f4f6",
             "text_color": "#000000",
             "button_text": "Read the 6\/6 star review here",
-            "button_url": "shopify:\/\/collections"
+            "button_url": "https:\/\/connery.dk\/test-witt-etna-rotante-pizzaovn.139920.html"
           }
         },
         "bc32b46c-5bc6-4052-9e35-bce8642ec890": {
