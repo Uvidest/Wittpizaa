@@ -159,47 +159,6 @@
             "width": 1
           }
         },
-        "24d04b7b-8577-4b50-a07d-4c541e15b986": {
-          "type": "text_block",
-          "settings": {
-            "title": "VITREOUS ENAMEL COATING",
-            "text": "<h3>WHAT IS VITREOUS ENAMEL?<\/h3><p>Vitreous enamel (porcelain enamel) is a smooth, glassy, and durable surface fused to a metal substrate at temperatures over 800 °C. Used for a wide range of applications from cookware, BBQs, and appliances.<\/p><h3>IS VITREOUS ENAMEL SAFE?<\/h3><p>Vitreous enamel is a safe non-toxic coating and the optimum material for a variety of uses. It offers superior heat resistance. It is non-porous which makes it more hygienic, easier to clean and well-suited in cookware, BBQs, and appliances.<\/p><h3>CARE FOR VITREOUS ENAMEL<\/h3><ul><li>Make sure your Witt ETNA Pizza Oven has cooled down and is safe to touch before cleaning the inside.<\/li><li>The pizza oven can be cleaned inside with a little mild soapy water and a soft cloth or sponge.<\/li><li>To clean any stubborn dirt or grease, use a little baking soda on a wet sponge.<\/li><li>Do not use steel utensils or scouring agents.<\/li><\/ul><h3>GOT A QUESTION OR A CONCERN?<\/h3><p>Please contact our customer service team who you will be able to assist in answering any questions or quires.<\/p>",
-            "add_text": "",
-            "bg_color": "#f4f4f6",
-            "text_color": "#121212",
-            "width": 2
-          }
-        },
-        "4de6a163-b5ef-4f36-bc7d-4dbadc796125": {
-          "type": "text_block",
-          "settings": {
-            "title": "HOW LONG DOES IT TAKE TO COOL DOWN?",
-            "text": "<p>The cooldown time varies due to the ambient temperatures. The ETNA Pizza Ovens is one of the most temperature-consistent pizza ovens on the market with effective insulation, taking approximately one and a half hour to cool down completely.<\/p>",
-            "add_text": "Never touch the surface or store the oven before it has cooled down!",
-            "bg_color": "#e0ded4",
-            "text_color": "#121212",
-            "width": 1
-          }
-        },
-        "8ca8c609-6896-4e29-9fe5-b430aca63dea": {
-          "type": "text_block",
-          "settings": {
-            "title": "WHAT ARE THE DIMENSIONS?",
-            "text": "<p>The Witt ETNA Pizza Oven (Rotante & Fermo) has the following dimensions:<\/p><ul><li>Height: <strong>436mm<\/strong><\/li><li>Width: <strong>663mm<\/strong><\/li><li>Depth: <strong>761mm<\/strong><\/li><li>Loading height: <strong>143mm<\/strong><\/li><li>Footprint: <strong>633x603mm<\/strong><\/li><\/ul>",
-            "add_text": "",
-            "bg_color": "#3f444a",
-            "text_color": "#ffffff",
-            "width": 1
-          }
-        },
-        "fce4a479-4da1-428d-84dc-f67de102551e": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/witt-pizza_oven-front-large-230111_1.webp",
-            "width": 1,
-            "image_ratio": "contain"
-          }
-        },
         "3f816fd6-d2e1-4928-94bd-a5757f863ab8": {
           "type": "image",
           "settings": {
@@ -212,6 +171,25 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/witt-pizza_oven-side-large-230111.webp",
+            "width": 1,
+            "image_ratio": "cover"
+          }
+        },
+        "24d04b7b-8577-4b50-a07d-4c541e15b986": {
+          "type": "text_block",
+          "settings": {
+            "title": "VITREOUS ENAMEL COATING",
+            "text": "<h3>WHAT IS VITREOUS ENAMEL?<\/h3><p>Vitreous enamel (porcelain enamel) is a smooth, glassy, and durable surface fused to a metal substrate at temperatures over 800 °C. Used for a wide range of applications from cookware, BBQs, and appliances.<\/p><h3>IS VITREOUS ENAMEL SAFE?<\/h3><p>Vitreous enamel is a safe non-toxic coating and the optimum material for a variety of uses. It offers superior heat resistance. It is non-porous which makes it more hygienic, easier to clean and well-suited in cookware, BBQs, and appliances.<\/p><h3>CARE FOR VITREOUS ENAMEL<\/h3><ul><li>Make sure your Witt ETNA Pizza Oven has cooled down and is safe to touch before cleaning the inside.<\/li><li>The pizza oven can be cleaned inside with a little mild soapy water and a soft cloth or sponge.<\/li><li>To clean any stubborn dirt or grease, use a little baking soda on a wet sponge.<\/li><li>Do not use steel utensils or scouring agents.<\/li><\/ul><h3>GOT A QUESTION OR A CONCERN?<\/h3><p>Please contact our customer service team who you will be able to assist in answering any questions or quires.<\/p>",
+            "add_text": "",
+            "bg_color": "#f4f4f6",
+            "text_color": "#121212",
+            "width": 2
+          }
+        },
+        "d74e08fa-9db2-4021-9351-fecd95123f64": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_witt-pizza2304_1.webp",
             "width": 1,
             "image_ratio": "cover"
           }
@@ -231,12 +209,10 @@
         "20aa02cd-c8d8-4390-a8fa-f425a7fb1077",
         "313c2c34-bacb-4011-8f68-0c7a4f4a7b56",
         "cffe347b-8910-4a75-8d0f-42f4e2cab817",
-        "24d04b7b-8577-4b50-a07d-4c541e15b986",
-        "4de6a163-b5ef-4f36-bc7d-4dbadc796125",
-        "8ca8c609-6896-4e29-9fe5-b430aca63dea",
-        "fce4a479-4da1-428d-84dc-f67de102551e",
         "3f816fd6-d2e1-4928-94bd-a5757f863ab8",
-        "36009bd5-51cd-4300-95f1-4ae57c064d5c"
+        "36009bd5-51cd-4300-95f1-4ae57c064d5c",
+        "24d04b7b-8577-4b50-a07d-4c541e15b986",
+        "d74e08fa-9db2-4021-9351-fecd95123f64"
       ],
       "settings": {
         "st": 16,
