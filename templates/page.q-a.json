@@ -115,6 +115,17 @@
             "width": 1
           }
         },
+        "fbdc1434-75a0-49f7-afce-2a2a6d33571d": {
+          "type": "text_block",
+          "settings": {
+            "title": "IS IT SAFE TO USE THE POLYPROPYLENE BRUSH IN THE PIZZA OVEN, WHILE IT IS STILL HOT?",
+            "text": "<p>No. The brush can melt and as a result damage the pizza stone. We recommend only to use the brush in the oven once it has cooled completely.<\/p>",
+            "add_text": "",
+            "bg_color": "#d0672a",
+            "text_color": "#fff",
+            "width": 1
+          }
+        },
         "24d04b7b-8577-4b50-a07d-4c541e15b986": {
           "type": "text_block",
           "settings": {
@@ -156,14 +167,14 @@
             "image_ratio": "contain"
           }
         },
-        "fbdc1434-75a0-49f7-afce-2a2a6d33571d": {
+        "20aa02cd-c8d8-4390-a8fa-f425a7fb1077": {
           "type": "text_block",
           "settings": {
-            "title": "IS IT SAFE TO USE THE POLYPROPYLENE BRUSH IN THE PIZZA OVEN, WHILE IT IS STILL HOT?",
-            "text": "<p>No. The brush can melt and as a result damage the pizza stone. We recommend only to use the brush in the oven once it has cooled completely.<\/p>",
+            "title": "MY WITT ETNA PIZZA OVEN IS SHOWING SIGNS OF DISCOLORATION AND STRETCH MARKS INSIDE THE ROOF OF THE OVEN.",
+            "text": "<p>This is a normal process and is due to the enamel coating going through heat cycles. <\/p>",
             "add_text": "",
-            "bg_color": "#d0672a",
-            "text_color": "#fff",
+            "bg_color": "#f4f4f6",
+            "text_color": "#171719",
             "width": 1
           }
         }
@@ -178,11 +189,12 @@
         "8b38e4b2-d45c-4e26-8739-ad63a5d38d44",
         "e3a5377b-348d-4554-88bf-a6b56c979f83",
         "843a5e58-fa2a-4697-b604-287fe8760a01",
+        "fbdc1434-75a0-49f7-afce-2a2a6d33571d",
         "24d04b7b-8577-4b50-a07d-4c541e15b986",
         "4de6a163-b5ef-4f36-bc7d-4dbadc796125",
         "8ca8c609-6896-4e29-9fe5-b430aca63dea",
         "fce4a479-4da1-428d-84dc-f67de102551e",
-        "fbdc1434-75a0-49f7-afce-2a2a6d33571d"
+        "20aa02cd-c8d8-4390-a8fa-f425a7fb1077"
       ],
       "settings": {
         "st": 16,
