@@ -193,6 +193,17 @@
             "width": 1,
             "image_ratio": "cover"
           }
+        },
+        "69279e86-3b8a-4cf5-bdfa-ea3b99352ca5": {
+          "type": "text_block",
+          "settings": {
+            "title": "HOW ABOUT THE GAS REGULATOR AND HOSE?",
+            "text": "<p>The ETNA Rotante and Fermo Pizza Ovens does not include a gas regulator and hose. These must be purchased separately and can be found in <a href=\"https:\/\/www.wittpizza.com\/accessories\">the accessory shop<\/a>.<\/p>",
+            "add_text": "",
+            "bg_color": "#171719",
+            "text_color": "#fff",
+            "width": 1
+          }
         }
       },
       "block_order": [
@@ -212,7 +223,8 @@
         "3f816fd6-d2e1-4928-94bd-a5757f863ab8",
         "36009bd5-51cd-4300-95f1-4ae57c064d5c",
         "24d04b7b-8577-4b50-a07d-4c541e15b986",
-        "d74e08fa-9db2-4021-9351-fecd95123f64"
+        "d74e08fa-9db2-4021-9351-fecd95123f64",
+        "69279e86-3b8a-4cf5-bdfa-ea3b99352ca5"
       ],
       "settings": {
         "st": 16,
