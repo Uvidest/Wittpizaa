@@ -55,6 +55,33 @@
             "url": "",
             "bg_color": "#f4f4f6"
           }
+        },
+        "54229bd2-cc6c-419d-9f30-e9c7067f4d6a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/netherlands-vector-sq.webp",
+            "title": "Dutch",
+            "url": "",
+            "bg_color": "#F4F4F6"
+          }
+        },
+        "9f2f4e22-26d3-4a3b-97d9-830bd946c076": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/italy-vector-sq.webp",
+            "title": "Italian",
+            "url": "",
+            "bg_color": "#F4F4F6"
+          }
+        },
+        "f47402ae-19d5-43f1-ac77-410332915199": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/spain-vector-sq.webp",
+            "title": "Spanish",
+            "url": "",
+            "bg_color": "#F4F4F6"
+          }
         }
       },
       "block_order": [
@@ -62,7 +89,10 @@
         "ebc5f8a1-6f2b-4e80-87a4-04f2ee4fe775",
         "bf3ffc2f-39cc-49d6-83bf-42b31f2b04b4",
         "45771305-f7f0-476b-94a1-15f54dd83c2e",
-        "e6d40f34-6ca3-4834-add0-abd5031e09c1"
+        "e6d40f34-6ca3-4834-add0-abd5031e09c1",
+        "54229bd2-cc6c-419d-9f30-e9c7067f4d6a",
+        "9f2f4e22-26d3-4a3b-97d9-830bd946c076",
+        "f47402ae-19d5-43f1-ac77-410332915199"
       ],
       "settings": {
         "title": "USER MANUALS",
