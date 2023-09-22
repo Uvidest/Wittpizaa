@@ -207,6 +207,14 @@
             "width": 1,
             "image_ratio": "cover"
           }
+        },
+        "36009bd5-51cd-4300-95f1-4ae57c064d5c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/witt-pizza_oven-side-large-230111.webp",
+            "width": 1,
+            "image_ratio": "cover"
+          }
         }
       },
       "block_order": [
@@ -227,7 +235,8 @@
         "4de6a163-b5ef-4f36-bc7d-4dbadc796125",
         "8ca8c609-6896-4e29-9fe5-b430aca63dea",
         "fce4a479-4da1-428d-84dc-f67de102551e",
-        "3f816fd6-d2e1-4928-94bd-a5757f863ab8"
+        "3f816fd6-d2e1-4928-94bd-a5757f863ab8",
+        "36009bd5-51cd-4300-95f1-4ae57c064d5c"
       ],
       "settings": {
         "st": 16,
