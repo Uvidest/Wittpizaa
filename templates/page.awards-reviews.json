@@ -102,6 +102,22 @@
             "button_text": "Read more",
             "button_url": "https:\/\/www.bbcgoodfood.com\/review\/witt-etna-rotante-pizza-oven-review"
           }
+        },
+        "97e60d9f-8046-49d4-9896-ee04cdcf8385": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wp-etna-fermo-review-womenshealth-uk-logo_block-001a.webp",
+            "title": "Women's Health",
+            "title_url": true,
+            "title_size": "h3",
+            "date": "27\/02\/2023",
+            "text": "<p>Emma Gritt from WomensHealth tested the Witt ETNA Fermo pizza oven and learned a lot from the experience. One of her realisations was a statement we hear a lot:<strong>\"...the new Witt Etna Fermo is a brilliant investment for families and pizza lovers alike.\"<\/strong><\/p>",
+            "add_text": "",
+            "bg_color": "#F4F4F6",
+            "text_color": "#000",
+            "button_text": "Read more",
+            "button_url": ""
+          }
         }
       },
       "block_order": [
@@ -109,7 +125,8 @@
         "bc32b46c-5bc6-4052-9e35-bce8642ec890",
         "2cfc473d-63b5-4554-af7c-f317da59497b",
         "6ee04800-11de-422b-a7cf-bbacb23ceac8",
-        "a9184c3e-149d-4212-857d-1f25649a5ae6"
+        "a9184c3e-149d-4212-857d-1f25649a5ae6",
+        "97e60d9f-8046-49d4-9896-ee04cdcf8385"
       ],
       "settings": {
         "st": 16,
