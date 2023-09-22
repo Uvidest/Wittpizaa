@@ -47,7 +47,7 @@
         "2c2ae304-bf37-4875-8f70-68393e6e71d2"
       ],
       "settings": {
-        "title": "Title",
+        "title": "PRESS RELEASES",
         "bg_color": "#f4f4f6",
         "st": 16,
         "sb": 16,
@@ -128,6 +128,16 @@
     "bf6d993a-308b-4667-a63a-f7cc072dd0b4": {
       "type": "custom-press-media",
       "blocks": {
+        "7a585c91-244f-442c-9191-bc5bc5936028": {
+          "type": "image",
+          "settings": {
+            "main_image": false,
+            "image": "shopify:\/\/shop_images\/Witt.webp",
+            "image_ratio": "normal",
+            "url": false,
+            "own_url": ""
+          }
+        },
         "dc9e4858-008f-40ed-847a-a86e33b9b614": {
           "type": "image",
           "settings": {
@@ -140,6 +150,7 @@
         }
       },
       "block_order": [
+        "7a585c91-244f-442c-9191-bc5bc5936028",
         "dc9e4858-008f-40ed-847a-a86e33b9b614"
       ],
       "settings": {
@@ -181,7 +192,7 @@
       ],
       "settings": {
         "title": "Fonts",
-        "bg_color": "#f4f4f6",
+        "bg_color": "#ffffff",
         "st": 16,
         "sb": 16,
         "stm": 16,
