@@ -43,16 +43,16 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/wp-etna-rotante-award-the_independant-logo_block-001c_1.webp",
-            "title": "Title",
+            "title": "INDEPENDENT",
             "title_url": true,
-            "title_size": "h2",
-            "date": "11\/09\/2023",
-            "text": "<p>Connery.dk has tested the Witt ETNA Rotante, and the results speak for themselves. The rotating pizza stone is an absolute game-changer, ensuring even baking and simplifying the process, which is a great advantage, especially for those new to pizza baking. Additionally, the Rotante impresses with its incredibly fast heating time, reaching 500°C in just 15 minutes. These innovative features make the Witt ETNA Rotante the ideal pizza oven for both beginners and those looking to upgrade their current model.<\/p>",
+            "title_size": "h3",
+            "date": "20\/04\/2023",
+            "text": "<p>According to Jon Axworthy from The Independent, the Witt's rotante pizza oven impresses with its wide-opening encased in a matte finish, offering versatility with a large cordierite stone for cooking 16-inch pizzas. The oven features a visible U-shaped burner for consistent flames and a hidden second burner for crispy bases. The standout feature is the automatic rotation of the pizza stone, ensuring even cooking and producing delicious homemade pizza.<\/p>",
             "add_text": "",
             "bg_color": "#f4f4f6",
-            "text_color": "#000000",
-            "button_text": "Read more",
-            "button_url": ""
+            "text_color": "#171719",
+            "button_text": "Read the 5\/5 star review",
+            "button_url": "https:\/\/www.independent.co.uk\/extras\/indybest\/house-garden\/bbqs-accessories\/best-pizza-oven-outdoor-a9566981.html"
           }
         },
         "2cfc473d-63b5-4554-af7c-f317da59497b": {
