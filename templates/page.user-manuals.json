@@ -50,7 +50,8 @@
         "e6d40f34-6ca3-4834-add0-abd5031e09c1": {
           "type": "block",
           "settings": {
-            "title": "Title",
+            "image": "shopify:\/\/shop_images\/sweden-vector-sq.webp",
+            "title": "Swedish",
             "url": "",
             "bg_color": "#f4f4f6"
           }
