@@ -100,6 +100,24 @@
             "url": "",
             "bg_color": "#F4F4F6"
           }
+        },
+        "50b4a624-1003-4408-bdf5-bb3c216a892a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/czech-republic-vector-sq.webp",
+            "title": "Czech",
+            "url": "",
+            "bg_color": "#F4F4F6"
+          }
+        },
+        "bd1b0529-bc5c-4627-9183-eec7a5652b17": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/estonia-vector-sq.webp",
+            "title": "Estonian",
+            "url": "",
+            "bg_color": "#F4F4F6"
+          }
         }
       },
       "block_order": [
@@ -112,7 +130,9 @@
         "9f2f4e22-26d3-4a3b-97d9-830bd946c076",
         "f47402ae-19d5-43f1-ac77-410332915199",
         "78830420-ad40-405e-af9b-b9619b7abb5b",
-        "33513f9f-ffd3-4cc1-99e3-569ca34927d1"
+        "33513f9f-ffd3-4cc1-99e3-569ca34927d1",
+        "50b4a624-1003-4408-bdf5-bb3c216a892a",
+        "bd1b0529-bc5c-4627-9183-eec7a5652b17"
       ],
       "settings": {
         "title": "USER MANUALS",
