@@ -41,7 +41,8 @@
         "45771305-f7f0-476b-94a1-15f54dd83c2e": {
           "type": "block",
           "settings": {
-            "title": "Title",
+            "image": "shopify:\/\/shop_images\/norway-vector-sq.webp",
+            "title": "Norwegian",
             "url": "",
             "bg_color": "#f4f4f6"
           }
