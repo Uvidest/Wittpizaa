@@ -204,6 +204,14 @@
             "text_color": "#fff",
             "width": 1
           }
+        },
+        "eefb25d2-89d6-4191-be21-a20709964c9a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wp-mgy-1643c1.webp",
+            "width": 1,
+            "image_ratio": "cover"
+          }
         }
       },
       "block_order": [
@@ -224,7 +232,8 @@
         "36009bd5-51cd-4300-95f1-4ae57c064d5c",
         "24d04b7b-8577-4b50-a07d-4c541e15b986",
         "d74e08fa-9db2-4021-9351-fecd95123f64",
-        "69279e86-3b8a-4cf5-bdfa-ea3b99352ca5"
+        "69279e86-3b8a-4cf5-bdfa-ea3b99352ca5",
+        "eefb25d2-89d6-4191-be21-a20709964c9a"
       ],
       "settings": {
         "st": 16,
