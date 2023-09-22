@@ -51,8 +51,8 @@
         "bg_color": "#f4f4f6",
         "st": 16,
         "sb": 16,
-        "stm": 16,
-        "sbm": 16
+        "stm": 32,
+        "sbm": 32
       }
     },
     "a4fb180c-8793-4024-a82f-fea7ebdfdef1": {
