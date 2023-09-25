@@ -154,6 +154,7 @@
         "2a28defc-4d0c-475a-8da6-5e947349fdbe": {
           "type": "block",
           "settings": {
+            "image": "shopify:\/\/shop_images\/wp-review-mandesager-rotante-221109.webp",
             "title": "MANDESAGER.DK",
             "title_url": true,
             "title_size": "h2",
