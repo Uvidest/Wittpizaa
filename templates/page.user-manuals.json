@@ -15,7 +15,7 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/united-kingdom-vector-sq_1.webp",
-            "title": "Enlish",
+            "title": "English",
             "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0829\/8535\/3527\/files\/80650010_manual_en.pdf?v=1695386192",
             "bg_color": "#f4f4f6"
           }
@@ -89,7 +89,7 @@
             "image": "shopify:\/\/shop_images\/france-vector-sq.webp",
             "title": "French",
             "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0829\/8535\/3527\/files\/80650010_manual_dk_no_se_fi_nl_be.pdf?v=1695385143",
-            "bg_color": "#F4F4F6"
+            "bg_color": "#f4f4f6"
           }
         },
         "33513f9f-ffd3-4cc1-99e3-569ca34927d1": {
@@ -98,7 +98,7 @@
             "image": "shopify:\/\/shop_images\/iceland-vector-sq.webp",
             "title": "Icelandic",
             "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0829\/8535\/3527\/files\/80650010_manual_cz_ee_es_it_pt_he_si_is.pdf?v=1695386409",
-            "bg_color": "#F4F4F6"
+            "bg_color": "#f4f4f6"
           }
         },
         "50b4a624-1003-4408-bdf5-bb3c216a892a": {
@@ -107,7 +107,7 @@
             "image": "shopify:\/\/shop_images\/czech-republic-vector-sq.webp",
             "title": "Czech",
             "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0829\/8535\/3527\/files\/80650010_manual_cz_ee_es_it_pt_he_si_is.pdf?v=1695386409",
-            "bg_color": "#F4F4F6"
+            "bg_color": "#f4f4f6"
           }
         },
         "bd1b0529-bc5c-4627-9183-eec7a5652b17": {
@@ -116,7 +116,7 @@
             "image": "shopify:\/\/shop_images\/estonia-vector-sq.webp",
             "title": "Estonian",
             "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0829\/8535\/3527\/files\/80650010_manual_cz_ee_es_it_pt_he_si_is.pdf?v=1695386409",
-            "bg_color": "#F4F4F6"
+            "bg_color": "#f4f4f6"
           }
         }
       },
