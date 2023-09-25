@@ -166,6 +166,21 @@
             "button_text": "Read more",
             "button_url": "https:\/\/www.wittpizza.com\/awards-reviews\/mandesager-dk"
           }
+        },
+        "fedba5a5-d221-42d4-a82c-73d713a61ad0": {
+          "type": "block",
+          "settings": {
+            "title": "GASTROMAND.DK",
+            "title_url": true,
+            "title_size": "h2",
+            "date": "31\/10\/2022",
+            "text": "<p>\"There is no doubt that the Witt ETNA Rotante is the best gas oven I have tried to date.\"<\/p>",
+            "add_text": "",
+            "bg_color": "#F4F4F6",
+            "text_color": "#171719",
+            "button_text": "Read more",
+            "button_url": "https:\/\/www.wittpizza.com\/awards-reviews\/gastromand-dk"
+          }
         }
       },
       "block_order": [
@@ -177,7 +192,8 @@
         "97e60d9f-8046-49d4-9896-ee04cdcf8385",
         "7c387548-be68-421c-8076-d7f94a91c4c9",
         "33a71060-1f36-4e08-adf0-e232b4d601b1",
-        "2a28defc-4d0c-475a-8da6-5e947349fdbe"
+        "2a28defc-4d0c-475a-8da6-5e947349fdbe",
+        "fedba5a5-d221-42d4-a82c-73d713a61ad0"
       ],
       "settings": {
         "st": 16,
