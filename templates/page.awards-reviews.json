@@ -130,9 +130,25 @@
             "text": "<p><strong>Comments from the Jury<br\/><\/strong>The heat is evenly distributed around the oven for perfectly leopard spotted and crunchy crust pizzas. The ETNA series consists of stationary pizza ovens, in elegant Scandinavian design, made of 100% quality materials. Built to last. Double insulation, environmentally friendly, energy saving – and very fast heat up time.<\/p>",
             "add_text": "As awarded by the Chicago Athenaeum: Museum of Architecture and design. Awarded to Witt ETNA Pizza Oven series, which includes Witt ETNA Rotante and Witt ETNA Fermo.",
             "bg_color": "#171719",
-            "text_color": "#fff",
+            "text_color": "#ffffff",
             "button_text": "Read more",
             "button_url": "https:\/\/www.good-designawards.com\/award-details.html?award=50355"
+          }
+        },
+        "33a71060-1f36-4e08-adf0-e232b4d601b1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/witt_pizza-etna_series-award-2212-gda-gold_mockup3.webp",
+            "title": "GERMAN DESIGN AWARD GOLD 2023",
+            "title_url": false,
+            "title_size": "h2",
+            "date": "15\/12\/2022",
+            "text": "<p><strong>Comments from the Jury<\/strong>»<br\/>Pizza as crispy and delicious as from an Italian restaurant? The ›Witt ETNA‹ pizza oven promises just that with its special design. A large baking chamber and a rotating plate inside the oven ensure that the pizza is evenly crispy on all sides, and gas flames provide plenty of power...«<\/p>",
+            "add_text": "",
+            "bg_color": "#F4F4F6",
+            "text_color": "#000",
+            "button_text": "Read more",
+            "button_url": "https:\/\/www.german-design-award.com\/en\/the-winners\/gallery\/detail\/44469-witt-etna-series.html"
           }
         }
       },
@@ -143,7 +159,8 @@
         "6ee04800-11de-422b-a7cf-bbacb23ceac8",
         "a9184c3e-149d-4212-857d-1f25649a5ae6",
         "97e60d9f-8046-49d4-9896-ee04cdcf8385",
-        "7c387548-be68-421c-8076-d7f94a91c4c9"
+        "7c387548-be68-421c-8076-d7f94a91c4c9",
+        "33a71060-1f36-4e08-adf0-e232b4d601b1"
       ],
       "settings": {
         "st": 16,
