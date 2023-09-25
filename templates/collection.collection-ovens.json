@@ -13,7 +13,7 @@
     "product-grid": {
       "type": "custom-collection-grid-ovens",
       "settings": {
-        "title": "Choose your style:",
+        "title": "CHOOSE YOUR STYLE:",
         "back_color": "#e0ded4",
         "image_shape": "default",
         "show_vendor": false,
