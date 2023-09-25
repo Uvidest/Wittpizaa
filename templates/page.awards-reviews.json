@@ -170,6 +170,7 @@
         "fedba5a5-d221-42d4-a82c-73d713a61ad0": {
           "type": "block",
           "settings": {
+            "image": "shopify:\/\/shop_images\/wp-review-rotante-gastromand_dk-2022_10a.webp",
             "title": "GASTROMAND.DK",
             "title_url": true,
             "title_size": "h2",
