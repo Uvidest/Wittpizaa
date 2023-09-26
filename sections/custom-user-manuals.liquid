@@ -28,8 +28,7 @@
     display: flex;
     gap: 1.6rem;
     flex-wrap: wrap;
-    padding-left: 15px;
-    padding-right: 15px;
+  
   }
   .user-manuals-item{
     position: relative;
@@ -88,10 +87,10 @@
 
 <div class="user-manuals section-{{ section.id }}">
     <div class="user-manuals-wrapper">
-        <h2 class="user-manuals-title">
+        <h2 class="user-manuals-title page-width">
             {{ section.settings.title }}
         </h2>
-        <div class="user-manuals-list">
+        <div class="user-manuals-list page-width">
             {% for block in section.blocks %}
               {% if block.settings.image != blank %}
                 <div style="background: {{ block.settings.bg_color }}" class="user-manuals-item">
