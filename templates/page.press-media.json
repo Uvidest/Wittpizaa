@@ -62,8 +62,10 @@
           "type": "image",
           "settings": {
             "main_image": true,
+            "main_image_text": "MAIN IMAGE",
             "image": "shopify:\/\/shop_images\/1_main_witt-pizza2606.webp",
             "image_ratio": "normal",
+            "obg_fit": "cover",
             "url": true,
             "own_url": ""
           }
@@ -72,8 +74,10 @@
           "type": "image",
           "settings": {
             "main_image": false,
+            "main_image_text": "Main image",
             "image": "shopify:\/\/shop_images\/2_witt-pizza2304-thumb.webp",
             "image_ratio": "normal",
+            "obg_fit": "cover",
             "url": true,
             "own_url": ""
           }
@@ -82,8 +86,10 @@
           "type": "image",
           "settings": {
             "main_image": false,
+            "main_image_text": "Main image",
             "image": "shopify:\/\/shop_images\/3_witt-pizza3263-thumb.webp",
             "image_ratio": "normal",
+            "obg_fit": "cover",
             "url": false,
             "own_url": ""
           }
@@ -92,8 +98,10 @@
           "type": "image",
           "settings": {
             "main_image": false,
+            "main_image_text": "Main image",
             "image": "shopify:\/\/shop_images\/4_witt_pizza1638-thumb.webp",
             "image_ratio": "normal",
+            "obg_fit": "cover",
             "url": true,
             "own_url": ""
           }
@@ -102,8 +110,10 @@
           "type": "image",
           "settings": {
             "main_image": false,
+            "main_image_text": "Main image",
             "image": "shopify:\/\/shop_images\/5_witt-pizza2041-thumb.webp",
             "image_ratio": "normal",
+            "obg_fit": "cover",
             "url": false,
             "own_url": ""
           }
@@ -132,8 +142,10 @@
           "type": "image",
           "settings": {
             "main_image": false,
+            "main_image_text": "Main image",
             "image": "shopify:\/\/shop_images\/Witt.webp",
             "image_ratio": "normal",
+            "obg_fit": "contain",
             "url": false,
             "own_url": ""
           }
@@ -142,8 +154,10 @@
           "type": "image",
           "settings": {
             "main_image": false,
+            "main_image_text": "Main image",
             "image": "shopify:\/\/shop_images\/witt_pizza_rotante_badge_black.webp",
             "image_ratio": "normal",
+            "obg_fit": "cover",
             "url": false,
             "own_url": ""
           }
@@ -169,8 +183,10 @@
           "type": "image",
           "settings": {
             "main_image": false,
+            "main_image_text": "Main image",
             "image": "shopify:\/\/shop_images\/witt_pizza-design-typography-helvetica-black1_1.webp",
             "image_ratio": "small",
+            "obg_fit": "cover",
             "url": true,
             "own_url": "https:\/\/www.facebook.com\/shopify"
           }
@@ -179,8 +195,10 @@
           "type": "image",
           "settings": {
             "main_image": false,
+            "main_image_text": "Main image",
             "image": "shopify:\/\/shop_images\/witt_pizza-design-typography-open_sans-black.webp",
             "image_ratio": "small",
+            "obg_fit": "cover",
             "url": true,
             "own_url": ""
           }
