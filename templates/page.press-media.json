@@ -62,7 +62,7 @@
           "type": "image",
           "settings": {
             "main_image": true,
-            "main_image_text": "",
+            "main_image_text": "qwe",
             "image": "shopify:\/\/shop_images\/1_main_witt-pizza2606.webp",
             "image_ratio": "normal",
             "obg_fit": "cover",
