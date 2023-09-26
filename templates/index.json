@@ -129,12 +129,50 @@
         "text-det": "Read more",
         "text-add": "Add to cart"
       }
+    },
+    "653bf676-cb64-487e-b2c0-9a4ed6b23ba6": {
+      "type": "custom-video-product",
+      "blocks": {
+        "dc903e62-1883-46cb-a88b-1d9435e1c0d2": {
+          "type": "prev-product",
+          "settings": {
+            "range": 25,
+            "title": "innovative features",
+            "main-image": "shopify:\/\/shop_images\/wp-etna-rotante-crop_right-graphite.webp",
+            "advantages-text-1": "Rotating pizza stone",
+            "advantages-text-2": "booster burner",
+            "advantages-text-3": "0-500°C in 15 minutes",
+            "image-advantages-1": "shopify:\/\/shop_images\/Frame_17.svg",
+            "image-advantages-2": "shopify:\/\/shop_images\/Frame_18.svg",
+            "image-advantages-3": "shopify:\/\/shop_images\/Frame_19.svg",
+            "subtitle": "",
+            "descr": "",
+            "background": "",
+            "text-color": "#fff",
+            "block-opacity": 100
+          }
+        },
+        "4949526c-cfec-4a65-ad50-ae7244ad7e72": {
+          "type": "video",
+          "settings": {
+            "range": 75,
+            "video": "shopify:\/\/files\/videos\/27599f9f1da24edab99ed3ed0a0adea2.HD-1080p-2.5Mbps-18519993.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "dc903e62-1883-46cb-a88b-1d9435e1c0d2",
+        "4949526c-cfec-4a65-ad50-ae7244ad7e72"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
     "40209936-d554-4e8b-bb75-e446baf1930a",
-    "846ae930-e037-4de4-9ac9-37da248ca839"
+    "846ae930-e037-4de4-9ac9-37da248ca839",
+    "653bf676-cb64-487e-b2c0-9a4ed6b23ba6"
   ]
 }
