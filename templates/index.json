@@ -106,8 +106,8 @@
       ],
       "settings": {
         "bc-image": "shopify:\/\/shop_images\/2202_08_03_witt_pizza1448_1.webp",
-        "text-det": "",
-        "text-add": ""
+        "text-det": "Read more",
+        "text-add": "Add to cart"
       }
     }
   },
