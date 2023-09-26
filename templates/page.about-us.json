@@ -14,8 +14,7 @@
         "template--16239425847489__27e4fb17-3943-4e0b-9e2d-41f3bd4e4c86-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "ABOUT WITT",
-            "heading_size": "h2"
+            "heading": "ABOUT WITT"
           }
         },
         "template--16239425847489__27e4fb17-3943-4e0b-9e2d-41f3bd4e4c86-text-1": {
@@ -45,7 +44,7 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "",
