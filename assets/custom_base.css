@@ -27,7 +27,7 @@
 }
 @media screen and (max-width: 1000px) {
     .h1{
-        font-size: calc(2.4rem + 4.0vw);
+        font-size: calc(2.5rem + 4.0vw);
     }
     .h2{
         font-size: calc(2.100rem + 2.0vw);

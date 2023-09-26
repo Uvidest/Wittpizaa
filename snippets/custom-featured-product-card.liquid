@@ -106,6 +106,8 @@
                 
                     <legend class="form__label">{{ option.name }}</legend>
                     {%- for option in product.options_with_values -%}
+                        {% if option.name == "Color" %}
+
                       <fieldset class="js product-form__input">
                         {%- liquid
                             assign variants_available_arr = product.variants | map: 'available'
@@ -182,11 +184,12 @@
 
                         {%- endfor -%}
                       </fieldset>
+                        {% endif %}
+
                     {%- endfor -%}
                 
                 <script type="application/json">
                             {{ product.variants | json }}
-
 
                         </script>
             </variant-radios>
@@ -208,7 +211,7 @@
                 </h2>
                 {% if product.description != blank %}
                 <div class="description regular">
-                    {{ product.description }}
+                    {{ product.description | replace: '<meta charset="utf-8">', '' }}
                 </div>
                 {% endif %}
 
