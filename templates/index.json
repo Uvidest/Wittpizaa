@@ -82,19 +82,19 @@
         "2e3f6640-bbad-44e8-b862-46558d94814d": {
           "type": "goods",
           "settings": {
-            "product": ""
+            "product": "witt-etna-fermo"
           }
         },
         "fba7bbc8-4b44-430e-b1b1-a4952bc41e5a": {
           "type": "goods",
           "settings": {
-            "product": ""
+            "product": "witt-etna-rotante-pizza-oven"
           }
         },
         "2368e3a8-d933-4de7-b430-3794f4763128": {
           "type": "goods",
           "settings": {
-            "product": ""
+            "product": "witt-etna-fermo"
           }
         }
       },
@@ -105,6 +105,7 @@
         "2368e3a8-d933-4de7-b430-3794f4763128"
       ],
       "settings": {
+        "bc-image": "shopify:\/\/shop_images\/2202_08_03_witt_pizza1448_1.webp",
         "text-det": "",
         "text-add": ""
       }
