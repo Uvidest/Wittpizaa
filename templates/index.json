@@ -109,11 +109,32 @@
         "text-det": "Read more",
         "text-add": "Add to cart"
       }
+    },
+    "40209936-d554-4e8b-bb75-e446baf1930a": {
+      "type": "custom-video-control",
+      "blocks": {
+        "8bb07d1d-2884-4bf9-8aea-bd5be35f23cc": {
+          "type": "text-block",
+          "settings": {
+            "text-content": "Experience culinary creativity with our remarkable pizza ovens",
+            "text-link": "Explore hare"
+          }
+        }
+      },
+      "block_order": [
+        "8bb07d1d-2884-4bf9-8aea-bd5be35f23cc"
+      ],
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/27599f9f1da24edab99ed3ed0a0adea2.HD-1080p-2.5Mbps-18519993.mp4",
+        "icon-pause": "",
+        "icon-play": ""
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "846ae930-e037-4de4-9ac9-37da248ca839"
+    "846ae930-e037-4de4-9ac9-37da248ca839",
+    "40209936-d554-4e8b-bb75-e446baf1930a"
   ]
 }
