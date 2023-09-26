@@ -1,0 +1,142 @@
+
+<style>
+    .section-{{ section.id }} {
+        padding-top: {{ section.settings.st }}px;
+        padding-bottom: {{ section.settings.sb }}px;
+    {% if section.settings.image_bg != blank %}
+        background: url('{{ section.settings.image_bg.src | img_url: "large" }}'), lightgray 50% / cover no-repeat;
+    {% else %}
+        background: #000;
+    {% endif %}
+    }
+
+    @media screen and (max-width: 768px) {
+        .section-{{ section.id }} {
+            padding-top: {{ section.settings.stm }}px;
+            padding-bottom: {{ section.settings.sbm }}px;
+        }
+    }
+</style>
+<style>
+    .product-main-video{
+        background-size: cover;
+    }
+    .product-main-video-video video{
+        width: 100%;
+    }
+    .product-main-video-wrapper{
+        max-width: 1309px;
+        margin: 0 auto;
+    }
+    .product-main-video-title{
+        color: #FFF;
+        text-align: center;
+        font-family: var(--font-heading-family);
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+</style>
+
+{% if section.settings.video != blank %}
+    <div class="product-main-video section-{{ section.id }}">
+        <div class="page-width">
+            {% if section.settings.title != blank %}
+                <div class="product-main-video-title">
+                    {{ section.settings.title }}
+                </div>
+            {% endif %}
+            <div class="product-main-video-wrapper">
+                <div class="product-main-video-video">
+                    {% if section.settings.video != blank %}
+                        {{
+                        section.settings.video
+                        | video_tag: image_size: '1200x', loop: true, controls: true, muted: false
+                        }}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product video",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Title",
+      "label": "Title"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_bg",
+      "label": "Background image"
+    },
+    {
+      "type": "header",
+      "content": "Space desktop"
+    },
+    {
+      "type": "range",
+      "id": "st",
+      "label": "Space top",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "sb",
+      "label": "Space bottom",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Space mobile"
+    },
+    {
+      "type": "range",
+      "id": "stm",
+      "label": "Space top",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "sbm",
+      "label": "Space bottom",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 16
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product video"
+    }
+  ]
+}
+{% endschema %}
