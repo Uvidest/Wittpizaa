@@ -114,7 +114,7 @@
             "image": "shopify:\/\/shop_images\/5_witt-pizza2041-thumb.webp",
             "image_ratio": "normal",
             "obg_fit": "cover",
-            "url": false,
+            "url": true,
             "own_url": ""
           }
         }
