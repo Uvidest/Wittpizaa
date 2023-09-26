@@ -1,0 +1,173 @@
+<section class="custom-blog-list">
+  <div class="page-width">
+    <h1 class="custom-blog-list__title h1">{{ section.settings.title }}</h3>
+    <div class="custom-blog-list__wrapper">
+      {% for article in section.settings.blog.articles %}
+        <div class="custom-blog-list__article article">
+          {% if article.image != blank %}
+            {{ article.image | image_url: height: 235 | image_tag }}
+          {% endif %}
+          <a href="{{ article.url}}" class="article__title h3">{{ article.title }}</a>
+          <p
+            class="article__content regular">{{ article.content }}</p>
+          {% if section.settings.show-link == true %}
+            <a href="{{article.url}}" class="article__link regular">
+              {{ section.settings.text-link }}
+              {{ section.settings.icon-link }}
+            </a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    <a href="{{section.settings.blog.url}}" class="custom-blog-list__link regular">{{section.settings.text-btn}}</a>
+
+  </div>
+</section>
+<style>
+  .custom-blog-list {
+    background-color: #e0ded4;
+    padding-bottom: 32px;
+  }
+  .custom-blog-list__title {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0;
+  }
+  .custom-blog-list__link {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #171719;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+  .custom-blog-list__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-bottom: 20px;
+  }
+  .article {
+    width: calc(33.33% - 32px * 2 / 3);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 15px;
+  }
+  .custom-blog-list__article.article > img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0 ;
+  }
+  .article__title {
+    text-decoration: none;
+    color: rgb(23, 23, 25);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .article__content {
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+    color: #000;
+    flex-grow: 1;
+  }
+  .article__link {
+    text-transform: uppercase;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 16px;
+    column-gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(23, 23, 25);
+  }
+  .article__link:hover,
+  .article__title:hover {
+    color: #d0672a;
+    text-decoration: underline;
+  }
+
+  @media(max-width: 992px) {
+    .custom-blog-list__title {
+      font-size: 54px;
+      line-height: normal;
+    }
+  }
+  @media(max-width: 768px) {
+    .custom-blog-list__wrapper {
+      flex-direction: column;
+    }
+    .article {
+      width: 100%;
+    }
+    .custom-blog-list__article.article > img {
+      height: 408px;
+    }
+  }
+  @media(max-width:576px) {
+    .custom-blog-list__article.article > img {
+      height: 208px;
+    }
+    .custom-blog-list__title {
+      font-size: 39px;
+      line-height: 39px;
+    }
+    .article__title {
+      font-size: 20px;
+      line-height: normal;
+    }
+  }
+</style>
+{% schema %}
+  {
+    "name": "custom-blog-list",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "title"
+      },
+      {
+        "type": "text",
+        "id": "text-btn",
+        "label": "Text for main link"
+      },
+      {
+        "type": "checkbox",
+        "id": "show-link",
+        "label": "Show link for cart",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "text-link",
+        "default": "Read more",
+        "label": "Text for link"
+      },
+      {
+        "type": "html",
+        "id": "icon-link",
+        "label": "Icon for link"
+      }, {
+        "type": "blog",
+        "id": "blog",
+        "label": "blog"
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "custom-blog-list"
+      }
+    ]
+  }
+{% endschema %}

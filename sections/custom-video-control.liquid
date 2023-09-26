@@ -1,0 +1,104 @@
+<section class="video-controll">
+  {{section.settings.video | video_tag: autoplay: true, loop: true, width: '100%', height: '100%', class: 'video-controll__video'}}
+  <button
+    type="button"
+    data-state="play"
+    class="video-controll__btn"
+  >
+    {{section.settings.icon-pause}}
+  </button>
+</section>
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const video = document.querySelector('.video-controll__video');
+    const btn = document.querySelector('.video-controll__btn');
+    
+    function toggleVideo() {
+      if (btn.getAttribute('data-state') === 'play') {
+        console.log('Pause video');
+        btn.setAttribute('data-state', 'pause');
+        video.pause();
+        btn.innerHTML = '{{section.settings.icon-play}}'; // Змінюємо на іконку play
+      } else {
+        console.log('Play video');
+        btn.setAttribute('data-state', 'play');
+        video.play();
+        btn.innerHTML = '{{section.settings.icon-pause}}'; // Змінюємо на іконку pause
+      }
+    }
+    video.addEventListener('click', toggleVideo);
+    btn.addEventListener('click', toggleVideo);
+  });
+</script>
+<style>
+  .video-controll__video {
+    position: relative;
+
+  }
+  .video-controll__btn {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 0;
+  }
+  .video-controll__btn:active {
+    outline: 0.375rem solid hsla(0,0%,100%,.5);
+  }
+  .video-controll__btn > svg {
+    display: block;
+    margin: auto;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "custom-video-controll",
+    "settings": [
+      {
+        "type": "video",
+        "id": "video",
+        "label" : "Select video"
+      },
+      {
+        "type": "html",
+        "id": "icon-pause",
+        "label": "Icon pause"
+      },
+      {
+        "type": "html",
+        "id": "icon-play",
+        "label": "Icon plaay"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text-block",
+        "name": "Text block",
+        "settings" : [
+          {
+            "type": "text",
+            "id": "text-content",
+            "label": "Text content"
+          },
+          {
+            "type": "text",
+            "id": "text-link",
+            "label": "Text for link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "custom-video-controll"
+      }
+    ]
+  }
+{% endschema %}

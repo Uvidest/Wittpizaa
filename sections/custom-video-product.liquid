@@ -1,0 +1,427 @@
+<section class="custom-prevProduct-video">
+  <div class="page-width">
+    <div class="custom-prevProduct-video__wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'prev-product' %}
+          <div class="custom-prevProduct-video__prevProduct prevProduct prevProduct-{{block.id}}">
+            <p class="prevProduct__title">{{ block.settings.title }}</p>
+            <div class="prevProduct__images">
+              {%if block.settings.main-image != blank %}
+                {{ block.settings.main-image | image_url: width: 340 | image_tag: class: 'prevProduct__mainImg' }}
+              {%endif%}
+              {%if block.settings.small-image != blank %}
+                {{ block.settings.small-image | image_url: width: 75 | image_tag: class: 'prevProduct__smallImg' }}
+              {%endif%}
+            </div>
+            <p class="prevProduct__subtitle">{{ block.settings.subtitle }}</p>
+            <p class="prevProduct__descr">{{ block.settings.descr }}</p>
+            <div class="prevProduct__advantages">
+              <div class="prevProduct__advantage">
+                {{block.settings.image-advantages-1 | image_url: width: 25 | image_tag}}
+                <p>{{block.settings.advantages-text-1}}</p>
+              </div>
+              <div class="prevProduct__advantage">
+                {{block.settings.image-advantages-2 | image_url: width: 25 | image_tag}}
+                <p>{{block.settings.advantages-text-2}}</p>
+              </div>
+              <div class="prevProduct__advantage">
+                {{block.settings.image-advantages-3 | image_url: width: 25 | image_tag}}
+                <p>{{block.settings.advantages-text-3}}</p>
+              </div>
+            </div>
+          </div>
+          {% when 'video' %}
+          <div class="custom-prevProduct-video__video video-{{block.id}}">
+            <div class="video__wrapper">
+              {{ block.settings.video | video_tag: autoplay: true, loop: true, controls: true, width: '100%', height: '100%' }}
+            </div>
+          </div>
+          {% when 'blog-post' %}
+          <div class="custom-prevProduct-video__blog blog-{{block.id}}">
+            <p class="blog__name">{{ block.settings.name_blog }}</p>
+            <a href="{{block.settings.article.url}}" class="blog__image">
+              {{ block.settings.article.image | image_url: width: 290 | image_tag }}
+            </a>
+            <div class="blog__wrapper">
+              <div class="blog__date">
+                <span>
+                  {% if block.settings.date-icon != blank %}
+                    {{ block.settings.date-icon }}
+                  {% endif %}
+                </span>
+                <p>
+                  {{ block.settings.article.created_at | date: "%d/%m/%Y" }}
+                </p>
+              </div>
+              <a href="{{block.settings.article.url}}" class="blog__title">{{ block.settings.article.title }}</a>
+              <p class="blog__content">{{ block.settings.article.content }}</p>
+              <a href="{{block.settings.article.url}}" class="blog__link">
+                {{ block.settings.text-link }}
+                {{ block.settings.icon-link }}
+              </a>
+            </div>
+          </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  .custom-prevProduct-video {
+    background-color: #000;
+    padding: 50px 0;
+  }
+  .custom-prevProduct-video__wrapper {
+    display: flex;
+    column-gap: 30px;
+  }
+  .custom-prevProduct-video__prevProduct {
+    border-radius: 15px;
+    padding-bottom: 20px;
+  }
+  .prevProduct__title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 60px;
+    padding-top: 24px;
+    padding-left: 16px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .prevProduct__images {
+    position: relative;
+  }
+  .prevProduct__smallImg {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  .prevProduct__mainImg {
+    width: 100%;
+  }
+  .prevProduct__subtitle {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 8px;
+    padding-left: 16px;
+  }
+  .prevProduct__descr {
+    padding: 0 16px 16px;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.56px;
+  }
+  .prevProduct__advantage {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    gap: 15px;
+  }
+  .prevProduct__advantage:not(:last-child) {
+    padding-bottom: 10px;
+  }
+  .prevProduct__advantage > p {
+    margin: 0;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .video__wrapper {
+    height: 100%;
+  }
+  .video__wrapper > video {
+    object-fit: cover;
+  }
+  .custom-prevProduct-video__blog {
+    padding: 16px;
+    background-color: rgb(39, 39, 41);
+    color: rgb(23, 23, 25);
+  }
+  .blog__name {
+    padding-top: 24px;
+    padding-bottom: 21px;
+    background-color: rgb(224, 222, 212);
+    text-align: center;
+    font-size: 21px;
+    font-weight: 400;
+  }
+  .blog__wrapper {
+    background-color: rgb(224, 222, 212);
+    padding: 32px;
+  }
+  .blog__date {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    padding-bottom: 10px;
+  }
+  .blog__date > p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #171719;
+  }
+  .blog__title {
+    font-weight: 700;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(23, 23, 25);
+    padding-bottom: 10px;
+  }
+  .blog__content {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0.27px;
+    color: #171719;
+    opacity: 0.75;
+    padding-bottom: 10px;
+  }
+  .blog__link {
+    display: flex;
+    gap: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    font-weight: 600;
+    color: rgb(23, 23, 25);
+  }
+  .blog__image > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .blog__title:hover {
+    text-decoration: underline;
+    color: #d0672a;
+  }
+  .blog__link:hover {
+    text-decoration: underline;
+    color: #d0672a;
+    .blog__link_text {
+      color: #d0672a;
+    }
+  }
+  .blog__image > img:hover {
+    transform: scale(1.1);
+  }
+  @media(max-width: 1200px) {
+    .blog__wrapper {
+      padding: 10px;
+    }
+  }
+  @media (max-width: 992px) {
+    .custom-prevProduct-video__wrapper {
+      flex-direction: column;
+      gap: 16px;
+    }
+    .prevProduct__mainImg {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  @media (max-width: 576px) {
+    .custom-prevProduct-video__blog {
+      padding: 8px;
+    }
+  }
+</style>
+{% style %}
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'prev-product' %}
+      .custom-prevProduct-video__prevProduct.prevProduct-{{ block.id}}{
+        flex-basis: {{ block.settings.range | append: '%' }};
+        min-width: 240px;
+        background-color: {{ block.settings.background}}
+        ;
+      }
+      .prevProduct-{{ block.id}} .prevProduct__title,
+      .prevProduct-{{ block.id}} .prevProduct__subtitle,
+      .prevProduct-{{ block.id}} .prevProduct__descr, 
+      .prevProduct-{{ block.id}} .prevProduct__smallImg,
+      .prevProduct-{{block.id}} .prevProduct__advantage > p {
+        color: {{ block.settings.text-color}};
+        opacity: {{ block.settings.block-opacity | append: '%'}};
+      }
+
+      {% when 'video' %}
+      .custom-prevProduct-video__video.video-{{ block.id }}
+        {
+          flex-basis: {{ block.settings.range | append: '%' }};
+        }
+        {% when 'blog-post' %}
+        .custom-prevProduct-video__blog.blog-{{ block.id}}{
+          flex-basis: {{ block.settings.range | append: '%' }};
+        }
+      {% endcase %}
+    {% endfor %}
+{% endstyle %}
+{% schema %}
+  {
+    "name": "Video-blog-block",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "prev-product",
+        "name": "Preview product",
+        "settings": [
+          {
+            "type": "range",
+            "id": "range",
+            "min": 10,
+            "max": 90,
+            "step": 1,
+            "unit": "%",
+            "label": "Width block",
+            "default": 25
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "image_picker",
+            "id": "main-image",
+            "label": "Main image"
+          },
+          {
+            "type": "text",
+            "id": "advantages-text-1",
+            "label": "Advantages text 1"
+          },
+          {
+            "type": "text",
+            "id": "advantages-text-2",
+            "label": "Advantages text 2"
+          },
+          {
+            "type": "text",
+            "id": "advantages-text-3",
+            "label": "Advantages text 3"
+          },
+          {
+            "type": "image_picker",
+            "id": "image-advantages-1",
+            "label": "Image for first advantages"
+          },
+          {
+            "type": "image_picker",
+            "id": "image-advantages-2",
+            "label": "Image for second advantages"
+          },
+          {
+            "type": "image_picker",
+            "id": "image-advantages-3",
+            "label": "Image for third advantages"
+          },
+          {
+            "type": "image_picker",
+            "id": "small-image",
+            "label": "Additional image"
+          }, {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle"
+          }, {
+            "type": "textarea",
+            "id": "descr",
+            "label": "Description"
+          }, {
+            "type": "color",
+            "id": "background",
+            "label": "Background color"
+          }, {
+            "type": "color",
+            "id": "text-color",
+            "label": "Text color",
+            "default": "#fff"
+          }, {
+            "type": "range",
+            "id": "block-opacity",
+            "min": 10,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "default": 100,
+            "label": "Opacity for block"
+          }
+        ]
+      }, {
+        "type": "video",
+        "name": "Video",
+        "settings": [
+          {
+            "type": "range",
+            "id": "range",
+            "min": 10,
+            "max": 90,
+            "step": 1,
+            "unit": "%",
+            "label": "Width block",
+            "default": 25
+          }, {
+            "type": "video",
+            "id": "video",
+            "label": "A Shopify-hosted video"
+          }
+        ]
+      }, {
+        "type": "blog-post",
+        "name": "article",
+        "settings": [
+          {
+            "type": "range",
+            "id": "range",
+            "min": 10,
+            "max": 90,
+            "step": 1,
+            "unit": "%",
+            "label": "Width block",
+            "default": 25
+          },
+          {
+            "type": "article",
+            "id": "article",
+            "label": "Select article"
+          },
+          {
+            "type": "text",
+            "id": "name_blog",
+            "label": "Name blog"
+          },
+          {
+            "type": "text",
+            "id": "text-link",
+            "label": "Text for link"
+          }, {
+            "type": "html",
+            "id": "date-icon",
+            "label": "Calendar icon"
+          }, {
+            "type": "html",
+            "id": "icon-link",
+            "label": "Icon for link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "video-blog-block"
+      }
+    ]
+  }
+{% endschema %}
