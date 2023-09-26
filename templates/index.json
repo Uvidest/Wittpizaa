@@ -66,10 +66,53 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "846ae930-e037-4de4-9ac9-37da248ca839": {
+      "type": "custom-product-list",
+      "blocks": {
+        "aa66b528-7e40-445a-bccb-107ad15e469e": {
+          "type": "content",
+          "settings": {
+            "subTitle": "Don’t limit yourself",
+            "title": "ʼMUST HAVESʼ",
+            "text-link": "All accessories",
+            "icon-link": ""
+          }
+        },
+        "2e3f6640-bbad-44e8-b862-46558d94814d": {
+          "type": "goods",
+          "settings": {
+            "product": ""
+          }
+        },
+        "fba7bbc8-4b44-430e-b1b1-a4952bc41e5a": {
+          "type": "goods",
+          "settings": {
+            "product": ""
+          }
+        },
+        "2368e3a8-d933-4de7-b430-3794f4763128": {
+          "type": "goods",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "aa66b528-7e40-445a-bccb-107ad15e469e",
+        "2e3f6640-bbad-44e8-b862-46558d94814d",
+        "fba7bbc8-4b44-430e-b1b1-a4952bc41e5a",
+        "2368e3a8-d933-4de7-b430-3794f4763128"
+      ],
+      "settings": {
+        "text-det": "",
+        "text-add": ""
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "846ae930-e037-4de4-9ac9-37da248ca839"
   ]
 }
