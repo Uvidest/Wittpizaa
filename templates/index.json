@@ -166,6 +166,17 @@
       ],
       "settings": {
       }
+    },
+    "e6298114-f704-4a81-b690-57c542455e58": {
+      "type": "custom-blog-list",
+      "settings": {
+        "title": "GET INSPIRED WITH OUR RECIPES",
+        "text-btn": "View all recipe",
+        "show-link": true,
+        "text-link": "Read more",
+        "icon-link": "",
+        "blog": "news"
+      }
     }
   },
   "order": [
@@ -173,6 +184,7 @@
     "featured_collection",
     "40209936-d554-4e8b-bb75-e446baf1930a",
     "846ae930-e037-4de4-9ac9-37da248ca839",
-    "653bf676-cb64-487e-b2c0-9a4ed6b23ba6"
+    "653bf676-cb64-487e-b2c0-9a4ed6b23ba6",
+    "e6298114-f704-4a81-b690-57c542455e58"
   ]
 }
