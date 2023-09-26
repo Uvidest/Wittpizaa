@@ -58,13 +58,6 @@
             "text": "View in 3D",
             "back_img": "shopify:\/\/shop_images\/2_witt-pizza2304_1.webp"
           }
-        },
-        "ad67bf06-6f05-44a8-ada4-7882db1caa2a": {
-          "type": "view-at-home-button",
-          "settings": {
-            "text": "View at Home",
-            "back_img": "shopify:\/\/shop_images\/2202_08_03_witt_pizza1448_1.webp"
-          }
         }
       },
       "block_order": [
@@ -76,8 +69,7 @@
         "965d30cf-378d-4637-8975-60bf2f2bdc94",
         "cec68d16-eb8c-410b-8f8a-5df53b124e0c",
         "40936438-f816-4633-8e2f-0e819a563690",
-        "f634f033-b9fa-4e1e-a1e4-a680cb445f33",
-        "ad67bf06-6f05-44a8-ada4-7882db1caa2a"
+        "f634f033-b9fa-4e1e-a1e4-a680cb445f33"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -91,7 +83,7 @@
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 12
+        "padding_bottom": 48
       }
     },
     "related-products": {
