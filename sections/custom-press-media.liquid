@@ -217,6 +217,14 @@
     .obg_fit-contain img{
         object-fit: contain;
     }
+  .link-full-width{
+    positopn: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
 </style>
 
 <div class="press-media section-{{ section.id }}">
@@ -233,6 +241,9 @@
                                 <div class="press-media-item-image zoom_hover">
                                     <img src="{{ block.settings.image.src | img_url: "master" }}"
                                          alt="{{ block.settings.image.alt }}">
+                              {% if block.settings.url != blank %}
+                                  <a class="link-full-width" href={{ block.settings.url }}> </a>
+                              {% endif %}
                                 </div>
                             {% endif %}
                             {% if block.settings.title != blank %}
