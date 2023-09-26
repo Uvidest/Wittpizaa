@@ -25,6 +25,9 @@
     font-size: 18px;
     letter-spacing: .01em;
   }
+  .q-a-item-text li{
+    font-size: 16px;
+  }
   .q-a-item-text ul{
     margin: 0;
     margin-bottom: 1.6rem;
@@ -37,6 +40,7 @@
     margin: 0;
     margin-bottom: 5px;
     font-size: 1.7rem;
+    font-weight: 600;
   }
     .q-a-list{
         display: grid;
@@ -73,16 +77,37 @@
       background: rgb(0,0,0,.1);
       border-radius: 10px;
       font-weight: 600;
-      line-height: 1.4rem;
+      line-height: 2.24rem;
       font-size: 18px;
       letter-spacing: 0.01em;
     }
+.q-a-bottom-text{
+  padding: 16px;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
 
   @media screen and (max-width: 990px) {
+    .q-a-item-text h3{
+      font-size: 19px;
+    }
+    .q-a-item-title.h3 {
+      font-size: 2rem;
+    }
     .q-a-list{
       display: flex;
       flex-direction: column;
     }
+  }
+  @media screen and (max-width: 600px) {
+    .q-a-item-title.h3 {
+      font-size: calc(1.8rem + .9vw);
+    }
+  }
+    .bigger_space_bottom{
+    margin-bottom: 30px;
   }
 </style>
 
@@ -95,7 +120,7 @@
                         {% if block.settings.title != blank and block.settings.text != blank %}
                         <div style="background: {{ block.settings.bg_color }}; grid-column: span {{ block.settings.width }};" class="q-a-item text_block block-{{ section.id }}-{{ forloop.index }}">
                             {% if block.settings.title != blank %}
-                                    <div style="color: {{ block.settings.text_color }}" href="{{ block.settings.url }}" class="q-a-item-title h3">
+                                    <div style="color: {{ block.settings.text_color }}" href="{{ block.settings.url }}" class="q-a-item-title h3 {% if block.settings.biger_p == true %}bigger_space_bottom{% endif %}">
                                         {{ block.settings.title }}
                                     </div>
                             {% endif %}
@@ -130,7 +155,11 @@
                 {% endcase %}
             {% endfor %}
         </div>
-
+      {% if section.settings.text_bottom != blank %}
+        <div class="q-a-bottom-text">
+          {{ section.settings.text_bottom }}
+        </div>
+      {% endif %}
 
     </div>
 </div>
@@ -141,6 +170,12 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "text_bottom",
+      "label": "Text bottom",
+      "default": "¹Tested at 20 °C (68 °F ) ambient temperature – no wind."
+    },
     {
       "type": "header",
       "content": "Space desktop"
@@ -200,6 +235,12 @@
           "id": "title",
           "label": "Title",
           "default": "Title"
+        },
+        {
+          "type": "checkbox",
+          "id": "biger_p",
+          "label": "Bigger space bottom",
+          "default": false
         },
         {
           "type": "richtext",

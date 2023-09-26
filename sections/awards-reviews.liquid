@@ -14,7 +14,7 @@
 </style>
 
 <style>
-    .awards-reviews-item-text p {
+    .awards-reviews-item-text p{
         margin: 0;
         margin-bottom: 1.6rem;
     }
@@ -29,12 +29,12 @@
 
     .awards-reviews-list {
         display: flex;
-        gap: 1.6rem;
+        gap: 1rem;
         flex-wrap: wrap;
     }
 
     .awards-reviews-item {
-        width: calc(25% - (1.6rem * 3) / 4);
+        width: calc(25% - (1rem * 3) / 4);
         display: flex;
         flex-direction: column;
     }
@@ -43,6 +43,7 @@
         position: relative;
         display: block;
         overflow: hidden;
+        cursor: pointer;
     }
 
     .awards-reviews-item-image:before {
@@ -50,7 +51,10 @@
         display: block;
         padding-top: 56%;
     }
-
+    .awards-reviews-item-text strong{
+        font-weight: 600;
+    }
+    .awards-reviews-item-image-link,
     .awards-reviews-item-image img {
         position: absolute;
         top: 0;
@@ -181,6 +185,11 @@
                             sizes: sizes,
                             widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
                             }}
+                            {% if block.settings.button_url != blank %}
+                                <a href="{{ block.settings.button_url }}"  class="awards-reviews-item-image-link">
+
+                                </a>
+                            {% endif %}
                         </div>
                     {% endif %}
                     <div class="awards-reviews-item-text-box">

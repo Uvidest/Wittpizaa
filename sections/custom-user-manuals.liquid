@@ -28,6 +28,8 @@
     display: flex;
     gap: 1.6rem;
     flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .user-manuals-item{
     position: relative;
@@ -45,6 +47,8 @@
     object-fit: cover;
   }
   .user-manuals-item-title{
+    font-family: var(--font-heading-family);
+    color #171719;
     font-size: 1.7rem;
     font-weight: 700;
     line-height: 1.1em;
@@ -83,7 +87,7 @@
 
 
 <div class="user-manuals section-{{ section.id }}">
-    <div class="user-manuals-wrapper page-width">
+    <div class="user-manuals-wrapper">
         <h2 class="user-manuals-title">
             {{ section.settings.title }}
         </h2>
