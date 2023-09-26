@@ -1006,7 +1006,12 @@ class VariantSelects extends HTMLElement {
     if (!modalContent) return;
     const newMediaModal = modalContent.querySelector(`[data-media-id="${this.currentVariant.featured_media.id}"]`);
     modalContent.prepend(newMediaModal);
+    const CustomMediaGalleries = document.querySelector('custom-product-media');
+    if (CustomMediaGalleries){
+      CustomMediaGalleries.setActiveMedia(this.currentVariant)
+    }
   }
+
 
   updateURL() {
     if (!this.currentVariant || this.dataset.updateUrl === 'false') return;
@@ -1093,10 +1098,7 @@ class VariantSelects extends HTMLElement {
 
             const destination = document.getElementById(`price-${this.dataset.section}`);
             const price = html.querySelector('.price');
-            console.log('price', price)
-            console.log(`#price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`)
             const current_price = document.querySelector(`#price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section} .price`);
-            console.log('current_price', current_price)
 
             current_price.innerHTML = price.innerHTML
             // const inventorySource = html.getElementById(
@@ -1163,7 +1165,6 @@ class VariantSelects extends HTMLElement {
             if (this.currentVariant.id !== requestedVariantId) return;
 
             const html = new DOMParser().parseFromString(responseText, 'text/html');
-            console.log(html)
             const destination = document.getElementById(`price-${this.dataset.section}`);
             const source = html.getElementById(
                 `price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`
@@ -1203,7 +1204,6 @@ class VariantSelects extends HTMLElement {
             }
 
             const price = document.getElementById(`price-${this.dataset.section}`);
-            console.log("pirce", price)
 
             if (price) price.classList.remove('visibility-hidden');
 

@@ -33,7 +33,6 @@ if (!customElements.get('media-gallery')) {
         this.elements.viewer.querySelectorAll('[data-media-id]').forEach((element) => {
           element.classList.remove('is-active');
         });
-        console.log(activeMedia)
         activeMedia.classList.add('is-active');
 
         if (prepend) {

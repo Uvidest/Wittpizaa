@@ -59,10 +59,37 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      {{ value -}}
-      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-    </label>
+    {% if option.name == "Color" and product.template_suffix == "oven" %}
+      {% assign colorsWithValues = settings.config_color_swatch | downcase | newline_to_br | split: '<br />' %}
+      {% assign mainColor = value %}
+      {% assign bgType = "color" %}
+      {% for colorWithValue in colorsWithValues %}
+        {% if colorWithValue contains ":" %}
+          {% assign orogin_value = value | downcase %}
+          {% assign swatchValue = colorWithValue | split: ":" | first | strip %}
+          {% if swatchValue == orogin_value %}
+            {% assign mainColor = colorWithValue | split: ":" | last | strip %}
+            {% if mainColor contains "#" %}
+              {% assign bgType = "color" %}
+            {% elsif  mainColor contains "." %}
+              {% assign bgType = "image" %}
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      <label style="background: {% if bgType == "color" %}{{ mainColor }}{% elsif bgType == "image" %}url({{ images[mainColor] | img_url }}){% endif %} !important" class="option__color" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+          <path d="M15.1209 28.5L6.09595 19.475L8.3522 17.2188L15.1209 23.9875L29.648 9.46045L31.9043 11.7167L15.1209 28.5Z" fill="white"/>
+        </svg>
+        <span  class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+      </label>
+      {% else %}
+      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+        {{ value -}}
+        <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+      </label>
+    {% endif %}
+
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"
