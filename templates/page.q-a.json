@@ -13,8 +13,8 @@
       "settings": {
         "title": "QUESTIONS & ANSWERS",
         "background-image": "shopify:\/\/shop_images\/2202_08_03_WITT_PIZZA1488.jpg",
-        "st": 74,
-        "sb": 54,
+        "st": 84,
+        "sb": 70,
         "stm": 74,
         "sbm": 54
       }
@@ -26,6 +26,7 @@
           "type": "text_block",
           "settings": {
             "title": "HOW HOT DOES IT GET?",
+            "biger_p": false,
             "text": "<p>The pizza stone in the ETNA pizza ovens from Witt Pizza will warm up superfast – within 15 minutes – and conduct heat at 500 °C (950 °F)!¹ The extra booster burner ensures even heat distribution throughout the entire pizza stone when it turns. Placing the pizza on the stone to cook will therefor create perfectly crisp crust without overcooking the topping – the latter being the saddening result if the pizza stone is not hot enough.<\/p>",
             "add_text": "",
             "bg_color": "#d0672a",
@@ -45,6 +46,7 @@
           "type": "text_block",
           "settings": {
             "title": "HOW LONG DOES IT TAKE TO HEAT UP?",
+            "biger_p": false,
             "text": "<p>Witt ETNA pizza ovens heat the pizza stone up to 500 °C (950 °F) in just 15 minutes.¹<\/p><p>Sliding a pizza into a traditional pizza oven results in the pizza stone temperature dropping significantly. This means that the pizza oven must reheat the pizza stone once again. Witt ETNA Rotante is equipped with a booster burner that continuous heats the rotating pizza stone from the bottom and keeps it ready for use.<\/p>",
             "add_text": "",
             "bg_color": "#f4f4f6",
@@ -56,6 +58,7 @@
           "type": "text_block",
           "settings": {
             "title": "MY WITT ETNA PIZZA OVEN HAS BLACK CHIPS THAT HAS FALLEN ONTO MY PIZZA STONE AFTER I HAVE FINISHED USING THE OVEN OR BEFORE THE NEXT TIME, I USE MY OVEN.",
+            "biger_p": false,
             "text": "<p>The black chips are a carbon deposit built up from cooking, please brush off these from the stone using your Witt ETNA Pizza Oven brush and wipe down with a cloth from the interior housing of the oven. (Please refer to page 16 of your owner’s manual for further cleaning and maintenance of your Witt ETNA Pizza Oven).<\/p>",
             "add_text": "",
             "bg_color": "#e0ded4",
@@ -67,6 +70,7 @@
           "type": "text_block",
           "settings": {
             "title": "FIRST TIME USE",
+            "biger_p": false,
             "text": "<p>It is highly recommended prior to cooking in your Witt ETNA Pizza Oven for the first time that you conduct a burn off. Turn the main burner on high for 30 minutes. Then please turn off the main burner and let the oven cool down naturally. Once the oven has cooled, please use a paper towel to wipe the inside of the oven to remove any soot from the burn off.  Be careful; the pizza oven may still be hot in some places.<\/p>",
             "add_text": "",
             "bg_color": "#171719",
@@ -78,6 +82,7 @@
           "type": "text_block",
           "settings": {
             "title": "THERE IS A WHITE POWDER RESIDUE ON THE INSIDE HOUSING OF MY WITT ETNA PIZZA OVEN, ON THE BURNER AND GUARD RAIL OF THE OVEN.",
+            "biger_p": false,
             "text": "<p>This is common and is from the burning of LP Gas. Please use a cloth to wipe away this white powder residue prior to using or after the pizza oven has cooled down. (Please refer to page 16 of your owner’s manual for further cleaning and maintenance of your Witt ETNA Pizza Oven).<\/p><p>The white powder is a result of the high temperatures, in the same way as pyrolysis in a regular.<\/p>",
             "add_text": "",
             "bg_color": "#3f444a",
@@ -97,6 +102,7 @@
           "type": "text_block",
           "settings": {
             "title": "AFTER COOKING ",
+            "biger_p": false,
             "text": "<p>Once you have cooked that great pizza, just before you eat, and if you are continuing to cook more pizzas, please turn the Witt ETNA Pizza Oven main burner down to a low setting. If you have finished cooking in your oven, please turn both the main and boost burner off.  Running the oven for an extended period with the main burner on high setting could result in damaging your Witt ETNA Pizza Oven.   <\/p>",
             "add_text": "",
             "bg_color": "#d0672a",
@@ -108,6 +114,7 @@
           "type": "text_block",
           "settings": {
             "title": "WHAT KIND OF GAS SHOULD I USE?",
+            "biger_p": false,
             "text": "<p>F-gas, LPG, Bottled gas, liquefied gas, propane gas - different names, same product. LPG stands for Liquified Petroleum Gas, which covers a collective term for the hydrocarbons propane and butane. It's standard bottled gas used for both cooking and barbequing in general.<\/p><p>You can get LPG bottled gas at gas stations, hardware stores, campsites, etc.<\/p>",
             "add_text": "",
             "bg_color": "#b4b4b6",
@@ -119,6 +126,7 @@
           "type": "text_block",
           "settings": {
             "title": "IS IT SAFE TO USE THE POLYPROPYLENE BRUSH IN THE PIZZA OVEN, WHILE IT IS STILL HOT?",
+            "biger_p": false,
             "text": "<p>No. The brush can melt and as a result damage the pizza stone. We recommend only to use the brush in the oven once it has cooled completely.<\/p>",
             "add_text": "",
             "bg_color": "#d0672a",
@@ -130,6 +138,7 @@
           "type": "text_block",
           "settings": {
             "title": "MY WITT ETNA PIZZA OVEN IS SHOWING SIGNS OF DISCOLORATION AND STRETCH MARKS INSIDE THE ROOF OF THE OVEN.",
+            "biger_p": false,
             "text": "<p>This is a normal process and is due to the enamel coating going through heat cycles. <\/p>",
             "add_text": "",
             "bg_color": "#f4f4f6",
@@ -141,6 +150,7 @@
           "type": "text_block",
           "settings": {
             "title": "HOW LONG DOES IT TAKE TO COOL DOWN?",
+            "biger_p": false,
             "text": "<p>The cooldown time varies due to the ambient temperatures. The ETNA Pizza Ovens is one of the most temperature-consistent pizza ovens on the market with effective insulation, taking approximately one and a half hour to cool down completely.<\/p>",
             "add_text": "Never touch the surface or store the oven before it has cooled down!",
             "bg_color": "#e0ded4",
@@ -152,6 +162,7 @@
           "type": "text_block",
           "settings": {
             "title": "WHAT ARE THE DIMENSIONS?",
+            "biger_p": false,
             "text": "<p>The Witt ETNA Pizza Oven (Rotante & Fermo) has the following dimensions:<\/p><ul><li>Height: <strong>436mm<\/strong><\/li><li>Width: <strong>663mm<\/strong><\/li><li>Depth: <strong>761mm<\/strong><\/li><li>Loading height: <strong>143mm<\/strong><\/li><li>Footprint: <strong>633x603mm<\/strong><\/li><\/ul>",
             "add_text": "",
             "bg_color": "#3f444a",
@@ -179,6 +190,7 @@
           "type": "text_block",
           "settings": {
             "title": "VITREOUS ENAMEL COATING",
+            "biger_p": false,
             "text": "<h3>WHAT IS VITREOUS ENAMEL?<\/h3><p>Vitreous enamel (porcelain enamel) is a smooth, glassy, and durable surface fused to a metal substrate at temperatures over 800 °C. Used for a wide range of applications from cookware, BBQs, and appliances.<\/p><h3>IS VITREOUS ENAMEL SAFE?<\/h3><p>Vitreous enamel is a safe non-toxic coating and the optimum material for a variety of uses. It offers superior heat resistance. It is non-porous which makes it more hygienic, easier to clean and well-suited in cookware, BBQs, and appliances.<\/p><h3>CARE FOR VITREOUS ENAMEL<\/h3><ul><li>Make sure your Witt ETNA Pizza Oven has cooled down and is safe to touch before cleaning the inside.<\/li><li>The pizza oven can be cleaned inside with a little mild soapy water and a soft cloth or sponge.<\/li><li>To clean any stubborn dirt or grease, use a little baking soda on a wet sponge.<\/li><li>Do not use steel utensils or scouring agents.<\/li><\/ul><h3>GOT A QUESTION OR A CONCERN?<\/h3><p>Please contact our customer service team who you will be able to assist in answering any questions or quires.<\/p>",
             "add_text": "",
             "bg_color": "#f4f4f6",
@@ -198,6 +210,7 @@
           "type": "text_block",
           "settings": {
             "title": "HOW ABOUT THE GAS REGULATOR AND HOSE?",
+            "biger_p": false,
             "text": "<p>The ETNA Rotante and Fermo Pizza Ovens does not include a gas regulator and hose. These must be purchased separately and can be found in <a href=\"https:\/\/www.wittpizza.com\/accessories\">the accessory shop<\/a>.<\/p>",
             "add_text": "",
             "bg_color": "#171719",
@@ -217,6 +230,7 @@
           "type": "text_block",
           "settings": {
             "title": "IF YOU HAVE ANY OTHER QUESTIONS ON THE INTERIOR MAINTENANCE OF YOUR WITT ETNA PIZZA OVEN.",
+            "biger_p": false,
             "text": "<p>Please contact our customer service team who you will be able to assist you further. <\/p>",
             "add_text": "",
             "bg_color": "#f4f4f6",
@@ -248,6 +262,7 @@
         "990eef3c-0e01-4c29-a56a-9ab6e78121dc"
       ],
       "settings": {
+        "text_bottom": "¹Tested at 20 °C (68 °F ) ambient temperature – no wind.",
         "st": 16,
         "sb": 16,
         "stm": 16,
