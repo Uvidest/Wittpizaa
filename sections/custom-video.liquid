@@ -1,0 +1,59 @@
+<section class="video-block">
+  {% if section.settings.video != blank %}
+    {{ section.settings.video | video_tag: autoplay: true, loop: true, width: '100%', height: '100%' }}
+  {% endif %}
+  <p class="video-block__text">{{ section.settings.text }}</h3>
+</section>
+<style>
+  .video-block {
+    position: relative;
+  }
+  .video-block__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+  }
+  @media (max-width: 1100px) {
+    .video-block__text {
+      font-size: 60px;
+    }
+  }
+  @media (max-width: 992px) {
+    .video-block__text {
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 576px) {
+    .video-block__text {
+      font-size: 25px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Custom video block",
+    "settings": [
+      {
+        "type": "video",
+        "id": "video",
+        "label": "Video"
+      }, {
+        "type": "text",
+        "id": "text",
+        "label": "Text centered"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom video block"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,262 @@
+<secrion class="product-list">
+  <div class="product-list__wrapper">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'content' %}
+          <div class="product-list__content content">
+            <h2 class="content__subtitle h2">{{ block.settings.subTitle }}</p>
+            <h1 class="content__title h1">{{ block.settings.title }}</h3>
+            <a class="content__link regular" href="#">
+              {{ block.settings.text-link }}
+              {{ block.settings.icon-link }}
+            </a>
+          </div>
+        {% when 'goods' %}
+          <div class="product-list__product product product-{{block.id}}">
+            {{ block.settings.product.featured_image | image_url: width: 280 | image_tag }}
+            <div class="product__content">
+              <h3 class="product__name h3">{{ block.settings.product.title }}</p>
+              <p class="product__price regular">{{ block.settings.product.price | money }}</p>
+              <div class="product__buttons">
+                <button type="button" data-id="{{block.settings.product.first_available_variant.id}}" class="product__add regular">
+                  {{ section.settings.text-add }}
+                </button>
+                <a href="{{block.settings.product.url}}" class="product__det regular">{{ section.settings.text-det }}</a>
+              </div>
+            </div>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</secrion>
+<style>
+  .product-list__wrapper {
+    background-position: 1% 48%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 96px 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .product-list__content.content,
+  .product-list__product.product {
+    flex-basis: 25%;
+  }
+  .product-list__content.content {
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .product-list__product.product {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+  .product-list__product.product > img {
+    border-radius: 15px 15px 0 0;
+  }
+  .product__content {
+    padding: 0 16px 16px 16px;
+  }
+  .content__subtitle.h2 {
+    color: #fff;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    font-size: 3.9rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .content__title {
+    color: #fff;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  .content__link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 25px;
+  }
+  .product-list__product.product > img {
+    height: auto;
+    flex-grow: 1;
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 16px;
+  }
+  .product-list__product .product__name {
+    text-align: center;
+    margin: 0;
+  }
+  .product-list__product .product__price {
+    flex-grow: 1;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .product-list__product .product__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .product-list__product .product__add {
+    flex-basis: 50%;
+    background-color: rgb(208, 103, 42);
+    color: #fff;
+    padding: 4px 8px;
+    border: 0.0833rem solid transparent;
+    text-align: center;
+    border-radius: 25px;
+  }
+  .product-list__product .product__det {
+    flex-basis: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 228, 229);
+    color: rgb(23, 23, 25);
+    text-decoration: none;
+    border-radius: 25px;
+  }
+  @media (max-width: 1228px) {
+    .product-list__wrapper {
+      padding: 96px 15px;
+    }
+  }
+  @media (max-width: 1118px) {
+    .product-list__wrapper {
+      flex-wrap: wrap;
+    }
+    .product-list__product.product,
+    .product-list__content.content {
+      flex-basis: calc(50% - 16px * 2);
+    }
+  }
+  @media (max-width: 768px) {
+    .product__content {
+      padding: 8px;
+    }
+    .product-list__product .product__buttons {
+      gap: 8px;
+    }
+  }
+  @media(max-width: 576px) {
+    .product-list__wrapper {
+      display: block;
+      padding: 50px 16px;
+    }
+    .product-list__product.product:not(:last-child) {
+      margin-bottom: 10px;
+    }   
+  }
+</style>
+{% style %}
+
+.product-list__wrapper {
+  background-image: linear-gradient(90deg,rgba(0,0,0,0.50), rgba(34, 34, 35, 0.50)), url("{{section.settings.bc-image | image_url}}");
+}
+
+{% endstyle %}
+
+<!-- <temp data-prettydiff-ignore><script>
+  const buttonsAdd = document.querySelectorAll('.product__add');
+
+  buttonsAdd.forEach(btn => btn.addEventListener('click', function() {
+    console.log(btn);
+    const id = + btn.getAttribute('data-id');
+    const currentCount = document.querySelector('.cart-count-bubble > span');
+    let formData = {
+      'items': [
+        {
+          'id': id,
+          'quantity': 1
+        }
+      ]
+    };
+
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    }).then(response => {
+      fetch(window.Shopify.routes.root + 'cart.js').then(res => res.json()).then(data => currentCount.innerHTML = `(${
+        data.item_count
+      })`)
+      return response.json();
+    }).catch((error) => {
+      console.error('Error:', error);
+    });
+  }))
+</script></temp> -->
+
+{% schema %}
+  {
+    "name": "custom-product-list",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bc-image",
+        "label": "Background image"
+      }, {
+        "type": "text",
+        "id": "text-det",
+        "label": "Text for product button link details"
+      }, {
+        "type": "text",
+        "id": "text-add",
+        "label": "Text for product button link add to cart"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "goods",
+        "name": "goods",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          }
+        ]
+      }, {
+        "type": "content",
+        "name": "content block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "subTitle",
+            "label": "Subtitle"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }, {
+            "type": "text",
+            "id": "text-link",
+            "label": "Text for link"
+          }, {
+            "type": "html",
+            "id": "icon-link",
+            "label": "Icon for link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "custom-product-list"
+      }
+    ]
+  }
+{% endschema %}
