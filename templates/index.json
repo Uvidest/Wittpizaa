@@ -27,8 +27,8 @@
           "witt-etna-fermo",
           "witt-etna-rotante-pizza-oven"
         ],
-        "title": "Title",
-        "back_color": "",
+        "title": "",
+        "back_color": "#e0ded4",
         "st": 16,
         "sb": 16,
         "stm": 16,
