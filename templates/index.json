@@ -20,6 +20,43 @@
         "icon-play": "<svg width=\"73px\" height=\"73px\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" stroke=\"#ffffff33\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"><\/g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/g><g id=\"SVGRepo_iconCarrier\"> <circle opacity=\"0.5\" cx=\"12\" cy=\"12\" r=\"10\" stroke=\"#ffffff33\" stroke-width=\"1.5\"><\/circle> <path d=\"M13.8876 9.9348C14.9625 10.8117 15.5 11.2501 15.5 12C15.5 12.7499 14.9625 13.1883 13.8876 14.0652C13.5909 14.3073 13.2966 14.5352 13.0261 14.7251C12.7888 14.8917 12.5201 15.064 12.2419 15.2332C11.1695 15.8853 10.6333 16.2114 10.1524 15.8504C9.6715 15.4894 9.62779 14.7336 9.54038 13.2222C9.51566 12.7947 9.5 12.3757 9.5 12C9.5 11.6243 9.51566 11.2053 9.54038 10.7778C9.62779 9.26636 9.6715 8.51061 10.1524 8.1496C10.6333 7.78859 11.1695 8.11466 12.2419 8.76679C12.5201 8.93597 12.7888 9.10831 13.0261 9.27492C13.2966 9.46483 13.5909 9.69274 13.8876 9.9348Z\" stroke=\"#ffffff33\" stroke-width=\"1.5\"><\/path> <\/g><\/svg>"
       }
     },
+    "653bf676-cb64-487e-b2c0-9a4ed6b23ba6": {
+      "type": "custom-video-product",
+      "blocks": {
+        "dc903e62-1883-46cb-a88b-1d9435e1c0d2": {
+          "type": "prev-product",
+          "settings": {
+            "range": 25,
+            "title": "innovative features",
+            "main-image": "shopify:\/\/shop_images\/wp-etna-rotante-crop_right-graphite.webp",
+            "advantages-text-1": "Rotating pizza stone",
+            "advantages-text-2": "booster burner",
+            "advantages-text-3": "0-500°C in 15 minutes",
+            "image-advantages-1": "shopify:\/\/shop_images\/Frame_17.svg",
+            "image-advantages-2": "shopify:\/\/shop_images\/Frame_18.svg",
+            "image-advantages-3": "shopify:\/\/shop_images\/Frame_19.svg",
+            "subtitle": "",
+            "descr": "",
+            "background": "",
+            "text-color": "#ffffff",
+            "block-opacity": 100
+          }
+        },
+        "4949526c-cfec-4a65-ad50-ae7244ad7e72": {
+          "type": "video",
+          "settings": {
+            "range": 75,
+            "video": "shopify:\/\/files\/videos\/27599f9f1da24edab99ed3ed0a0adea2.HD-1080p-2.5Mbps-18519993.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "dc903e62-1883-46cb-a88b-1d9435e1c0d2",
+        "4949526c-cfec-4a65-ad50-ae7244ad7e72"
+      ],
+      "settings": {
+      }
+    },
     "846ae930-e037-4de4-9ac9-37da248ca839": {
       "type": "custom-product-list",
       "blocks": {
@@ -63,43 +100,6 @@
         "text-add": "Add to cart"
       }
     },
-    "653bf676-cb64-487e-b2c0-9a4ed6b23ba6": {
-      "type": "custom-video-product",
-      "blocks": {
-        "dc903e62-1883-46cb-a88b-1d9435e1c0d2": {
-          "type": "prev-product",
-          "settings": {
-            "range": 25,
-            "title": "innovative features",
-            "main-image": "shopify:\/\/shop_images\/wp-etna-rotante-crop_right-graphite.webp",
-            "advantages-text-1": "Rotating pizza stone",
-            "advantages-text-2": "booster burner",
-            "advantages-text-3": "0-500°C in 15 minutes",
-            "image-advantages-1": "shopify:\/\/shop_images\/Frame_17.svg",
-            "image-advantages-2": "shopify:\/\/shop_images\/Frame_18.svg",
-            "image-advantages-3": "shopify:\/\/shop_images\/Frame_19.svg",
-            "subtitle": "",
-            "descr": "",
-            "background": "",
-            "text-color": "#ffffff",
-            "block-opacity": 100
-          }
-        },
-        "4949526c-cfec-4a65-ad50-ae7244ad7e72": {
-          "type": "video",
-          "settings": {
-            "range": 75,
-            "video": "shopify:\/\/files\/videos\/27599f9f1da24edab99ed3ed0a0adea2.HD-1080p-2.5Mbps-18519993.mp4"
-          }
-        }
-      },
-      "block_order": [
-        "dc903e62-1883-46cb-a88b-1d9435e1c0d2",
-        "4949526c-cfec-4a65-ad50-ae7244ad7e72"
-      ],
-      "settings": {
-      }
-    },
     "e6298114-f704-4a81-b690-57c542455e58": {
       "type": "custom-blog-list",
       "settings": {
@@ -110,12 +110,32 @@
         "icon-link": "",
         "blog": "news"
       }
+    },
+    "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030": {
+      "type": "custom-slider-forIt",
+      "blocks": {
+        "b7722406-62b0-40b0-824a-76d964fe88c4": {
+          "type": "slide",
+          "settings": {
+            "text": "\"We've tested lots of pizza ovens and without doubt, the Witt Rotante is the easiest model in which to cook a pizza\"",
+            "image": "shopify:\/\/shop_images\/Mask_group.svg"
+          }
+        }
+      },
+      "block_order": [
+        "b7722406-62b0-40b0-824a-76d964fe88c4"
+      ],
+      "settings": {
+        "title": "Don’t just take our word for it",
+        "controll": "shopify:\/\/shop_images\/Group_27.png"
+      }
     }
   },
   "order": [
     "40209936-d554-4e8b-bb75-e446baf1930a",
-    "846ae930-e037-4de4-9ac9-37da248ca839",
     "653bf676-cb64-487e-b2c0-9a4ed6b23ba6",
-    "e6298114-f704-4a81-b690-57c542455e58"
+    "846ae930-e037-4de4-9ac9-37da248ca839",
+    "e6298114-f704-4a81-b690-57c542455e58",
+    "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030"
   ]
 }
