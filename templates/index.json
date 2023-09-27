@@ -141,13 +141,21 @@
             "text": "\"It's a game-changing idea, brilliantly executed, and consistently produced the best fresh pizza we've eaten all year at home.\"",
             "image": "shopify:\/\/shop_images\/Mask_group_1.svg"
           }
+        },
+        "87c81bfa-52df-4eef-97b4-9ae8546b1800": {
+          "type": "slide",
+          "settings": {
+            "text": "\"We've tested lots of pizza ovens and without doubt, the Witt Rotante is the easiest model in which to cook a pizza\"",
+            "image": "shopify:\/\/shop_images\/Mask_group.svg"
+          }
         }
       },
       "block_order": [
         "b7722406-62b0-40b0-824a-76d964fe88c4",
         "29bcfc8f-7c99-4644-95e8-e18e6b3f016b",
         "bc713aee-2099-4856-9210-13ab1d067870",
-        "522e9666-d6ba-416e-8545-29e9409a1eb1"
+        "522e9666-d6ba-416e-8545-29e9409a1eb1",
+        "87c81bfa-52df-4eef-97b4-9ae8546b1800"
       ],
       "settings": {
         "title": "Don’t just take our word for it",
