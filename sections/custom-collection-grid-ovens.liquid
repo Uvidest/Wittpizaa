@@ -29,7 +29,10 @@
     }
 {%- endstyle -%}
 
-
+{% assign products = collection.products %}
+{% if section.settings.product_list != blank %}
+  {% assign products = section.settings.product_list %}
+  {% endif %}
 <div class="section-{{ section.id }} custom-collection">
 
         {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
@@ -70,7 +73,7 @@
                 grid--{{ section.settings.columns_desktop }}-col-desktop
               "
                         >
-                            {%- for product in collection.products -%}
+                            {%- for product in products -%}
                                 {% assign lazy_load = false %}
                                 {%- if forloop.index > 2 -%}
                                     {%- assign lazy_load = true -%}
