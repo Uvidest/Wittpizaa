@@ -48,9 +48,9 @@
                                 </h3>
                             {% endif %}
                             {% if block.settings.text != blank %}
-                                <div class="press-media-item-text">
+                                <p class="press-media-item-text">
                                     {{ block.settings.text }}
-                                </div>
+                                </p>
                             {% endif %}
                     </div>
                 {%- when 'image' -%}
@@ -93,9 +93,9 @@
                             </h3>
                         {% endif %}
                         {% if block.settings.text != blank %}
-                            <div style=" color: {{ block.settings.text_color }}" class="press-media-item-text">
+                            <p style=" color: {{ block.settings.text_color }}" class="press-media-item-text">
                                 {{ block.settings.text }}
-                            </div>
+                            </p>
                         {% endif %}
 
                     </div>
