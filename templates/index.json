@@ -199,6 +199,21 @@
       "settings": {
         "title": "Explore witt pizza"
       }
+    },
+    "d60eefe0-0065-43a1-972f-e7bd4f7b573a": {
+      "type": "custom-collection-grid-ovens",
+      "settings": {
+        "product_list": [
+          "witt-etna-fermo",
+          "witt-etna-rotante-pizza-oven"
+        ],
+        "title": "Title",
+        "back_color": "",
+        "st": 16,
+        "sb": 16,
+        "stm": 16,
+        "sbm": 16
+      }
     }
   },
   "order": [
@@ -208,6 +223,7 @@
     "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030",
     "e099d9b6-26d3-4242-81a0-81c8a5368db5",
     "e6298114-f704-4a81-b690-57c542455e58",
-    "6201729d-a22e-43f2-9cc2-d43bec0e03fa"
+    "6201729d-a22e-43f2-9cc2-d43bec0e03fa",
+    "d60eefe0-0065-43a1-972f-e7bd4f7b573a"
   ]
 }
