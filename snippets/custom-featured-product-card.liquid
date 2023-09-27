@@ -271,23 +271,24 @@
                     </div>
                 </noscript>
                 <!-- -->
-                <div class="no-js-hidden" id="price-{{ section.id }}-{{ index }}"
-                     role="status">
-                    {%- render 'price',
-                            product: product,
-                            use_variant: true,
-                            show_badges: true,
-                            price_class: 'price--large'
-                    -%}
-                </div>
+
                 <div class="product__view-details-box">
+                    <div class="no-js-hidden" id="price-{{ section.id }}-{{ index }}"
+                         role="status">
+                        {%- render 'price',
+                                product: product,
+                                use_variant: true,
+                                show_badges: true,
+                                price_class: 'price--large'
+                        -%}
+                    </div>
                     <a
                             {% if product == blank %}
                                 role="link" aria-disabled="true"
                             {% else %}
                                 href="{{ product.url }}"
                             {% endif %}
-                            class="link product__view-details animate-arrow"
+                            class="link product__view-details butn butn__new"
                     >
                         {% if product.metafields.custom.short_name != blank %}
                             {{ 'products.product.shop' | t }} {{ product.metafields.custom.short_name }}

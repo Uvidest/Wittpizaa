@@ -17,105 +17,8 @@
         }
     {% endfor %}
 </style>
+<link rel="stylesheet" href="{{ 'custom-q-a.css' | asset_url }}">
 
-<style>
-  .q-a-item-text p{
-    margin: 0;
-    margin-bottom: 1.6rem;
-    font-size: 18px;
-    letter-spacing: .01em;
-  }
-  .q-a-item-text li{
-    font-size: 16px;
-  }
-  .q-a-item-text ul{
-    margin: 0;
-    margin-bottom: 1.6rem;
-    padding-left: 3.2rem;
-  }
-  .q-a-item-text > *:last-child{
-    margin: 0;
-  }
-  .q-a-item-text h3{
-    margin: 0;
-    margin-bottom: 5px;
-    font-size: 1.7rem;
-    font-weight: 600;
-  }
-    .q-a-list{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.6rem
-    }
-    .text_block{
-        padding: 48px;
-    }
-    .q-a-item-title{
-      margin-bottom: 8px;
-    }
-    .q-a-item-image img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .q-a-item-image{
-      height: 100%;
-    }
-    .q-a-wrapper{
-      padding: 0 1.6rem;
-    }
-    .q-a-item-image.size-contain img{
-      object-fit: contain;
-      object-position: top;
-    }
-    .q-a-ad-text{
-      padding: 16px;
-      margin: 0 auto;
-      margin-top: 16px;
-      text-align: center;
-      background: rgb(0,0,0,.1);
-      border-radius: 10px;
-      font-weight: 600;
-      line-height: 2.24rem;
-      font-size: 18px;
-      letter-spacing: 0.01em;
-    }
-.q-a-bottom-text{
-  padding: 16px;
-  margin-top: 16px;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 0.03em;
-}
-  .q-a-item-text a{
-        transition-duration: 300ms;
-  }
-  .q-a-item-text a:hover{
-        color: #D0672A;
-  }
-
-  @media screen and (max-width: 990px) {
-    .q-a-item-text h3{
-      font-size: 19px;
-    }
-    .q-a-item-title.h3 {
-      font-size: 2.7rem;
-    }
-    .q-a-list{
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .q-a-item-title.h3 {
-      font-size: calc(1.8rem + .9vw);
-    }
-  }
-    .bigger_space_bottom{
-    margin-bottom: 30px;
-  }
-</style>
 
 <div class="q-a section-{{ section.id }}">
     <div class="q-a-wrapper">
@@ -151,7 +54,7 @@
                                 {%- endcapture -%}
 
                                 {{ block.settings.image | image_url: width: 1946 | image_tag:
-                                loading: lazy,
+                                loading: "lazy",
                                 sizes: sizes,
                                 widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
                                 }}

@@ -13,176 +13,22 @@
 
 </style>
 
-<style>
-    .awards-reviews-item-text p{
-        margin: 0;
-        margin-bottom: 1.6rem;
-    }
-
-    .awards-reviews-item-text > * {
-        margin: 0 !important;
-    }
-
-    .awards-reviews-wrapper {
-        padding: 0 1.6rem;
-    }
-
-    .awards-reviews-list {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-
-    .awards-reviews-item {
-        width: calc(25% - (1rem * 3) / 4);
-        display: flex;
-        flex-direction: column;
-    }
-
-    .awards-reviews-item-image {
-        position: relative;
-        display: block;
-        overflow: hidden;
-        cursor: pointer;
-    }
-
-    .awards-reviews-item-image:before {
-        content: '';
-        display: block;
-        padding-top: 56%;
-    }
-    .awards-reviews-item-text strong{
-        font-weight: 600;
-      color: #171719;
-    }
-    .awards-reviews-item-image-link,
-    .awards-reviews-item-image img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        transition-duration: 300ms;
-
-    }
-    .awards-reviews-item-image:hover img{
-        transform: scale(1.1);
-        transition-duration: 300ms;
-    }
-
-
-    .awards-reviews-item-text-box {
-        padding: 32px;
-        /*height: 100%;*/
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .awards-reviews-item-date {
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-        font-size: calc(1.2rem + 0.0vw);
-        margin-bottom: 5px;
-    }
-
-    .awards-reviews-item-date svg {
-        height: 12.5px;
-        width: 12.5px;
-    }
-
-    .awards-reviews-item-text-box-value {
-        display: flex;
-        gap: 0.32rem;
-        flex-direction: column;
-    }
-    .awards-reviews-item-title{
-        text-decoration: none;
-        transition-duration: 300ms;
-    }
-
-    .awards-reviews-item-button:hover,
-    a.awards-reviews-item-title:hover{
-        color: #d0672a!important;
-        transition-duration: 300ms;
-        text-decoration: underline;
-    }
-    .awards-reviews-item-title.h2 {
-        margin-bottom: 6px;
-    }
-
-    .awards-reviews-item-title.h3 {
-        margin-top: 8px;
-        margin-bottom: 5.6px;
-        font-size: calc(1.84rem + 0.3vw);
-
-    }
-
-    .awards-reviews-item-button {
-        font-size: 1.6rem;
-        font-weight: 600;
-        letter-spacing: 0.01em;
-        line-height: 1.2em;
-        text-decoration: none;
-        margin-top: 1.6rem;
-        font-family: var(--font-heading-family);
-        color: #000;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        transition-duration: 300ms;
-    }
-    .awards-reviews-item-button svg{
-        height: 1.6rem;
-        width: 1.6rem;
-        position: relative;
-        top: 2px
-    }
-    .awards-reviews-item-add-text{
-        font-size: 1.105rem; !important;
-        opacity: 80%;
-        margin-top: 1.6rem;
-    }
-    @media screen and (max-width: 1200px) {
-        .awards-reviews-item {
-            width: calc(33.33% - (1.6rem * 2) / 3);
-        }
-    }
-    @media screen and (max-width: 990px) {
-        .awards-reviews-item {
-            width: calc(50% - 1.6rem / 2);
-        }
-    }
-    @media screen and (max-width: 768px) {
-        .awards-reviews-item {
-            width: 100%;
-        }
-        .awards-reviews-item-text-box{
-            padding: 16px;
-        }
-        .awards-reviews-item-title.h3 {
-            font-size: calc(1.92rem + 0.4vw);
-        }
-    }
-</style>
+<link rel="stylesheet" href="{{ 'custom-awards-reviews.css' | asset_url }}">
 
 <div class="awards-reviews section-{{ section.id }}">
     <div class="awards-reviews-wrapper">
         <div class="awards-reviews-list">
             {% for block in section.blocks %}
                 <div style="background: {{ block.settings.bg_color }};"
-                     class="awards-reviews-item text_block block-{{ section.id }}-{{ forloop.index }}">
+                     class="awards-reviews-item text_block">
                     {% if block.settings.image != blank %}
-                        <div class="awards-reviews-item-image size-{{ block.settings.image_ratio }}">
+                        <div class="awards-reviews-item-image">
                             {%- capture sizes -%}
                                 {{ settings.page_width | divided_by: 5 | round }}px}}
                             {%- endcapture -%}
 
                             {{ block.settings.image | image_url: width: 1946 | image_tag:
-                            loading: lazy,
+                            loading: "lazy",
                             sizes: sizes,
                             widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
                             }}
@@ -216,10 +62,10 @@
                                         {{ block.settings.title }}
                                     </a>
                                 {% else %}
-                                    <div style="color: {{ block.settings.text_color }}" href="{{ block.settings.url }}"
+                                    <h3 style="color: {{ block.settings.text_color }}" href="{{ block.settings.url }}"
                                          class="awards-reviews-item-title {{ block.settings.title_size }}">
                                         {{ block.settings.title }}
-                                    </div>
+                                    </h3>
                                 {% endif %}
 
                             {% endif %}
