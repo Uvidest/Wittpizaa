@@ -1,0 +1,208 @@
+.press-media p {
+    margin: 0;
+}
+
+.press-media-wrapper {
+    display: flex;
+    gap: 1.6rem;
+    /*justify-content: space-between;*/
+}
+
+.press-media-title {
+    width: 16.66%;
+    padding-top: 1.6rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin: 0;
+}
+
+.press-media-list {
+    display: flex;
+    gap: 1.6rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.press-media-item-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition-duration: 300ms;
+}
+.press-media-item-image.zoom_hover img:hover{
+    transform: scale(1.2);
+    transition-duration: 300ms;
+}
+.press-media-item-image {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.press-media-item-image:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.press-media-item-image.size-small:before {
+    padding-top: 54.1%;
+}
+
+.image_with_text-block .press-media-item-image:before {
+    content: '';
+    display: block;
+    padding-top: 75%;
+}
+
+.press-media-item {
+    width: calc(20% - (4 * 1.6rem) / 5);
+}
+
+.image_with_text-block {
+    width: 25.8%;
+}
+
+.press-media-item > :last-child {
+    margin-bottom: 0;
+}
+
+.press-media-item-title {
+    font-family: var(--font-heading-family);
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: calc(1.84rem + 0.3vw);
+    color: #171719;
+    text-decoration: none;
+    transition-duration: 300ms;
+}
+a.press-media-item-title:hover {
+    color:#d0672a;
+    transition-duration: 300ms;
+    text-decoration: underline;
+}
+
+.block-text_block .press-media-item-title {
+    font-family: var(--font-heading-family);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.block-text_block .press-media-item-text {
+
+}
+.press-media-item-text strong{
+    font-weight: 600;
+}
+.press-media-item-text {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    margin-bottom: 13px;
+    margin-top: 0;
+    color: #171719;
+    line-height: 1.5;
+    transition-duration: 300ms;
+}
+
+.press-media-item-text p {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    margin-bottom: 13px;
+    margin-top: 0;
+    transition-duration: 300ms;
+    line-height: 130%;
+}
+
+.press-media-item-image_main {
+    font-family: var(--font-heading-family);
+    position: absolute;
+    top: 32px;
+    left: 16px;
+    padding: 6px 12px;
+    background: #fff;
+    color:#171719;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    line-height: 1.2em;
+    transition-duration: 300ms;
+}
+.press-media-item-image:hover .press-media-item-image_main{
+    background: #3F444A;
+    color: #fff;
+}
+
+.block-text_block {
+    padding: 16px 16px 32px 16px;
+    height: auto;
+}
+.press-media-item-image_url{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 990px) {
+    .press-media-title {
+        width: 100%;
+        font-size: calc(2.100rem + 2.0vw);
+        padding: 16px 0;
+        margin-bottom: 10px;
+    }
+
+    .press-media-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .press-media-list {
+        flex-wrap: wrap;
+    }
+
+    .press-media-item {
+        width: 100% !important;
+    }
+
+    .press-media-item-image_main {
+        top: 16px;
+    }
+
+    .press-media-item-title {
+        font-size: calc(1.900rem + 0.4vw);
+    }
+
+    .block-text_block .press-media-item-title {
+        font-size: calc(2.100rem + 2.0vw);
+    }
+
+}
+.obg_fit-cover img{
+    object-fit: cover;
+}
+.obg_fit-contain img{
+    object-fit: contain;
+}
+.link-full-width{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}

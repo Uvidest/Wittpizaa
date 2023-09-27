@@ -1,0 +1,70 @@
+.user-manuals-title{
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.56rem;
+    margin: 0;
+    text-align: center;
+    padding: 1.6rem;
+}
+.user-manuals-list{
+    display: flex;
+    gap: 1.6rem;
+    flex-wrap: wrap;
+
+}
+.user-manuals-item{
+    text-decoration: none;
+    position: relative;
+    width: calc(25% - (3 * 1.6rem)/4);
+    padding: 48px;
+}
+
+.user-manuals-item-image{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.6rem;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.user-manuals-item-title{
+    margin: 0;
+    font-family: var(--font-heading-family);
+    color: #171719;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    text-align: center;
+    transition-duration: 300ms;
+}
+.user-manuals-item:hover .user-manuals-item-title{
+    transition-duration: 300ms;
+    color: #d0672a;
+}
+.user-manuals-item-link{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1000px) {
+    .user-manuals-title{
+        font-size: calc(2.4rem + 4.0vw);
+    }
+}
+@media screen and (max-width: 990px) {
+    .user-manuals-item{
+        width: calc(50% - 1.6rem/2);
+    }
+    .user-manuals-item-title{
+        font-size: calc(1.6rem + 1.0vw)!important;
+    }
+}
+
+
