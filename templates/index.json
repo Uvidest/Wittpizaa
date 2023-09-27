@@ -127,11 +127,19 @@
             "text": "“..the new Witt Etna Fermo is a brilliant investment for families and pizza lovers alike.\"",
             "image": "shopify:\/\/shop_images\/Frame_22.svg"
           }
+        },
+        "bc713aee-2099-4856-9210-13ab1d067870": {
+          "type": "slide",
+          "settings": {
+            "text": "“In the crowded arena of outdoor pizza ovens, the new Witt ETNA Rotate is a game changer that may alter your pizza-making life forever”",
+            "image": "shopify:\/\/shop_images\/image_6.svg"
+          }
         }
       },
       "block_order": [
         "b7722406-62b0-40b0-824a-76d964fe88c4",
-        "29bcfc8f-7c99-4644-95e8-e18e6b3f016b"
+        "29bcfc8f-7c99-4644-95e8-e18e6b3f016b",
+        "bc713aee-2099-4856-9210-13ab1d067870"
       ],
       "settings": {
         "title": "Don’t just take our word for it",
