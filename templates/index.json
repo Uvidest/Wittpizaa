@@ -161,6 +161,13 @@
         "icon-link": "",
         "blog": "recipes"
       }
+    },
+    "e099d9b6-26d3-4242-81a0-81c8a5368db5": {
+      "type": "custom-video",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/fire.mp4",
+        "text": "Got a minute?"
+      }
     }
   },
   "order": [
@@ -168,6 +175,7 @@
     "653bf676-cb64-487e-b2c0-9a4ed6b23ba6",
     "846ae930-e037-4de4-9ac9-37da248ca839",
     "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030",
-    "e6298114-f704-4a81-b690-57c542455e58"
+    "e6298114-f704-4a81-b690-57c542455e58",
+    "e099d9b6-26d3-4242-81a0-81c8a5368db5"
   ]
 }
