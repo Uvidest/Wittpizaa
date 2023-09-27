@@ -168,6 +168,37 @@
         "video": "shopify:\/\/files\/videos\/fire.mp4",
         "text": "Got a minute?"
       }
+    },
+    "6201729d-a22e-43f2-9cc2-d43bec0e03fa": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "d0d0c824-2d47-4300-8e83-ca85a9792526": {
+          "type": "collection-item",
+          "settings": {
+            "collection": "pizza-ovens"
+          }
+        },
+        "cc13a63f-2c85-40f6-8abb-437c5665c0b4": {
+          "type": "collection-item",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "425c8a00-f167-4fd4-b5a8-fa6505c80e8d": {
+          "type": "collection-item",
+          "settings": {
+            "collection": "recipes"
+          }
+        }
+      },
+      "block_order": [
+        "d0d0c824-2d47-4300-8e83-ca85a9792526",
+        "cc13a63f-2c85-40f6-8abb-437c5665c0b4",
+        "425c8a00-f167-4fd4-b5a8-fa6505c80e8d"
+      ],
+      "settings": {
+        "title": "Explore witt pizza"
+      }
     }
   },
   "order": [
@@ -176,6 +207,7 @@
     "846ae930-e037-4de4-9ac9-37da248ca839",
     "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030",
     "e6298114-f704-4a81-b690-57c542455e58",
-    "e099d9b6-26d3-4242-81a0-81c8a5368db5"
+    "e099d9b6-26d3-4242-81a0-81c8a5368db5",
+    "6201729d-a22e-43f2-9cc2-d43bec0e03fa"
   ]
 }
