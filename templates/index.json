@@ -100,17 +100,6 @@
         "text-add": "Add to cart"
       }
     },
-    "e6298114-f704-4a81-b690-57c542455e58": {
-      "type": "custom-blog-list",
-      "settings": {
-        "title": "GET INSPIRED WITH OUR RECIPES",
-        "text-btn": "View all recipe",
-        "show-link": true,
-        "text-link": "Read more",
-        "icon-link": "",
-        "blog": "news"
-      }
-    },
     "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030": {
       "type": "custom-slider-forIt",
       "blocks": {
@@ -161,13 +150,24 @@
         "title": "Don’t just take our word for it",
         "controll": "shopify:\/\/shop_images\/Group_27.png"
       }
+    },
+    "e6298114-f704-4a81-b690-57c542455e58": {
+      "type": "custom-blog-list",
+      "settings": {
+        "title": "GET INSPIRED WITH OUR RECIPES",
+        "text-btn": "View all recipe",
+        "show-link": true,
+        "text-link": "view RECIPES →",
+        "icon-link": "",
+        "blog": "recipes"
+      }
     }
   },
   "order": [
     "40209936-d554-4e8b-bb75-e446baf1930a",
     "653bf676-cb64-487e-b2c0-9a4ed6b23ba6",
     "846ae930-e037-4de4-9ac9-37da248ca839",
-    "e6298114-f704-4a81-b690-57c542455e58",
-    "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030"
+    "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030",
+    "e6298114-f704-4a81-b690-57c542455e58"
   ]
 }
