@@ -52,7 +52,7 @@
             "image-advantages-3": "shopify:\/\/shop_images\/Frame_19.svg",
             "subtitle": "",
             "descr": "",
-            "background": "",
+            "background": "#3f444a",
             "text-color": "#ffffff",
             "block-opacity": 100
           }
