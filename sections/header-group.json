@@ -35,10 +35,18 @@
             "text": "Features",
             "sectionId": "Features"
           }
+        },
+        "e88dfad8-3b33-400a-881f-c892560e0d71": {
+          "type": "product_navigation_tab",
+          "settings": {
+            "text": "Reviews",
+            "sectionId": "Reviews"
+          }
         }
       },
       "block_order": [
-        "5e7e40f1-fcff-4723-a326-4579aa3f3a22"
+        "5e7e40f1-fcff-4723-a326-4579aa3f3a22",
+        "e88dfad8-3b33-400a-881f-c892560e0d71"
       ],
       "settings": {
         "logo_position": "middle-left",
