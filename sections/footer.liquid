@@ -6,25 +6,27 @@
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+
+.footer {
+  margin-top: {{section.settings.margin_top | times: 0.75 | round: 0}}px;
+}
+
+.section-{{section.id}}-padding {
+  padding-top: {{section.settings.padding_top | times: 0.75 | round: 0}}px;
+  padding-bottom: {{section.settings.padding_bottom | times: 0.75 | round: 0}}px;
+}
+
+@media screen and(min-width: 750px) {
   .footer {
-    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
+    margin-top: {{section.settings.margin_top}}px;
   }
 
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  .section-{{section.id}}-padding {
+    padding-top: {{section.settings.padding_top}}px;
+    padding-bottom: {{section.settings.padding_bottom}}px;
   }
+}
 
-  @media screen and (min-width: 750px) {
-    .footer {
-      margin-top: {{ section.settings.margin_top }}px;
-    }
-
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
 {%- endstyle -%}
 <style>
     [data-testid="form-row"]:has(button),
@@ -65,7 +67,7 @@
     or section.settings.enable_follow_on_shop
   -%}
     {%- unless only_empty_brand -%}
-      <div class="footer__content-top page-width">
+      <div class="page-width">
         {%- if section.blocks.size > 0 -%}
           {%- liquid
             if section.blocks.size == 9
@@ -147,6 +149,23 @@
                       {%- if block.settings.show_social and has_social_icons -%}
                         {%- render 'social-icons', class: 'footer__list-social' -%}
                       {%- endif -%}
+                    </div>
+                  {%- when 'have_you_see' -%}
+                    <div class="have_you_see">
+                      <h2 class="footer-block__heading rte">{{ block.settings.title }}</h2>
+                      <div class="have_you_see__wrapper">
+                        {% for i in (1..3) %}
+                          <div class="have_you_see__item">
+                            {%- assign link = 'link-' | append: forloop.index -%}
+                            {%- assign name = 'name-' | append: forloop.index -%}
+                            {%- assign image = 'image-' | append: forloop.index -%}
+                            <a href="{{ block.settings[link]}}" class="have_you_see__link">
+                              {{block.settings[image] | image_url: height: 183 | image_tag}}
+                              <p class="have_you_see__name">{{block.settings[name]}}</p>
+                            </a>
+                          </div>
+                        {% endfor %}
+                      </div>
                     </div>
                   {%- when 'image' -%}
                     <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
@@ -388,15 +407,139 @@
     </div>
   </div>
 </footer>
+<style>
+  .footer {
+    background-color: rgba(224, 222, 212, 1);
+  }
+  .list-unstyled.list-social.footer__list-social {
+    display: block;
+  }
+  .footer-block__heading {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: "Oswald";
+    padding-bottom: 24px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .link.link--text.list-menu__item,
+  .link.list-social__link {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(23, 23, 25, 1);
+    padding-bottom: 16px;
+    text-decoration: none;
+    transition: text-decoration .3s ease-in;
+  }
+  .link.link--text.list-menu__item:hover,
+  .link.list-social__link:hover {
+    text-decoration: underline;
+  }
+  .link.list-social__link > span {
+    padding-left: 11px;
+  }
+  .footer-block.grid__item{
+    flex-grow: 0;
+  }
 
+  .footer-block.grid__item:last-child {
+    flex-grow: 1;
+  }
+  .have_you_see__wrapper {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .have_you_see__item {
+    flex-basis: calc(33% - 24px);
+    min-width: 165px;
+    width: 100%;
+  }
+  .have_you_see__link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    transition: transform .3s ease-in;
+  }
+  .have_you_see__link:hover{
+    transform: scale(1.1);
+  }
+  .have_you_see__item > a > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .have_you_see__name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    padding: 16px 0 16px 16px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: rgba(23, 23, 25, 1);
+  }
+  @media (max-width: 768px) {
+    .have_you_see__wrapper {
+      column-gap: 13px;
+      row-gap: 24px;
+    }
+  }
+</style>
 {% schema %}
+
 {
   "name": "t:sections.footer.name",
   "blocks": [
     {
       "type": "@app"
-    },
-    {
+    }, {
+      "type": "have_you_see",
+      "name": "Have you see",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }, {
+          "type": "image_picker",
+          "id": "image-1",
+          "label": "Image for block"
+        }, {
+          "type": "url",
+          "id": "link-1",
+          "label": "Link for section"
+        }, {
+          "type": "text",
+          "id": "name-1",
+          "label": "Name for first block"
+        }, {
+          "type": "image_picker",
+          "id": "image-2",
+          "label": "Image for second block"
+        }, {
+          "type": "url",
+          "id": "link-2",
+          "label": "Url for second block"
+        }, {
+          "type": "text",
+          "id": "name-2",
+          "label": "Name for second block"
+        }, {
+          "type": "image_picker",
+          "id": "image-3",
+          "label": "Image for third block"
+        }, {
+          "type": "url",
+          "id": "link-3",
+          "label": "Url for third block"
+        }, {
+          "type": "text",
+          "id": "name-3",
+          "label": "Name for third block"
+        }
+      ]
+    }, {
       "type": "link_list",
       "name": "t:sections.footer.blocks.link_list.name",
       "settings": [
@@ -405,8 +548,7 @@
           "id": "heading",
           "default": "Quick links",
           "label": "t:sections.footer.blocks.link_list.settings.heading.label"
-        },
-        {
+        }, {
           "type": "link_list",
           "id": "menu",
           "default": "footer",
@@ -414,20 +556,17 @@
           "info": "t:sections.footer.blocks.link_list.settings.menu.info"
         }
       ]
-    },
-    {
+    }, {
       "type": "brand_information",
       "name": "t:sections.footer.blocks.brand_information.name",
       "settings": [
         {
           "type": "paragraph",
           "content": "t:sections.footer.blocks.brand_information.settings.paragraph.content"
-        },
-        {
+        }, {
           "type": "header",
           "content": "t:sections.footer.blocks.brand_information.settings.header__1.content"
-        },
-        {
+        }, {
           "type": "checkbox",
           "id": "show_social",
           "default": true,
@@ -435,8 +574,7 @@
           "info": "t:sections.footer.blocks.brand_information.settings.show_social.info"
         }
       ]
-    },
-    {
+    }, {
       "type": "text",
       "name": "t:sections.footer.blocks.text.name",
       "settings": [
@@ -445,16 +583,14 @@
           "id": "heading",
           "default": "Heading",
           "label": "t:sections.footer.blocks.text.settings.heading.label"
-        },
-        {
+        }, {
           "type": "richtext",
           "id": "subtext",
           "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
           "label": "t:sections.footer.blocks.text.settings.subtext.label"
         }
       ]
-    },
-    {
+    }, {
       "type": "image",
       "name": "Image",
       "settings": [
@@ -462,8 +598,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
-        },
-        {
+        }, {
           "type": "range",
           "id": "image_width",
           "min": 50,
@@ -472,8 +607,7 @@
           "unit": "px",
           "label": "Image width",
           "default": 100
-        },
-        {
+        }, {
           "type": "select",
           "id": "alignment",
           "label": "Image alignment on large screen",
@@ -481,12 +615,10 @@
             {
               "value": "",
               "label": "Left"
-            },
-            {
+            }, {
               "value": "center",
               "label": "Center"
-            },
-            {
+            }, {
               "value": "right",
               "label": "Right"
             }
@@ -502,94 +634,77 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "background-1"
-    },
-    {
+    }, {
       "type": "header",
       "content": "t:sections.footer.settings.header__1.content",
       "info": "t:sections.footer.settings.header__1.info"
-    },
-    {
+    }, {
       "type": "checkbox",
       "id": "newsletter_enable",
       "default": true,
       "label": "t:sections.footer.settings.newsletter_enable.label"
-    },
-    {
+    }, {
       "type": "inline_richtext",
       "id": "newsletter_heading",
       "default": "Subscribe to our emails",
       "label": "t:sections.footer.settings.newsletter_heading.label"
-    },
-    {
+    }, {
       "type": "header",
       "content": "t:sections.footer.settings.header__9.content",
       "info": "t:sections.footer.settings.header__9.info"
-    },
-    {
+    }, {
       "type": "checkbox",
       "id": "enable_follow_on_shop",
       "default": true,
       "label": "t:sections.footer.settings.enable_follow_on_shop.label"
-    },
-    {
+    }, {
       "type": "header",
       "content": "t:sections.footer.settings.header__2.content",
       "info": "t:sections.footer.settings.header__2.info"
-    },
-    {
+    }, {
       "type": "checkbox",
       "id": "show_social",
       "default": true,
       "label": "t:sections.footer.settings.show_social.label"
-    },
-    {
+    }, {
       "type": "header",
       "content": "t:sections.footer.settings.header__3.content",
       "info": "t:sections.footer.settings.header__4.info"
-    },
-    {
+    }, {
       "type": "checkbox",
       "id": "enable_country_selector",
       "default": true,
       "label": "t:sections.footer.settings.enable_country_selector.label"
-    },
-    {
+    }, {
       "type": "header",
       "content": "t:sections.footer.settings.header__5.content",
       "info": "t:sections.footer.settings.header__6.info"
-    },
-    {
+    }, {
       "type": "checkbox",
       "id": "enable_language_selector",
       "default": true,
       "label": "t:sections.footer.settings.enable_language_selector.label"
-    },
-    {
+    }, {
       "type": "header",
       "content": "t:sections.footer.settings.header__7.content"
-    },
-    {
+    }, {
       "type": "checkbox",
       "id": "payment_enable",
       "default": true,
       "label": "t:sections.footer.settings.payment_enable.label"
-    },
-    {
+    }, {
       "type": "header",
       "content": "t:sections.footer.settings.header__8.content",
       "info": "t:sections.footer.settings.header__8.info"
-    },
-    {
+    }, {
       "type": "checkbox",
       "id": "show_policy",
       "default": false,
       "label": "t:sections.footer.settings.show_policy.label"
-    },
-    {
+    }, {
       "type": "header",
       "content": "t:sections.all.spacing"
-    },
-    {
+    }, {
       "type": "range",
       "id": "margin_top",
       "min": 0,
@@ -598,12 +713,10 @@
       "unit": "px",
       "label": "t:sections.footer.settings.margin_top.label",
       "default": 0
-    },
-    {
+    }, {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
+    }, {
       "type": "range",
       "id": "padding_top",
       "min": 0,
@@ -612,8 +725,7 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
       "default": 36
-    },
-    {
+    }, {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
@@ -628,11 +740,11 @@
     "blocks": [
       {
         "type": "link_list"
-      },
-      {
+      }, {
         "type": "text"
       }
     ]
   }
 }
+
 {% endschema %}
