@@ -42,11 +42,19 @@
             "text": "Reviews",
             "sectionId": "Reviews"
           }
+        },
+        "e814a9af-b1d7-4afd-b7e0-2e226a9de37b": {
+          "type": "product_navigation_tab",
+          "settings": {
+            "text": "Accessories",
+            "sectionId": "Accessories"
+          }
         }
       },
       "block_order": [
         "5e7e40f1-fcff-4723-a326-4579aa3f3a22",
-        "e88dfad8-3b33-400a-881f-c892560e0d71"
+        "e88dfad8-3b33-400a-881f-c892560e0d71",
+        "e814a9af-b1d7-4afd-b7e0-2e226a9de37b"
       ],
       "settings": {
         "logo_position": "middle-left",
