@@ -28,7 +28,11 @@
           "witt-etna-rotante-pizza-oven"
         ],
         "title": "",
-        "back_color": "#e0ded4"
+        "back_color": "#e0ded4",
+        "space_top": 16,
+        "space_bottom": 16,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 16
       }
     },
     "653bf676-cb64-487e-b2c0-9a4ed6b23ba6": {
@@ -158,7 +162,7 @@
         "87c81bfa-52df-4eef-97b4-9ae8546b1800"
       ],
       "settings": {
-        "title": "Don’t just take our word for it",
+        "title": "DON'T JUST TAKE OUR WORD FOR IT",
         "controll": "shopify:\/\/shop_images\/Group_27.png"
       }
     },
