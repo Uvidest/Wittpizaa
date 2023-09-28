@@ -3,7 +3,7 @@
 .product__info-container>*+*{
     margin: 0;
 }
-.deferred-media__poster img{
+.main_product .deferred-media__poster img{
   width: 100%;
   object-fit: cover
 }
