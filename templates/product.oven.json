@@ -120,10 +120,10 @@
         "media_left": true,
         "bg_color": "#e0ded4",
         "sectionId": "",
-        "space_top": 16,
-        "space_bottom": 16,
-        "space_top_mobile": 16,
-        "space_bottom_mobile": 16
+        "space_top": 0,
+        "space_bottom": 48,
+        "space_top_mobile": 0,
+        "space_bottom_mobile": 48
       }
     },
     "6a4a59e3-1974-4152-87e1-8e9111ebeec5": {
@@ -136,10 +136,10 @@
         "media_left": false,
         "bg_color": "#e0ded4",
         "sectionId": "",
-        "space_top": 16,
-        "space_bottom": 16,
-        "space_top_mobile": 16,
-        "space_bottom_mobile": 16
+        "space_top": 0,
+        "space_bottom": 48,
+        "space_top_mobile": 0,
+        "space_bottom_mobile": 48
       }
     },
     "776b5659-d284-4500-a2d1-9fa74dd009b2": {
@@ -152,10 +152,10 @@
         "media_left": true,
         "bg_color": "#e0ded4",
         "sectionId": "",
-        "space_top": 16,
-        "space_bottom": 16,
-        "space_top_mobile": 16,
-        "space_bottom_mobile": 16
+        "space_top": 0,
+        "space_bottom": 48,
+        "space_top_mobile": 0,
+        "space_bottom_mobile": 48
       }
     },
     "related-products": {
