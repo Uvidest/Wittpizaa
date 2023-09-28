@@ -165,7 +165,7 @@ button.product-form__submit:hover:after,
 .main_product .product__info-wrapper.grid__item.scroll-trigger.animate--slide-in {
     max-width: 43% !important;
     width: 100%;
-
+    padding: 0
 }
 
 /*slider*/
