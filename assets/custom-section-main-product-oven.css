@@ -123,6 +123,7 @@ button.product-form__submit:hover:after,
     font-style: normal;
     font-weight: 600;
     line-height: 16px; /* 26px */
+  overflow: hidden;
 }
 .product-text-with-icon-list{
     display: flex;
