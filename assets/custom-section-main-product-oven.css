@@ -224,6 +224,7 @@ button.product-form__submit:hover:after,
     top: 8rem
 }
 .media_button{
+  cursor: pointer;
     width: 100%;
     max-width: calc(33% - 18px*2/3);
     margin-right: 16px;
