@@ -3,7 +3,10 @@
 .product__info-container>*+*{
     margin: 0;
 }
-/*custom style*/
+
+.main_product .product__info-container>*{
+  margin-bottom: 24px;
+}
 .product__title h1{
     color: #FFF;
     font-size: 56px;
