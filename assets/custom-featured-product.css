@@ -68,6 +68,7 @@ button:not([disabled]):hover:after,
 .featured-product.grid{
     gap: 18px;
     flex-wrap: nowrap;
+  max-width: 1210px
 }
 .featured-product .product__title{
     color: #171719;
