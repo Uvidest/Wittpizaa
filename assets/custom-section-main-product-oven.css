@@ -339,7 +339,7 @@ button.product-form__submit:hover:after,
     .product__description li>span{
         font-size: 18px;
     }
-    .product-form__input{
+    .main_product .product-form__input{
         margin-bottom: 26px;
     }
     .price--large{
