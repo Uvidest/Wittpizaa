@@ -4,6 +4,41 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "029ed2f5-f2b9-4c79-a7c4-10bf0e3557cf": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "efbb631f-8fc0-4c75-a112-04f724312b93": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
+        "050b3c44-e49f-464a-b2af-7ed2b14159ab": {
+          "type": "have_you_see",
+          "settings": {
+            "title": "",
+            "image-1": "shopify:\/\/shop_images\/Rectangle_49.jpg",
+            "link-1": "",
+            "name-1": "Pizza Recipes",
+            "image-2": "shopify:\/\/shop_images\/Rectangle_51.jpg",
+            "link-2": "shopify:\/\/blogs\/recipes",
+            "name-2": "reviews",
+            "image-3": "shopify:\/\/shop_images\/Rectangle_51.jpg",
+            "link-3": "",
+            "name-3": "Bundle offer"
+          }
+        }
+      },
+      "block_order": [
+        "029ed2f5-f2b9-4c79-a7c4-10bf0e3557cf",
+        "efbb631f-8fc0-4c75-a112-04f724312b93",
+        "050b3c44-e49f-464a-b2af-7ed2b14159ab"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": false,
