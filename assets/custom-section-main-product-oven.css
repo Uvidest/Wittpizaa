@@ -87,9 +87,7 @@ line-height: 130%;
     list-style: none;
     padding: 0;
 }
-.product__description > p:first-child{
-    text-align: center;
-}
+
 .product__description li > span{
     margin: 0;
     display: flex;
