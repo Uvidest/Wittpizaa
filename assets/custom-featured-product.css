@@ -171,7 +171,14 @@ button:not([disabled]):hover:after,
     .featured-product .product-form__input input[type=radio]+label.option__color{
         width: 42px;
         height: 42px;
+      position: relative
     }
+  .featured-product .product-form__input input[type=radio]+label.option__color svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
     .featured-product .product__info-container>*{
         margin-bottom: 16px;
     }
