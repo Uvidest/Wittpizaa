@@ -505,6 +505,31 @@
       </a>
     </div>
   </header>
+  {% if product.template_suffix == "oven" %}
+    <div class="product-navigation page-width">
+        <span class="breadcrumbs">
+            {% assign pro_collection = product.collections.first %}
+            {% if pro_collection %}
+                <a href="{{ pro_collection.url }}">{{ pro_collection.title }}</a> / {{ product.title }}
+            {% endif %}
+        </span>
+            <ul class="product-navigation-list">
+                <span class="animation-scrollbar">
+
+                </span>
+                <li data-section-id="mainProduct" class="navigation-list-item active">
+                            Product
+                        </li>
+                {% for block in section.blocks %}
+                    {% if block.type == "product_navigation_tab" %}
+                        <li data-section-id="{{ block.settings.sectionId }}" class="navigation-list-item">
+                            {{ block.settings.text }}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+    </div>
+{% endif %}
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
