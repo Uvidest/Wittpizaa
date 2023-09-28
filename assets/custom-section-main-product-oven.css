@@ -3,7 +3,9 @@
 .product__info-container>*+*{
     margin: 0;
 }
-
+.main_product .product__info-container>*+*{
+  margin: 0
+}
 .main_product .product__info-container>*{
   margin-bottom: 24px;
 }
