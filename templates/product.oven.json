@@ -158,6 +158,19 @@
         "space_bottom_mobile": 48
       }
     },
+    "e773ee6f-9a11-451f-826f-2cdf158c0a36": {
+      "type": "custom_product-video_section",
+      "settings": {
+        "title": "watch etna rotante in action",
+        "video": "shopify:\/\/files\/videos\/fire.mp4",
+        "image_bg": "shopify:\/\/shop_images\/2_witt-pizza2304_1.webp",
+        "sectionId": "VIdeo",
+        "st": 100,
+        "sb": 100,
+        "stm": 48,
+        "sbm": 48
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -183,6 +196,7 @@
     "2cad0583-5201-4071-ba1a-b617511ed7a0",
     "6a4a59e3-1974-4152-87e1-8e9111ebeec5",
     "776b5659-d284-4500-a2d1-9fa74dd009b2",
+    "e773ee6f-9a11-451f-826f-2cdf158c0a36",
     "related-products"
   ]
 }
