@@ -1,15 +1,15 @@
 
 <style>
     .section-{{ section.id }} {
-        padding-top: {{ section.settings.st }}px;
-        padding-bottom: {{ section.settings.sb }}px;
+        padding-top: {{ section.settings.space_top }}px;
+        padding-bottom: {{ section.settings.space_bottom }}px;
         background: {{ section.settings.bg_color }};
     }
 
     @media screen and (max-width: 768px) {
         .section-{{ section.id }} {
-            padding-top: {{ section.settings.stm }}px;
-            padding-bottom: {{ section.settings.sbm }}px;
+            padding-top: {{ section.settings.space_top_mobile }}px;
+            padding-bottom: {{ section.settings.space_bottom_mobile }}px;
         }
     }
 </style>
@@ -111,7 +111,7 @@
 </style>
 
 {% if section.settings.image != blank or section.settings.video != blank %}
-    <div class="image_or_video_with_text section-{{ section.id }}">
+    <div {%  if section.settings.sectionId != blank %}data-custom-section-id="{{ section.settings.sectionId }}"{% endif %} class="image_or_video_with_text section-{{ section.id }}">
         <div class="page-width">
             <div class="image_or_video_with_text-wrapper {% if section.settings.media_left == true %}reverse{% endif %}">
                 <div class="image_or_video_with_text-text-block">
@@ -196,12 +196,17 @@
       "label": "Background color"
     },
     {
+      "type": "text",
+      "id": "sectionId",
+      "label": "Id section for tabs on header"
+    },
+    {
       "type": "header",
       "content": "Space desktop"
     },
     {
       "type": "range",
-      "id": "st",
+      "id": "space_top",
       "label": "Space top",
       "unit": "px",
       "min": 0,
@@ -211,7 +216,7 @@
     },
     {
       "type": "range",
-      "id": "sb",
+      "id": "space_bottom",
       "label": "Space bottom",
       "unit": "px",
       "min": 0,
@@ -225,7 +230,7 @@
     },
     {
       "type": "range",
-      "id": "stm",
+      "id": "space_top_mobile",
       "label": "Space top",
       "unit": "px",
       "min": 0,
@@ -235,7 +240,7 @@
     },
     {
       "type": "range",
-      "id": "sbm",
+      "id": "space_bottom_mobile",
       "label": "Space bottom",
       "unit": "px",
       "min": 0,
