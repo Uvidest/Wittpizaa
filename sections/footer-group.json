@@ -23,13 +23,13 @@
           "settings": {
             "title": "Have you seen?",
             "image-1": "shopify:\/\/shop_images\/Rectangle_49.jpg",
-            "link-1": "",
+            "link-1": "shopify:\/\/pages\/about-us",
             "name-1": "Pizza Recipes",
             "image-2": "shopify:\/\/shop_images\/Rectangle_51.jpg",
             "link-2": "shopify:\/\/blogs\/recipes",
             "name-2": "reviews",
             "image-3": "shopify:\/\/shop_images\/Rectangle_51.jpg",
-            "link-3": "",
+            "link-3": "shopify:\/\/collections\/accessories",
             "name-3": "Bundle offer"
           }
         }
