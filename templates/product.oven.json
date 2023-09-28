@@ -104,10 +104,10 @@
         "media_left": false,
         "bg_color": "#e0ded4",
         "sectionId": "",
-        "space_top": 16,
-        "space_bottom": 16,
-        "space_top_mobile": 16,
-        "space_bottom_mobile": 16
+        "space_top": 48,
+        "space_bottom": 48,
+        "space_top_mobile": 48,
+        "space_bottom_mobile": 48
       }
     },
     "2cad0583-5201-4071-ba1a-b617511ed7a0": {
@@ -134,7 +134,23 @@
         "image_text": "shopify:\/\/shop_images\/Frame_23.svg",
         "image": "shopify:\/\/shop_images\/Rectangle_13.png",
         "media_left": false,
-        "bg_color": "#F4F4F6",
+        "bg_color": "#e0ded4",
+        "sectionId": "",
+        "space_top": 16,
+        "space_bottom": 16,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 16
+      }
+    },
+    "776b5659-d284-4500-a2d1-9fa74dd009b2": {
+      "type": "custom-image_or_video_with_text",
+      "settings": {
+        "title": "PIZZAS READY IN LESS THAN 90 SECONDS",
+        "text": "No more hangry waiting for the pizza oven to get ready! The ETNA waits for you to get them pizzas done… So get to it, will ya?",
+        "image_text": "shopify:\/\/shop_images\/Frame_17_e7374e9c-7585-4213-b34d-2d7d00aa550d.svg",
+        "image": "shopify:\/\/shop_images\/Rectangle_14.png",
+        "media_left": true,
+        "bg_color": "#e0ded4",
         "sectionId": "",
         "space_top": 16,
         "space_bottom": 16,
@@ -166,6 +182,7 @@
     "0b6e77c2-8e63-4291-8cda-e3f282f5d60b",
     "2cad0583-5201-4071-ba1a-b617511ed7a0",
     "6a4a59e3-1974-4152-87e1-8e9111ebeec5",
+    "776b5659-d284-4500-a2d1-9fa74dd009b2",
     "related-products"
   ]
 }
