@@ -163,7 +163,7 @@ button.product-form__submit:hover:after,
     justify-content: space-between;
 }
 .main_product .product__info-wrapper.grid__item.scroll-trigger.animate--slide-in {
-    max-width: 43% !important;
+    max-width: 40% !important;
     width: 100%;
     padding: 0
 }
