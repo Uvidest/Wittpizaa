@@ -506,7 +506,8 @@
     </div>
   </header>
   {% if product.template_suffix == "oven" %}
-    <div class="product-navigation page-width">
+    <div class="product-navigation">
+        <div class="page-width">
         <span class="breadcrumbs">
             {% assign pro_collection = product.collections.first %}
             {% if pro_collection %}
@@ -528,6 +529,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        </span>
     </div>
 {% endif %}
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
