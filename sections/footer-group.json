@@ -21,7 +21,7 @@
         "050b3c44-e49f-464a-b2af-7ed2b14159ab": {
           "type": "have_you_see",
           "settings": {
-            "title": "",
+            "title": "Have you seen?",
             "image-1": "shopify:\/\/shop_images\/Rectangle_49.jpg",
             "link-1": "",
             "name-1": "Pizza Recipes",
