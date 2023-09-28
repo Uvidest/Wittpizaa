@@ -13,8 +13,6 @@
             padding-bottom: {{ section.settings.sbm }}px;
         }
     }
-</style>
-<style>
     .product-main-video {
         background-size: cover;
     }
@@ -68,7 +66,7 @@
 </style>
 
 {% if section.settings.video != blank %}
-    <div data-custom-section-id="{{ section.settings.sectionId }}" class="product-main-video section-{{ section.id }}">
+    <div custom-video-section {%  if section.settings.sectionId != blank %}data-custom-section-id="{{ section.settings.sectionId }}"{% endif %} class="product-main-video section-{{ section.id }}">
         <div class="page-width">
             {% if section.settings.title != blank %}
                 <div class="product-main-video-title">

@@ -6,11 +6,16 @@
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
+{{ 'custom-featured-product.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+    .section-{{ section.id }}{
+        background: #000
+}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    background: #000
   }
 
   @media screen and (min-width: 750px) {
@@ -58,8 +63,30 @@
   >
 {%- endif -%}
 
-<section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
+
+<section {%  if section.settings.sectionId != blank %}data-custom-section-id="{{ section.settings.sectionId }}"{% endif %} class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %} section-{{ section.id }}">
   <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
+    {% assign title = blank %}
+    {% capture current_time %}{{ "now" | date: "%H:%M" }}{% endcapture %}
+    {% capture cutoff_time %}13:00{% endcapture %}
+    {% capture current_day %}{{ "now" | date: "%A" }}{% endcapture %}
+    {{ current_day }}
+    {{ current_time }}
+    {% if current_day == 'Saturday' %}
+        {% assign title = section.settings.title_Saturday %}
+    {% elsif current_day == 'Sunday' %}
+        {% assign title = section.settings.title_Sunday %}
+    {% elsif current_time >= cutoff_time %}
+        {% assign title = section.settings.title_more_13 %}
+    {% else %}
+    {% assign title = section.settings.title_else_time %}
+{% endif %}
+    {% if title != balnk %}
+    <h2 class="featured_product-title">
+    {{ title }}
+    </h2>
+    {% endif %}
+
     <div class="featured-product product product--{{ section.settings.media_size }} grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 or section.settings.product == blank %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
         <media-gallery
@@ -512,17 +539,30 @@
                 {% render 'icon-with-text', block: block %}
             {%- endcase -%}
           {%- endfor -%}
-          <a
-            {% if product == blank %}
-              role="link" aria-disabled="true"
-            {% else %}
-              href="{{ product.url }}"
+          {% assign checkSpecialBlock = false %}
+          {%- for block in section.blocks -%}
+                {% if block.type == 'text_with_icon' %}
+                      {% assign checkSpecialBlock = true %}
+                {% endif %}
+            {% endfor %}
+            {% if checkSpecialBlock == true %}
+            <div class="product-text-with-icon-list">
+                    {%- for block in section.blocks -%}
+                        {%- case block.type -%}
+                            {%- when 'text_with_icon' -%}
+                                {% if block.settings.text != balnk and block.settings.icon != blank %}
+                                    <div class="product-text-with-icon">
+                                        <img src="{{ block.settings.icon.src | img_url }}" alt="{{ block.settings.icon.alt}}">
+                                        <span>
+                {{ block.settings.text }}
+              </span>
+                                    </div>
+                                {% endif %}
+                        {% endcase %}
+                    {% endfor %}
+                </div>
             {% endif %}
-            class="link product__view-details animate-arrow"
-          >
-            {{ 'products.product.view_full_details' | t }}
-            {% render 'icon-arrow' %}
-          </a>
+
         </product-info>
       </div>
       {%- if section.settings.media_position == 'right' -%}
@@ -666,7 +706,7 @@
           "price" : {{ variant.price | divided_by: 100.00 | json }},
           "priceCurrency" : {{ cart.currency.iso_code | json }},
           "url" : {{ request.origin | append: variant.url | json }}
-        }{% unless forloop.last %},{% endunless %}
+        }{% unless forloop.last %}{% endunless %}
       {%- endfor -%}
     ]
   }
@@ -715,6 +755,23 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "text_with_icon",
+      "name": "Text with icon",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Text block",
+          "label": "Some text"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        }
+      ]
     },
     {
       "type": "text",
@@ -1523,10 +1580,28 @@
       "label": "t:sections.featured-product.settings.product.label"
     },
     {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "background-1"
+      "type": "text",
+      "id": "title_Saturday",
+      "label": "Title for Saturday",
+      "default": "ORDER TODAY - SHIPS MONDAY⏰"
+    },
+    {
+      "type": "text",
+      "id": "title_more_13",
+      "label": "Title if current title 13:00",
+      "default": "ORDER TODAY - SHIPS TOMORROW⏰"
+    },
+    {
+      "type": "text",
+      "id": "title_Sunday",
+      "label": "Title for Sunday",
+      "default": "ORDER TODAY - SHIPS TOMORROW⏰"
+    },
+    {
+      "type": "text",
+      "id": "title_else_time",
+      "label": "Title for else time",
+      "default": "ORDER TODAY - SHIPS TODAY⏰"
     },
     {
       "type": "checkbox",
@@ -1559,6 +1634,11 @@
       "default": "medium",
       "label": "t:sections.main-product.settings.media_size.label",
       "info": "t:sections.main-product.settings.media_size.info"
+    },
+    {
+      "type": "text",
+      "id": "sectionId",
+      "label": "Id section for tabs on header"
     },
     {
       "type": "checkbox",
@@ -1654,6 +1734,26 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Paddind top mobile",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Paddind bottom mobile",
       "default": 36
     }
   ],

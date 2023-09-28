@@ -95,9 +95,9 @@
     }
 
     .product-navigation {
-        background: #181818;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        background: #363636;
+        padding-top: 16px;
+        padding-bottom: 16px;
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
     }
@@ -106,16 +106,28 @@
     .breadcrumbs a{
         color: #fff;
     }
+.breadcrumbs a,
+    .breadcrumbs{
+        margin: auto 0;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 26px */
+    }
     .navigation-list-item{
         display: inline-block;
-        padding: 10px 13px;
-        border-radius: 10px;
+        padding: 15px 20px;
+        border-radius: 50px;
         margin-right: 10px;
         position: relative;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%; /* 26px */
     }
 
     .navigation-list-item.active{
-        background: #2C2C2C;
+        background: #545454;
 
     }
     .navigation-list-item:last-child{
@@ -125,13 +137,16 @@
         max-width: max-content;
         margin: 0 auto;
         position: relative;
+        padding: 0;
+        display: flex;
+        gap: 10px
     }
     .animation-scrollbar{
         position: absolute;
         left: 0;
-        border-radius: 10px;
+        border-radius: 50px;
         height: 100%;
-        background: #2C2C2C;
+        background: #545454;
         transition-duration: 200ms;
 
     }
@@ -411,35 +426,31 @@
             </a>
         </div>
     </header>
+{% if product.template_suffix == "oven" %}
     <div class="product-navigation page-width">
-        <div class="breadcrumbs">
+        <span class="breadcrumbs">
             {% assign pro_collection = product.collections.first %}
             {% if pro_collection %}
-                <a href="{{ pro_collection.url }}">{{ pro_collection.title }}</a>/{{ product.title }}
+                <a href="{{ pro_collection.url }}">{{ pro_collection.title }}</a> / {{ product.title }}
             {% endif %}
-        </div>
-        {% if product.template_suffix == "oven" %}
-            <div class="product-navigation-list">
+        </span>
+            <ul class="product-navigation-list">
                 <span class="animation-scrollbar">
 
                 </span>
-                <span data-section-id="mainProduct" class="navigation-list-item active">
+                <li data-section-id="mainProduct" class="navigation-list-item active">
                             Product
-                        </span>
+                        </li>
                 {% for block in section.blocks %}
                     {% if block.type == "product_navigation_tab" %}
-                        <span data-section-id="{{ block.settings.sectionId }}" class="navigation-list-item">
+                        <li data-section-id="{{ block.settings.sectionId }}" class="navigation-list-item">
                             {{ block.settings.text }}
-                        </span>
+                        </li>
                     {% endif %}
                 {% endfor %}
-            </div>
-        {% endif %}
-
-
-
+            </ul>
     </div>
-
+{% endif %}
     </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
     {%- if settings.cart_type == "notification" -%}

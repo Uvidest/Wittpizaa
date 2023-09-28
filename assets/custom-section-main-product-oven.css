@@ -27,14 +27,14 @@
 .product .price .badge, .product .price__container{
     margin-bottom: 0;
 }
-.product__info-container *{
+.main_product .product__info-container *{
     color: #fff;
 }
 .price .price-item{
     font-family: var(--font-heading-family);
 }
-.product__info-container .price--on-sale .price-item--regular,
-.price__regular .price-item--regular{
+.main_product .product__info-container .price--on-sale .price-item--regular,
+.main_product .price__regular .price-item--regular{
     color: #FFF;
     font-family: var(--font-heading-family);
     font-size: 32px;
@@ -47,7 +47,7 @@ fieldset.product-form__input .form__label,
 .product__tax{
     display: none;
 }
-.product-form__input input[type=radio]+label.option__color {
+.main_product .product-form__input input[type=radio]+label.option__color {
     border: 1px solid black;
     width: 42px;
     height: 42px;
@@ -55,13 +55,13 @@ fieldset.product-form__input .form__label,
     box-shadow: 0px 0px 0px 1px #5A5B56;
     margin-top: 0;
 }
-.product-form__input input[type=radio]+label.option__color svg{
+.main_product .product-form__input input[type=radio]+label.option__color svg{
     display: none;
 }
-.product-form__input input[type=radio]:checked+label.option__color {
+.main_product .product-form__input input[type=radio]:checked+label.option__color {
     box-shadow: 0px 0px 0px 1px #fff;
 }
-.product-form__input input[type=radio]:checked+label.option__color svg {
+.main_product .product-form__input input[type=radio]:checked+label.option__color svg {
     display: block;
 }
 .product-form__input{
@@ -104,6 +104,11 @@ fieldset.product-form__input .form__label,
 }
 .product__description svg path {
     fill: #fff
+}
+button.product-form__submit:hover:after,
+.product-form__submit:after,
+.product-form__submit:before{
+    box-shadow: none;
 }
 .product-form__submit{
     background: #ED671E;
@@ -149,14 +154,14 @@ fieldset.product-form__input .form__label,
 .slider-button{
     color: #fff !important;
 }
-.grid__item.product__media-wrapper{
+.main_product .grid__item.product__media-wrapper{
     max-width: 53%!important;
     width: 100%!important;
 }
 .product.grid{
     justify-content: space-between;
 }
-.product__info-wrapper.grid__item.scroll-trigger.animate--slide-in {
+.main_product .product__info-wrapper.grid__item.scroll-trigger.animate--slide-in {
     max-width: 43% !important;
     width: 100%;
 
@@ -278,7 +283,7 @@ fieldset.product-form__input .form__label,
     margin-bottom: 24px;
 }
 @media screen and (max-width: 1440px) {
-    .grid__item.product__media-wrapper {
+    .main_product .grid__item.product__media-wrapper {
     max-width: 50% !important;
         padding: 0 !important;
 }
@@ -293,12 +298,12 @@ fieldset.product-form__input .form__label,
     .product.grid {
         gap: 32px
     }
-    .product__info-wrapper.grid__item.scroll-trigger.animate--slide-in,
-    .grid__item.product__media-wrapper{
+    .main_product .product__info-wrapper.grid__item.scroll-trigger.animate--slide-in,
+    .main_product .grid__item.product__media-wrapper{
         width: 100%;
         max-width: none!important;
     }
-    .product__info-wrapper.grid__item.scroll-trigger.animate--slide-in{
+    .main_product .product__info-wrapper.grid__item.scroll-trigger.animate--slide-in{
         padding: 0;
     }
 }
