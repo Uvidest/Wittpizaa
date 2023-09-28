@@ -52,6 +52,9 @@ fieldset.product-form__input .form__label,
 .product__tax{
     display: none;
 }
+.main_product .product-form__input{
+        margin-bottom: 26px;
+    }
 .main_product .product-form__input input[type=radio]+label.option__color {
     border: 1px solid black;
     width: 42px;
@@ -339,7 +342,7 @@ button.product-form__submit:hover:after,
     .product__description li>span{
         font-size: 18px;
     }
-    .main_product .product-form__input{
+    .product-form__input{
         margin-bottom: 26px;
     }
     .price--large{
