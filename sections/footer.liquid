@@ -159,10 +159,12 @@
                             {%- assign link = 'link-' | append: forloop.index -%}
                             {%- assign name = 'name-' | append: forloop.index -%}
                             {%- assign image = 'image-' | append: forloop.index -%}
-                            <a href="{{ block.settings[link]}}" class="have_you_see__link">
-                              {{block.settings[image] | image_url: height: 183 | image_tag}}
-                              <p class="have_you_see__name">{{block.settings[name]}}</p>
-                            </a>
+                            {%if block.settings[link] != blank and block.settings[name] != blank and block.settings[image] != blank%}
+                              <a href="{{ block.settings[link]}}" class="have_you_see__link">
+                                {{block.settings[image] | image_url: height: 183 | image_tag}}
+                                <p class="have_you_see__name">{{block.settings[name]}}</p>
+                              </a>
+                            {%endif%}
                           </div>
                         {% endfor %}
                       </div>
@@ -504,11 +506,11 @@
         }, {
           "type": "image_picker",
           "id": "image-1",
-          "label": "Image for block"
+          "label": "Image for first block"
         }, {
           "type": "url",
           "id": "link-1",
-          "label": "Link for section"
+          "label": "Url for first block"
         }, {
           "type": "text",
           "id": "name-1",
