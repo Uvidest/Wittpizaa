@@ -1247,6 +1247,9 @@ class VariantSelects extends HTMLElement {
 
   setUnavailable() {
     const button = document.getElementById(`product-form-${this.dataset.section}`);
+    if (!button){
+      return;
+    }
     const addButton = button.querySelector('[name="add"]');
     const addButtonText = button.querySelector('[name="add"] > span');
     const price = document.getElementById(`price-${this.dataset.section}`);

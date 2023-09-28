@@ -31,7 +31,7 @@
                     <div class="press-media-item image_with_text-block">
                         {% if block.settings.image != blank %}
                         <{% if block.settings.url != blank %}a href="{{ block.settings.url }}" {% else %}div {% endif %}
-                                class="press-media-item-image zoom_hover">
+                                class="press-media-item-image {% if block.settings.url != blank %}zoom_hover{% endif %}">
                             <img src="{{ block.settings.image.src | img_url: "master" }}"
                                  alt="{{ block.settings.image.alt }}">
                             </{% if block.settings.url != blank %}a{% else %}div {% endif %}>
