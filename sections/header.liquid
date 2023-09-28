@@ -186,7 +186,7 @@
     text-transform: uppercase;
     font-weight: 700;
   }
-  .product-navigation {
+  .product-navigation__wrapper {
         background: #363636;
         padding-top: 16px;
         padding-bottom: 16px;
@@ -507,7 +507,7 @@
   </header>
   {% if product.template_suffix == "oven" %}
     <div class="product-navigation">
-        <div class="page-width">
+        <div class="page-width product-navigation__wrapper">
         <span class="breadcrumbs">
             {% assign pro_collection = product.collections.first %}
             {% if pro_collection %}
