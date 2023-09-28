@@ -28,6 +28,18 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "5e7e40f1-fcff-4723-a326-4579aa3f3a22": {
+          "type": "product_navigation_tab",
+          "settings": {
+            "text": "Features",
+            "sectionId": "Features"
+          }
+        }
+      },
+      "block_order": [
+        "5e7e40f1-fcff-4723-a326-4579aa3f3a22"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
