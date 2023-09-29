@@ -1,36 +1,38 @@
 <secrion class="product-list">
-  <div class="product-list__wrapper">
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'content' %}
-        <div class="product-list__content content">
-          <h4 class="content__subtitle h1">{{ block.settings.subTitle }}</p>
-          <h3 class="content__title h1">{{ block.settings.title }}</h3>
-          <a href="#" class="content__link regular">
-            {{ block.settings.text-link }}
-            {{ block.settings.icon-link }}
-          </a>
-        </div>
-        {% when 'goods' %}
-        <div class="product-list__product product product-{{block.id}}">
-          {% if block.settings.product.featured_image != blank %}
-            {{ block.settings.product.featured_image | image_url: width: 280 | image_tag }}
-          {% endif %} 
-          
-          <p class="product__name h2">{{ block.settings.product.title }}</p>
-          <p class="product__price">{{ block.settings.product.price | money }}</p>
-          <div class="product__buttons">
-            <button
-              type="button"
-              data-id="{{block.settings.product.first_available_variant.id}}"
-              class="product__add regular">
-              {{ section.settings.text-add }}
-            </button>
-            <a href="{{block.settings.product.url}}" class="product__det regular">{{ section.settings.text-det }}</a>
+  <div class="page-width">
+    <div class="product-list__wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'content' %}
+          <div class="product-list__content content">
+            <h4 class="content__subtitle h1">{{ block.settings.subTitle }}</p>
+            <h3 class="content__title h1">{{ block.settings.title }}</h3>
+            <a href="#" class="content__link regular butn butn__new">
+              {{ block.settings.text-link }}
+              {{ block.settings.icon-link }}
+            </a>
           </div>
-        </div>
-      {% endcase %}
-    {% endfor %}
+          {% when 'goods' %}
+          <div class="product-list__product product product-{{block.id}}">
+            {% if block.settings.product.featured_image != blank %}
+              {{ block.settings.product.featured_image | image_url: width: 280 | image_tag }}
+            {% endif %} 
+            
+            <p class="product__name h2">{{ block.settings.product.title }}</p>
+            <p class="product__price">{{ block.settings.product.price | money }}</p>
+            <div class="product__buttons">
+              <button
+                type="button"
+                data-id="{{block.settings.product.first_available_variant.id}}"
+                class="product__add regular">
+                {{ section.settings.text-add }}
+              </button>
+              <a href="{{block.settings.product.url}}" class="product__det regular">{{ section.settings.text-det }}</a>
+            </div>
+          </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
   </div>
 </secrion>
 <style>
@@ -38,11 +40,10 @@
     background-position: 1% 48%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 96px 16px;
+    padding: 48px 0;
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-bottom: 16px;
   }
   .product-list__content.content,
   .product-list__product.product {
@@ -103,6 +104,7 @@
     text-align: center;
     border-radius: 50px;
     font-weight: 600;
+    cursor: pointer;
   }
   .product-list__product .product__det {
     display: flex;
@@ -137,53 +139,70 @@
     background-color: #d0672a;
     display: inline-flex;
     align-items: center;
-    padding: 13px 46px;
     width: fit-content;
     border-radius: 50px;
+    width: 200px;
+    height: 42px;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Oswald';
   }
   @media(max-width: 992px) {
     .product-list__wrapper {
       flex-wrap: wrap;
+      gap: 15px;
     }
     .product-list__product.product,
     .product-list__content.content {
-      flex-basis: calc(50% - 24px * 2);
+      flex-basis: calc(50% - 15px * 2);
+      flex-grow: 1;
+    }
+    .product-list__content.content {
+      padding: 0;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     .product-list__product.product > img {
-      height: 200px;
-      padding-bottom: 16px;
+      padding-bottom: 10px;
     }
-    .product-list__wrapper {
-      gap: 14px;
+    .product-list__product.product {
+      padding: 10px 10px 0 10px;
     }
-    .product-list__product.product,
-    .product-list__content.content {
-      flex-grow: 1;
+    .product-list__product .product__name {
+      padding-bottom: 10px;
+      font-size: 16px;
+    }
+    .product-list__product .product__price {
+      padding-bottom: 10px;
+      font-size: 14px;
     }
     .product-list__product .product__buttons {
       flex-wrap: wrap;
-      padding: 0 16px 16px 16px;
+      padding: 0 0 10px 0;
+      gap: 5px;
     }
-    .product-list__product .product__det,
-    .product-list__product .product__add {
+    .product-list__product .product__buttons > button,
+    .product-list__product .product__buttons > a {
+      flex-basis: 100%;
+      width: 100%;
       font-size: 14px;
     }
-    .content__subtitle {
-      font-size: 29px;
+    .content__link.regular {
+      width: 100%;
     }
-    .content__title {
-      font-size: 32px;
+    @media (max-width: 402px) {
+      .product-list__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 165px);
+      }
+      
     }
-    .link {
-      font-size: 12px;
-    }
-
   }
+
 </style>
 {% style %}
-  .product-list__wrapper {
+  .product-list {
+    display: block;
     background-image:linear-gradient(90deg,rgba(0,0,0,0.50), rgba(34, 34, 35, 0.50)),url("{{section.settings.bc-image | image_url}}");
   }
 {% endstyle %}
@@ -221,7 +240,7 @@
 </script>
 {% schema %}
   {
-    "name": "product-list",
+    "name": "Product list",
     "settings": [
       {
         "type": "image_picker",
@@ -230,11 +249,11 @@
       }, {
         "type": "text",
         "id": "text-det",
-        "label": "Text for product button link details"
+        "label": "First button label"
       }, {
         "type": "text",
         "id": "text-add",
-        "label": "Text for product button link add to cart"
+        "label": "Second button label"
       }
     ],
     "blocks": [
@@ -263,18 +282,23 @@
           }, {
             "type": "text",
             "id": "text-link",
-            "label": "Text for link"
+            "label": "Button label"
           }, {
             "type": "html",
             "id": "icon-link",
-            "label": "Icon for link"
+            "label": "Icon for button"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Url for button"
           }
         ]
       }
     ],
     "presets": [
       {
-        "name": "product-list"
+        "name": "Product list"
       }
     ]
   }

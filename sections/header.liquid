@@ -90,6 +90,22 @@
   }
 </style>
 <style>
+  .header-wrapper--border-bottom {
+    border: none;
+  }
+  .header__heading .header__heading-link {
+    padding: 0;
+  }
+  header.header {
+    padding-top: 16px;
+    padding-bottom: 17px;
+  }
+
+  .header__menu-item.list-menu__item {
+    align-self: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .header {
     background-color: #000;
   }
@@ -107,12 +123,14 @@
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    font-family: 'Oswald';
   }
   .menu-drawer__menu-item {
     text-transform: uppercase;
   }
   .header--middle-left {
     grid-template-columns: 1fr auto 1fr;
+    justify-content: space-between;
     max-width: none;
   }
   .header__icons {
@@ -178,7 +196,7 @@
     font-size: 16px;
   }
   .header__submenu.list-menu.list-menu--disclosure {
-    background-color: #000;
+    background-color: rgba(23, 23, 25, 1);
   }
   .header__submenu > li > .header__menu-item {
     text-decoration: none;
