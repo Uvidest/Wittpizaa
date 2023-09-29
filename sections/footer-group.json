@@ -32,12 +32,36 @@
             "link-3": "shopify:\/\/collections\/accessories",
             "name-3": "Bundle offer"
           }
+        },
+        "a3a170b6-90f8-4aab-8fd4-742c21fc504f": {
+          "type": "footer-link",
+          "settings": {
+            "text-link": "Terms and Conditions",
+            "link": ""
+          }
+        },
+        "b6b31b82-0076-478a-b724-9d60923759a1": {
+          "type": "footer-link",
+          "settings": {
+            "text-link": "Privacy Policy",
+            "link": ""
+          }
+        },
+        "cd63ba77-03cc-42f3-861a-2019b4d1661e": {
+          "type": "footer-link",
+          "settings": {
+            "text-link": "Cookies",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "029ed2f5-f2b9-4c79-a7c4-10bf0e3557cf",
         "efbb631f-8fc0-4c75-a112-04f724312b93",
-        "050b3c44-e49f-464a-b2af-7ed2b14159ab"
+        "050b3c44-e49f-464a-b2af-7ed2b14159ab",
+        "a3a170b6-90f8-4aab-8fd4-742c21fc504f",
+        "b6b31b82-0076-478a-b724-9d60923759a1",
+        "cd63ba77-03cc-42f3-861a-2019b4d1661e"
       ],
       "settings": {
         "color_scheme": "background-1",
