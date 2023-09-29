@@ -1,10 +1,11 @@
 class customProductMedia extends HTMLElement {
     constructor() {
         super();
-        this.Init()
-    }
-    Init(){
+        this.InitSlider()
         this.model3d = document.querySelector('.d_model_custom')
+        this.initMediaButtons()
+    }
+    InitSlider(){
         this.initMediaButtons()
         this.mainGallery = new Swiper('[data-swiper-container]', {
             loop: true,
@@ -38,10 +39,7 @@ class customProductMedia extends HTMLElement {
                 }
             })
         })
-        if (this.model3d){
-            this.initMediaButtons(this.model3d)
-        }
-        this.setListenerMediaButton()
+        
     }
     setActiveMedia(variant){
         let featured_medias = this.querySelectorAll('[data-featured_media]')
@@ -64,7 +62,7 @@ class customProductMedia extends HTMLElement {
             this.updateSlides(variant[optionIndex], variant.featured_media.id)
 
             // this.carousel.update()
-            this.Init()
+            this.InitSlider()
             // featured_media.setAttribute("src", variant.featured_media.preview_image.src)
         }
     }
@@ -100,10 +98,7 @@ class customProductMedia extends HTMLElement {
                 this.model3d.classList.add("active")
             })
         }
-    }
-
-    setListenerMediaButton(){
-        let videoButton = document.querySelector("[custom-video-button]")
+      let videoButton = document.querySelector("[custom-video-button]")
         console.log(videoButton)
         if (videoButton){
             let videoSection = document.querySelector("[custom-video-section]");
@@ -117,6 +112,8 @@ class customProductMedia extends HTMLElement {
             }
         }
     }
+
+  
 }
 
 customElements.define('custom-product-media', customProductMedia);
