@@ -68,5 +68,10 @@
         font-size: calc(1.6rem + 1.0vw)!important;
     }
 }
+@media screen and (max-width: 400px) {
+    .user-manuals-item{
+        padding30px;
+    }
+}
 
 
