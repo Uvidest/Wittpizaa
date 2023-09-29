@@ -51,9 +51,11 @@
                         data-cascade
                     {% endif %}
             >
+              {% if section.settings.title != blank %}
                 <h2 class="product-grid-title h1">
                     {{ section.settings.title }}
                 </h2>
+                {% endif %}
                 {%- if collection.products.size == 0 -%}
                     <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
                         <div class="loading-overlay gradient"></div>
