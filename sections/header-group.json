@@ -5,16 +5,24 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
+        "5b943b66-0b71-42c7-93ac-168a86119459": {
+          "type": "custom-link",
           "settings": {
-            "text": "Welcome to our store",
-            "link": ""
+            "text": "FAQ",
+            "url": ""
+          }
+        },
+        "9bc75b68-ec20-4246-bd24-949b57ba4a6c": {
+          "type": "custom-link",
+          "settings": {
+            "text": "Contact us",
+            "url": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "5b943b66-0b71-42c7-93ac-168a86119459",
+        "9bc75b68-ec20-4246-bd24-949b57ba4a6c"
       ],
       "settings": {
         "color_scheme": "background-1",
