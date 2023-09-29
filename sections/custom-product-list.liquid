@@ -24,10 +24,10 @@
               <button
                 type="button"
                 data-id="{{block.settings.product.first_available_variant.id}}"
-                class="product__add regular">
+                class="product__add butn butn__new regular">
                 {{ section.settings.text-add }}
               </button>
-              <a href="{{block.settings.product.url}}" class="product__det regular">{{ section.settings.text-det }}</a>
+              <a href="{{block.settings.product.url}}" class="product__det regular butn butn__new">{{ section.settings.text-det }}</a>
             </div>
           </div>
         {% endcase %}
@@ -94,7 +94,10 @@
     gap: 8px;
     padding: 0 16px 24px 16px;
   }
-  .product-list__product .product__add.regular {
+  .product-list__product .product__add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-grow: 1;
     background-color: rgb(208, 103, 42);
     color: #fff;
@@ -105,21 +108,26 @@
     border-radius: 50px;
     font-weight: 600;
     cursor: pointer;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
   }
-  .product-list__product .product__det {
+  .product__det.regular{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     flex-grow: 1;
     background-color: rgb(228, 228, 229);
+    background-image: none;
+    font-size: 18px;
     color: rgb(23, 23, 25);
     font-weight: 600;
     text-decoration: none;
     border-radius: 50px;
     height: 35px;
     font-family: 'Oswald';
+    width: fit-content;
   }
+ 
   .content__subtitle.h1 {
     color: #fff;
     font-weight: 400;
