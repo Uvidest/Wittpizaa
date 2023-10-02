@@ -220,7 +220,6 @@
   const buttonsAdd = document.querySelectorAll('.product__add');
 
   buttonsAdd.forEach(btn => btn.addEventListener('click', function() {
-    console.log(btn);
     const id = + btn.getAttribute('data-id');
     const currentCount = document.querySelector('.cart-count-bubble > span');
     let formData = {

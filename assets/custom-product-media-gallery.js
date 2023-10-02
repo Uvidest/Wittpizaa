@@ -99,7 +99,6 @@ class customProductMedia extends HTMLElement {
             })
         }
       let videoButton = document.querySelector("[custom-video-button]")
-        console.log(videoButton)
         if (videoButton){
             let videoSection = document.querySelector("[custom-video-section]");
             if (videoSection) {
