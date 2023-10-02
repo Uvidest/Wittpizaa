@@ -70,8 +70,7 @@
     {% capture current_time %}{{ "now" | date: "%H:%M" }}{% endcapture %}
     {% capture cutoff_time %}13:00{% endcapture %}
     {% capture current_day %}{{ "now" | date: "%A" }}{% endcapture %}
-    {{ current_day }}
-    {{ current_time }}
+
     {% if current_day == 'Saturday' %}
         {% assign title = section.settings.title_Saturday %}
     {% elsif current_day == 'Sunday' %}

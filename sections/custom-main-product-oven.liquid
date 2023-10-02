@@ -614,13 +614,16 @@
                         {% endcase %}
                     {% endfor %}
                 </div>
-                <ul class="list list-payment" role="list">
-                    {%- for type in shop.enabled_payment_types -%}
-                        <li class="list-payment__item">
-                            {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-                        </li>
-                    {%- endfor -%}
-                </ul>
+                <div class="payment_icons__wrapper">
+                    <span class="payment_icons__text">{{ 'products.product.payment_icons_text' | t }}</span>
+                    <div class="payment_icons__icons">
+                        {% for i in (1..6) %}
+                            <div class="payment_icons__item">
+                                {% render 'payment-icons', index: i %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
 
                 <a href="{{ product.url }}" class="link product__view-details animate-arrow">
                     {{ 'products.product.view_full_details' | t }}

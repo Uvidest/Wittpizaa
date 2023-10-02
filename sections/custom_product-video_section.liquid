@@ -2,7 +2,8 @@
     .section-{{ section.id }} {
         padding-top: {{ section.settings.st }}px;
         padding-bottom: {{ section.settings.sb }}px;
-    {% if section.settings.image_bg != blank %} background: url('{{ section.settings.image_bg.src | img_url: "large" }}'), lightgray 50% / cover no-repeat;
+    {% if section.settings.image_bg != blank %}
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url('{{ section.settings.image_bg.src | img_url: "master" }}'), lightgray 50% / cover no-repeat;
     {% else %} background: #000;
     {% endif %}
     }
