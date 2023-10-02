@@ -4,8 +4,8 @@
       "type": "custom-video-control",
       "settings": {
         "video": "shopify:\/\/files\/videos\/27599f9f1da24edab99ed3ed0a0adea2.HD-1080p-2.5Mbps-18519993.mp4",
-        "text-content": "Experience culinary creativity with our remarkable pizza ovens",
-        "text-link": "Explore hare",
+        "text_content": "",
+        "text_link": "",
         "url": "shopify:\/\/collections"
       }
     },
@@ -27,20 +27,20 @@
     "653bf676-cb64-487e-b2c0-9a4ed6b23ba6": {
       "type": "custom-video-product",
       "blocks": {
-        "dc903e62-1883-46cb-a88b-1d9435e1c0d2": {
+        "5aef1a80-496a-4c6c-8f09-463e34efcb99": {
           "type": "prev-product",
           "settings": {
             "range": 25,
             "title": "innovative features",
-            "main-image": "shopify:\/\/shop_images\/wp-etna-rotante-crop_right-graphite.webp",
-            "advantages-text-1": "Rotating pizza stone",
-            "advantages-text-2": "booster burner",
-            "advantages-text-3": "0-500°C in 15 minutes",
+            "main_image": "shopify:\/\/shop_images\/wp-etna-rotante-crop_right-graphite.webp",
+            "text-advantages-1": "Rotating pizza stone",
+            "text-advantages-2": "booster burner",
+            "text-advantages-3": "0-500°C in 15 minutes",
             "image-advantages-1": "shopify:\/\/shop_images\/Frame_17.svg",
             "image-advantages-2": "shopify:\/\/shop_images\/Frame_18.svg",
             "image-advantages-3": "shopify:\/\/shop_images\/Frame_19.svg",
-            "background": "#3f444a",
-            "text-color": "#ffffff",
+            "background": "",
+            "text_color": "#fff",
             "block-opacity": 100
           }
         },
@@ -53,7 +53,7 @@
         }
       },
       "block_order": [
-        "dc903e62-1883-46cb-a88b-1d9435e1c0d2",
+        "5aef1a80-496a-4c6c-8f09-463e34efcb99",
         "4949526c-cfec-4a65-ad50-ae7244ad7e72"
       ],
       "settings": {
@@ -67,9 +67,9 @@
           "settings": {
             "subTitle": "DON'T LIMIT YOURSELF",
             "title": "ʼMUST HAVESʼ",
-            "text-link": "All accessories",
-            "icon-link": "",
-            "url": ""
+            "text_button": "",
+            "icon_button": "",
+            "url_button": ""
           }
         },
         "2e3f6640-bbad-44e8-b862-46558d94814d": {
@@ -99,8 +99,8 @@
       ],
       "settings": {
         "bc-image": "shopify:\/\/shop_images\/2202_08_03_witt_pizza1448_1.webp",
-        "text-det": "Read more",
-        "text-add": "Add to cart"
+        "text_det": "",
+        "text_add": ""
       }
     },
     "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030": {
@@ -165,10 +165,10 @@
       "type": "custom-blog-list",
       "settings": {
         "title": "GET INSPIRED WITH OUR RECIPES",
-        "text-btn": "View all recipe",
-        "show-link": true,
-        "text-link": "view RECIPES →",
-        "icon-link": "",
+        "text_btn": "",
+        "show_link": true,
+        "text_link": "Read more",
+        "icon_link": "",
         "blog": "recipes"
       }
     },
