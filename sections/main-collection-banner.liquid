@@ -3,7 +3,7 @@
     padding-top: {{ section.settings.st }}px;
     padding-bottom: {{ section.settings.sb }}px;
   {% if section.settings.background-image != blank %}
-    background-image: url("{{ section.settings.background-image.src | img_url: 'large' }}");
+    background-image: url("{{ section.settings.background-image.src | img_url: 'master' }}");
   {% else %}
     background: #8c8a8a;
   {% endif %}
