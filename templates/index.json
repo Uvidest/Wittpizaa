@@ -62,14 +62,14 @@
     "846ae930-e037-4de4-9ac9-37da248ca839": {
       "type": "custom-product-list",
       "blocks": {
-        "aa66b528-7e40-445a-bccb-107ad15e469e": {
+        "4f7a5d9d-f75a-4cc7-9ea1-961154f2976e": {
           "type": "content",
           "settings": {
-            "subTitle": "DON'T LIMIT YOURSELF",
+            "subTitle": "Don’t limit yourself",
             "title": "ʼMUST HAVESʼ",
-            "text_button": "",
+            "text_button": "All accessories",
             "icon_button": "",
-            "url_button": ""
+            "url_button": "#"
           }
         },
         "2e3f6640-bbad-44e8-b862-46558d94814d": {
@@ -92,15 +92,15 @@
         }
       },
       "block_order": [
-        "aa66b528-7e40-445a-bccb-107ad15e469e",
+        "4f7a5d9d-f75a-4cc7-9ea1-961154f2976e",
         "2e3f6640-bbad-44e8-b862-46558d94814d",
         "fba7bbc8-4b44-430e-b1b1-a4952bc41e5a",
         "2368e3a8-d933-4de7-b430-3794f4763128"
       ],
       "settings": {
         "bc-image": "shopify:\/\/shop_images\/2202_08_03_witt_pizza1448_1.webp",
-        "text_det": "",
-        "text_add": ""
+        "text_det": "Read more",
+        "text_add": "Add to cart"
       }
     },
     "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030": {
