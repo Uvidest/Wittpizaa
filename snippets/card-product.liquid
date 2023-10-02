@@ -216,8 +216,8 @@
                 assign qty_rules = true
               endif
             -%}
-            {%- if product.template_suffix != 'accessories' and card_product.variants.size > 1 or qty_rules -%}
-              <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
+            {%- if product.template_suffix != 'accessories' and collection.template_suffix != 'accessories' and card_product.variants.size > 1 or qty_rules -%}
+                <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
                 <button
                   id="{{ product_form_id }}-submit"
                   type="submit"
@@ -264,7 +264,7 @@
                 </div>
               </quick-add-modal>
             
-            {%- elsif product.template_suffix == 'accessories' -%}
+            {%- elsif product.template_suffix == 'accessories' or collection.template_suffix == 'accessories' -%}
               <product-form data-section-id="{{ section.id }}">
                 {%- form 'product',
                   card_product,
