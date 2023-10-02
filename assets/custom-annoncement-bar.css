@@ -1,12 +1,10 @@
 .shopify-section.shopify-section-group-header-group.announcement-bar-section {
   z-index: 99;
-}
-.announcement-bar-section {
   position: sticky;
-  top: 0;
   left: 0;
   right: 0;
-}
+  top: 0;
+} 
 .utility-bar {
   background-color: rgba(224, 222, 212, 1);
 }
