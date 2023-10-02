@@ -1,0 +1,38 @@
+.video-block {
+  position: relative;
+}
+.video-block > video {
+  display: block;
+}
+.video-block__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  font-family: 'Oswald';
+}
+@media (max-width: 1100px) {
+  .video-block__text {
+    font-size: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .video-block__text {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .video-block > video {
+    min-height: 415px;
+    object-fit: cover;
+  }
+  .video-block__text {
+    font-size: 40px;
+    white-space: nowrap;
+  }
+}

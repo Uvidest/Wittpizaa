@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ 'custom-video-product.css' | asset_url }}">
+
 <section class="custom-prevProduct-video">
   <div class="page-width">
     <div class="custom-prevProduct-video__wrapper">
@@ -7,29 +9,34 @@
           <div class="custom-prevProduct-video__prevProduct prevProduct prevProduct-{{block.id}}">
             <p class="prevProduct__title">{{ block.settings.title }}</p>
             <div class="prevProduct__images">
-              {%if block.settings.main-image != blank %}
-                {{ block.settings.main-image | image_url: width: 340 | image_tag: class: 'prevProduct__mainImg' }}
+              {% if block.settings.main_image != blank %}
+                {{ block.settings.main_image | image_url: width: 340 | image_tag: class: 'prevProduct__mainImg', lazyload: 'lazy' }}
               {%endif%}
             </div>
             <div class="prevProduct__advantages">
-              <div class="prevProduct__advantage">
-                {{block.settings.image-advantages-1 | image_url: width: 40 | image_tag}}
-                <p>{{block.settings.advantages-text-1}}</p>
-              </div>
-              <div class="prevProduct__advantage">
-                {{block.settings.image-advantages-2 | image_url: width: 40 | image_tag}}
-                <p>{{block.settings.advantages-text-2}}</p>
-              </div>
-              <div class="prevProduct__advantage">
-                {{block.settings.image-advantages-3 | image_url: width: 40 | image_tag}}
-                <p>{{block.settings.advantages-text-3}}</p>
-              </div>
+              {% for advantage in (1..3) %}
+                {%- assign advantageCount = 'advantages-' | append: forloop.index -%}
+                {% assign image_key = 'image-' | append: advantageCount %}
+                {% assign text_key = 'text-' | append: advantageCount %}
+                <div class="prevProduct__advantage">
+                  {% if block.settings[image_key] != blank%}
+                    {{ block.settings[image_key] | image_url: width:40 | image_tag: lazyload: 'lazy' }}
+                  {% endif %}
+                  {%if block.settings[text_key] != blank%}
+                    <p>
+                      {{block.settings[text_key]}}
+                    </p>
+                  {%endif%}
+                </div>
+              {% endfor %}
             </div>
           </div>
           {% when 'video' %}
           <div class="custom-prevProduct-video__video video-{{block.id}}">
             <div class="video__wrapper">
-              {{ block.settings.video | video_tag: autoplay: true, loop: true, controls: true, width: '100%', height: '100%' }}
+              {% if block.settings.video != blank %}
+                {{ block.settings.video | video_tag: autoplay: true, loop: true, controls: true, width: '100%', height: '100%' }}
+              {%endif%}
             </div>
           </div>
         {% endcase %}
@@ -37,104 +44,7 @@
     </div>
   </div>
 </section>
-<style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  .custom-prevProduct-video {
-    background-color: #000;
-    padding: 48px 0;
-  }
-  .custom-prevProduct-video__wrapper {
-    display: flex;
-    column-gap: 48px;
-  }
-  .custom-prevProduct-video__prevProduct {
-    border-radius: 15px;
-    padding: 42px 0 42px 42px;
-  }
-  .prevProduct__title {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 60px;
-    margin: 0;
-    text-transform: uppercase;
-    font-family: "Oswald";
-    max-width: 235px;
-  }
-  .prevProduct__images {
-    position: relative;
-  }
-  .prevProduct__mainImg {
-    width: 100%;
-  }
-  .prevProduct__advantages {
-    position: relative;
-    margin-top: -45px;
-  }
-  .prevProduct__advantage {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  .prevProduct__advantage:not(:last-child) {
-    padding-bottom: 15px;
-  }
-  .prevProduct__advantage > p {
-    margin: 0;
-    font-family: "Oswald";
-    font-size: 29px;
-    line-height: normal;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
 
-  .video__wrapper {
-    height: 100%;
-  }
-  .video__wrapper > video {
-    object-fit: cover;
-  }
-
-  @media(max-width: 1200px) {
-    .custom-prevProduct-video__prevProduct {
-      padding: 27px 0 27px 27px;
-    }
-    .blog__wrapper {
-      padding: 10px;
-    }
-  }
-  @media (max-width: 992px) {
-    .custom-prevProduct-video__wrapper {
-      flex-direction: column;
-      gap: 24px;
-    }
-    .prevProduct__mainImg {
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-    .prevProduct__title {
-      font-size: 40px;
-    }
-    .prevProduct__advantages {
-      margin: 0;
-    }
-  }
-  @media (max-width: 576px) {
-    .custom-prevProduct-video__blog {
-      padding: 8px;
-    }
-    .prevProduct__advantage > p {
-      font-size: 20px;
-    }
-    .prevProduct__advantage > img {
-      width: 30px;
-      height: 30px;
-    }
-  }
-</style>
 {% style %}
   {% for block in section.blocks %}
     {% case block.type %}
@@ -142,12 +52,11 @@
       .custom-prevProduct-video__prevProduct.prevProduct-{{ block.id}}{
         flex-basis: {{ block.settings.range | append: '%' }};
         min-width: 240px;
-        background-color: {{ block.settings.background}}
-        ;
+        background-color: {{ block.settings.background}};
       }
       .prevProduct-{{ block.id}} .prevProduct__title,
       .prevProduct-{{block.id}} .prevProduct__advantage > p {
-        color: {{ block.settings.text-color}};
+        color: {{ block.settings.text_color}};
         opacity: {{ block.settings.block-opacity | append: '%'}};
       }
 
@@ -186,22 +95,22 @@
           },
           {
             "type": "image_picker",
-            "id": "main-image",
+            "id": "main_image",
             "label": "Image featured product"
           },
           {
             "type": "text",
-            "id": "advantages-text-1",
+            "id": "text-advantages-1",
             "label": "Advantages text 1"
           },
           {
             "type": "text",
-            "id": "advantages-text-2",
+            "id": "text-advantages-2",
             "label": "Advantages text 2"
           },
           {
             "type": "text",
-            "id": "advantages-text-3",
+            "id": "text-advantages-3",
             "label": "Advantages text 3"
           },
           {
@@ -226,7 +135,7 @@
           },
           {
             "type": "color",
-            "id": "text-color",
+            "id": "text_color",
             "label": "Text color",
             "default": "#fff"
           }, {

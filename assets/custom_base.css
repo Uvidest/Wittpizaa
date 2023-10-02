@@ -208,3 +208,14 @@
 }
 
 
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #000;
+}
+main {
+  padding-top: 82px;
+}
