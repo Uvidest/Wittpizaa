@@ -1,3 +1,8 @@
+<link rel="stylesheet" href="{{ 'custom-slider-forIt.css' | asset_url }}">
+<script src="{{ 'custom-slider-forIt.js' | asset_url }}" defer="defer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
 <section class="custom-slider">
   <div class="page-width">
     <h2 class="custom-slider__title h1">{{section.settings.title}}</h2>
@@ -7,121 +12,29 @@
           {% for slide in section.blocks %}
              {% if slide.type == 'slide' %}
               <div class="swiper-slide custom-slider__slide">
-                <p class="custom-slider__text regular">{{slide.settings.text}}</p>
-                {{ slide.settings.image | image_url: height: 50 | image_tag }}
+                {% if slide.settings.text != blank %}
+                  <p class="custom-slider__text regular">{{slide.settings.text}}</p>
+                {%endif%}
+                {%if slide.settings.image != blank %}
+                  {{ slide.settings.image | image_url: height: 50 | image_tag }}
+                {%endif%}
               </div>
              {%endif%}
           {% endfor %}
         </div>
         
       </div>
-      <div class="custom-slider__next">
-        {{section.settings.controll | image_url: height: 39, width: 39 | image_tag }}
-      </div>
-      <div class="custom-slider__prev">
-        {{section.settings.controll | image_url: height: 39, width: 39 | image_tag }}
-      </div>
+      {%if section.settings.controll != blank %}
+        <div class="custom-slider__next">
+          {{section.settings.controll | image_url: height: 39, width: 39 | image_tag }}
+        </div>
+        <div class="custom-slider__prev">
+          {{section.settings.controll | image_url: height: 39, width: 39 | image_tag }}
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<style>
-  @import url('https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
-  .custom-slider {
-    background-color: #000;
-    position: relative;
-    padding-bottom: 48px;
-  }
-  .mySwiper {
-    width: calc(100% - 100px);
-    margin: 0 auto;
-  }
-  .custom-slider__slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    height: auto;
-  }
-
-  .custom-slider__title.h1 {
-    margin: 0;
-    color: #fff;
-    text-align: center;
-    padding-bottom: 48px;
-  }
-  .custom-slider__wrapper {
-
-  }
-
-  .custom-slider__text.regular{
-    color: #fff;
-    margin: 0;
-  }
-  .custom-slider__next,
-  .custom-slider__prev {
-    cursor: pointer;
-    position: absolute;
-    top: calc(50% - 39px);
-    right: 10px;
-    z-index: 10;
-  }
-  .custom-slider__prev {
-    right:auto;
-    left: 10px;
-    transform: rotate(-180deg);
-  }
-  .custom-slider__next[aria-disabled="true"],
-  .custom-slider__prev[aria-disabled="true"]{
-    display: none;
-  }
-  @media (max-width: 767px) {
-    .custom-slider__title.h1 {
-      padding-bottom: 32px;
-    }
-  }
-  @media (max-width: 568px) {
-    .custom-slider__wrapper {
-      display: block;
-      margin: 0;
-    }
-    .custom-slider__slide {
-      width: 100%!important;
-      gap: 16px;
-    }
-    .custom-slider__slide:not(:last-child) {
-      padding-bottom: 32px;
-    }
-  }
-</style>
-<script>
-  let swiper = new Swiper(".mySwiper", {
-    
-    breakpoints: {
-      320: {
-        enabled:false,
-      },
-      568: {
-        enabled: true,
-        spaceBetween: 16,
-        slidesPerView: 2,
-      },
-      768: {
-        spaceBetween: 16,
-        slidesPerView: 3,
-      },
-      992: {
-        spaceBetween: 16,
-        slidesPerView: 4
-      }
-    },
-    navigation: {
-      nextEl: ".custom-slider__next",
-      prevEl: ".custom-slider__prev",
-    },
-  });
-</script>
 
 {% schema %}
   {
@@ -146,12 +59,12 @@
           {
             "type": "text",
             "id": "text",
-            "label": "Text for block"
+            "label": "Text label"
           },
           {
             "type": "image_picker",
             "id": "image",
-            "label": "Image for block"
+            "label": "Image"
           }
         ]
       }

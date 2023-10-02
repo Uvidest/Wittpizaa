@@ -1,5 +1,10 @@
+<link rel="stylesheet" href="{{ 'custom-video-controll.css' | asset_url }}">
+<script src="{{ 'custom-video-controll.js' | asset_url }}" defer="defer"></script>
+
 <section class="video-controll">
-  {{section.settings.video | video_tag: autoplay: true, loop: true, width: '100%', height: '100%', class: 'video-controll__video'}}
+  {% if section.settings.video != blank %}
+    {{section.settings.video | video_tag: autoplay: true, loop: true, width: '100%', height: '100%', class: 'video-controll__video'}}
+  {% endif %}
   <button
     type="button"
     data-state="play"
@@ -8,181 +13,12 @@
     <svg fill="#ffffff33" height="73px" width="73px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" stroke="#ffffff33" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M256,0C114.842,0,0,114.842,0,256s114.842,256,256,256s256-114.842,256-256S397.158,0,256,0z M256,465.455 c-115.493,0-209.455-93.961-209.455-209.455S140.507,46.545,256,46.545S465.455,140.507,465.455,256S371.493,465.455,256,465.455z "></path> </g> </g> <g> <g> <path d="M318.061,139.636c-12.853,0-23.273,10.42-23.273,23.273v186.182c0,12.853,10.42,23.273,23.273,23.273 c12.853,0,23.273-10.42,23.273-23.273V162.909C341.333,150.056,330.913,139.636,318.061,139.636z"></path> </g> </g> <g> <g> <path d="M193.939,139.636c-12.853,0-23.273,10.42-23.273,23.273v186.182c0,12.853,10.42,23.273,23.273,23.273 c12.853,0,23.273-10.42,23.273-23.273V162.909C217.212,150.056,206.792,139.636,193.939,139.636z"></path> </g> </g> </g></svg>
   </button>
   <div class="video-controll__content">
-    <h3 class="video-controll__text-content h1">{{section.settings.text-content}}</h3>
-    {%if section.settings.text-link != blank%}
-    <a href="{{section.settings.url}}" class="video-controll__link butn butn__new"><span>{{section.settings.text-link}}</span></a>
+    <h3 class="video-controll__text-content h1">{{section.settings.text_content}}</h3>
+    {%if section.settings.text_link != blank%}
+    <a href="{{section.settings.url}}" class="video-controll__link butn butn__new"><span>{{section.settings.text_link}}</span></a>
     {%endif%}
   </div>
 </section>
-
-<script>
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const video = document.querySelector('.video-controll__video');
-    const btn = document.querySelector('.video-controll__btn');
-    
-    function toggleVideo() {
-      if (btn.getAttribute('data-state') === 'play') {
-        console.log('Pause video');
-        btn.setAttribute('data-state', 'pause');
-        video.pause();
-        btn.innerHTML = '<svg width="73px" height="73px" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff33"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle opacity="0.5" cx="12" cy="12" r="10" stroke="#ffffff33" stroke-width="1.5"></circle> <path d="M13.8876 9.9348C14.9625 10.8117 15.5 11.2501 15.5 12C15.5 12.7499 14.9625 13.1883 13.8876 14.0652C13.5909 14.3073 13.2966 14.5352 13.0261 14.7251C12.7888 14.8917 12.5201 15.064 12.2419 15.2332C11.1695 15.8853 10.6333 16.2114 10.1524 15.8504C9.6715 15.4894 9.62779 14.7336 9.54038 13.2222C9.51566 12.7947 9.5 12.3757 9.5 12C9.5 11.6243 9.51566 11.2053 9.54038 10.7778C9.62779 9.26636 9.6715 8.51061 10.1524 8.1496C10.6333 7.78859 11.1695 8.11466 12.2419 8.76679C12.5201 8.93597 12.7888 9.10831 13.0261 9.27492C13.2966 9.46483 13.5909 9.69274 13.8876 9.9348Z" stroke="#ffffff33" stroke-width="1.5"></path> </g></svg>'; // Змінюємо на іконку play
-      } else {
-        console.log('Play video');
-        btn.setAttribute('data-state', 'play');
-        video.play();
-        btn.innerHTML = '<svg fill="#ffffff33" height="73px" width="73px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" stroke="#ffffff33" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M256,0C114.842,0,0,114.842,0,256s114.842,256,256,256s256-114.842,256-256S397.158,0,256,0z M256,465.455 c-115.493,0-209.455-93.961-209.455-209.455S140.507,46.545,256,46.545S465.455,140.507,465.455,256S371.493,465.455,256,465.455z "></path> </g> </g> <g> <g> <path d="M318.061,139.636c-12.853,0-23.273,10.42-23.273,23.273v186.182c0,12.853,10.42,23.273,23.273,23.273 c12.853,0,23.273-10.42,23.273-23.273V162.909C341.333,150.056,330.913,139.636,318.061,139.636z"></path> </g> </g> <g> <g> <path d="M193.939,139.636c-12.853,0-23.273,10.42-23.273,23.273v186.182c0,12.853,10.42,23.273,23.273,23.273 c12.853,0,23.273-10.42,23.273-23.273V162.909C217.212,150.056,206.792,139.636,193.939,139.636z"></path> </g> </g> </g></svg>'; // Змінюємо на іконку pause
-      }
-    }
-    video.addEventListener('click', toggleVideo);
-    btn.addEventListener('click', toggleVideo);
-  });
-</script>
-<style>
-  .video-controll {
-    position: relative;
-    background: #E0DED4;
-  }
-  .video-controll__video {
-  }
-  .video-controll__btn {
-    width: 73px;
-    height: 73px;
-    position: absolute;
-    background-color: transparent;
-    margin-top: 48px;
-    right: 121px;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-  }
-  .video-controll__btn > svg {
-    display: block;
-    margin: auto;
-  }
-  .video-controll__content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    left: 48px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #fff;
-  }
-  .video-controll__text-content.h1 {
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    max-width: 877px;
-    margin: 0;
-    color: #fff;
-  }
-  .video-controll__link.butn.butn__new {
-    font-size: 20px;
-    font-weight: 600;
-    width: 250px;
-    height: 66px;
-  }
-  .butn:link,
-  .butn:visited {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    text-decoration: none;
-    background-color: #d0672a;
-    background-image: linear-gradient(90deg, #d0672a, #d0672a);
-    height: 6rem;
-    width: 40rem;
-
-    margin-right: 13px;
-    border-radius: 30px;
-    border: none;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-  }
-  .butn::before {
-      background: #fff;
-      content: "";
-      height: 155px;
-      opacity: 0;
-      position: absolute;
-      top: -50px;
-      transform: rotate(35deg);
-      width: 50px;
-      transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  .butn::after {
-      background: #fff;
-      content: "";
-      height: 20rem;
-      opacity: 0;
-      position: absolute;
-      top: -50px;
-      transform: rotate(35deg);
-      transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
-      width: 8rem;
-  }
-  .butn__new::before {
-      left: -50%;
-  }
-
-  .butn__new::after {
-    left: -100%;
-  }
-
-  .butn:hover,
-  .butn:active {
-    transform: translateY(-3px);
-    color: #fff;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
-  }
-
-  .butn__new:hover::before {
-    left: 120%;
-    opacity: 0.5s;
-  }
-
-  .butn__new:hover::after {
-    left: 200%;
-    opacity: 0.6;
-  }
-
-  .butn span {
-    z-index: 20;
-  }
-  @media (max-width: 1200px) {
-    .video-controll__text-content.h1 {
-      font-size: 60px;
-    }
-  }
-  @media (max-width: 768px) {
-    .video-controll__content {
-      position: static;
-      padding: 24px 15px 48px 15px;
-      transform: translateY(0);
-      gap: 32px;
-    }
-    .video-controll__text-content.h1 {
-      color: #171719;
-      font-size: 40px;
-    }
-    .video-controll__btn {
-      display: none;
-    }
-  }
-  @media (max-width: 568px) {
-    .video-controll__link.butn.butn__new  {
-      width: 100%;
-    }
-  }
-</style>
-
 {% schema %}
   {
     "name": "Video with controll",
@@ -194,12 +30,12 @@
       },
       {
         "type": "text",
-        "id": "text-content",
+        "id": "text_content",
         "label": "Text content"
       },
       {
         "type": "text",
-        "id": "text-link",
+        "id": "text_link",
         "label": "Button label"
       },
       {

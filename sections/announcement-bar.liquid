@@ -1,5 +1,6 @@
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'custom-annoncement-bar.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign social_icons = true
@@ -228,41 +229,7 @@
     </div>
   </div>
 </div>
-<style>
-  .utility-bar {
-    background-color: rgba(224, 222, 212, 1);
-  }
-  .localization-wrapper {
-    align-items: center;
-  }
-  .page-width.utility-bar__grid {
-    padding: 0;
-    max-width: none;
-  }
-  .custom-link__wrapper > ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-  }
-  .custom-link__wrapper > ul > li{
-    padding: 0 16px;
-    border-right: 1px solid black;
-  }
-  .custom-link__link {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
-    transition: text-decoration .3s ease-in;
-  }
-  .custom-link__link:hover{
-    text-decoration: underline;
-  }
-  .utility-bar__grid {
-    display: flex;
-    justify-content: end;
-  }
-</style>
+
 
 
 {% schema %}
@@ -365,12 +332,12 @@
         {
           "type": "text",
           "id": "text",
-          "label": "Text for link"
+          "label": "Label button"
         },
         {
           "type": "url",
           "id": "url",
-          "label": "Url"
+          "label": "Url button"
         }
       ]
     }
