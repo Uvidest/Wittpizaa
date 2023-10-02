@@ -1,11 +1,11 @@
 class customProductMedia extends HTMLElement {
     constructor() {
         super();
-        this.Init()
+        this.InitSlider()
+        this.model3d = document.querySelector('.d_model_custom')
+        this.initMediaButtons()
     }
-    Init(){
-        const model3d = document.querySelector('.d_model_custom')
-        this.model3d = model3d
+    InitSlider(){
         this.initMediaButtons()
         this.mainGallery = new Swiper('[data-swiper-container]', {
             loop: true,
@@ -34,14 +34,12 @@ class customProductMedia extends HTMLElement {
             slide.addEventListener("click", ()=>{
                 let index = +slide.getAttribute("data-loop-index")
                 this.mainGallery.slideTo(index)
-                if (model3d){
-                    this.hide3Dmodel()
+                if (this.model3d){
+                    this.model3d.classList.remove("active")
                 }
             })
         })
-        if (this.model3d){
-            this.initMediaButtons()
-        }
+        
     }
     setActiveMedia(variant){
         let featured_medias = this.querySelectorAll('[data-featured_media]')
@@ -64,7 +62,7 @@ class customProductMedia extends HTMLElement {
             this.updateSlides(variant[optionIndex], variant.featured_media.id)
 
             // this.carousel.update()
-            this.Init()
+            this.InitSlider()
             // featured_media.setAttribute("src", variant.featured_media.preview_image.src)
         }
     }
@@ -90,26 +88,32 @@ class customProductMedia extends HTMLElement {
         const carouselSlides = this.querySelectorAll(".custom-carousel-slide.swiper-slide")
         for(let i = 0; i < carouselSlides.length; i++ ){
             carouselSlides[i].setAttribute("data-loop-index", i+1)
-
         }
 
     }
     initMediaButtons(){
-            let model3dButton = document.querySelector('.model_button')
+        let model3dButton = document.querySelector('.model_button')
         if (model3dButton) {
-            model3dButton.addEventListener("click", this.open3Dmodel)
+            model3dButton.addEventListener("click", ()=>{
+                this.model3d.classList.add("active")
+            })
+        }
+      let videoButton = document.querySelector("[custom-video-button]")
+        console.log(videoButton)
+        if (videoButton){
+            let videoSection = document.querySelector("[custom-video-section]");
+            if (videoSection) {
+                videoButton.addEventListener("click", ()=>{
+                    {
+                        const y = videoSection.getBoundingClientRect().top + window.pageYOffset - 150;
+                        window.scrollTo({top: y, behavior: "smooth"});
+                    }
+                });
+            }
         }
     }
-    open3Dmodel(){
-        let model3d = document.querySelector('.d_model_custom')
-        model3d.classList.add("active")
 
-    }
-    hide3Dmodel(){
-        let model3d = document.querySelector('.d_model_custom')
-        model3d.classList.remove("active")
-
-    }
+  
 }
 
 customElements.define('custom-product-media', customProductMedia);

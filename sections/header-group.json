@@ -5,16 +5,24 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
+        "5b943b66-0b71-42c7-93ac-168a86119459": {
+          "type": "custom-link",
           "settings": {
-            "text": "Welcome to our store",
-            "link": ""
+            "text": "FAQ",
+            "url": ""
+          }
+        },
+        "9bc75b68-ec20-4246-bd24-949b57ba4a6c": {
+          "type": "custom-link",
+          "settings": {
+            "text": "Contact us",
+            "url": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "5b943b66-0b71-42c7-93ac-168a86119459",
+        "9bc75b68-ec20-4246-bd24-949b57ba4a6c"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -22,21 +30,49 @@
         "show_social": false,
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
+        "enable_country_selector": true,
+        "enable_language_selector": true
       }
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "5e7e40f1-fcff-4723-a326-4579aa3f3a22": {
+          "type": "product_navigation_tab",
+          "settings": {
+            "text": "Features",
+            "sectionId": "Features"
+          }
+        },
+        "e88dfad8-3b33-400a-881f-c892560e0d71": {
+          "type": "product_navigation_tab",
+          "settings": {
+            "text": "Reviews",
+            "sectionId": "Reviews"
+          }
+        },
+        "e814a9af-b1d7-4afd-b7e0-2e226a9de37b": {
+          "type": "product_navigation_tab",
+          "settings": {
+            "text": "Accessories",
+            "sectionId": "Accessories"
+          }
+        }
+      },
+      "block_order": [
+        "5e7e40f1-fcff-4723-a326-4579aa3f3a22",
+        "e88dfad8-3b33-400a-881f-c892560e0d71",
+        "e814a9af-b1d7-4afd-b7e0-2e226a9de37b"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
+        "sticky_header_type": "always",
+        "show_line_separator": false,
         "color_scheme": "background-1",
         "menu_color_scheme": "background-1",
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "enable_language_selector": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,

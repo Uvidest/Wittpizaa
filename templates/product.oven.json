@@ -90,8 +90,180 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
+        "padding_top": 48,
         "padding_bottom": 48
+      }
+    },
+    "0b6e77c2-8e63-4291-8cda-e3f282f5d60b": {
+      "type": "custom-image_or_video_with_text",
+      "settings": {
+        "title": "ROTATING PIZZA STONE",
+        "text": "ETNA Rotante Pizza Oven and its unique rotating pizza stone ensure 360 degrees of perfect crust crispness - making the best homemade pizza in less than a minute.",
+        "image_text": "shopify:\/\/shop_images\/Frame_21_2e6b9f81-80bd-4cf7-81a7-98586de39127.svg",
+        "video": "shopify:\/\/files\/videos\/fire.mp4",
+        "media_left": false,
+        "bg_color": "#e0ded4",
+        "sectionId": "Features",
+        "space_top": 48,
+        "space_bottom": 48,
+        "space_top_mobile": 48,
+        "space_bottom_mobile": 48
+      }
+    },
+    "2cad0583-5201-4071-ba1a-b617511ed7a0": {
+      "type": "custom-image_or_video_with_text",
+      "settings": {
+        "title": "0-500 °C IN LESS THAN 15 MINUTES",
+        "text": "The ETNA Rotante Pizza Oven preheats to 500 °C (950 °F) in only 15 minutes due to the Booster Burner below the rotating pizza stone.",
+        "image_text": "shopify:\/\/shop_images\/Frame_22_79688d86-0e12-4633-85ee-f1690133e12e.svg",
+        "image": "shopify:\/\/shop_images\/Rectangle_10_1.png",
+        "media_left": true,
+        "bg_color": "#e0ded4",
+        "sectionId": "Reviews",
+        "space_top": 0,
+        "space_bottom": 48,
+        "space_top_mobile": 0,
+        "space_bottom_mobile": 48
+      }
+    },
+    "6a4a59e3-1974-4152-87e1-8e9111ebeec5": {
+      "type": "custom-image_or_video_with_text",
+      "settings": {
+        "title": "BOOSTER & U-SHAPED BURNER",
+        "text": "U-shaped main burner for perfectly even heat distribution. The extra booster burner placed underneath the rotating pizza stone ensures a constant, even temperature and a consistent hot pizza stone to keep your pizzas coming in a continuous flow.",
+        "image_text": "shopify:\/\/shop_images\/Frame_23.svg",
+        "image": "shopify:\/\/shop_images\/Rectangle_13.png",
+        "media_left": false,
+        "bg_color": "#e0ded4",
+        "sectionId": "",
+        "space_top": 0,
+        "space_bottom": 48,
+        "space_top_mobile": 0,
+        "space_bottom_mobile": 48
+      }
+    },
+    "776b5659-d284-4500-a2d1-9fa74dd009b2": {
+      "type": "custom-image_or_video_with_text",
+      "settings": {
+        "title": "PIZZAS READY IN LESS THAN 90 SECONDS",
+        "text": "No more hangry waiting for the pizza oven to get ready! The ETNA waits for you to get them pizzas done… So get to it, will ya?",
+        "image_text": "shopify:\/\/shop_images\/Frame_17_e7374e9c-7585-4213-b34d-2d7d00aa550d.svg",
+        "image": "shopify:\/\/shop_images\/Rectangle_14.png",
+        "media_left": true,
+        "bg_color": "#e0ded4",
+        "sectionId": "",
+        "space_top": 0,
+        "space_bottom": 48,
+        "space_top_mobile": 0,
+        "space_bottom_mobile": 48
+      }
+    },
+    "e773ee6f-9a11-451f-826f-2cdf158c0a36": {
+      "type": "custom_product-video_section",
+      "settings": {
+        "title": "watch etna rotante in action",
+        "video": "shopify:\/\/files\/videos\/fire.mp4",
+        "image_bg": "shopify:\/\/shop_images\/2_witt-pizza2304_1.webp",
+        "sectionId": "Accessories",
+        "st": 100,
+        "sb": 100,
+        "stm": 48,
+        "sbm": 48
+      }
+    },
+    "2d4d0e30-f356-4cbb-92aa-80de79c9713d": {
+      "type": "featured-product",
+      "blocks": {
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-quantity_selector-1": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-share-1": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "399badcf-494a-42b2-930b-1c23f1d60fe1": {
+          "type": "text_with_icon",
+          "settings": {
+            "text": "free home delivery",
+            "icon": "shopify:\/\/shop_images\/Frame.svg"
+          }
+        },
+        "9c843905-f609-4f74-9e8a-edb62752dce8": {
+          "type": "text_with_icon",
+          "settings": {
+            "text": "30-days return policy",
+            "icon": "shopify:\/\/shop_images\/Frame_1.svg"
+          }
+        }
+      },
+      "block_order": [
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-text-1",
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-title-1",
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-price-1",
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-variant_picker-1",
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-quantity_selector-1",
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-buy_buttons-1",
+        "template--21284784046391__2d4d0e30-f356-4cbb-92aa-80de79c9713d-share-1",
+        "399badcf-494a-42b2-930b-1c23f1d60fe1",
+        "9c843905-f609-4f74-9e8a-edb62752dce8"
+      ],
+      "settings": {
+        "product": "witt-etna-fermo",
+        "title_Saturday": "ORDER TODAY - SHIPS MONDAY⏰",
+        "title_more_13": "ORDER TODAY - SHIPS TOMORROW⏰",
+        "title_Sunday": "ORDER TODAY - SHIPS TOMORROW⏰",
+        "title_else_time": "ORDER TODAY - SHIPS TODAY⏰",
+        "secondary_background": false,
+        "media_size": "medium",
+        "sectionId": "",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 36
       }
     },
     "related-products": {
@@ -115,6 +287,12 @@
   },
   "order": [
     "main",
+    "0b6e77c2-8e63-4291-8cda-e3f282f5d60b",
+    "2cad0583-5201-4071-ba1a-b617511ed7a0",
+    "6a4a59e3-1974-4152-87e1-8e9111ebeec5",
+    "776b5659-d284-4500-a2d1-9fa74dd009b2",
+    "e773ee6f-9a11-451f-826f-2cdf158c0a36",
+    "2d4d0e30-f356-4cbb-92aa-80de79c9713d",
     "related-products"
   ]
 }

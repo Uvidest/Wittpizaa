@@ -1247,6 +1247,9 @@ class VariantSelects extends HTMLElement {
 
   setUnavailable() {
     const button = document.getElementById(`product-form-${this.dataset.section}`);
+    if (!button){
+      return;
+    }
     const addButton = button.querySelector('[name="add"]');
     const addButtonText = button.querySelector('[name="add"] > span');
     const price = document.getElementById(`price-${this.dataset.section}`);
@@ -1323,6 +1326,41 @@ class ProductRecommendations extends HTMLElement {
           if (html.querySelector('.grid__item')) {
             this.classList.add('product-recommendations--loaded');
           }
+
+          let recommendationsSlider = new Swiper('product-recommendations.swiper', {
+            slidesPerView: 1.14,
+            slidesPerGroup: 1,
+            spaceBetween: 15,
+            navigation: {
+              prevEl: '.product-recommendations__arrow-left',
+              nextEl: '.product-recommendations__arrow-right'
+            },
+            pagination: {
+              el: '.product-rocommendations__pagination',
+              clickable: true,
+              /* dynamicBullets: true */
+            },
+            breakpoints: {
+              750: {
+                slidesPerView: 2.4,
+                slidesPerGroup: 2,
+                spaceBetween: 15,
+                pagination: false
+              },
+              990: {
+                slidesPerView: 3.4,
+                slidesPerGroup: 2,
+                spaceBetween: 16,
+                pagination: false
+              }, 
+              1250: {
+                slidesPerView: 4.65,
+                slidesPerGroup: 2,
+                spaceBetween: 16,
+                pagination: false
+              }
+            }
+          })
         })
         .catch((e) => {
           console.error(e);

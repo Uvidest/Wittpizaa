@@ -15,9 +15,9 @@
         "text": "<p>The Witt ETNA pizza ovens are receiving global recognition as design, functionality and sublime taste all comes together as a crispier whole. This is resulting in prestigious awards as well as top ratings and reviews.<\/p>",
         "bg_color": "#ffffff",
         "st": 48,
-        "sb": 24,
+        "sb": 0,
         "stm": 48,
-        "sbm": 16
+        "sbm": 0
       }
     },
     "071aa2f2-5520-4811-9d9f-1d12fb3c6ada": {
@@ -157,7 +157,7 @@
             "image": "shopify:\/\/shop_images\/wp-review-mandesager-rotante-221109.webp",
             "title": "MANDESAGER.DK",
             "title_url": true,
-            "title_size": "h2",
+            "title_size": "h3",
             "date": "09\/11\/2022",
             "text": "<p>\"Witt ETNA Rotante er den perfekte pizzaovn.\"<\/p>",
             "add_text": "",
@@ -173,11 +173,11 @@
             "image": "shopify:\/\/shop_images\/wp-review-rotante-gastromand_dk-2022_10a.webp",
             "title": "GASTROMAND.DK",
             "title_url": true,
-            "title_size": "h2",
+            "title_size": "h3",
             "date": "31\/10\/2022",
             "text": "<p>\"There is no doubt that the Witt ETNA Rotante is the best gas oven I have tried to date.\"<\/p>",
             "add_text": "",
-            "bg_color": "#F4F4F6",
+            "bg_color": "#f4f4f6",
             "text_color": "#171719",
             "button_text": "Read more",
             "button_url": "https:\/\/www.wittpizza.com\/awards-reviews\/gastromand-dk"

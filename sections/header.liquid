@@ -1,4 +1,10 @@
+
 <link rel="stylesheet" href="{{ 'custom_header.css' | asset_url }}">
+
+
+{% if product.template_suffix == "oven" %}
+<script src="{{ 'header_product_tabs.js' | asset_url }}" defer="defer"></script>
+{% endif %}
 
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -88,6 +94,7 @@
     }
   }
 </style>
+
 {%- style -%}
   .header {
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
@@ -343,6 +350,34 @@
       </a>
     </div>
   </header>
+  {% if product.template_suffix == "oven" %}
+    <div class="product-navigation">
+        <div class="page-width product-navigation__wrapper">
+        <span class="breadcrumbs">
+            {% assign pro_collection = product.collections.first %}
+            {% if pro_collection %}
+                <a href="{{ pro_collection.url }}">{{ pro_collection.title }}</a> / {{ product.title }}
+            {% endif %}
+        </span>
+            <ul class="product-navigation-list">
+                <span class="animation-scrollbar">
+
+                </span>
+                <li data-section-id="mainProduct" class="navigation-list-item active">
+                            Product
+                        </li>
+                {% for block in section.blocks %}
+                    {% if block.type == "product_navigation_tab" %}
+                        <li data-section-id="{{ block.settings.sectionId }}" class="navigation-list-item">
+                            {{ block.settings.text }}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </span>
+        </div>
+    </div>
+{% endif %}
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
@@ -689,7 +724,24 @@
   "blocks": [
     {
       "type": "@app"
-    }
+    },
+    {
+          "type": "product_navigation_tab",
+          "name": "Product navigation tab",
+          "settings": [
+            {
+              "type": "text",
+              "id": "text",
+              "default": "Tab",
+              "label": "Tab's name"
+            },
+            {
+              "type": "text",
+              "id": "sectionId",
+              "label": "Section id for tab"
+            }
+          ]
+        }
   ]
 }
 {% endschema %}

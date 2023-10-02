@@ -106,6 +106,8 @@
                 
                     <legend class="form__label">{{ option.name }}</legend>
                     {%- for option in product.options_with_values -%}
+                        {% if option.name == "Color" %}
+
                       <fieldset class="js product-form__input">
                         {%- liquid
                             assign variants_available_arr = product.variants | map: 'available'
@@ -139,7 +141,7 @@
                             <input
                                     type="radio"
                                     id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ index }}"
-                                    name="{{ option.name }}"
+                                    name="{{ option.name }}-{{ index }}"
                                     value="{{ value | escape }}"
                                     form="{{ product_form_id }}"
                                     {% if option.selected_value == value %}
@@ -182,11 +184,12 @@
 
                         {%- endfor -%}
                       </fieldset>
+                        {% endif %}
+
                     {%- endfor -%}
                 
                 <script type="application/json">
                             {{ product.variants | json }}
-
 
                         </script>
             </variant-radios>
@@ -208,7 +211,7 @@
                 </h2>
                 {% if product.description != blank %}
                 <div class="description regular">
-                    {{ product.description }}
+                    {{ product.description | replace: '<meta charset="utf-8">', '' }}
                 </div>
                 {% endif %}
 
@@ -268,23 +271,24 @@
                     </div>
                 </noscript>
                 <!-- -->
-                <div class="no-js-hidden" id="price-{{ section.id }}-{{ index }}"
-                     role="status">
-                    {%- render 'price',
-                            product: product,
-                            use_variant: true,
-                            show_badges: true,
-                            price_class: 'price--large'
-                    -%}
-                </div>
+
                 <div class="product__view-details-box">
+                    <div class="no-js-hidden" id="price-{{ section.id }}-{{ index }}"
+                         role="status">
+                        {%- render 'price',
+                                product: product,
+                                use_variant: true,
+                                show_badges: true,
+                                price_class: 'price--large'
+                        -%}
+                    </div>
                     <a
                             {% if product == blank %}
                                 role="link" aria-disabled="true"
                             {% else %}
                                 href="{{ product.url }}"
                             {% endif %}
-                            class="link product__view-details animate-arrow"
+                            class="link product__view-details butn butn__new"
                     >
                         {% if product.metafields.custom.short_name != blank %}
                             {{ 'products.product.shop' | t }} {{ product.metafields.custom.short_name }}

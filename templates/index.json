@@ -1,75 +1,217 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "40209936-d554-4e8b-bb75-e446baf1930a": {
+      "type": "custom-video-control",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/27599f9f1da24edab99ed3ed0a0adea2.HD-1080p-2.5Mbps-18519993.mp4",
+        "text-content": "Experience culinary creativity with our remarkable pizza ovens",
+        "text-link": "Explore hare",
+        "url": "shopify:\/\/collections"
+      }
+    },
+    "d60eefe0-0065-43a1-972f-e7bd4f7b573a": {
+      "type": "custom-collection-grid-ovens",
+      "settings": {
+        "product_list": [
+          "witt-etna-fermo",
+          "witt-etna-rotante-pizza-oven"
+        ],
+        "title": "",
+        "back_color": "#e0ded4",
+        "space_top": 16,
+        "space_bottom": 16,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 16
+      }
+    },
+    "653bf676-cb64-487e-b2c0-9a4ed6b23ba6": {
+      "type": "custom-video-product",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "dc903e62-1883-46cb-a88b-1d9435e1c0d2": {
+          "type": "prev-product",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "range": 25,
+            "title": "innovative features",
+            "main-image": "shopify:\/\/shop_images\/wp-etna-rotante-crop_right-graphite.webp",
+            "advantages-text-1": "Rotating pizza stone",
+            "advantages-text-2": "booster burner",
+            "advantages-text-3": "0-500°C in 15 minutes",
+            "image-advantages-1": "shopify:\/\/shop_images\/Frame_17.svg",
+            "image-advantages-2": "shopify:\/\/shop_images\/Frame_18.svg",
+            "image-advantages-3": "shopify:\/\/shop_images\/Frame_19.svg",
+            "background": "#3f444a",
+            "text-color": "#ffffff",
+            "block-opacity": 100
           }
         },
-        "button": {
-          "type": "buttons",
+        "4949526c-cfec-4a65-ad50-ae7244ad7e72": {
+          "type": "video",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "range": 82,
+            "video": "shopify:\/\/files\/videos\/27599f9f1da24edab99ed3ed0a0adea2.HD-1080p-2.5Mbps-18519993.mp4"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "dc903e62-1883-46cb-a88b-1d9435e1c0d2",
+        "4949526c-cfec-4a65-ad50-ae7244ad7e72"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "846ae930-e037-4de4-9ac9-37da248ca839": {
+      "type": "custom-product-list",
+      "blocks": {
+        "aa66b528-7e40-445a-bccb-107ad15e469e": {
+          "type": "content",
+          "settings": {
+            "subTitle": "DON'T LIMIT YOURSELF",
+            "title": "ʼMUST HAVESʼ",
+            "text-link": "All accessories",
+            "icon-link": "",
+            "url": ""
+          }
+        },
+        "2e3f6640-bbad-44e8-b862-46558d94814d": {
+          "type": "goods",
+          "settings": {
+            "product": "witt-perforated-pizza-peel-14-36cm"
+          }
+        },
+        "fba7bbc8-4b44-430e-b1b1-a4952bc41e5a": {
+          "type": "goods",
+          "settings": {
+            "product": "witt-perforated-pizza-peel-14-36cm"
+          }
+        },
+        "2368e3a8-d933-4de7-b430-3794f4763128": {
+          "type": "goods",
+          "settings": {
+            "product": "witt-perforated-pizza-peel-14-36cm"
+          }
+        }
+      },
+      "block_order": [
+        "aa66b528-7e40-445a-bccb-107ad15e469e",
+        "2e3f6640-bbad-44e8-b862-46558d94814d",
+        "fba7bbc8-4b44-430e-b1b1-a4952bc41e5a",
+        "2368e3a8-d933-4de7-b430-3794f4763128"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "bc-image": "shopify:\/\/shop_images\/2202_08_03_witt_pizza1448_1.webp",
+        "text-det": "Read more",
+        "text-add": "Add to cart"
+      }
+    },
+    "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030": {
+      "type": "custom-slider-forIt",
+      "blocks": {
+        "b7722406-62b0-40b0-824a-76d964fe88c4": {
+          "type": "slide",
+          "settings": {
+            "text": "\"We've tested lots of pizza ovens and without doubt, the Witt Rotante is the easiest model in which to cook a pizza\"",
+            "image": "shopify:\/\/shop_images\/Mask_group.svg"
+          }
+        },
+        "29bcfc8f-7c99-4644-95e8-e18e6b3f016b": {
+          "type": "slide",
+          "settings": {
+            "text": "“..the new Witt Etna Fermo is a brilliant investment for families and pizza lovers alike.\"",
+            "image": "shopify:\/\/shop_images\/Frame_22.svg"
+          }
+        },
+        "bc713aee-2099-4856-9210-13ab1d067870": {
+          "type": "slide",
+          "settings": {
+            "text": "“In the crowded arena of outdoor pizza ovens, the new Witt ETNA Rotate is a game changer that may alter your pizza-making life forever”",
+            "image": "shopify:\/\/shop_images\/image_6.svg"
+          }
+        },
+        "522e9666-d6ba-416e-8545-29e9409a1eb1": {
+          "type": "slide",
+          "settings": {
+            "text": "\"It's a game-changing idea, brilliantly executed, and consistently produced the best fresh pizza we've eaten all year at home.\"",
+            "image": "shopify:\/\/shop_images\/Mask_group_1.svg"
+          }
+        },
+        "87c81bfa-52df-4eef-97b4-9ae8546b1800": {
+          "type": "slide",
+          "settings": {
+            "text": "\"We've tested lots of pizza ovens and without doubt, the Witt Rotante is the easiest model in which to cook a pizza\"",
+            "image": "shopify:\/\/shop_images\/Mask_group.svg"
+          }
+        }
+      },
+      "block_order": [
+        "b7722406-62b0-40b0-824a-76d964fe88c4",
+        "29bcfc8f-7c99-4644-95e8-e18e6b3f016b",
+        "bc713aee-2099-4856-9210-13ab1d067870",
+        "522e9666-d6ba-416e-8545-29e9409a1eb1",
+        "87c81bfa-52df-4eef-97b4-9ae8546b1800"
+      ],
+      "settings": {
+        "title": "DON'T JUST TAKE OUR WORD FOR IT",
+        "controll": "shopify:\/\/shop_images\/Group_27.png"
+      }
+    },
+    "e099d9b6-26d3-4242-81a0-81c8a5368db5": {
+      "type": "custom-video",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/fire.mp4",
+        "text": "Got a minute?"
+      }
+    },
+    "e6298114-f704-4a81-b690-57c542455e58": {
+      "type": "custom-blog-list",
+      "settings": {
+        "title": "GET INSPIRED WITH OUR RECIPES",
+        "text-btn": "View all recipe",
+        "show-link": true,
+        "text-link": "view RECIPES →",
+        "icon-link": "",
+        "blog": "recipes"
+      }
+    },
+    "6201729d-a22e-43f2-9cc2-d43bec0e03fa": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "d0d0c824-2d47-4300-8e83-ca85a9792526": {
+          "type": "collection-item",
+          "settings": {
+            "collection": "pizza-ovens"
+          }
+        },
+        "cc13a63f-2c85-40f6-8abb-437c5665c0b4": {
+          "type": "collection-item",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "425c8a00-f167-4fd4-b5a8-fa6505c80e8d": {
+          "type": "collection-item",
+          "settings": {
+            "collection": "recipes"
+          }
+        }
+      },
+      "block_order": [
+        "d0d0c824-2d47-4300-8e83-ca85a9792526",
+        "cc13a63f-2c85-40f6-8abb-437c5665c0b4",
+        "425c8a00-f167-4fd4-b5a8-fa6505c80e8d"
+      ],
+      "settings": {
+        "title": "Explore witt pizza"
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "40209936-d554-4e8b-bb75-e446baf1930a",
+    "d60eefe0-0065-43a1-972f-e7bd4f7b573a",
+    "653bf676-cb64-487e-b2c0-9a4ed6b23ba6",
+    "846ae930-e037-4de4-9ac9-37da248ca839",
+    "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030",
+    "e099d9b6-26d3-4242-81a0-81c8a5368db5",
+    "e6298114-f704-4a81-b690-57c542455e58",
+    "6201729d-a22e-43f2-9cc2-d43bec0e03fa"
   ]
 }

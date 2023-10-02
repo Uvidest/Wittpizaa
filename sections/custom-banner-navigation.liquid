@@ -2,6 +2,7 @@
     .section-{{ section.id }} {
         padding-top: {{ section.settings.st }}px;
         padding-bottom: {{ section.settings.sb }}px;
+        background: {{ section.settings.bg_color }};
     }
 
     @media screen and (max-width: 768px) {
@@ -11,39 +12,15 @@
         }
     }
 
+
 </style>
-<link rel="stylesheet" href="{{ 'custom-user-manuals.css' | asset_url }}">
 
 
-<div class="user-manuals section-{{ section.id }}">
-    <div class="user-manuals-wrapper">
-      {% if section.settings.title != blank %}
-        <h2 class="user-manuals-title page-width">
-          {{ section.settings.title }}
-        </h2>
-      {% endif %}
-        <if class="user-manuals-list page-width">
-            {% for block in section.blocks %}
-              {% if block.settings.image != blank %}
-                <{% if block.settings.url != blank %}a href="{{ block.settings.url }}"{% else %}div{% endif %} style="background: {{ block.settings.bg_color }}" class="user-manuals-item">
-                    <img class="user-manuals-item-image" src="{{ block.settings.image.src | img_url: "master" }}" alt="{{ block.settings.image.alt }}">
-                  {% if block.settings.title != blank %}
-                    <h3 class="user-manuals-item-title">
-                      {{ block.settings.title }}
-                    </h3>
-                  {% endif %}
-                </{% if block.settings.url != blank %}a{% else %}div{% endif %}>
-              {% endif %}
-            {% endfor %}
-        </if>
 
-
-    </div>
-</div>
 
 {% schema %}
 {
-  "name": "User manuals",
+  "name": "Product navigation",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -52,6 +29,12 @@
       "id": "title",
       "default": "Title",
       "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "default": "#F4F4F6",
+      "label": "Background color"
     },
     {
       "type": "header",
@@ -104,8 +87,8 @@
   ],
   "blocks": [
     {
-      "type": "block",
-      "name": "Item",
+      "type": "image_with_text",
+      "name": "Image with text",
       "settings": [
         {
           "type": "image_picker",
@@ -119,22 +102,96 @@
           "default": "Title"
         },
         {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "text"
+        },
+        {
           "type": "url",
           "id": "url",
           "label": "Url"
+        }
+      ]
+    },
+    {
+      "type": "text_block",
+      "name": "Text block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>text</p>"
         },
         {
           "type": "color",
           "id": "bg_color",
-          "default": "#F4F4F6",
+          "default": "#000",
           "label": "Background color"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "default": "#fff",
+          "label": "Text color"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "main_image",
+          "default": false,
+          "label": "Main image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "image_ratio",
+          "options": [
+            {
+              "value": "normal",
+              "label": "Normal"
+            },
+            {
+              "value": "small",
+              "label": "Small"
+            }
+          ],
+          "default": "normal",
+          "label": "Image ratio"
+        },
+        {
+          "type": "checkbox",
+          "id": "url",
+          "default": false,
+          "label": "Image url"
+        },
+        {
+          "type": "url",
+          "id": "own_url",
+          "label": "Own url"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "User manuals"
+      "name": "Product navigation"
     }
   ]
 }

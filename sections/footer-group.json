@@ -4,19 +4,78 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "029ed2f5-f2b9-4c79-a7c4-10bf0e3557cf": {
+          "type": "link_list",
+          "settings": {
+            "heading": "INFORMATION",
+            "menu": "footer"
+          }
+        },
+        "efbb631f-8fc0-4c75-a112-04f724312b93": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
+        "050b3c44-e49f-464a-b2af-7ed2b14159ab": {
+          "type": "have_you_see",
+          "settings": {
+            "title": "Have you seen?",
+            "image-1": "shopify:\/\/shop_images\/Rectangle_49.jpg",
+            "link-1": "shopify:\/\/pages\/about-us",
+            "name-1": "Pizza Recipes",
+            "image-2": "shopify:\/\/shop_images\/Rectangle_51.jpg",
+            "link-2": "shopify:\/\/blogs\/recipes",
+            "name-2": "reviews",
+            "image-3": "shopify:\/\/shop_images\/Rectangle_51.jpg",
+            "link-3": "shopify:\/\/collections\/accessories",
+            "name-3": "Bundle offer"
+          }
+        },
+        "a3a170b6-90f8-4aab-8fd4-742c21fc504f": {
+          "type": "footer-link",
+          "settings": {
+            "text-link": "Terms and Conditions",
+            "link": ""
+          }
+        },
+        "b6b31b82-0076-478a-b724-9d60923759a1": {
+          "type": "footer-link",
+          "settings": {
+            "text-link": "Privacy Policy",
+            "link": ""
+          }
+        },
+        "cd63ba77-03cc-42f3-861a-2019b4d1661e": {
+          "type": "footer-link",
+          "settings": {
+            "text-link": "Cookies",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "029ed2f5-f2b9-4c79-a7c4-10bf0e3557cf",
+        "efbb631f-8fc0-4c75-a112-04f724312b93",
+        "050b3c44-e49f-464a-b2af-7ed2b14159ab",
+        "a3a170b6-90f8-4aab-8fd4-742c21fc504f",
+        "b6b31b82-0076-478a-b724-9d60923759a1",
+        "cd63ba77-03cc-42f3-861a-2019b4d1661e"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": false,
         "newsletter_heading": "",
         "enable_follow_on_shop": false,
         "show_social": false,
-        "enable_country_selector": false,
+        "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": true,
-        "show_policy": false,
+        "show_policy": true,
         "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 48,
+        "padding_bottom": 0
       }
     }
   },

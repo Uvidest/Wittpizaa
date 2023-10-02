@@ -154,10 +154,10 @@
       {
         "type": "range",
         "id": "page_width",
-        "min": 1300,
-        "max": 1600,
-        "step": 10,
-        "default": 1320,
+        "min": 1500,
+        "max": 1900,
+        "step": 5,
+        "default": 1820,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.page_width.label"
       },
@@ -198,6 +198,26 @@
         "default": 8,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.spacing_grid_vertical.label"
+      },
+      {
+        "type": "range",
+        "id": "spacing_grid_horizontal_mobole",
+        "min": 4,
+        "max": 40,
+        "step": 4,
+        "default": 16,
+        "unit": "px",
+        "label": "Horizontal space mobile"
+      },
+      {
+        "type": "range",
+        "id": "spacing_grid_vertical_mobile",
+        "min": 4,
+        "max": 40,
+        "step": 4,
+        "default": 16,
+        "unit": "px",
+        "label": "Vertical space mobile"
       }
     ]
   },
