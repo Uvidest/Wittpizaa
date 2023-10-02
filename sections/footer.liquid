@@ -150,19 +150,19 @@
                         {%- render 'social-icons', class: 'footer__list-social' -%}
                       {%- endif -%}
                     </div>
-                  {%- when 'have_you_see' -%}
-                    <div class="have_you_see">
+                  {%- when 'preview_panel' -%}
+                    <div class="preview-panel">
                       <h2 class="footer-block__heading rte">{{ block.settings.title }}</h2>
-                      <div class="have_you_see__wrapper">
+                      <div class="preview-panel__wrapper">
                         {% for i in (1..3) %}
-                          <div class="have_you_see__item">
+                          <div class="preview-panel__item">
                             {%- assign link = 'link-' | append: forloop.index -%}
                             {%- assign name = 'name-' | append: forloop.index -%}
                             {%- assign image = 'image-' | append: forloop.index -%}
                             {%if block.settings[link] != blank and block.settings[name] != blank and block.settings[image] != blank%}
-                              <a href="{{ block.settings[link]}}" class="have_you_see__link">
+                              <a href="{{ block.settings[link]}}" class="preview-panel__link">
                                 {{block.settings[image] | image_url: height: 183 | image_tag}}
-                                <p class="have_you_see__name">{{block.settings[name]}}</p>
+                                <p class="preview-panel__name">{{block.settings[name]}}</p>
                               </a>
                             {%endif%}
                           </div>
@@ -426,168 +426,7 @@
    
   </div>
 </footer>
-<style>
-  .footer {
-    background-color: rgba(224, 222, 212, 1);
-  }
-  .footer__blocks-wrapper {
-    display: flex;
-  }
-  .list-unstyled.list-social.footer__list-social {
-    display: block;
-  }
-  .footer-block__heading {
-    font-weight: 700;
-    font-size: 32px;
-    font-family: "Oswald";
-    padding-bottom: 19px;
-    text-transform: uppercase;
-    margin: 0;
-  }
-  .footer__blocks-wrapper.scroll-trigger.animate--slide-in {
-    padding-bottom: 32px;
-  }
-  .footer-block__details-content,
-  .list-unstyled.list-social.footer__list-social {
-    margin-bottom: 48px;
-  }
-  .footer-block__details-content > li > .link.link--text.list-menu__item,
-  .footer__list-social > li > .link.list-social__link {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: normal;
-    padding: 0;
-    padding-bottom: 16px;
-    color: rgba(23, 23, 25, 1);
-    text-decoration: none;
-    transition: text-decoration .3s ease-in;
-  }
-  .footer-block__details-content > li > .link.link--text.list-menu__item:hover,
-  .footer__list-social > li > .link.list-social__link:hover {
-    text-decoration: underline;
-  }
-  .link.list-social__link > span {
-    padding-left: 11px;
-  }
-  .footer-block.grid__item:first-child,
-  .footer-block.grid__item:nth-child(2){
-    flex-grow: 0; 
-  }
 
-  .have_you_see__wrapper {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-  .have_you_see__item {
-    flex-basis: calc(33% - 24px);
-    min-width: 165px;
-    width: 100%;
-  }
-  .have_you_see__link {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    transition: transform .3s ease-in;
-  }
-  .have_you_see__link:hover{
-    transform: scale(1.1);
-  }
-  .have_you_see__item > a > img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .have_you_see__name {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: normal;
-    padding: 16px 0 16px 16px;
-    text-transform: uppercase;
-    background-color: #fff;
-    color: rgba(23, 23, 25, 1);
-  }
-  
-  @media (max-width: 768px) {
-    .have_you_see__wrapper {
-      column-gap: 13px;
-      row-gap: 24px;
-    }
-    .footer__blocks-wrapper {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .footer-block.grid__item {
-      flex-grow: 1;
-      width: 100%;
-      max-width: 100%;
-    }
-  }
-
-  .footer__content-bottom-wrapper {
-    display: block;
-  }
-  .footer__column.footer__localization {
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-  }
-  .footer-bottom-link__wrapper {
-    display: flex;
-    align-items: center;
-    gap: 48px;
-  }
-  .footer-bottom-link__wrapper > ul{
-    list-style: none;
-    display: flex;
-    gap: 48px;
-    padding-left: 0;
-    margin: 0;
-
-  }
-  .footer-bottom-link__link {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
-    transition: text-decoration .3s ease-in;
-  } 
-  .footer-bottom-link__link:hover {
-    text-decoration: underline;
-  }
-  .copyright__content {
-    font-size: 16px;
-    padding-right: 10px;
-  }
-  .disclosure__button.localization-form__select.localization-selector {
-    border: none;
-    background-color: inherit;
-    outline: none;
-  }
-  .disclosure__list.list-unstyled,
-  .disclosure__list-wrapper {
-    background-color: rgba(224, 222, 212, 1);
-  }
-  @media (max-width: 768px) {
-    .footer-bottom-link__wrapper > ul {
-      gap: 16px;
-      justify-content: center;
-    }
-    .footer__column.footer__localization {
-      justify-content: center;
-    }
-    .footer-block.grid__item{
-      margin: 0;
-    }
-    .footer-bottom-link__wrapper {
-      gap: 16px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-</style>
 {% schema %}
 
 {
@@ -613,8 +452,8 @@
       ]
     },
     {
-      "type": "have_you_see",
-      "name": "Have you see",
+      "type": "preview_panel",
+      "name": "Preview panel",
       "settings": [
         {
           "type": "text",
@@ -623,39 +462,39 @@
         }, {
           "type": "image_picker",
           "id": "image-1",
-          "label": "Image for first block"
+          "label": "First image"
         }, {
           "type": "url",
           "id": "link-1",
-          "label": "Url for first block"
+          "label": "First url "
         }, {
           "type": "text",
           "id": "name-1",
-          "label": "Name for first block"
+          "label": "First label"
         }, {
           "type": "image_picker",
           "id": "image-2",
-          "label": "Image for second block"
+          "label": "Second image"
         }, {
           "type": "url",
           "id": "link-2",
-          "label": "Url for second block"
+          "label": "Second url"
         }, {
           "type": "text",
           "id": "name-2",
-          "label": "Name for second block"
+          "label": "Second label"
         }, {
           "type": "image_picker",
           "id": "image-3",
-          "label": "Image for third block"
+          "label": "Third image"
         }, {
           "type": "url",
           "id": "link-3",
-          "label": "Url for third block"
+          "label": "Third url"
         }, {
           "type": "text",
           "id": "name-3",
-          "label": "Name for third block"
+          "label": "Third label"
         }
       ]
     }, {

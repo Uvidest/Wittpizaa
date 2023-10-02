@@ -1,0 +1,42 @@
+.shopify-section.shopify-section-group-header-group.announcement-bar-section {
+  z-index: 99;
+}
+.announcement-bar-section {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.utility-bar {
+  background-color: rgba(224, 222, 212, 1);
+}
+.localization-wrapper {
+  align-items: center;
+}
+.page-width.utility-bar__grid {
+  padding: 0;
+  max-width: none;
+}
+.custom-link__wrapper > ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+.custom-link__wrapper > ul > li{
+  padding: 0 16px;
+  border-right: 1px solid black;
+}
+.custom-link__link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  transition: text-decoration .3s ease-in;
+}
+.custom-link__link:hover{
+  text-decoration: underline;
+}
+.utility-bar__grid {
+  display: flex;
+  justify-content: end;
+}
