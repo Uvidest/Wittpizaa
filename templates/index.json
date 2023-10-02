@@ -39,7 +39,7 @@
             "image-advantages-1": "shopify:\/\/shop_images\/Frame_17.svg",
             "image-advantages-2": "shopify:\/\/shop_images\/Frame_18.svg",
             "image-advantages-3": "shopify:\/\/shop_images\/Frame_19.svg",
-            "background": "",
+            "background": "#3f444a",
             "text_color": "#ffffff",
             "block-opacity": 100
           }
