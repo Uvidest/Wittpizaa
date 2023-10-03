@@ -2,7 +2,7 @@
   background-position: 1% 48%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 48px 0;
+  padding: 48px;
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -23,6 +23,7 @@
   flex-direction: column;
   padding: 16px 16px 0 16px;
   border-radius: 10px 10px 10px 10px;
+  max-width: 380px;
 }
 
 .product-list__product.product > img {
@@ -119,10 +120,27 @@
   font-size: 18px;
   font-family: 'Oswald';
 }
+@media screen and (max-width: 1450px) {
+  .product-list__wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+  }
+  .product-list__content.content {
+    justify-self: center;
+  }
+  .product-list__product.product:last-child {
+    display: none;
+  }
+}
 @media(max-width: 992px) {
   .product-list__wrapper {
+    display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    padding: 48px 15px;
+  }
+  .product-list__product.product:last-child {
+    display: flex;
   }
   .product-list__product.product,
   .product-list__content.content {

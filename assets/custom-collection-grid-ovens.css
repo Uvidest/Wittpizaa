@@ -195,6 +195,15 @@
 .custom-featured-product-grid .description p{
     font-size: 20px
 }
+@media screen and (max-width: 1450px) {
+    .custom-featured-product-grid .product__title {
+        font-size: 40px;
+    }
+
+    .custom-collection .product-grid {
+        gap: 27px;
+    }
+}
 @media screen and (max-width: 900px) {
     .custom-collection .page-width{
         padding-left: 15px;

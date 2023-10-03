@@ -562,6 +562,7 @@
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .preview-panel__item {
   flex-basis: calc(33% - 24px);
