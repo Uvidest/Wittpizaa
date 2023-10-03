@@ -5,8 +5,8 @@
       "settings": {
         "video": "shopify:\/\/files\/videos\/27599f9f1da24edab99ed3ed0a0adea2.HD-1080p-2.5Mbps-18519993.mp4",
         "text_content": "Experience culinary creativity with our remarkable pizza ovens",
-        "text_link": "Explore here",
-        "url": "shopify:\/\/collections"
+        "text_link": "asd",
+        "url": ""
       }
     },
     "d60eefe0-0065-43a1-972f-e7bd4f7b573a": {
@@ -18,8 +18,8 @@
         ],
         "title": "",
         "back_color": "#e0ded4",
-        "space_top": 16,
-        "space_bottom": 16,
+        "space_top": 36,
+        "space_bottom": 48,
         "space_top_mobile": 16,
         "space_bottom_mobile": 16
       }
