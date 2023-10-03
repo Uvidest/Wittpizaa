@@ -210,7 +210,7 @@
                     {%- endif -%}
                 </h2>
                 {% if product.description != blank %}
-                <div class="description regular">
+                <div class="description regular {% if list_description == false %}list-hidden{% endif %}">
                     {{ product.description | replace: '<meta charset="utf-8">', '' }}
                 </div>
                 {% endif %}
