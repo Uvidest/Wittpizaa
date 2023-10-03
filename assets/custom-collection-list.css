@@ -64,7 +64,6 @@
     justify-content: center;
   }
   .custom-collection-list__item {
-    flex-grow: 1;
     max-width: 440px;
     min-width: 345px;
   }

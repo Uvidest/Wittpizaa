@@ -3,6 +3,10 @@
   position: relative;
   background: #E0DED4;
 }
+.video-controll__video {
+  min-height: 280px;
+  object-fit: cover;
+}
 .video-controll__btn {
   width: 73px;
   height: 73px;

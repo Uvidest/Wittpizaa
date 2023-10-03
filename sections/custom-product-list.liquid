@@ -8,7 +8,7 @@
         {% case block.type %}
           {% when 'content' %}
           <div class="product-list__content content">
-            {%if block.settings.subtitle != blank%}
+            {% if block.settings.subTitle != blank %}
               <h4 class="content__subtitle h1">{{ block.settings.subTitle }}</p>
             {%endif%}
 
@@ -26,19 +26,25 @@
           {% when 'goods' %}
             <div class="product-list__product product product-{{block.id}}">
               {% if block.settings.product.featured_image != blank %}
-                {{ block.settings.product.featured_image | image_url: width: 280 | image_tag: lazyload: 'lazy' }}
+                <a href="{{block.settings.product.url}}">
+                  {{ block.settings.product.featured_image | image_url: width: 280 | image_tag: lazyload: 'lazy' }}
+                </a>
               {% endif %} 
               
-              <p class="product__name h2">{{ block.settings.product.title }}</p>
+              <a href="{{block.settings.product.url}}" class="product__name h2">{{ block.settings.product.title }}</a>
               <p class="product__price">{{ block.settings.product.price | money }}</p>
               <div class="product__buttons">
-                <button
+                {% if section.settings.text_add != blank %}
+                  <button
                   type="button"
                   data-id="{{block.settings.product.first_available_variant.id}}"
                   class="product__add butn butn__new regular">
                   {{ section.settings.text_add }}
                 </button>
-                <a href="{{block.settings.product.url}}" class="product__det regular butn butn__new">{{ section.settings.text_det }}</a>
+                {%endif%}
+                {%if section.settings.text_det != blank%}
+                  <a href="{{block.settings.product.url}}" class="product__det regular butn butn__new">{{ section.settings.text_det }}</a>
+                {%endif%}
               </div>
             </div>
         {% endcase %}
@@ -61,13 +67,15 @@
         "type": "image_picker",
         "id": "bc-image",
         "label": "Background image"
-      }, {
-        "type": "text",
-        "id": "text_det",
-        "label": "First button label"
-      }, {
+      },
+      {
         "type": "text",
         "id": "text_add",
+        "label": "First button label"
+      },
+      {
+        "type": "text",
+        "id": "text_det",
         "label": "Second button label"
       }
     ],
