@@ -30,6 +30,15 @@
 .accessories_collection .quick-add{
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 1440px) {
+    .accessories_collection .card__content .card__heading{
+        font-size: 32px;
+    }
+    .accessories_collection .card-information .price__container .price-item{
+        font-size: 20px!important;
+    }
+}
 @media screen and (max-width: 650px) {
     .accessories_collection .card__content .card__heading{
         font-size: 16px;

@@ -104,7 +104,7 @@
   line-height: 11px;
 
 }
-.facet-filters__field .select{
+.facet-filters__field .select__select{
   border-radius: 5px;
   border: 1px solid #B0ADA6;
   background: #FFF;
@@ -1138,7 +1138,7 @@ input.mobile-facets__checkbox {
     line-height: 8px;
 
   }
-  .facet-filters__field .select{
+  .facet-filters__field .select__select{
     border-radius: 5px;
     border: 1px solid #B0ADA6;
     background: #FFF;
