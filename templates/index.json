@@ -18,6 +18,7 @@
         ],
         "title": "",
         "back_color": "#e0ded4",
+        "hide_list_in_description": true,
         "space_top": 36,
         "space_bottom": 48,
         "space_top_mobile": 16,
