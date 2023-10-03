@@ -18,8 +18,8 @@
         ],
         "title": "",
         "back_color": "#e0ded4",
-        "space_top": 16,
-        "space_bottom": 16,
+        "space_top": 36,
+        "space_bottom": 48,
         "space_top_mobile": 16,
         "space_bottom_mobile": 16
       }
