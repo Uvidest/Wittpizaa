@@ -201,7 +201,7 @@
       },
       {
         "type": "range",
-        "id": "spacing_grid_horizontal_mobole",
+        "id": "spacing_grid_horizontal_mobile",
         "min": 4,
         "max": 40,
         "step": 4,
