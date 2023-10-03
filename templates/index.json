@@ -166,7 +166,7 @@
       "type": "custom-blog-list",
       "settings": {
         "title": "GET INSPIRED WITH OUR RECIPES",
-        "text_btn": "View all recipe",
+        "text_btn": "view RECIPES →",
         "show_link": true,
         "text_link": "Read more",
         "icon_link": "",
