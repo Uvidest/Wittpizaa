@@ -98,7 +98,7 @@
                                             product: product,
                                             section: section,
                                             index: forloop.index,
-                                            list_description: section.settings.list_in_description
+                                            list_description: section.settings.hide_list_in_description
                                     %}
                                 </li>
                             {%- endfor -%}
@@ -136,9 +136,9 @@
     },
     {
       "type": "checkbox",
-      "id": "list_in_description",
-      "label": "List in description",
-      "default": true
+      "id": "hide_list_in_description",
+      "label": "Hide list in description",
+      "default": false
     },
     {
       "type": "header",
