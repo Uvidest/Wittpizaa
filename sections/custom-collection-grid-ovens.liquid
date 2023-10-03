@@ -97,7 +97,8 @@
                                     {% render 'custom-featured-product-card',
                                             product: product,
                                             section: section,
-                                            index: forloop.index
+                                            index: forloop.index,
+                                            list_description: section.settings.list_in_description
                                     %}
                                 </li>
                             {%- endfor -%}
@@ -134,12 +135,10 @@
       "label": "Background color"
     },
     {
-      "type": "header",
-      "content": "t:sections.main-collection-product-grid.settings.header__3.content"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.main-collection-product-grid.settings.header__1.content"
+      "type": "checkbox",
+      "id": "list_in_description",
+      "label": "List in description",
+      "default": true
     },
     {
       "type": "header",
