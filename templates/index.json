@@ -21,7 +21,7 @@
         "hide_list_in_description": true,
         "space_top": 36,
         "space_bottom": 48,
-        "space_top_mobile": 16,
+        "space_top_mobile": 0,
         "space_bottom_mobile": 16
       }
     },
