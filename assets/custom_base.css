@@ -217,3 +217,22 @@ tr {
   border-bottom: 1px solid #000;
 }
 /**/
+
+.product-form__submit{
+    background: #ED671E;
+    max-width: 250px;
+    width: 100%;
+    padding: 25px 10px;
+    min-height: unset;
+    border-radius: 50px;
+    color: #fff;
+    font-family: var(--font-heading-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    overflow: hidden;
+}
+fieldset.product-form__input .form__label, .product__tax{
+    display: none;
+}

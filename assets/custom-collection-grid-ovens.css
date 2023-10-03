@@ -27,7 +27,7 @@
     margin: 0 auto;
 }
 
-.product-media-container .media{
+.custom-featured-product-grid .product-media-container .media{
     padding-top: 69.6% !important;
 }
 .product-media-container .media>img{
@@ -112,7 +112,7 @@
     margin: 0;
     margin-top: 10px;
 }
-.price.price--large.price--show-badge,
+.custom-featured-product-grid .price.price--large.price--show-badge,
 .custom-featured-product-grid .product__title{
     color: #fff;
     text-align: center;
