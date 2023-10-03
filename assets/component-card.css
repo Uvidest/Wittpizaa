@@ -483,3 +483,7 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+.quick-add__submit{
+  overflow: hidden;
+}
+
