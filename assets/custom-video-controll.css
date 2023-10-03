@@ -8,7 +8,7 @@
   height: 73px;
   position: absolute;
   background-color: transparent;
-  margin-top: 48px;
+  margin-top: 125px;
   right: 121px;
   border: none;
   padding: 0;
@@ -113,6 +113,13 @@
 
 .butn span {
   z-index: 20;
+}
+@media screen and (max-width: 1450px) {
+  .video-controll__text-content.h1 {
+    font-size: 64px;
+    line-height: 130%;
+    max-width: 762px;
+  }
 }
 @media (max-width: 1200px) {
   .video-controll__text-content.h1 {

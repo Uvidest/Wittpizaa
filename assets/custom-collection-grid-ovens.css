@@ -4,7 +4,7 @@
 .product-grid-title{
     margin: 0;
     text-align: center;
-  margin-bottom: 48px
+    margin-bottom: 48px
 
 }
 .custom-featured-product-grid{
@@ -199,7 +199,21 @@
 .custom-featured-product-grid .description p{
     font-size: 20px
 }
+@media screen and (max-width: 1450px) {
+    .custom-featured-product-grid .product__title {
+        font-size: 40px;
+    }
+    .custom-collection .product-grid {
+        gap: 27px;
+    }
+    .product-grid-title {
+        display: none;
+    }
+}
 @media screen and (max-width: 900px) {
+    .product-grid-title {
+        display: block;
+    }
     .custom-collection .page-width{
         padding-left: 15px;
         padding-right: 15px;
