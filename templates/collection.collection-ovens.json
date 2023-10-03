@@ -13,16 +13,16 @@
     "product-grid": {
       "type": "custom-collection-grid-ovens",
       "settings": {
+        "product_list": [
+
+        ],
         "title": "CHOOSE YOUR STYLE:",
         "back_color": "#e0ded4",
-        "image_shape": "default",
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "st": 48,
-        "sb": 46,
-        "stm": 34,
-        "sbm": 46
+        "hide_list_in_description": false,
+        "space_top": 48,
+        "space_bottom": 48,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 16
       }
     },
     "b8cbf3fc-d380-4376-aab3-fef012f17402": {
