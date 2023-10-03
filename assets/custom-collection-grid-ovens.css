@@ -39,6 +39,10 @@
 .custom-featured-product-grid .global-media-settings{
     border: none;
 }
+.custom-featured-product-grid .description.list-hidden ul{
+  display:none;
+}
+
 .custom-featured-product-grid .description svg{
     width: 24px;
     height: 24px;
