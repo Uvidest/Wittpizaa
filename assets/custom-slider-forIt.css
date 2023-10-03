@@ -3,6 +3,7 @@
   background-color: #000;
   position: relative;
   padding-bottom: 48px;
+  padding-top: 48px;
 }
 .mySwiper {
   width: calc(100% - 100px);

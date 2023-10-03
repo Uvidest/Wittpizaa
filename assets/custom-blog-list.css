@@ -16,7 +16,7 @@
   text-decoration: none;
   background-color: #fff;
   height: 42px;
-  width: 242px;
+  width: 200px;
   border-radius: 25px;
   color: #171719;
   font-family: Oswald;
@@ -78,7 +78,7 @@
   align-items: center;
   justify-content: center;
   column-gap: 5px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   text-decoration: none;
   color: rgb(23, 23, 25);
@@ -104,7 +104,8 @@
   }
 }
 @media (max-width: 576px) {
-  .custom-blog-list {
+  .custom-blog-list__title {
+    padding-top: 48px;
     padding-bottom: 32px;
   }
   .article__title {
@@ -113,6 +114,7 @@
     font-size: 16px;
   }
   .article__link {
+    font-size: 16px;
     padding-top: 16px;
     padding-bottom: 24px;
   }

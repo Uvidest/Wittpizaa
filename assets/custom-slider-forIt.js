@@ -1,5 +1,6 @@
 
 let customSliderForIt = new Swiper(".mySwiper", {
+  loop: true,
   breakpoints: {
     320: {
       enabled:false,
