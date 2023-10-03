@@ -2,7 +2,7 @@
 <script src="{{ 'custom-product-list.js' | asset_url }}" defer="defer"></script>
 
 <secrion class="product-list">
-  <div class="page-width">
+  <div class="product-list__container">
     <div class="product-list__wrapper">
       {% for block in section.blocks %}
         {% case block.type %}
@@ -58,6 +58,7 @@
     background-image:linear-gradient(90deg,rgba(0,0,0,0.50), rgba(34, 34, 35, 0.50)),url("{{section.settings.bc-image | image_url}}");
   }
 {% endstyle %}
+
 {% schema %}
   {
     "name": "Product list",

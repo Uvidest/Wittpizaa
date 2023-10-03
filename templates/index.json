@@ -4,8 +4,8 @@
       "type": "custom-video-control",
       "settings": {
         "video": "shopify:\/\/files\/videos\/27599f9f1da24edab99ed3ed0a0adea2.HD-1080p-2.5Mbps-18519993.mp4",
-        "text-content": "Experience culinary creativity with our remarkable pizza ovens",
-        "text-link": "Explore hare",
+        "text_content": "Experience culinary creativity with our remarkable pizza ovens",
+        "text_link": "Explore here",
         "url": "shopify:\/\/collections"
       }
     },
@@ -18,29 +18,30 @@
         ],
         "title": "",
         "back_color": "#e0ded4",
-        "space_top": 16,
-        "space_bottom": 16,
-        "space_top_mobile": 16,
-        "space_bottom_mobile": 16
+        "hide_list_in_description": true,
+        "space_top": 36,
+        "space_bottom": 48,
+        "space_top_mobile": 0,
+        "space_bottom_mobile": 48
       }
     },
     "653bf676-cb64-487e-b2c0-9a4ed6b23ba6": {
       "type": "custom-video-product",
       "blocks": {
-        "dc903e62-1883-46cb-a88b-1d9435e1c0d2": {
+        "5aef1a80-496a-4c6c-8f09-463e34efcb99": {
           "type": "prev-product",
           "settings": {
             "range": 25,
             "title": "innovative features",
-            "main-image": "shopify:\/\/shop_images\/wp-etna-rotante-crop_right-graphite.webp",
-            "advantages-text-1": "Rotating pizza stone",
-            "advantages-text-2": "booster burner",
-            "advantages-text-3": "0-500°C in 15 minutes",
+            "main_image": "shopify:\/\/shop_images\/wp-etna-rotante-crop_right-graphite.webp",
+            "text-advantages-1": "Rotating pizza stone",
+            "text-advantages-2": "booster burner",
+            "text-advantages-3": "0-500°C in 15 minutes",
             "image-advantages-1": "shopify:\/\/shop_images\/Frame_17.svg",
             "image-advantages-2": "shopify:\/\/shop_images\/Frame_18.svg",
             "image-advantages-3": "shopify:\/\/shop_images\/Frame_19.svg",
             "background": "#3f444a",
-            "text-color": "#ffffff",
+            "text_color": "#ffffff",
             "block-opacity": 100
           }
         },
@@ -53,7 +54,7 @@
         }
       },
       "block_order": [
-        "dc903e62-1883-46cb-a88b-1d9435e1c0d2",
+        "5aef1a80-496a-4c6c-8f09-463e34efcb99",
         "4949526c-cfec-4a65-ad50-ae7244ad7e72"
       ],
       "settings": {
@@ -62,14 +63,14 @@
     "846ae930-e037-4de4-9ac9-37da248ca839": {
       "type": "custom-product-list",
       "blocks": {
-        "aa66b528-7e40-445a-bccb-107ad15e469e": {
+        "4f7a5d9d-f75a-4cc7-9ea1-961154f2976e": {
           "type": "content",
           "settings": {
-            "subTitle": "DON'T LIMIT YOURSELF",
+            "subTitle": "Don’t limit yourself",
             "title": "ʼMUST HAVESʼ",
-            "text-link": "All accessories",
-            "icon-link": "",
-            "url": ""
+            "text_button": "All accessories",
+            "icon_button": "",
+            "url_button": "#"
           }
         },
         "2e3f6640-bbad-44e8-b862-46558d94814d": {
@@ -92,15 +93,15 @@
         }
       },
       "block_order": [
-        "aa66b528-7e40-445a-bccb-107ad15e469e",
+        "4f7a5d9d-f75a-4cc7-9ea1-961154f2976e",
         "2e3f6640-bbad-44e8-b862-46558d94814d",
         "fba7bbc8-4b44-430e-b1b1-a4952bc41e5a",
         "2368e3a8-d933-4de7-b430-3794f4763128"
       ],
       "settings": {
         "bc-image": "shopify:\/\/shop_images\/2202_08_03_witt_pizza1448_1.webp",
-        "text-det": "Read more",
-        "text-add": "Add to cart"
+        "text_det": "Read more",
+        "text_add": "Add to cart"
       }
     },
     "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030": {
@@ -165,10 +166,10 @@
       "type": "custom-blog-list",
       "settings": {
         "title": "GET INSPIRED WITH OUR RECIPES",
-        "text-btn": "View all recipe",
-        "show-link": true,
-        "text-link": "view RECIPES →",
-        "icon-link": "",
+        "text_btn": "View all recipe",
+        "show_link": true,
+        "text_link": "view RECIPES →",
+        "icon_link": "",
         "blog": "recipes"
       }
     },
@@ -202,6 +203,83 @@
       "settings": {
         "title": "Explore witt pizza"
       }
+    },
+    "03fe4b93-f00d-48b8-93df-745fcd9c8dbc": {
+      "type": "featured-product",
+      "blocks": {
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-share-1": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-text-1",
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-title-1",
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-price-1",
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-variant_picker-1",
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-quantity_selector-1",
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-buy_buttons-1",
+        "template--21205594898743__03fe4b93-f00d-48b8-93df-745fcd9c8dbc-share-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "witt-etna-fermo",
+        "title_Saturday": "ORDER TODAY - SHIPS MONDAY⏰",
+        "title_more_13": "ORDER TODAY - SHIPS TOMORROW⏰",
+        "title_Sunday": "ORDER TODAY - SHIPS TOMORROW⏰",
+        "title_else_time": "ORDER TODAY - SHIPS TODAY⏰",
+        "secondary_background": false,
+        "media_size": "medium",
+        "sectionId": "",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 36
+      }
     }
   },
   "order": [
@@ -212,6 +290,7 @@
     "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030",
     "e099d9b6-26d3-4242-81a0-81c8a5368db5",
     "e6298114-f704-4a81-b690-57c542455e58",
-    "6201729d-a22e-43f2-9cc2-d43bec0e03fa"
+    "6201729d-a22e-43f2-9cc2-d43bec0e03fa",
+    "03fe4b93-f00d-48b8-93df-745fcd9c8dbc"
   ]
 }

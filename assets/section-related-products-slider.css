@@ -106,7 +106,7 @@ product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-ne
 
 .card__information+.quick-add product-form button.quick-add__submit::before,
 .card__information+.quick-add product-form button.quick-add__submit::after {
-    display: none;
+    box-shadow: none;
 }
 
 .card__information+.quick-add product-form button.quick-add__submit {

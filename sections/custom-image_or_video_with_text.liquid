@@ -20,6 +20,7 @@
         flex-wrap: wrap;
         border-radius: 20px;
         overflow: hidden;
+        background: #fff;
     }
 
     .image_or_video_with_text-wrapper.reverse {
@@ -37,7 +38,6 @@
         align-items: center;
         justify-content: center;
         padding: 15px;
-        background: #fff;
     }
 
     .text-block-image {
@@ -97,6 +97,10 @@
     }
 
     @media screen and (max-width: 700px) {
+        .text-block-title{
+            font-size: 29px;
+            margin-bottom: 16px;
+        }
         .video-or-text-block-container video, .video-or-text-block-container img {
             min-height: 270px;
         }
@@ -105,9 +109,16 @@
         .image_or_video_with_text-video-block {
             width: 100%;
         }
-
+        .image_or_video_with_text-wrapper.reverse,
         .image_or_video_with_text-wrapper {
             flex-direction: column-reverse;
+        }
+        .text-block-text{
+            font-size: 18px;
+        }
+
+        .image_or_video_with_text-text-block{
+            padding-bottom: 32px;
         }
     }
 </style>
@@ -137,7 +148,7 @@
                         {% if section.settings.video != blank %}
                             {{
                             section.settings.video
-                            | video_tag: image_size: '600x', loop: true, controls: true, muted: false
+                            | video_tag: image_size: '600x', loop: true, controls: true, muted: false, autoplay: section.settings.autoplay
                             }}
                         {% else %}
                             <img src="{{ section.settings.image.src | img_url: "large" }}"
@@ -184,6 +195,12 @@
       "type": "video",
       "id": "video",
       "label": "Video"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "default": false,
+      "label": "Autoplay"
     },
     {
       "type": "checkbox",

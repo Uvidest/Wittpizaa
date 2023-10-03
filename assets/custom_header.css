@@ -114,6 +114,11 @@ header.header {
 }
 .product-navigation{
   background: #363636;
+  position: fixed;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    z-index: 222222;
 }
 .product-navigation__wrapper {
   padding-top: 16px;

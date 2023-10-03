@@ -2,6 +2,8 @@
     .section-{{ section.id }} {
         padding-top: {{ section.settings.st }}px;
         padding-bottom: {{ section.settings.sb }}px;
+        padding-left: 48px;
+        padding-right: 48px;
         background: {{ section.settings.bg_color }};
     }
 
@@ -9,6 +11,8 @@
         .section-{{ section.id }} {
             padding-top: {{ section.settings.stm }}px;
             padding-bottom: {{ section.settings.sbm }}px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 
@@ -97,12 +101,12 @@
     margin-bottom: 24px;
   }
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 1450px) {
     .custom-slide-logo{
-      height: 30px;
+      height: 35px;
     }
     .custom-slider-title{
-      font-size: 40px;
+      font-size: 48px;
     }
   }
   @media screen and (max-width: 768px) {
@@ -137,7 +141,7 @@
 </style>
 
 <div class="custom-slider section-{{ section.id }}">
-  <div class="custom-slider-container page-width">
+  <div class="custom-slider-container">
     <h2 class="custom-slider-title h1">
       {{ section.settings.title }}
     </h2>
