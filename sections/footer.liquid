@@ -12,7 +12,7 @@
 }
 
 .section-{{section.id}}-padding {
-  padding-top: {{section.settings.padding_top | times: 0.75 | round: 0}}px;
+  padding-top: 48px;
   padding-bottom: {{section.settings.padding_bottom | times: 0.75 | round: 0}}px;
   padding-left: 15px;
   padding-right: 15px;
@@ -289,10 +289,8 @@
   {%- endif -%}
 
   <div
-    class="footer__content-bottom{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-    {% if settings.animations_reveal_on_scroll %}
-      data-cascade
-    {% endif %}
+    class="footer__content-bottom"
+    
   >
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
@@ -389,7 +387,8 @@
         {%- endif -%}
         </div>
       </div>
-      <div class="footer__column footer__column--info">
+      {%comment%}
+        <div class="footer__column footer__column--info">
         {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
             <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
@@ -403,6 +402,7 @@
           </div>
         {%- endif -%}
       </div>
+      {%endcomment%}
     </div>
     {%comment%}
        <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
