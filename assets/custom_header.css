@@ -1,9 +1,3 @@
-.header {
-  position: fixed;
-  top: 38px;
-  left: 0;
-  right: 0;
-}
 .header-wrapper--border-bottom {
   border: none;
 }
