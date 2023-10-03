@@ -1036,7 +1036,7 @@ summary::-webkit-details-marker {
   }
 }
 @media screen and (max-width: 1440px) and (min-width: 990px) {
-  ul.grid.product-grid .grid__item{
+  .accessories_collection ul.grid.product-grid .grid__item{
     width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
     max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
   }
