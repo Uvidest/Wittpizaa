@@ -66,6 +66,7 @@
     padding: 48px 15px;
   }
   .custom-slider__title.h1 {
+    font-size: 40px;
     padding-bottom: 32px;
   }
 }
@@ -80,5 +81,15 @@
   }
   .custom-slider__slide:not(:last-child) {
     padding-bottom: 32px;
+  }
+  .custom-slider__slide img {
+    max-height: 20px;
+  }
+  .mySwiper {
+    max-width: 309px;
+    width: auto;
+  }
+  .custom-slider__text.regular{
+    font-size: 14px;
   }
 }
