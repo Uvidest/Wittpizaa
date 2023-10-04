@@ -31,15 +31,31 @@
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1450px) {
+    .facets-wrapper.page-width {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+    .collection.page-width {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
     .accessories_collection .card__content .card__heading{
-        font-size: 32px;
+        font-size: 29px;
     }
     .accessories_collection .card-information .price__container .price-item{
         font-size: 20px!important;
     }
 }
 @media screen and (max-width: 650px) {
+    .facets-wrapper.page-width {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .collection.page-width {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .accessories_collection .card__content .card__heading{
         font-size: 16px;
     }
