@@ -599,6 +599,23 @@
   color: rgba(23, 23, 25, 1);
 }
 
+@media screen and (max-width: 1440px) and (min-width: 1250px) {
+  .footer__blocks-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+  }
+  .footer-block.grid__item {
+    width: 100%;
+    max-width: initial;
+  }
+  .preview-panel__item {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+  }
+}
+
 @media (max-width: 768px) {
   .preview-panel__wrapper {
     column-gap: 13px;
