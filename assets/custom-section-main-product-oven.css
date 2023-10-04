@@ -344,13 +344,33 @@ button.product-form__submit:hover:after,
     width: 100%;
     height: 100%;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1450px) {
     .main_product .grid__item.product__media-wrapper {
     max-width: 50% !important;
         padding: 0 !important;
 }
     .product--large:not(.product--no-media) .product__info-wrapper{
         padding: 0;
+    }
+    .product__title h1 {
+        font-size: 48px;
+    }
+    .main_product .product__info-container .price--on-sale .price-item--regular, .main_product .price__regular .price-item--regular {
+        font-size: 28px;
+    }
+    .main_product .product__description>p {
+        font-size: 18px;
+    }
+    .main_product .product-text-with-icon {
+        font-size: 14px !important;
+    }
+    .main_product .product-text-with-icon img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+    }
+    .main_product .main_product .product__info-wrapper.grid__item.scroll-trigger.animate--slide-in {
+        max-width: 42% !important;
     }
 }
 @media screen and (max-width: 950px) {

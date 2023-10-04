@@ -9,7 +9,7 @@
 
 .product_breadcrumbs__wrapper .breadcrumbs__item {
     color: #171719;
-    font-family: "Source Sans 3";
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -118,7 +118,7 @@
 
 .product__description {
     color: #171719;
-    font-family: "Source Sans 3";
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
