@@ -7,12 +7,14 @@
         {% case block.type %}
           {% when 'prev-product' %}
           <div class="custom-prevProduct-video__prevProduct prevProduct prevProduct-{{block.id}}">
-            <p class="prevProduct__title">{{ block.settings.title }}</p>
-            <div class="prevProduct__images">
-              {% if block.settings.main_image != blank %}
-                {{ block.settings.main_image | image_url: width: 340 | image_tag: class: 'prevProduct__mainImg', lazyload: 'lazy' }}
-              {%endif%}
-            </div>
+            {% if block.settings.title %}
+              <p class="prevProduct__title">{{ block.settings.title }}</p>
+            {% endif %}
+            {% if block.settings.main_image != blank %}
+              <div class="prevProduct__images">
+                {{ block.settings.main_image | image_url: width: 399 | image_tag: class: 'prevProduct__mainImg', lazyload: 'lazy' }}
+              </div>
+            {%endif%}
             <div class="prevProduct__advantages">
               {% for advantage in (1..3) %}
                 {%- assign advantageCount = 'advantages-' | append: forloop.index -%}
