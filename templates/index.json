@@ -100,8 +100,8 @@
       ],
       "settings": {
         "bc-image": "shopify:\/\/shop_images\/2202_08_03_witt_pizza1448_1.webp",
-        "text_det": "Read more",
-        "text_add": "Add to cart"
+        "text_add": "Add to cart",
+        "text_det": "Read more"
       }
     },
     "54ccfd19-1aa9-4fba-ab3e-2fe7f6da8030": {
@@ -152,7 +152,7 @@
       ],
       "settings": {
         "title": "DON'T JUST TAKE OUR WORD FOR IT",
-        "controll": "shopify:\/\/shop_images\/Group_27.png"
+        "controll": "shopify:\/\/shop_images\/Group_27.svg"
       }
     },
     "e099d9b6-26d3-4242-81a0-81c8a5368db5": {
