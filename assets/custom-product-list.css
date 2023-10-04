@@ -27,13 +27,13 @@
   max-width: 380px;
 }
 .product-list__product.product > a {
+  padding-bottom: 24px;
   overflow: hidden;
 }
 .product-list__product.product > a > img {
   height: 270px;
   width: 100%;
   object-fit: cover;
-  padding-bottom: 24px;
   transition: transform .3s ease-in-out;
 }
 .product-list__product.product > a > img:hover{
@@ -197,6 +197,9 @@
   }
   .content__link.regular {
     width: 100%;
+  }
+  .product-list__product.product > a > img {
+    height: 100%;
   }
   @media (max-width: 402px) {
     .product-list__wrapper {
