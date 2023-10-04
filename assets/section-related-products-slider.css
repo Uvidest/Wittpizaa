@@ -18,7 +18,6 @@ product-recommendations.related-products ul.grid {
     gap: 0 !important;
     flex-wrap: nowrap;
     margin-bottom: 0;
-    justify-content: center;
 }
 
 product-recommendations.related-products ul.grid li.swiper-slide {
@@ -31,7 +30,8 @@ product-recommendations.related-products ul.grid li.swiper-slide:last-child {
     margin-right: 0 !important;
 }
 
-product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide+.grid__item.swiper-slide:not(:last-child)::after {
+product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide+.grid__item.swiper-slide:not(:last-child)::after,
+product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-prev:not(:first-child)::after {
     content: '';
     display: flex;
     width: 100%;
@@ -43,6 +43,8 @@ product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-ne
     background: rgba(255, 255, 255, 0.50);
     border-radius: 20px;
 }
+
+
 
 .card-wrapper.product-card-wrapper .card__inner {
     background: none;
@@ -222,9 +224,7 @@ product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-ne
     .card-information .price__container .price-item {
         font-size: 16px !important;
     }
-}
 
-@media screen and (max-width: 1249px) {
     product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide+.grid__item.swiper-slide:not(:last-child)::after {
         display: none;
     }

@@ -1354,6 +1354,12 @@ class ProductRecommendations extends HTMLElement {
                 pagination: false
               }, 
               1250: {
+                slidesPerView: 3.46,
+                slidesPerGroup: 2,
+                spaceBetween: 16,
+                pagination: false
+              },
+              1450: {
                 slidesPerView: 4.65,
                 slidesPerGroup: 2,
                 spaceBetween: 16,
