@@ -8,6 +8,13 @@
     {% endif %}
     }
 
+    @media screen and (max-width: 1450px) {
+      .section-{{ section.id }} {
+        padding-top: 48px;
+        padding-bottom: 48px;
+      }
+    }
+
     @media screen and (max-width: 768px) {
         .section-{{ section.id }} {
             padding-top: {{ section.settings.stm }}px;
@@ -57,6 +64,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    @media screen and (max-width: 1450px) {
+      .product-main-video-wrapper {
+        max-width: 1115px;
+      }
+      .product-main-video-title {
+        font-size: 48px;
+      }
     }
     @media screen and (max-width: 768px) {
         .product-main-video-title {
