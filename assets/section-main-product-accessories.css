@@ -237,18 +237,18 @@
 }
 
 @media screen and (max-width: 1450px) {
+    .product_breadcrumbs__wrapper {
+        top: 23px;
+    }
+    .product--large:not(.product--no-media) .product__info-wrapper{
+        max-width: 49% !important;
+    }
     .grid__item.product__media-wrapper {
         max-width: 48% !important;
     }
-
     .product__title h1 {
-        font-size: 40px;
+        font-size: 48px;
     }
-
-    .price__container .price-item {
-        font-size: 29px !important;
-    }
-
     .product__description {
         font-size: 18px;
     }
@@ -261,14 +261,6 @@
     .product-form__buttons .shopify-payment-button button::after {
         font-size: 20px;
         padding: 15px 0;
-    }
-
-    .advantages__item span {
-        font-size: 18px;
-    }
-
-    .payment_icons__text {
-        font-size: 18px;
     }
 }
 
@@ -321,6 +313,7 @@
 
     .price__container .price-item {
         line-height: 1;
+        font-size: 29px !important;
     }
 
     .product__description {
@@ -344,6 +337,7 @@
     .advantages__wrapper {
         flex-direction: column;
         gap: 16px;
+        font-size: 18px;
     }
 
     .payment_icons__wrapper {
