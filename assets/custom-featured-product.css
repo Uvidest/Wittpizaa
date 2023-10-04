@@ -151,6 +151,12 @@ span.price-item.price-item--sale.price-item--last{
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
+@media screen and (max-width: 1450px) {
+    .featured_product-title {
+        font-size: 48px;
+    }
+}
 @media screen and (max-width: 960px) {
     .custom-featured-product .product__info-wrapper, .custom-featured-product .grid__item.product__media-wrapper{
         max-width: none;

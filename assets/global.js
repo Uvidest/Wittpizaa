@@ -1367,6 +1367,10 @@ class ProductRecommendations extends HTMLElement {
               }
             }
           })
+
+          if (recommendationsSlider.isBeginning && recommendationsSlider.isEnd && recommendationsSlider.initialized) {
+            recommendationsSlider.el.classList.add('related_products__no-slides')
+          }
         })
         .catch((e) => {
           console.error(e);

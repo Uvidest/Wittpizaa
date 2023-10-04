@@ -218,11 +218,15 @@ product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-pr
         font-size: 48px;
     }
     .card__content .card__heading {
-        font-size: 29px;
+        font-size: 32px;
     }
 
     .card-information .price__container .price-item {
-        font-size: 16px !important;
+        font-size: 20px !important;
+    }
+
+    product-recommendations.related-products.related_products__no-slides ul.grid {
+        justify-content: center;
     }
 
     product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide+.grid__item.swiper-slide:not(:last-child)::after {

@@ -369,8 +369,12 @@ button.product-form__submit:hover:after,
         height: 20px;
         object-fit: contain;
     }
-    .main_product .main_product .product__info-wrapper.grid__item.scroll-trigger.animate--slide-in {
+    .main_product .product__info-wrapper.grid__item.scroll-trigger.animate--slide-in {
         max-width: 42% !important;
+    }
+
+    .main_product .media_button {
+        padding: 9px 10px;
     }
 }
 @media screen and (max-width: 950px) {
