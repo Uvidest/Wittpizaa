@@ -262,17 +262,21 @@
       <div class="blog-filter-tags">
         <ul class="blog-filter-tags--list">
           {%- for tag in blog.all_tags -%}
-            <li class="blog-filter-tags--item">
-              <input data-tag-name="{{- tag -}}" role="tag-tab" {% if current_tags contains tag %}checked{% endif %} type="checkbox" id="tags-{{ forloop.index }}">
-              <label for="tags-{{ forloop.index }}">
-                <span class="blog-filter-tags--item-checkbox">
+          <li class="blog-filter-tags--item {% if current_tags contains tag %}active{% endif %}">
+            {% capture filterTag %}
+              <span class="blog-filter-tags--item-checkbox">
                   <span class="blog-filter-tags--item-circle">
                   </span>
                 </span>
-                {{- tag -}}
-              </label>
-            </li>
+                {{ tag }}
+            {%endcapture%}
+            {%- if current_tags contains tag -%}
+              {{- filterTag | link_to_remove_tag: tag -}}
+            {%- else -%}
+              {{- filterTag | link_to_tag: tag -}}
+            {%- endif -%}
           {%- endfor -%}
+          </li>
         </ul>
       </div>
       {%- endif -%}
@@ -306,36 +310,7 @@
 
   </div>
 {%- endpaginate -%}
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    function AddUrlTag(tagName){
-      if(window.location.href.includes("tagged")){
-        window.location.href = window.location.href + `+${tagName}`
-      }
-      else{
-        window.location.href = window.location.href + `/tagged/${tagName}`
-      }
-    }
-    function RemoveUrlTag(tagName){
-      let url = window.location.href
-      let tags = url.split("/").at(-1).split('+')
-      if(tags.length > 1){
-        let newTags = tags.filter(tag => tag !== tagName).join("+")
-        window.location.href = window.location.href.split("/").slice(0,-1).join('/')+"/"+newTags
-      }
-      else{
-        window.location.href = window.location.href.split('/').slice(0,-2).join('/')
-      }
-    }
-    let filterTags = document.querySelectorAll('[role="tag-tab"]')
-    filterTags.forEach(filterTag => {
-      filterTag.addEventListener("change", ()=>{
-        let tagName = filterTag.getAttribute("data-tag-name")
-        filterTag.checked?AddUrlTag(tagName):RemoveUrlTag(tagName)
-      })
-    })
-  })
-</script>
+
 {% schema %}
 {
   "name": "t:sections.main-blog.name",
