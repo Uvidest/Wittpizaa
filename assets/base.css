@@ -1041,6 +1041,7 @@ summary::-webkit-details-marker {
     max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
   }
 
+
 }
 @media screen and (min-width: 990px) {
   .grid--1-col-desktop {

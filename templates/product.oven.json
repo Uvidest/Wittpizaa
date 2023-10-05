@@ -95,7 +95,7 @@
       }
     },
     "0b6e77c2-8e63-4291-8cda-e3f282f5d60b": {
-      "type": "custom-image_or_video_with_text",
+      "type": "custom-media-with-text",
       "settings": {
         "title": "ROTATING PIZZA STONE",
         "text": "ETNA Rotante Pizza Oven and its unique rotating pizza stone ensure 360 degrees of perfect crust crispness - making the best homemade pizza in less than a minute.",
@@ -111,7 +111,7 @@
       }
     },
     "2cad0583-5201-4071-ba1a-b617511ed7a0": {
-      "type": "custom-image_or_video_with_text",
+      "type": "custom-media-with-text",
       "settings": {
         "title": "0-500 °C IN LESS THAN 15 MINUTES",
         "text": "The ETNA Rotante Pizza Oven preheats to 500 °C (950 °F) in only 15 minutes due to the Booster Burner below the rotating pizza stone.",
@@ -127,7 +127,7 @@
       }
     },
     "6a4a59e3-1974-4152-87e1-8e9111ebeec5": {
-      "type": "custom-image_or_video_with_text",
+      "type": "custom-media-with-text",
       "settings": {
         "title": "BOOSTER & U-SHAPED BURNER",
         "text": "U-shaped main burner for perfectly even heat distribution. The extra booster burner placed underneath the rotating pizza stone ensures a constant, even temperature and a consistent hot pizza stone to keep your pizzas coming in a continuous flow.",
@@ -143,7 +143,7 @@
       }
     },
     "776b5659-d284-4500-a2d1-9fa74dd009b2": {
-      "type": "custom-image_or_video_with_text",
+      "type": "custom-media-with-text",
       "settings": {
         "title": "PIZZAS READY IN LESS THAN 90 SECONDS",
         "text": "No more hangry waiting for the pizza oven to get ready! The ETNA waits for you to get them pizzas done… So get to it, will ya?",
@@ -159,7 +159,7 @@
       }
     },
     "e773ee6f-9a11-451f-826f-2cdf158c0a36": {
-      "type": "custom_product-video_section",
+      "type": "custom-product-video-section",
       "settings": {
         "title": "watch etna rotante in action",
         "video": "shopify:\/\/files\/videos\/fire.mp4",

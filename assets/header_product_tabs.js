@@ -19,11 +19,9 @@ sectionTabs.forEach(sectionTabs => {
         entries.forEach(entry => {
             const intersecting = entry.isIntersecting
             if (intersecting){
-                changeSkrollBarPosition(sectionTabs)
+                changeScrollBarPosition(sectionTabs)
                 tabs.forEach(tab => {
-                    tab.classList.remove(".active")
-
-
+                    tab.classList.remove("active")
                 })
             }
         })
@@ -31,7 +29,7 @@ sectionTabs.forEach(sectionTabs => {
     observer.observe(sectionTabs)
 
 })
-function changeSkrollBarPosition(section){
+function changeScrollBarPosition(section){
     let activeTab
     tabs.forEach(tab => {
         tab.classList.remove("active")
