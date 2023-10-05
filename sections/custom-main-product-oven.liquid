@@ -20,9 +20,11 @@
 
     {%- style -%}
         #shopify-section-{{ section.id }}{
-        background: #0F0F0F;
-        background: linear-gradient(180deg, rgba(29,29,29,1) 0%, rgba(0,0,0,1) 100%);
-
+        {% if section.settings.background_gradient != blank or section.settings.bg_color != blank %}
+            background: {% if section.settings.bg_type == "gradient" %}{{ section.settings.background_gradient }}{% else %}{{ section.settings.bg_color }}{% endif %}
+        {% else %}
+            background: linear-gradient(180deg, rgba(29,29,29,1) 0%, rgba(0,0,0,1) 100%);
+        {% endif %}
         }
         .section-{{ section.id }}-padding {
         padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -2161,6 +2163,34 @@
     }
   ],
   "settings": [
+    {
+      "type": "select",
+      "id": "bg_type",
+      "options": [
+        {
+          "value": "color",
+          "label": "Color"
+        },
+        {
+          "value": "gradient",
+          "label": "Gradient"
+        }
+      ],
+      "default": "gradient",
+      "label": "Background type"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "default": "#0F0F0F",
+      "label": "Background color"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient",
+      "default": "linear-gradient(180deg, rgba(29,29,29,1) 0%, rgba(0,0,0,1) 100%)"
+    },
     {
       "type": "checkbox",
       "id": "enable_sticky_info",
