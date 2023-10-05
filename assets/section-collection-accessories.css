@@ -118,10 +118,7 @@
 .card__content .card__heading a {
     text-decoration: none !important;
 }
-
 .accessories_collection .price--on-sale .price__sale{
-    display: flex;
-    flex-direction: row-reverse;
     gap: 10px
 }
 .accessories_collection .card--standard>.card__content .card__information{

@@ -108,7 +108,7 @@ button:not([disabled]):hover:after,
     line-height: 1;
     text-transform: uppercase;
 }
-span.price-item.price-item--sale.price-item--last{
+.custom-featured-product span.price-item.price-item--sale.price-item--last{
     font-size: 25px;
 }
 .custom-featured-product .product__info-container .product-form{
