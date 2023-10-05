@@ -15,7 +15,7 @@
 {%- endstyle -%}
 
 <div class="customer login section-{{ section.id }}-padding">
-  <h1 id="recover" tabindex="-1">
+  <h1 id="recover" tabindex="-1" class="h1">
     {{ 'customer.recover_password.title' | t }}
   </h1>
   <div>
@@ -67,15 +67,17 @@
     {%- endform -%}
   </div>
 
-  <h1 class="h3" id="login" tabindex="-1">
+  <h1 class="customer__title h1" id="login" tabindex="-1">
     {{ 'customer.login_page.title' | t }}
   </h1>
-  <div class="regular bottom_line" style="line-height: 1">
-    <span>Don't have an account yet?</span>
-    <a class="regular" style="display: inline-block" href="{{ routes.account_register_url }}">
-      {{ 'customer.login_page.create_account' | t }}
-    </a>
-  </div>
+  {%comment%}
+      <div class="regular bottom_line" style="line-height: 1">
+        <span>Don't have an account yet?</span>
+        <a class="regular" style="display: inline-block" href="{{ routes.account_register_url }}">
+          {{ 'customer.login_page.create_account' | t }}
+        </a>
+      </div>
+  {%endcomment%}
 
   <div>
     {%- if recover_success == true -%}
@@ -102,9 +104,11 @@
         </h2>
         {{ form.errors | default_errors }}
       {%- endif -%}
-      <div class="flied_label" style="text-align: left">
-        {{ 'customer.login_page.your_email' | t }}
-      </div>
+      {%comment%}
+        <div class="flied_label" style="text-align: left">
+          {{ 'customer.login_page.your_email' | t }}
+        </div>
+      {%endcomment%}
       <div class="field">
         <input
                 type="email"
@@ -124,14 +128,16 @@
       </div>
 
       {%- if form.password_needed -%}
-        <div style="display: flex; justify-content: space-between" class="label_box">
-          <div class="flied_label" style="text-align: left">
-            {{ 'customer.login_page.your_password' | t }}
+        {%comment%}
+          <div style="display: flex; justify-content: space-between" class="label_box">
+            <div class="flied_label" style="text-align: left">
+              {{ 'customer.login_page.your_password' | t }}
+            </div>
+            <a class="flied_label" href="#recover">
+              {{ 'customer.login_page.forgot_password' | t }}
+            </a>
           </div>
-          <a class="flied_label" href="#recover">
-            {{ 'customer.login_page.forgot_password' | t }}
-          </a>
-        </div>
+        {%endcomment%}
 
         <div class="field">
           <input
@@ -149,7 +155,9 @@
             {{ 'customer.login_page.password' | t }}
           </label>
         </div>
-
+        <a class="flied_label" href="#recover">
+          {{ 'customer.login_page.forgot_password' | t }}
+        </a>
         <a class="hidden" href="#recover">
           {{ 'customer.login_page.forgot_password' | t }}
         </a>
@@ -159,7 +167,7 @@
         {{ 'customer.login_page.sign_in' | t }}
       </button>
 
-      <a class="hidden" href="{{ routes.account_register_url }}">
+      <a href="{{ routes.account_register_url }}">
         {{ 'customer.login_page.create_account' | t }}
       </a>
     {%- endform -%}
