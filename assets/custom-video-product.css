@@ -25,6 +25,7 @@
 }
 .prevProduct__mainImg {
   width: 100%;
+  height: auto;
 }
 .prevProduct__advantages {
   position: relative;

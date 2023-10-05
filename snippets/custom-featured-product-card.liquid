@@ -37,7 +37,8 @@
                                         xr_button: false,
                                         media_width: media_width,
                                         media_fit: cover,
-                                        constrain_to_viewport: true
+                                        constrain_to_viewport: true,
+                                        product_url: product.url
                                 %}
                             </div>
                         {%- endif -%}
@@ -61,7 +62,8 @@
                                             xr_button: false,
                                             media_width: media_width,
                                             media_fit: section.settings.media_fit,
-                                            constrain_to_viewport: section.settings.constrain_to_viewport
+                                            constrain_to_viewport: section.settings.constrain_to_viewport,
+                                            product_url: product.url
                                     %}
                                 </div>
                             {%- endif -%}
