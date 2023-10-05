@@ -49,6 +49,7 @@
           "type": "video-button-media",
           "settings": {
             "text": "Play video",
+            "icon": "",
             "back_img": "shopify:\/\/shop_images\/wp-review-rotante-gastromand_dk-2022_10a.webp"
           }
         },
@@ -56,6 +57,7 @@
           "type": "3d-button",
           "settings": {
             "text": "View in 3D",
+            "icon": "",
             "back_img": "shopify:\/\/shop_images\/2_witt-pizza2304_1.webp"
           }
         },
@@ -63,6 +65,7 @@
           "type": "view-at-home-button",
           "settings": {
             "text": "View at Home",
+            "icon": "",
             "back_img": "shopify:\/\/shop_images\/2202_08_03_witt_pizza1448_1.webp"
           }
         }
@@ -80,6 +83,9 @@
         "80dafc8e-1fcf-4e6b-9b1f-d895b23e42ad"
       ],
       "settings": {
+        "bg_type": "gradient",
+        "bg_color": "#0F0F0F",
+        "background_gradient": "linear-gradient(180deg, rgba(29, 29, 29, 1), rgba(0, 0, 0, 1) 100%)",
         "enable_sticky_info": true,
         "media_size": "medium",
         "constrain_to_viewport": true,
@@ -90,6 +96,7 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
+        "sectionId": "Product",
         "padding_top": 48,
         "padding_bottom": 48
       }
@@ -101,6 +108,7 @@
         "text": "ETNA Rotante Pizza Oven and its unique rotating pizza stone ensure 360 degrees of perfect crust crispness - making the best homemade pizza in less than a minute.",
         "image_text": "shopify:\/\/shop_images\/Frame_21_2e6b9f81-80bd-4cf7-81a7-98586de39127.svg",
         "video": "shopify:\/\/files\/videos\/fire.mp4",
+        "autoplay": false,
         "media_left": false,
         "bg_color": "#e0ded4",
         "sectionId": "Features",
@@ -117,6 +125,7 @@
         "text": "The ETNA Rotante Pizza Oven preheats to 500 °C (950 °F) in only 15 minutes due to the Booster Burner below the rotating pizza stone.",
         "image_text": "shopify:\/\/shop_images\/Frame_22_79688d86-0e12-4633-85ee-f1690133e12e.svg",
         "image": "shopify:\/\/shop_images\/Rectangle_10_1.png",
+        "autoplay": false,
         "media_left": true,
         "bg_color": "#e0ded4",
         "sectionId": "Reviews",
@@ -133,6 +142,7 @@
         "text": "U-shaped main burner for perfectly even heat distribution. The extra booster burner placed underneath the rotating pizza stone ensures a constant, even temperature and a consistent hot pizza stone to keep your pizzas coming in a continuous flow.",
         "image_text": "shopify:\/\/shop_images\/Frame_23.svg",
         "image": "shopify:\/\/shop_images\/Rectangle_13.png",
+        "autoplay": false,
         "media_left": false,
         "bg_color": "#e0ded4",
         "sectionId": "",
@@ -149,6 +159,7 @@
         "text": "No more hangry waiting for the pizza oven to get ready! The ETNA waits for you to get them pizzas done… So get to it, will ya?",
         "image_text": "shopify:\/\/shop_images\/Frame_17_e7374e9c-7585-4213-b34d-2d7d00aa550d.svg",
         "image": "shopify:\/\/shop_images\/Rectangle_14.png",
+        "autoplay": false,
         "media_left": true,
         "bg_color": "#e0ded4",
         "sectionId": "",

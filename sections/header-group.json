@@ -37,6 +37,13 @@
     "header": {
       "type": "header",
       "blocks": {
+        "3a63837f-20ec-4d65-b521-3a8a9103da5b": {
+          "type": "product_navigation_tab",
+          "settings": {
+            "text": "Product",
+            "sectionId": "Product"
+          }
+        },
         "5e7e40f1-fcff-4723-a326-4579aa3f3a22": {
           "type": "product_navigation_tab",
           "settings": {
@@ -57,20 +64,13 @@
             "text": "Accessories",
             "sectionId": "Accessories"
           }
-        },
-        "3a63837f-20ec-4d65-b521-3a8a9103da5b": {
-          "type": "product_navigation_tab",
-          "settings": {
-            "text": "Product",
-            "sectionId": "Product"
-          }
         }
       },
       "block_order": [
+        "3a63837f-20ec-4d65-b521-3a8a9103da5b",
         "5e7e40f1-fcff-4723-a326-4579aa3f3a22",
         "e88dfad8-3b33-400a-881f-c892560e0d71",
-        "e814a9af-b1d7-4afd-b7e0-2e226a9de37b",
-        "3a63837f-20ec-4d65-b521-3a8a9103da5b"
+        "e814a9af-b1d7-4afd-b7e0-2e226a9de37b"
       ],
       "settings": {
         "logo_position": "middle-left",
