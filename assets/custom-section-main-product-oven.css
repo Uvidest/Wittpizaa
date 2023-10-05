@@ -63,7 +63,7 @@ fieldset.product-form__input .form__label,
     display: none;
 }
 .main_product .product-form__input{
-        margin-bottom: 26px;
+        margin-bottom: 48px;
     }
 .main_product .product-form__input input[type=radio]+label.option__color {
     border: 1px solid black;
