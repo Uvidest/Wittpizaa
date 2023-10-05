@@ -8,7 +8,7 @@
 
 @media screen and (min-width: 750px) {
   .customer:not(.account):not(.order) {
-    max-width: 47.8rem;
+    max-width: 592px;
   }
 }
 
@@ -753,3 +753,121 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
 }
+
+main {
+  background-color: #e0ded4;
+}
+.customer form{
+  margin-top: 48px;
+}
+.customer__title.h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+.customer .field input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(176, 173, 166, 1);
+  padding: 0;
+  margin: 0;
+}
+.customer .field label {
+  padding-left: 20px;
+}
+.customer .field label,
+.customer .field input {
+  font-size: 20px;
+  font-family: Source Sans 3;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(176, 173, 166, 1);
+}
+.customer .field {
+  border: none;
+  height: 60px;
+  margin-top: 1rem;
+
+}
+.login .field+a {
+  margin-top: 16px;
+}
+.customer:not(.account):not(.order) {
+  padding: 48px 0;
+}
+.customer .field {
+  margin-top: 24px;
+}
+.customer button {
+  padding: 25px 0;
+  margin: 32px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.login a[href="#recover"],
+.customer a {
+  font-size: 16px;
+  color: rgba(23, 23, 25, 1);
+ }
+ .customer .field input:hover {
+  box-shadow: none;
+ }
+ .customer .field input:focus{
+  border-radius: 10px;
+  margin: 0;
+  outline: none;
+ }
+ .customer .field input:focus~label {
+  font-size: 14px;
+ }
+ @media (max-width: 768px) {
+  .customer .field {
+    margin-top: 16px;
+  }
+ }
+
+ .customer.account .customer__title.h1 {
+  padding-bottom: 32px;
+  text-align: center;
+ }
+ .customer.account > div:first-child > a {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+ }
+ :is(.account,.order) p {
+  font-size: 20px;
+ }
+ .addresses ul p {
+  font-size: 20px;
+ }
+ .customer.addresses a {
+  font-size: 20px;
+ }
+ .customer button {
+  padding: 15px 0;
+  margin: 48px 0;
+  max-width: 250px;
+ }
+ .addresses ul p {
+  margin-top: 32px;
+ }
+ .addresses li>button:first-of-type {
+  margin: 0;
+  margin-top: 24px;
+  margin-right: 16px;
+  padding: 15px 0;
+  max-width: 100px;
+  background-color: rgba(23, 23, 25, 1);
+  color: rgba(224, 222, 212, 1);
+ }
+ .addresses li>button+button {
+  margin: 0;
+  border: 1px solid rgba(23, 23, 25, 1);
+  max-width: 100px;
+ }
+ .customer button:hover {
+  background-color:currentColor;
+  transform: scale(1.1);
+  
+ }
