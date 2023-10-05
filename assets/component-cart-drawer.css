@@ -33,7 +33,7 @@
 .drawer__inner-empty {
   height: 100%;
   padding: 0 1.5rem;
-  background-color: rgb(var(--color-background));
+  background-color: rgba(224, 222, 212, 1);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -504,4 +504,20 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
     font-size: 14px;
     padding: 16px 0 32px 0;
   }
+}
+.cart-drawer__empty-content > .button {
+  background-color: rgba(208, 103, 42, 1);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 25px 0;
+  border-radius: 50px;
+  width: 100%;
+  transition: background-color .3s ease-in;
+}
+.cart-drawer__empty-content > .button:after{
+  display: none;
+}
+.cart-drawer__empty-content > .button:hover {
+  background-color: rgb(174, 85, 34);
 }
