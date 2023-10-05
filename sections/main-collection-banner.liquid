@@ -1,7 +1,9 @@
+{{ 'main-collection-banner.css' | asset_url | stylesheet_tag }}
+
 <style>
   .section-{{ section.id }} {
-    padding-top: {{ section.settings.st }}px;
-    padding-bottom: {{ section.settings.sb }}px;
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
     padding-left: 48px;
     padding-right: 48px;
   {% if section.settings.background-image != blank %}
@@ -16,8 +18,8 @@
 
   @media screen and (max-width: 768px) {
     .section-{{ section.id }} {
-      padding-top: {{ section.settings.stm }}px;
-      padding-bottom: {{ section.settings.sbm }}px;
+      padding-top: {{ section.settings.padding-top-mobile }}px;
+      padding-bottom: {{ section.settings.padding-bottom-mobile }}px;
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -25,38 +27,7 @@
 
 
 </style>
-<style>
-  .banner-text-overlay-title{
-    text-align: center;
-    font-size: 8rem !important;
-    color: #fff;
-    /*margin: 0;*/
-  }
-  .banner-text-overlay-text{
-    line-height: 1.2;
-    color: #fff;
-    margin-top: 16px;
-    font-size: 30px !important;
-    text-align: center;
-    max-width: 985px;
-  }
-  @media screen and (max-width: 1450px) {
-    .banner-text-overlay-title {
-      font-size: 64px !important;
-    }
-    .banner-text-overlay-text {
-      font-size: 24px !important;
-    }
-  }
-  @media screen and (max-width: 990px) {
-    .banner-text-overlay-title{
-      font-size: calc(2.32rem + 4.5vw)!important;
-    }
-    .banner-text-overlay-text {
-      font-size: 18px !important;
-    }
-    }
-</style>
+
 
 <div class="banner-text-overlay section-{{ section.id }}">
   <div class="banner-text-overlay-wrapper">
@@ -86,8 +57,8 @@
     },
     {
       "type": "range",
-      "id": "st",
-      "label": "Space top",
+      "id": "padding-top",
+      "label": "Padding top",
       "unit": "px",
       "min": 0,
       "max": 200,
@@ -96,8 +67,8 @@
     },
     {
       "type": "range",
-      "id": "sb",
-      "label": "Space bottom",
+      "id": "padding-bottom",
+      "label": "Padding bottom",
       "unit": "px",
       "min": 0,
       "max": 200,
@@ -110,8 +81,8 @@
     },
     {
       "type": "range",
-      "id": "stm",
-      "label": "Space top",
+      "id": "padding-top-mobile",
+      "label": "Padding top",
       "unit": "px",
       "min": 0,
       "max": 200,
@@ -120,8 +91,8 @@
     },
     {
       "type": "range",
-      "id": "sbm",
-      "label": "Space bottom",
+      "id": "padding-bottom-mobile",
+      "label": "Padding bottom",
       "unit": "px",
       "min": 0,
       "max": 200,

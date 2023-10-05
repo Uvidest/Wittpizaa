@@ -80,9 +80,9 @@
 <section {%  if section.settings.sectionId != blank %}data-custom-section-id="{{ section.settings.sectionId }}"{% endif %} class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %} section-{{ section.id }}">
   <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
     {% assign title = blank %}
-    {% capture current_time %}{{ "now" | date: "%H:%M" }}{% endcapture %}
-    {% capture cutoff_time %}13:00{% endcapture %}
-    {% capture current_day %}{{ "now" | date: "%A" }}{% endcapture %}
+    {% assign current_time = "now" | date: "%H:%M" %}
+    {% assign cutoff_time = '13:00' %}
+    {% assign current_day = "now" | date: "%A" %}
 
     {% if current_day == 'Saturday' %}
         {% assign title = section.settings.title_Saturday %}
@@ -93,7 +93,7 @@
     {% else %}
     {% assign title = section.settings.title_else_time %}
 {% endif %}
-    {% if title != balnk %}
+    {% if title != blank %}
     <h2 class="featured_product-title">
     {{ title }}
     </h2>
@@ -555,22 +555,22 @@
           {%- for block in section.blocks -%}
                 {% if block.type == 'text_with_icon' %}
                       {% assign checkSpecialBlock = true %}
+                      {% break %}
                 {% endif %}
             {% endfor %}
             {% if checkSpecialBlock == true %}
             <div class="product-text-with-icon-list">
                     {%- for block in section.blocks -%}
-                        {%- case block.type -%}
-                            {%- when 'text_with_icon' -%}
+                        {% if block.type == 'text_with_icon' %}
                                 {% if block.settings.text != balnk and block.settings.icon != blank %}
                                     <div class="product-text-with-icon">
                                         <img src="{{ block.settings.icon.src | img_url }}" alt="{{ block.settings.icon.alt}}">
                                         <span>
-                {{ block.settings.text }}
-              </span>
+                                        {{ block.settings.text }}
+                                      </span>
                                     </div>
                                 {% endif %}
-                        {% endcase %}
+                        {% endif %}
                     {% endfor %}
                 </div>
             {% endif %}
