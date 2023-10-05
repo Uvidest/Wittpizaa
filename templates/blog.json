@@ -3,13 +3,18 @@
     "main": {
       "type": "main-blog",
       "settings": {
-        "layout": "collage",
+        "bg_color": "#e0ded4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut cupiditate ducimus iusto quod sunt.",
+        "link_title": "view RECIPES →",
+        "layout": "grid",
         "show_image": true,
-        "image_height": "medium",
-        "show_date": true,
+        "image_height": "adapt",
+        "show_date": false,
         "show_author": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 36
       }
     }
   },

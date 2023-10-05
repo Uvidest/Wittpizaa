@@ -119,6 +119,7 @@
               {{ article.title | truncate: 50 | escape }}
             </a>
           </h3>
+          {% if show_date or show_author %}
           <div class="article-card__info caption-with-letter-spacing h5">
             {%- if show_date -%}
               <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
@@ -127,6 +128,7 @@
               <span>{{ article.author }}</span>
             {%- endif -%}
           </div>
+          {% endif %}
           {%- if show_excerpt -%}
             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
               <p class="article-card__excerpt rte-width">
@@ -137,12 +139,18 @@
                 {%- endif -%}
               </p>
             {%- endif -%}
+          {%- if article.comments_count > 0 and blog.comments_enabled? -%}
             <div class="article-card__footer">
-              {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                 <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
-              {%- endif -%}
             </div>
+              {%- endif -%}
           {%- endif -%}
+          {% if link_title != blank %}
+            <a class="article-card__link" href="{{ article.url }}">
+              {{ link_title }}
+
+            </a>
+          {% endif %}
         </div>
         {%- if show_badge -%}
           <div class="card__badge {{ settings.badge_position }}">

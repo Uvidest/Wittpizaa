@@ -48,11 +48,7 @@
       ],
       "settings": {
         "title": "PRESS RELEASES",
-        "bg_color": "#f4f4f6",
-        "st": 16,
-        "sb": 16,
-        "stm": 32,
-        "sbm": 32
+        "bg_color": "#f4f4f6"
       }
     },
     "a4fb180c-8793-4024-a82f-fea7ebdfdef1": {
@@ -128,11 +124,7 @@
       ],
       "settings": {
         "title": "Images",
-        "bg_color": "#ffffff",
-        "st": 16,
-        "sb": 16,
-        "stm": 16,
-        "sbm": 16
+        "bg_color": "#ffffff"
       }
     },
     "bf6d993a-308b-4667-a63a-f7cc072dd0b4": {
@@ -169,11 +161,7 @@
       ],
       "settings": {
         "title": "Logos",
-        "bg_color": "#f4f4f6",
-        "st": 16,
-        "sb": 16,
-        "stm": 36,
-        "sbm": 16
+        "bg_color": "#f4f4f6"
       }
     },
     "1c858473-42de-4afa-92c3-04794822a87a": {
@@ -210,11 +198,7 @@
       ],
       "settings": {
         "title": "Fonts",
-        "bg_color": "#ffffff",
-        "st": 16,
-        "sb": 16,
-        "stm": 16,
-        "sbm": 16
+        "bg_color": "#ffffff"
       }
     },
     "f3f17fdc-e329-4053-bd2b-cd78de1fdacd": {
@@ -265,11 +249,7 @@
       ],
       "settings": {
         "title": "Colors",
-        "bg_color": "#f4f4f6",
-        "st": 16,
-        "sb": 16,
-        "stm": 16,
-        "sbm": 16
+        "bg_color": "#f4f4f6"
       }
     }
   },
