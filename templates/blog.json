@@ -4,11 +4,12 @@
       "type": "main-blog",
       "settings": {
         "bg_color": "#e0ded4",
+        "show_tags": true,
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut cupiditate ducimus iusto quod sunt.",
         "link_title": "view RECIPES →",
         "layout": "grid",
         "show_image": true,
-        "image_height": "adapt",
+        "image_height": "medium",
         "show_date": false,
         "show_author": false,
         "padding_top": 36,
