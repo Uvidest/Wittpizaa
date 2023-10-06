@@ -163,7 +163,7 @@
     font-family: var(--font-heading-family);
     max-width: 200px;
     width: 100%;
-    background: #ED671E;
+    background: #D0672A;
     border-radius: 25px;
     margin-top: 32px;
     font-size: 18px;
@@ -222,7 +222,7 @@
         border-radius: 10px;
     }
   .product-grid-title{
-    margin-bottom: 24px;
+      font-size: 40px;
   }
     .custom-collection .product-grid{
         margin-top: 0;
