@@ -64,6 +64,9 @@
     min-height: 39px;
     display: block;
 }
+.swiper-button-prev svg{
+    transform: rotate(180deg);
+}
 .swiper-button-next{
     right: 10px;
 }
@@ -131,7 +134,7 @@
     margin-bottom: 24px;
 }
 .main_product .product__column-sticky {
-    top: 18rem
+    top: 20rem
 }
 
 .product__title h1{
@@ -385,6 +388,12 @@ button.product-form__submit:hover:after,
 
     .main_product .media_button {
         padding: 9px 10px;
+    }
+}
+
+@media screen and (max-width: 110px) {
+    .main_product .product__column-sticky {
+        top: 25rem
     }
 }
 @media screen and (max-width: 950px) {

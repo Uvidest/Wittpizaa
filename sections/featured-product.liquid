@@ -574,7 +574,16 @@
                     {% endfor %}
                 </div>
             {% endif %}
-
+            <div class="payment_icons__wrapper">
+                    <span class="payment_icons__text">{{ 'products.product.payment_icons_text' | t }}</span>
+                    <div class="payment_icons__icons">
+                        {% for i in (1..6) %}
+                            <div class="payment_icons__item">
+                                {% render 'payment-icons', index: i %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
         </product-info>
       </div>
       {%- if section.settings.media_position == 'right' -%}
