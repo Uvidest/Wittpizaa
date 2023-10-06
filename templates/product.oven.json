@@ -84,7 +84,7 @@
       ],
       "settings": {
         "bg_type": "gradient",
-        "bg_color": "#0F0F0F",
+        "bg_color": "#0f0f0f",
         "background_gradient": "linear-gradient(180deg, rgba(29, 29, 29, 1), rgba(0, 0, 0, 1) 100%)",
         "enable_sticky_info": true,
         "media_size": "medium",
