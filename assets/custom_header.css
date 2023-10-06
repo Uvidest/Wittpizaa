@@ -139,16 +139,14 @@ header.header {
 }
 
 .product_breadcrumbs__wrapper .breadcrumbs__item {
-    color: #171719;
+    color: #fff;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
 }
-.navigation-list-item,
-.breadcrumbs,
-.breadcrumbs a{
+.navigation-list-item{
   color: #fff;
 }
 .breadcrumbs a,
