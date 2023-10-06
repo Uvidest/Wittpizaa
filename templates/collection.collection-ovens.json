@@ -4,8 +4,8 @@
       "type": "main-collection-banner",
       "settings": {
         "background-image": "shopify:\/\/shop_images\/image_1.png",
-        "padding-top": 16,
-        "padding-bottom": 16,
+        "padding-top": 124,
+        "padding-bottom": 124,
         "padding-top-mobile": 16,
         "padding-bottom-mobile": 16
       }
@@ -18,7 +18,7 @@
         ],
         "title": "CHOOSE YOUR STYLE:",
         "back_color": "#e0ded4",
-        "hide_list_in_description": false,
+        "hide_list_in_description": true,
         "space_top": 48,
         "space_bottom": 48,
         "space_top_mobile": 16,
