@@ -84,6 +84,7 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
+  text-transform: uppercase;
   color:rgba(23, 23, 25, 1);
   margin: 0;
 }
@@ -145,7 +146,9 @@ cart-drawer-items.is-empty + .drawer__footer {
 .drawer__footer > details + .cart-drawer__footer {
   padding-top: 1.5rem;
 }
-
+.cart-drawer__footer {
+  padding-top: 24px;
+}
 cart-drawer {
   position: fixed;
   top: 0;
@@ -231,10 +234,6 @@ cart-drawer-items {
 
 .cart-drawer .cart-item__image {
   max-width: 100%;
-}
-
-.cart-drawer .cart-items thead {
-  margin-bottom: 0.5rem;
 }
 
 .cart-drawer .cart-items thead th:first-child,
@@ -434,12 +433,21 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   font-size: 29px;
   font-weight: 700;
 }
+.cart-drawer .totals .totals__total {
+  text-transform: uppercase;
+}
+.cart-drawer .totals .totals__total-value {
+  font-family: "Oswald";
+  color: rgba(23, 23, 25, 1);
+}
 .cart-drawer .tax-note{
   font-size: 20px;
   margin: 0;
   padding: 24px 0 32px 0;
+  color: rgba(23, 23, 25, 1);
 }
 .cart__checkout-button.button {
+  overflow: hidden;
   background-color: rgba(208, 103, 42, 1);
   color: #fff;
   font-size: 20px;
@@ -447,15 +455,11 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   border: none;
   outline: none;
   padding: 25px 0;
+  font-family: "Oswald";
   border-radius: 50px;
   transition: background-color .3s ease-in;
 }
-.cart__checkout-button.button::after {
-  display: none;
-}
-.cart__checkout-button.button:hover{
-  background-color: rgb(166, 81, 31);
-}
+
 @media (max-width: 1440px) {
   .drawer__inner {
     width: 40rem;
@@ -486,6 +490,9 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   .drawer__inner {
     width: 345px;
     padding: 15px;
+  }
+  .cart-drawer .cart-item {
+    gap: 10px;
   }
   .drawer__heading {
     font-size: 29px;

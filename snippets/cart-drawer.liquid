@@ -39,7 +39,7 @@
               >
                 {% render 'icon-close' %}
               </button>
-              <a href="{{ routes.all_products_collection_url }}" class="button">
+              <a href="{{ routes.all_products_collection_url }}" class="button butn butn__new">
                 {{ 'general.continue_shopping' | t }}
               </a>
 
@@ -528,7 +528,7 @@
           <button
             type="submit"
             id="CartDrawer-Checkout"
-            class="cart__checkout-button button"
+            class="cart__checkout-button button butn butn__new"
             name="checkout"
             form="CartDrawer-Form"
             {% if cart == empty %}
