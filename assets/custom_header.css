@@ -200,6 +200,9 @@ header.header {
 }
 }
 @media screen and (max-width: 600px) {
+  .product_breadcrumbs__wrapper .breadcrumbs__item {
+        font-size: 16px;
+    }
   .breadcrumbs a,
   .breadcrumbs{
     font-size: 16px;
