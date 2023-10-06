@@ -161,6 +161,7 @@
     color: #fff;
     text-align: center;
     padding: 12px 10px;
+    font-family: var(--font-heading-family);
     max-width: 200px;
     width: 100%;
     background: #ED671E;
@@ -205,9 +206,6 @@
     }
     .custom-collection .product-grid {
         gap: 27px;
-    }
-    .product-grid-title {
-        display: none;
     }
 }
 @media screen and (max-width: 900px) {
