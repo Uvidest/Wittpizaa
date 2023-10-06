@@ -354,11 +354,11 @@
   {% if product.template_suffix == "oven" %}
     <div class="product-navigation">
         <div class="page-width product-navigation__wrapper">
-        <span class="breadcrumbs">
-            {% assign pro_collection = product.collections.first %}
-            {% if pro_collection %}
-                <a href="{{ pro_collection.url }}">{{ pro_collection.title }}</a> / {{ product.title }}
-            {% endif %}
+        <span class="product_breadcrumbs__wrapper">
+            <a class="breadcrumbs__item breadcrumbs__collcetion_url"
+               href="{{ product.collections[0].url }}">{{ product.collections[0].title }}</a>
+    <span class="breadcrumbs__item breadcrumbs__splitter">/</span>
+    <span class="breadcrumbs__item breadcrumbs__product">{{ product.title }}</span>
         </span>
             <ul class="product-navigation-list">
                 <span class="animation-scrollbar">
