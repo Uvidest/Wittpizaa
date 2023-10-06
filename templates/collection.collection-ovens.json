@@ -6,8 +6,8 @@
         "background-image": "shopify:\/\/shop_images\/image_1.png",
         "padding-top": 124,
         "padding-bottom": 124,
-        "padding-top-mobile": 16,
-        "padding-bottom-mobile": 16
+        "padding-top-mobile": 40,
+        "padding-bottom-mobile": 40
       }
     },
     "product-grid": {
@@ -21,8 +21,8 @@
         "hide_list_in_description": true,
         "space_top": 48,
         "space_bottom": 48,
-        "space_top_mobile": 16,
-        "space_bottom_mobile": 16
+        "space_top_mobile": 48,
+        "space_bottom_mobile": 34
       }
     },
     "b8cbf3fc-d380-4376-aab3-fef012f17402": {
