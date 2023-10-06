@@ -18,7 +18,7 @@
         ],
         "title": "CHOOSE YOUR STYLE:",
         "back_color": "#e0ded4",
-        "hide_list_in_description": true,
+        "hide_list_in_description": false,
         "space_top": 48,
         "space_bottom": 48,
         "space_top_mobile": 16,
