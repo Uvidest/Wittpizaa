@@ -202,6 +202,7 @@ header.header {
 @media screen and (max-width: 600px) {
   .product-navigation .product_breadcrumbs__wrapper .breadcrumbs__item {
         font-size: 16px;
+    line-height: 11px;
     }
   .breadcrumbs a,
   .breadcrumbs{
@@ -209,6 +210,7 @@ header.header {
   }
   .navigation-list-item{
     padding: 10px 15px;
+    line-height: 10px;
     font-size: 12px;
   }
   .product-navigation-list{

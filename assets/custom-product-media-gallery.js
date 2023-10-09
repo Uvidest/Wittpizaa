@@ -27,7 +27,12 @@ class customProductMedia extends HTMLElement {
         this.carousel = carousel
         this.mainGallery.on('slideChange', function (e) {
             let slideLength = carousel.wrapperEl.querySelectorAll('.swiper-slide').length
-            carousel.slideTo((e.activeIndex - 1) % slideLength)
+           let indexSlide = (e.activeIndex - 1) % slideLength
+           indexSlide >= 0
+               ?
+                carousel.slideTo((e.activeIndex - 1) % slideLength)
+                :
+                carousel.slideTo(10000)
         });
         this.carousel.wrapperEl.querySelectorAll(".swiper-slide").forEach(slide => {
             slide.addEventListener("click", () => {
