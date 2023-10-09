@@ -84,9 +84,7 @@
     max-width: initial !important;
 }
 
-.product__info-container.product__column-sticky {
-    padding-top: 30px;
-}
+
 
 .product__info-container>*+* {
     margin: 2.4rem 0 !important;

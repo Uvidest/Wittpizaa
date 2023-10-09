@@ -85,6 +85,8 @@
   font-size: 20px;
   font-weight: 700;
   line-height: normal;
+  font-family: var(--font-heading-family);
+
 }
 .cart-item__name:hover {
   text-decoration: underline;
@@ -119,7 +121,6 @@
   font-size: 18px;
   font-weight: 700;
   color: rgba(23, 23, 25, 1);
-  font-family: 'Oswald';
   line-height: normal;
   word-break: break-word;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
