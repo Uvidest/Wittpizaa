@@ -70,9 +70,13 @@
     font-size: 18px;
     transition-duration: 300ms;
 }
-.customer a:hover{
-    color: #d0672a;
-    transition-duration: 300ms;
+.customer a:hover,
+.login .flied_label:hover{
+  color: #d0672a;
+  transition-duration: 300ms;
+}
+.customer .field {
+  font-size: 14px;
 }
 .customer:not(.account):not(.order) {
     max-width: 480px;
@@ -97,25 +101,15 @@
 .customer .field{
     border: 1px solid rgba(23,23,25)
 }
-.customer .field input{
-    padding: 1.6rem 1.2rem;
-    font-size: 1.4rem;
-    height: 58px;
-
-}
 .customer .field label{
     font-size: 18px;
 }
-.customer .field input:hover{
-    box-shadow: inset 0px -3px 0px 0px #000;
-}
+
 .customer .field:before,
 .customer .field:after{
     content: none
 }
-.customer .field input:focus{
-    box-shadow: none;
-}
+
 .customer button {
     background: #D0672A;
     color: #fff;
@@ -127,10 +121,6 @@
     min-height: unset;
     padding: 8px 16px;
 
-}
-.customer button:hover{
-    background: #A34000;
-    transition-duration: 300ms;
 }
 .customer button:after,
 .customer button:before{

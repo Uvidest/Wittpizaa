@@ -15,7 +15,7 @@
 {%- endstyle -%}
 
 <div class="customer login section-{{ section.id }}-padding">
-  <h1 id="recover" tabindex="-1" class="h1">
+  <h1 id="recover" tabindex="-1" class="customer__title h1">
     {{ 'customer.recover_password.title' | t }}
   </h1>
   <div>
@@ -27,19 +27,19 @@
       {% assign recover_success = form.posted_successfully? %}
       <div class="field">
         <input
-                type="email"
-                value=""
-                name="email"
-                id="RecoverEmail"
-                autocorrect="off"
-                autocapitalize="off"
-                autocomplete="email"
-                {% if form.errors %}
-                  aria-invalid="true"
-                  aria-describedby="RecoverEmail-email-error"
-                  autofocus
-                {% endif %}
-                placeholder="{{ 'customer.login_page.email' | t }}"
+            type="email"
+            value=""
+            name="email"
+            id="RecoverEmail"
+            autocorrect="off"
+            autocapitalize="off"
+            autocomplete="email"
+            {% if form.errors %}
+              aria-invalid="true"
+              aria-describedby="RecoverEmail-email-error"
+              autofocus
+            {% endif %}
+            placeholder="{{ 'customer.login_page.email' | t }}"
         >
         <label for="RecoverEmail">
           {{ 'customer.login_page.email' | t }}
@@ -57,7 +57,7 @@
         </small>
       {%- endif -%}
 
-      <button>
+      <button class="butn butn__new butn_recover">
         {{ 'customer.login_page.submit' | t }}
       </button>
 
@@ -163,7 +163,7 @@
         </a>
       {%- endif -%}
 
-      <button>
+      <button class="butn butn__new">
         {{ 'customer.login_page.sign_in' | t }}
       </button>
 
@@ -177,7 +177,6 @@
     <div>
       <hr>
       <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
-
       {%- form 'guest_login' -%}
         <button>
           {{ 'customer.login_page.guest_continue' | t }}

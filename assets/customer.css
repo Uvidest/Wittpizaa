@@ -21,15 +21,12 @@
   margin-top: 4rem;
 }
 
-.customer button {
-  margin: 4rem 0 1.5rem;
-}
+
 
 .customer ul {
   line-height: calc(1 + 0.6 / var(--font-body-scale));
   padding-left: 4.4rem;
   text-align: left;
-  margin-bottom: 4rem;
 }
 
 .customer ul a {
@@ -345,7 +342,21 @@
 }
 
 .login p {
-  margin: 1.5rem 0;
+  margin: 0;
+  padding-top: 32px;
+  font-size: 30px;
+  color: rgba(23, 23, 25, 1);
+}
+@media (max-width: 1440px) {
+  .login p {
+    padding-top: 24px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .login p {
+    font-size: 18px;
+  }
 }
 
 .login h3 {
@@ -694,12 +705,8 @@ label[for='AddressProvinceNew'] {
   list-style: none;
   padding-left: 0;
   text-align: center;
+  margin: 0;
 }
-
-li[data-address] {
-  margin-top: 5rem;
-}
-
 .addresses [aria-expanded='false'] ~ div[id] {
   display: none;
 }
@@ -769,19 +776,29 @@ main {
   height: 100%;
   border-radius: 10px;
   border: 1px solid rgba(176, 173, 166, 1);
+  color: rgba(176, 173, 166, 1);
   padding: 0;
   margin: 0;
 }
-.customer .field label {
-  padding-left: 20px;
-}
-.customer .field label,
-.customer .field input {
+.customer .field input,
+.customer .field input[type="email"] ~ label,
+.customer .field input[type="password"] ~ label {
   font-size: 20px;
-  font-family: Source Sans 3;
+  font-family: Source Sans Pro;
   font-weight: 400;
   line-height: normal;
   color: rgba(176, 173, 166, 1);
+  padding-left: 20px;
+  transition: font-size 0.3s, padding-left 0.3s;
+}
+
+.customer .field input:focus + label{
+  font-size: 14px;
+  padding-left: 0;
+}
+.customer .field input:focus {
+  box-shadow: none;
+  border-radius: 10px;
 }
 .customer .field {
   border: none;
@@ -800,26 +817,26 @@ main {
 }
 .customer button {
   padding: 25px 0;
-  margin: 32px 0;
+  margin: 32px 0 48px 0;
   border-radius: 10px;
   overflow: hidden;
 }
-.login a[href="#recover"],
-.customer a {
+@media (max-width: 576px) {
+  .customer button{
+    margin: 32px 0;
+  }
+}
+.login a[href="#recover"]{
   font-size: 16px;
   color: rgba(23, 23, 25, 1);
  }
- .customer .field input:hover {
-  box-shadow: none;
+ .customer a {
+  font-size: 20px;
  }
- .customer .field input:focus{
-  border-radius: 10px;
-  margin: 0;
-  outline: none;
+ .butn.butn__new.butn_recover {
+  margin: 32px 0;
  }
- .customer .field input:focus~label {
-  font-size: 14px;
- }
+
  @media (max-width: 768px) {
   .customer .field {
     margin-top: 16px;
@@ -830,25 +847,42 @@ main {
   padding-bottom: 32px;
   text-align: center;
  }
+ .customer__title.h1.customer__title_margin {
+  margin-bottom: 32px;
+ }
+ @media (max-width: 1440px) {
+  .customer__title.h1.customer__title_margin{
+    margin-bottom: 24px;
+  }
+ }
+ li[data-address]>.customer__address {
+  margin: 0;
+  font-size: 24px;
+  padding-top: 48px;
+ }
+ @media (max-width: 1440px) {
+  .customer__title.h1{
+    font-size: 48px;
+  }
+ }
+ @media (max-width: 576px) {
+  .customer__title.h1{
+    font-size: 40px;
+  }
+ }
  .customer.account > div:first-child > a {
   display: flex;
   justify-content: center;
   font-size: 20px;
  }
- :is(.account,.order) p {
-  font-size: 20px;
- }
+
  .addresses ul p {
   font-size: 20px;
  }
  .customer.addresses a {
   font-size: 20px;
  }
- .customer button {
-  padding: 15px 0;
-  margin: 48px 0;
-  max-width: 250px;
- }
+
  .addresses ul p {
   margin-top: 32px;
  }
@@ -860,14 +894,67 @@ main {
   max-width: 100px;
   background-color: rgba(23, 23, 25, 1);
   color: rgba(224, 222, 212, 1);
+  transition: transform .3s ease-in;
  }
- .addresses li>button+button {
+ .addresses li>button:nth-of-type(2) {
   margin: 0;
+  padding: 15px 0;
   border: 1px solid rgba(23, 23, 25, 1);
   max-width: 100px;
+  transition: transform .3s ease-in;
  }
- .customer button:hover {
-  background-color:currentColor;
+ .addresses li>button:first-of-type:hover,
+.addresses li>button+button:hover{
   transform: scale(1.1);
-  
- }
+}
+.customer-account__details.h2 {
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+:is(.account,.order) p {
+  margin-bottom: 32px;
+  font-size: 20px;
+}
+@media (max-width: 1440px) {
+  .customer-account__details.h2{
+    font-size: 29px;
+    margin-bottom: 24px;
+  }
+  :is(.account,.order):not(:last-child) p {
+    margin-bottom: 24px;
+  }
+}
+.customer .butns__reset {
+  display: flex;
+  gap: 13px;
+  padding-top: 34px;
+}
+.customer .butn__reset{
+  padding: 15px 0;
+  background-color: inherit!important;
+  border: 1px solid rgba(23, 23, 25, 1);
+  max-width: 100px;
+  color: rgba(23, 23, 25, 1);
+  transition: transform .3s ease-in;
+}
+.customer .butns__reset > .butn__reset {
+  margin: 0;
+  height: 47px;
+}
+.customer .butns__reset > .butn.butn__new{
+  max-width: 250px;
+  margin: 0;
+  height: 47px;
+} 
+.butn__reset:hover {
+  transform: scale(1.1);
+}
+.customer.addresses button {
+  margin: 48px 0 0 0;
+}
+.addresses .h2 {
+  text-align: center;
+  padding-top: 48px;
+  margin: 0;
+  text-transform: uppercase;
+}
