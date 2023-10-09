@@ -42,6 +42,11 @@
     align-items: center;
     justify-content: center;
 }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .svg_start{
+    display: none;
+  }
+}
 @media screen and (max-width: 1450px) {
     .product-main-video__wrapper {
         max-width: 1115px;
