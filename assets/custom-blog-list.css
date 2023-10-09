@@ -92,6 +92,10 @@
   .custom-blog-list__title {
     font-size: 48px;
   }
+  .article__link{
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
 }
 @media(max-width: 992px) {
   .custom-blog-list {
