@@ -486,6 +486,7 @@ class HeaderDrawer extends MenuDrawer {
   }
 
   openMenuDrawer(summaryElement) {
+    document.querySelector('.product-navigation')?.classList.add("hidden")
     this.header = this.header || document.querySelector('.section-header');
     this.borderOffset =
       this.borderOffset || this.closest('.header-wrapper').classList.contains('header-wrapper--border-bottom') ? 1 : 0;
@@ -510,6 +511,7 @@ class HeaderDrawer extends MenuDrawer {
     super.closeMenuDrawer(event, elementToFocus);
     this.header.classList.remove('menu-open');
     window.removeEventListener('resize', this.onResize);
+    document.querySelector('.product-navigation')?.classList.remove("hidden")
   }
 
   onResize = () => {
