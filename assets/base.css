@@ -3511,3 +3511,60 @@ details-disclosure > details {
   padding-left: 15px;
   padding-right: 15px;
 }
+#WebPixelsManagerSandboxContainer {
+  display: none;
+}
+#address_default_address_new {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+#address_default_address_new + label::before {
+  content: ''; 
+  display: inline-flex;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid rgba(176, 173, 166, 1);
+  background-color: #fff;
+}
+#address_default_address_new:checked+label::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15px' height='15px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23b0ada6'%3e%3cg id='SVGRepo_bgCarrier' stroke-width='0'%3e%3c/g%3e%3cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3e%3c/g%3e%3cg id='SVGRepo_iconCarrier'%3e%3cpath d='M4 12.6111L8.92308 17.5L20 6.5' stroke='%23b0ada6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/svg%3e");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#address_default_address_new ~ label {
+  display: flex;
+  align-items: center;
+  margin-top: 19px;
+  font-size: 20px;
+}
+input[type='checkbox'][name="address[default]"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+input[type='checkbox'][name="address[default]"] + label::before{
+  content: ''; 
+  display: inline-flex;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid rgba(176, 173, 166, 1);
+  background-color: #fff;
+}
+input[type='checkbox'][name="address[default]"]:checked+label::before {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15px' height='15px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23b0ada6'%3e%3cg id='SVGRepo_bgCarrier' stroke-width='0'%3e%3c/g%3e%3cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3e%3c/g%3e%3cg id='SVGRepo_iconCarrier'%3e%3cpath d='M4 12.6111L8.92308 17.5L20 6.5' stroke='%23b0ada6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3c/g%3e%3c/svg%3e");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+input[type='checkbox'][name="address[default]"] ~ label{
+  display: flex;
+  align-items: center;
+  margin-top: 19px;
+  font-size: 20px;
+}
