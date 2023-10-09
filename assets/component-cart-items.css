@@ -385,4 +385,7 @@ cart-remove-button .icon-remove {
     padding-top: 12px;
     font-size: 12px;
   }
+  .cart-item__details .product-option > *{
+    font-size: 12px
+  } 
 }
