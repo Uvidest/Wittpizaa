@@ -371,6 +371,9 @@ button.product-form__submit:hover:after,
     .main_product .product__info-container .price--on-sale .price-item--regular, .main_product .price__regular .price-item--regular {
         font-size: 28px;
     }
+  .main_product .product__info-container .price--on-sale .price-item--regular{
+    font-size: 25px
+  }
     .main_product .product__description>p {
         font-size: 18px;
     }
