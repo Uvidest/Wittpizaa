@@ -593,7 +593,7 @@
   font-size: 20px;
   font-weight: 600;
   line-height: normal;
-  padding: 16px 0 16px 16px;
+  padding: 16px;
   text-transform: uppercase;
   background-color: #fff;
   color: rgba(23, 23, 25, 1);
@@ -724,5 +724,14 @@
   }
   .localization-form:only-child {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .preview-panel__item{
+    flex-basis: calc(50% - 7px);
+  }
+  .preview-panel__item>a>img{
+    height: 183px;
   }
 }
