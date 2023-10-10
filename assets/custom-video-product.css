@@ -22,6 +22,7 @@
 }
 .prevProduct__images {
   position: relative;
+  text-align: right;
 }
 .prevProduct__mainImg {
   width: 100%;
@@ -68,7 +69,6 @@
   }
   .prevProduct__images > .prevProduct__mainImg{
     width: 100%;
-    max-width: 100%;
     object-fit: cover;
     height: auto;
   }
@@ -124,5 +124,25 @@
   .prevProduct__advantage > img {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .video__wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+     max-height: none;
+  }
+  .video__wrapper>video{
+    position: absolute;
+    left: 0;
+    right: 0;
+     width: 100%;
+     height: 100%;
+  }
+  .prevProduct__mainImg {
+     max-width: 400px;
+     max-height: 446px;
   }
 }

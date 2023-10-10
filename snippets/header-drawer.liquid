@@ -13,7 +13,10 @@
     >
       <span>
         {% render 'icon-hamburger' %}
-        {% render 'icon-close' %}
+          <span class="hidden">
+              {% render 'icon-close' %}
+          </span>
+
       </span>
     </summary>
     <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
@@ -125,7 +128,7 @@
               {%- endfor -%}
             </ul>
           </nav>
-          <div class="menu-drawer__utility-links">
+          <div class="menu-drawer__utility-links hidden">
             {%- if shop.customer_accounts_enabled -%}
               <a
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
@@ -307,6 +310,12 @@
             </ul>
           </div>
         </div>
+          <span class="close-menu-drawer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none">
+              <path d="M3 16L17.8492 1.15076" stroke="#171719" stroke-width="1.5"/>
+              <path d="M3 1L17.8492 15.8492" stroke="#171719" stroke-width="1.5"/>
+            </svg>
+          </span>
       </div>
     </div>
   </details>

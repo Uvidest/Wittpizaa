@@ -62,6 +62,19 @@ header.header {
   padding-left: 5px;
   font-size: 16px;
 }
+.close-menu-drawer{
+  position: absolute;
+  width: 21px;
+  height: 17px;
+  top: 24px;
+  right: 15px;
+  cursor: pointer;
+}
+details > .header__icon--menu .icon-hamburger{
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
 @media (max-width: 1200px) {
   .header__icon.header__icon--cart > span {
     display: none;
@@ -70,18 +83,27 @@ header.header {
     gap: 16px;
   }
 }
+.menu-drawer{
+  top: 0;
+  position: fixed;
+  height: 100vh !important;
+}
 .menu-drawer__title{
   font-size: 40px;
   font-weight: 700;
   margin: 0;
-  line-height: normal;
+  line-height: 1;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(176, 173, 166, 1);
+  text-transform: uppercase;
 }
 .menu-drawer__navigation-container,
 .menu-drawer__inner-submenu {
   background-color: rgba(224, 222, 212, 1);
   padding: 0 15px;
+}
+.menu-drawer__navigation{
+  padding-top: 16px;
 }
 .menu-drawer__menu-item {
   font-weight: 700;
@@ -90,18 +112,33 @@ header.header {
 }
 .menu-drawer__menu-item:not(:last-child) {
   padding-bottom: 32px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .menu-drawer__menu-item--active {
   background-color: inherit;
 }
 .menu-drawer__menu-item.list-menu__item.link {
   font-size: 20px;
+  padding: 0;
+  gap: 8px;
+  line-height: 1;
+  font-family: var(--font-heading-family);
+}
+.menu-drawer__menu-item--active, .menu-drawer__menu-item:focus, .menu-drawer__close-button:focus, .menu-drawer__menu-item:hover, .menu-drawer__close-button:hover{
+  background-color: transparent;
+}
+.js .menu-drawer__menu li{
+  padding-top: 32px;
+  margin: 0 !important;
 }
 .menu-drawer__menu {
   padding-top: 32px;
 }
 .menu-drawer__menu-item>.icon-arrow {
-  top: calc(50% - 10px);
+  position: initial;
+  transform: none;
+  /*top: calc(50% - 10px);*/
 }
 .menu-drawer__close-button.link.link--text{
   font-size: 16px;
@@ -219,8 +256,14 @@ header.header {
     }
 }
 .section-header.shopify-section-header-sticky {
-  top: 31px;
+  top: 28px;
+}
+.section-header.shopify-section-header-sticky.overlay{
+  z-index: 12;
 }
 .js .header-localization:not(.menu-drawer__localization) .localization-form__select {
   height: fit-content;
+}
+.custom-link__wrapper ul{
+  padding: 0;
 }
