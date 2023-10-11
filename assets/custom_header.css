@@ -147,6 +147,11 @@ details > .header__icon--menu .icon-hamburger{
     line-height: 1;
     align-items: center;
     text-transform: uppercase;
+    padding-left: 0;
+    gap: 5px
+}
+.menu-drawer__close-button.link.link--text svg{
+  width: 2rem
 }
 .header__submenu.list-menu.list-menu--disclosure {
   background-color: rgba(23, 23, 25, 1);
