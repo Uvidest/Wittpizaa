@@ -48,7 +48,11 @@
       ],
       "settings": {
         "title": "PRESS RELEASES",
-        "bg_color": "#f4f4f6"
+        "bg_color": "#f4f4f6",
+        "space_top": 16,
+        "space_bottom": 16,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 16
       }
     },
     "a4fb180c-8793-4024-a82f-fea7ebdfdef1": {
@@ -124,7 +128,11 @@
       ],
       "settings": {
         "title": "Images",
-        "bg_color": "#ffffff"
+        "bg_color": "#ffffff",
+        "space_top": 16,
+        "space_bottom": 16,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 16
       }
     },
     "bf6d993a-308b-4667-a63a-f7cc072dd0b4": {
@@ -138,7 +146,7 @@
             "image": "shopify:\/\/shop_images\/Witt.webp",
             "image_ratio": "normal",
             "obg_fit": "contain",
-            "url": false,
+            "url": true,
             "own_url": ""
           }
         },
@@ -150,7 +158,7 @@
             "image": "shopify:\/\/shop_images\/witt_pizza_rotante_badge_black.webp",
             "image_ratio": "normal",
             "obg_fit": "cover",
-            "url": false,
+            "url": true,
             "own_url": ""
           }
         }
@@ -161,7 +169,11 @@
       ],
       "settings": {
         "title": "Logos",
-        "bg_color": "#f4f4f6"
+        "bg_color": "#f4f4f6",
+        "space_top": 16,
+        "space_bottom": 16,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 16
       }
     },
     "1c858473-42de-4afa-92c3-04794822a87a": {
@@ -198,7 +210,11 @@
       ],
       "settings": {
         "title": "Fonts",
-        "bg_color": "#ffffff"
+        "bg_color": "#ffffff",
+        "space_top": 16,
+        "space_bottom": 16,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 16
       }
     },
     "f3f17fdc-e329-4053-bd2b-cd78de1fdacd": {
@@ -249,7 +265,11 @@
       ],
       "settings": {
         "title": "Colors",
-        "bg_color": "#f4f4f6"
+        "bg_color": "#f4f4f6",
+        "space_top": 16,
+        "space_bottom": 16,
+        "space_top_mobile": 16,
+        "space_bottom_mobile": 16
       }
     }
   },
