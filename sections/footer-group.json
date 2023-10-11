@@ -22,21 +22,21 @@
           "type": "footer-link",
           "settings": {
             "text-link": "Terms and Conditions",
-            "link": ""
+            "link": "shopify:\/\/pages\/terms-and-conditions"
           }
         },
         "b6b31b82-0076-478a-b724-9d60923759a1": {
           "type": "footer-link",
           "settings": {
             "text-link": "Privacy Policy",
-            "link": ""
+            "link": "shopify:\/\/pages\/privacy-policy"
           }
         },
         "cd63ba77-03cc-42f3-861a-2019b4d1661e": {
           "type": "footer-link",
           "settings": {
             "text-link": "Cookies",
-            "link": ""
+            "link": "shopify:\/\/pages\/cookie-declaration"
           }
         },
         "f320c4eb-dd72-4a3a-b949-8ee084bdf112": {
