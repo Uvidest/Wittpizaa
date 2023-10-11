@@ -141,7 +141,9 @@ details > .header__icon--menu .icon-hamburger{
   /*top: calc(50% - 10px);*/
 }
 .menu-drawer__close-button.link.link--text{
-  font-size: 16px;
+  font-size: 36px;
+    font-weight: 600;
+    font-family: var(--font-heading-family);
 }
 .header__submenu.list-menu.list-menu--disclosure {
   background-color: rgba(23, 23, 25, 1);
