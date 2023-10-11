@@ -9,14 +9,14 @@
           "type": "custom-link",
           "settings": {
             "text": "FAQ",
-            "url": ""
+            "url": "shopify:\/\/pages\/q-a"
           }
         },
         "9bc75b68-ec20-4246-bd24-949b57ba4a6c": {
           "type": "custom-link",
           "settings": {
             "text": "Contact us",
-            "url": ""
+            "url": "shopify:\/\/pages\/contact"
           }
         }
       },
