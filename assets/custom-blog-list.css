@@ -121,6 +121,7 @@
 @media (max-width: 576px) {
   .custom-blog-list__title{
     padding-bottom: 32px;
+    font-size: 40px;
   }
   .article__image > img {
     height: 250px;

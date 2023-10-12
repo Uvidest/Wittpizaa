@@ -725,6 +725,11 @@
   .localization-form:only-child {
     padding: 0;
   }
+  .preview-panel__name {
+    font-size: 20px;
+    padding: 16px 12px;
+    text-transform: uppercase;
+  }
 }
 
 @media screen and (max-width: 550px) {

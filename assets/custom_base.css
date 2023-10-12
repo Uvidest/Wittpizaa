@@ -241,3 +241,6 @@ tr {
 fieldset.product-form__input .form__label, .product__tax{
     display: none;
 }
+localization-form{
+    display: flex;
+}
