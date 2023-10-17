@@ -152,6 +152,8 @@
       ],
       "settings": {
         "title": "DON'T JUST TAKE OUR WORD FOR IT",
+        "button-text": "All Reviews & Awards",
+        "button-url": "shopify:\/\/collections",
         "controll": "shopify:\/\/shop_images\/Group_27.svg"
       }
     },
