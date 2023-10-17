@@ -1,10 +1,9 @@
-@import url('https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css');
 .custom-slider {
   background-color: #000;
   position: relative;
 }
 .custom-slider__container {
-  padding: 48px;
+  padding: 60px 51px;
 }
 .mySwiper {
   width: calc(100% - 100px);
@@ -52,9 +51,24 @@
 .custom-slider__prev[aria-disabled="true"]{
   display: none;
 }
-@media screen and (max-width: 1450px) {
+.slider__button{
+  color: #3D3B3B;
+  font-family: var(--font-heading-family);
+  background: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 10px;
+  max-width: 176px;
+  width: 100%;
+  line-height: 1; /* 20.8px */
+  text-transform: capitalize;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1440px) {
   .custom-slider__title.h1 {
-    font-size: 48px;
+    font-size: 46px;
   }
   .custom-slider__slide img {
     max-height: 35px;
@@ -68,6 +82,10 @@
   .custom-slider__title.h1 {
     font-size: 40px;
     padding-bottom: 32px;
+  }
+  .slider__button{
+    margin-top: 20px;
+    font-size: 14px;
   }
 }
 @media (max-width: 568px) {

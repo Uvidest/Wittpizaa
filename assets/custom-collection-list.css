@@ -1,6 +1,6 @@
 .custom-collection-list{
   background-color: #000;
-  padding: 48px;
+  padding: 66px 55px 55px 55px;
 }
 .custom-collection-list__title.h1 {
   color: #fff;
@@ -33,7 +33,6 @@
   left: 24px;
   bottom: 24px;
   color: #171719;
-  font-family: Oswald;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -44,13 +43,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 222px;
   height: 59px;
 }
-@media screen and (max-width: 1450px) {
-  .custom-collection-list__title.h1 {
-    display: none;
+
+@media screen and (max-width: 1440px) {
+  .custom-collection-list__title.h1{
+    font-size: 60px;
+    padding-bottom: 60px;
   }
+  .custom-collection-list__wrapper{
+    column-gap: 41px;
+  }
+  .custom-collection-list__item{
+    width: calc(100%/3 - 2*41px/3);
+  }
+  .custom-collection-list__item>a>img{
+    height: 510px;
+  }
+  .custom-collection-list__link{
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
 }
 @media (max-width: 992px) {
   .custom-collection-list {
@@ -66,5 +81,9 @@
   .custom-collection-list__item {
     max-width: 440px;
     min-width: 345px;
+  }
+  .custom-collection-list__link{
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

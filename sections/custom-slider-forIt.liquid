@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{{ 'custom-slider-forIt.css' | asset_url }}">
 <script src="{{ 'custom-slider-forIt.js' | asset_url }}" defer="defer"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 
 
 <section class="custom-slider">
@@ -33,6 +33,12 @@
         </div>
       {% endif %}
     </div>
+    {% if  section.settings.button-url != blank and section.settings.button-text != blank %}
+      <a href="{{ section.settings.button-url }}" class="slider__button button_custom">
+        {{ section.settings.button-text }}
+      </a>
+    {% endif %}
+
   </div>
 </section>
 
@@ -44,6 +50,17 @@
         "type": "text",
         "id": "title",
         "label": "Title for section"
+      },
+      {
+        "type": "text",
+        "id": "button-text",
+        "label": "Title for button",
+        "default": "All Reviews & Awards"
+      },
+      {
+        "type": "url",
+        "id": "button-url",
+        "label": "Url for button"
       },
       {
         "type": "image_picker",
