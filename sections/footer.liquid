@@ -26,8 +26,8 @@
   .section-{{section.id}}-padding {
     padding-top: {{section.settings.padding_top}}px;
     padding-bottom: {{section.settings.padding_bottom}}px;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 51px;
+    padding-right: 51px;
   }
 }
 
@@ -90,7 +90,7 @@
           >
             {%- for block in section.blocks -%}
               <div
-                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block grid__item {% if block.type == "preview_panel" %} preview_panel-block{% endif %} {% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade

@@ -238,6 +238,9 @@ details > .header__icon--menu .icon-hamburger{
   background: #545454;
   transition-duration: 500ms;
 }
+.utility-bar .localization-wrapper .disclosure .localization-form__select{
+  font-size: 16px;
+}
 @media screen and (max-width: 1100px) {
   .product-navigation__wrapper {
   grid-template-columns: 1fr;

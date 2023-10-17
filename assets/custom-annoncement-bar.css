@@ -21,7 +21,7 @@
   margin: 0;
 }
 .custom-link__wrapper > ul > li{
-  padding: 0 16px;
+  padding: 0 14px;
   border-right: 1px solid black;
 }
 .custom-link__link {
