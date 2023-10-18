@@ -31,7 +31,7 @@
     line-height: normal;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 61px;
     text-align: center;
   }
   .custom-slide{
@@ -106,9 +106,23 @@
       height: 35px;
     }
     .custom-slider-title{
-      font-size: 48px;
+      font-size: 46px;
+      margin-bottom: 61px;
     }
-  }
+    .swiper-button-prev-slider svg,
+    .swiper-button-next-slider svg{
+      min-width: 35px;
+      min-height: 35px;
+      max-width: 35px;
+      max-height: 35px;
+    }
+    .swiper-button-next-slider {
+      right: -50px;
+    }
+    .swiper-button-prev-slider{
+      left: -50px;
+    }
+    }
   @media screen and (max-width: 768px) {
     .custom-slider-title{
       margin-bottom: 24px;
