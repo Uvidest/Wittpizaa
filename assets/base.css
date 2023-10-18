@@ -1035,14 +1035,7 @@ summary::-webkit-details-marker {
     animation: var(--animation-slide-in);
   }
 }
-@media screen and (max-width: 1440px) and (min-width: 990px) {
-  .accessories_collection ul.grid.product-grid .grid__item{
-    width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
-    max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
-  }
 
-
-}
 @media screen and (min-width: 990px) {
   .grid--1-col-desktop {
     flex: 0 0 100%;
