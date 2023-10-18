@@ -346,6 +346,7 @@ button.product-form__submit:hover:after,
   }
     .main_product .product__description>p {
         font-size: 18px;
+      font-weight: 600
     }
     .main_product .product-text-with-icon {
         font-size: 16px !important;
