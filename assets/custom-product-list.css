@@ -12,6 +12,7 @@
   max-width: 380px;
   flex-basis: 25%;
 }
+
 .product-list__content.content {
   padding: 8px 16px;
   display: flex;
@@ -156,13 +157,14 @@
   }
   .product-list__content.content {
     justify-self: center;
+    flex-basis: 24%;
   }
 
   .content__subtitle.h1 {
     font-size: 36px;
   }
   .content__title.h1 {
-    font-size: 48px;
+    font-size: 44px;
   }
   .product-list__product-media{
     margin-bottom: 24px;
@@ -176,6 +178,11 @@
   }
   .content__title.h1{
     padding-bottom: 23px;
+  }
+  .content__link.regular{
+    width: 100%;
+    max-width: 186px;
+    min-height: 48px;
   }
 }
 @media(max-width: 1080px) {

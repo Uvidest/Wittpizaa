@@ -73,6 +73,7 @@
   }
   .prevProduct__advantage>p{
     font-size: 22px;
+    font-weight: 400;
   }
   .prevProduct__advantage>img{
     width: 24px;
@@ -90,9 +91,6 @@
     width: 30px;
     height: 30px;
     object-fit: contain;
-  }
-  .prevProduct__advantage > p {
-    font-size: 20px;
   }
   .prevProduct__advantage:not(:last-child) {
     padding-bottom: 9px;
