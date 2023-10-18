@@ -3,9 +3,9 @@
     "banner": {
       "type": "main-collection-banner",
       "settings": {
-        "background-image": "shopify:\/\/shop_images\/image_1.png",
-        "padding-top": 124,
-        "padding-bottom": 124,
+        "background-image": "shopify:\/\/shop_images\/image_9.png",
+        "padding-top": 90,
+        "padding-bottom": 98,
         "padding-top-mobile": 40,
         "padding-bottom-mobile": 40
       }
@@ -19,8 +19,8 @@
         "title": "CHOOSE YOUR STYLE:",
         "back_color": "#e0ded4",
         "hide_list_in_description": false,
-        "space_top": 48,
-        "space_bottom": 48,
+        "space_top": 58,
+        "space_bottom": 50,
         "space_top_mobile": 48,
         "space_bottom_mobile": 34
       }
@@ -75,8 +75,8 @@
         "title": "Don’t just take our word for it",
         "bg_color": "#000000",
         "text_color": "#ffffff",
-        "st": 48,
-        "sb": 46,
+        "st": 60,
+        "sb": 78,
         "stm": 24,
         "sbm": 24
       }
