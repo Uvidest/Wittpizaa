@@ -240,6 +240,12 @@
         max-width: 160px;
         padding: 14px 10px;
     }
+  .custom-featured-product-grid .description {
+    margin-top: 23px;
+    max-width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 @media screen and (max-width: 900px) {
     .product-grid-title {
