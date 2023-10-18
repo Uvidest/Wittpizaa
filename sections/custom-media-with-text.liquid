@@ -7,20 +7,10 @@
         background: {{ section.settings.bg_color }};
     }
 
-    .section-{{ section.id }} .page-width {
-      padding-left: 48px;
-      padding-right: 48px;
-    }
-
     @media screen and (max-width: 768px) {
       .section-{{ section.id }} {
         padding-top: {{ section.settings.space_top_mobile }}px;
         padding-bottom: {{ section.settings.space_bottom_mobile }}px;
-      }
-
-      .section-{{ section.id }} .page-width {
-        padding-left: 15px;
-        padding-right: 15px;
       }
     }
 </style>

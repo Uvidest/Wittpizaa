@@ -20,9 +20,6 @@ sectionTabs.forEach(sectionTabs => {
             const intersecting = entry.isIntersecting
             if (intersecting){
                 changeScrollBarPosition(sectionTabs)
-                tabs.forEach(tab => {
-                    tab.classList.remove("active")
-                })
             }
         })
     }, { rootMargin: `-${window.innerHeight/2 - 40}px 0px -${window.innerHeight/2 - 40}px 0px ` })
@@ -34,9 +31,9 @@ function changeScrollBarPosition(section){
     tabs.forEach(tab => {
         tab.classList.remove("active")
         if (tab.getAttribute("data-section-id") == section.getAttribute("data-custom-section-id")){
+            tab?.classList.add("active")
             activeTab = tab
         }
-
     })
     scrollBarController.style.left = activeTab.offsetLeft+"px"
     scrollBarController.style.width = activeTab.offsetWidth+"px"

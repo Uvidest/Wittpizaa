@@ -163,7 +163,7 @@ details > .header__icon--menu .icon-hamburger{
   font-weight: 700;
 }
 .product-navigation{
-  background: #363636;
+  background: #181818;
     top: 130px;
     left: 0;
     width: 100%;
@@ -185,7 +185,6 @@ details > .header__icon--menu .icon-hamburger{
 }
 
 .product-navigation .product_breadcrumbs__wrapper .breadcrumbs__item {
-  
     color: #fff;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 20px;
@@ -193,9 +192,7 @@ details > .header__icon--menu .icon-hamburger{
     font-weight: 400;
     line-height: 130%;
 }
-.navigation-list-item{
-  color: #fff;
-}
+
 .breadcrumbs a,
 .breadcrumbs{
   margin: auto 0;
@@ -205,6 +202,7 @@ details > .header__icon--menu .icon-hamburger{
   line-height: 130%; /* 26px */
 }
 .navigation-list-item{
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   padding: 15px 20px;
@@ -212,12 +210,11 @@ details > .header__icon--menu .icon-hamburger{
   position: relative;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 130%; /* 26px */
-  font-family: var(--font-heading-family);
 }
 .navigation-list-item.active{
-  background: #545454;
+  font-weight: 700;
 }
 .navigation-list-item:last-child{
   margin-right: 0;
@@ -235,11 +232,28 @@ details > .header__icon--menu .icon-hamburger{
   left: 0;
   border-radius: 50px;
   height: 100%;
-  background: #545454;
+  background: #2C2C2C;
   transition-duration: 500ms;
 }
 .utility-bar .localization-wrapper .disclosure .localization-form__select{
   font-size: 16px;
+}
+@media screen and (max-width: 1440px) {
+  .navigation-list-item,
+  .product-navigation .product_breadcrumbs__wrapper .breadcrumbs__item{
+    font-size: 15px;
+    line-height: 10px;
+  }
+  .navigation-list-item{
+    padding: 12px 23px;
+  }
+  .product-navigation-list{
+    gap: 8px
+  }
+  .product-navigation__wrapper{
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 @media screen and (max-width: 1100px) {
   .product-navigation__wrapper {

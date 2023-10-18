@@ -47,12 +47,19 @@
     display: none;
   }
 }
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1440px) {
     .product-main-video__wrapper {
         max-width: 1115px;
     }
     .product-main-video__title {
-        font-size: 48px;
+        font-size: 55px;
+        margin-bottom: 55px;
+    }
+    .product-main-video__wrapper{
+        max-width: 976px;
+    }
+    .product-main-video__video{
+        padding-bottom: 63%;
     }
 }
 @media screen and (max-width: 768px) {
