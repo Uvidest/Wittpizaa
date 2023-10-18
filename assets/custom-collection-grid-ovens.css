@@ -236,7 +236,10 @@
         height: 46px;
         max-width: 160px;
     }
-
+    .custom-collection .product__view-details{
+        max-width: 160px;
+        padding: 14px 10px;
+    }
 }
 @media screen and (max-width: 900px) {
     .product-grid-title {
