@@ -96,7 +96,6 @@ product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-pr
 .card-information .price__container .price-item {
     color: #171719;
     text-align: center;
-    font-family: Oswald;
     font-size: 20px !important;
     font-style: normal;
     font-weight: 400;
@@ -213,9 +212,10 @@ product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-pr
     background-color: #D0672A;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1440px) {
     .related-products__heading {
-        font-size: 48px;
+        font-size: 40px;
+        margin-bottom: 47px;
     }
     .card__content .card__heading {
         font-size: 32px;
@@ -244,6 +244,28 @@ product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-pr
         z-index: 2;
         background: rgba(255, 255, 255, 0.50);
         border-radius: 20px;
+    }
+    product-recommendations .card--standard>.card__content{
+        padding: 26px 23px 19px 23px;
+    }
+    .card__content .card__heading a{
+        font-size: 20px;
+    }
+    product-recommendations .card-information>*:not(.visually-hidden:first-child)+*:not(.rating):not(.card__information-volume-pricing-note){
+        margin-top: 17px;
+    }
+    .card__information+.quick-add{
+        margin-top: 22px;
+    }
+    .product_card__read-more,
+    .card__information+.quick-add product-form button.quick-add__submit{
+        font-size: 14px;
+    }
+    .card__information+.quick-add product-form button.quick-add__submit,
+    .product_card__read-more {
+        font-size: 14px;
+        height: fit-content;
+        padding: 8px 0;
     }
 }
 
@@ -295,10 +317,6 @@ product-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-pr
     }
 
     .card__information+.quick-add product-form button.quick-add__submit {
-        font-size: 14px;
-    }
-
-    .product_card__read-more {
         font-size: 14px;
     }
 

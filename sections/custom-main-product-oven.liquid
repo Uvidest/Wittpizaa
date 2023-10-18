@@ -38,12 +38,6 @@
           }
         }
 
-        @media screen and (min-width: 1440px) {
-          .section-{{ section.id }}-padding {
-            padding-left: 48px;
-            padding-right: 48px;
-          }
-        }
     {%- endstyle -%}
 
     <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
@@ -602,16 +596,7 @@
                         {% endif %}
                     {% endfor %}
                 </div>
-                <div class="payment_icons__wrapper">
-                    <span class="payment_icons__text">{{ 'products.product.payment_icons_text' | t }}</span>
-                    <div class="payment_icons__icons">
-                        {% for i in (1..6) %}
-                            <div class="payment_icons__item">
-                                {% render 'payment-icons', index: i %}
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
+                {% render "payment-buttons" %}
 
                 <a href="{{ product.url }}" class="link product__view-details animate-arrow">
                     {{ 'products.product.view_full_details' | t }}
