@@ -276,7 +276,6 @@ button.product-form__submit:hover:after,
     gap: 16px;
     align-items: center;
     color: #FFF;
-    font-family: var(--font-heading-family);
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
