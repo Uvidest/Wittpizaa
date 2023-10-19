@@ -126,7 +126,7 @@
     max-width: initial !important;
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: start;
     gap: 20px;
     flex-wrap: wrap;
 }
