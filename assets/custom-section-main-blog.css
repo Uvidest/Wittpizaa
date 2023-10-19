@@ -225,6 +225,7 @@
     .blog-category__name{
         font-size: 26px;
         line-height: 17px;
+        font-weight: 600
     }
     .article-card__image--medium .ratio:before {
         padding-bottom: 62%;
