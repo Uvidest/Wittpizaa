@@ -224,6 +224,9 @@ cart-items {
 }
 
 /*custom style*/
+.template-cart{
+  background: #E0DED4;
+}
 .main-cart-items .cart-items{
   border: none;
 }
