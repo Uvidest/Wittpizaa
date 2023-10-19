@@ -205,6 +205,7 @@
     .main-blog__description {
         font-size: 24px;
         margin-bottom: 44px;
+        max-width: 689px
     }
     .blog-categories__list{
         max-width: 744px;
