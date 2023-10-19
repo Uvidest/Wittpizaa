@@ -71,7 +71,6 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 }
 
 .drawer__header {
-  position: relative;
   background-color: rgba(224, 222, 212, 1);
   display: flex;
   justify-content: space-between;
