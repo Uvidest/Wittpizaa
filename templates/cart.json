@@ -31,26 +31,10 @@
         "padding_top": 0,
         "padding_bottom": 56
       }
-    },
-    "6c182940-7774-4be4-b615-85f202c80993": {
-      "type": "related-products",
-      "settings": {
-        "heading": "You may also like",
-        "products_to_show": 4,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "cart-items",
-    "cart-footer",
-    "6c182940-7774-4be4-b615-85f202c80993"
+    "cart-footer"
   ]
 }
