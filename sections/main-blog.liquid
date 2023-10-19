@@ -25,7 +25,7 @@
 
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog section-{{ section.id }}-padding">
-    <div class="main-blog--wrapper">
+    <div class="main-blog--wrapper page-width">
       <h1 class="main-blog__title title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
         {{ blog.title | escape }}
       </h1>

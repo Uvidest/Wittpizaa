@@ -1,7 +1,4 @@
-.main-blog {
-    padding-left: 48px;
-    padding-right: 48px;
-}
+
 
 .main-blog__title {
     text-align: center;
@@ -137,7 +134,7 @@
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 130%; /* 62.4px */
+    line-height: 1; /* 62.4px */
     text-transform: uppercase;
 }
 .blog-filter-tags--list {
@@ -197,40 +194,75 @@
 }
 
 @media screen and (max-width: 1440px) {
+    .article-card-wrapper .card__information>*{
+        margin-bottom: 20px;
+    }
     .main-blog__title {
-        font-size: 64px;
-        margin-bottom: 24px;
+        font-size: 60px;
+        margin-bottom: 26px;
     }
 
     .main-blog__description {
         font-size: 24px;
+        margin-bottom: 44px;
     }
     .blog-categories__list{
-        max-width: 914px;
-        gap: 16px
+        max-width: 744px;
+        gap: 16px;
+        margin-bottom: 44px;
     }
     .blog-categories__item svg {
         max-width: 70px;
         max-height: 70px;
     }
     .blog-categories__item{
-        gap: 16px;
-        width: 170px;
-        height: 170px;
+        gap: 20px;
+        width: 135px;
+        height: 135px;
+        padding: 18px;
     }
     .blog-category__name{
-        font-size: 32px;
+        font-size: 26px;
+        line-height: 17px;
     }
     .article-card__image--medium .ratio:before {
         padding-bottom: 62%;
     }
 
     .article-card-wrapper .card__content {
-        padding: 24px 30px;
+        padding: 24px;
     }
 
     .article-card__excerpt {
-        margin-bottom: 16px;
+        font-size: 17px;
+    }
+    .blog-filter-tags--item-checkbox{
+        width: 34px;
+        height: 19px;
+    }
+    .blog-filter-tags--item-circle{
+        width: 13px;
+        height: 13px;
+    }
+    .blog-filter-tags--item a{
+        gap: 6px;
+        font-size: 19px;
+    }
+    .blog-filter-tags--list{
+        margin-bottom: 45px;
+        gap: 30px
+    }
+    .blog-articles{
+        column-gap: 40px;
+    }
+    .article-card-wrapper {
+        border-radius: 10px;
+    }
+    .article-card-wrapper .card__heading{
+        font-size: 24px;
+    }
+    .article-card__link{
+        font-size: 17px;
     }
 }
 
