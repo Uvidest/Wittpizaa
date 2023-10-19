@@ -93,18 +93,17 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   display: inline-block;
   padding: 0;
   box-shadow: 0 0 0 0.2rem rgba(var(--color-button), 0);
-  top: 10px;
-  right: -10px;
+  top: 24px;
+  right: 24pxpx;
   color: rgb(var(--color-foreground));
   background-color: transparent;
   border: none;
   cursor: pointer;
+  position: absolute;
+  
 }
 .drawer__close svg{
   display: block;
-}
-.cart-drawer__warnings .drawer__close {
-  right: 5px;
 }
 
 .drawer__close svg {
