@@ -9,12 +9,7 @@
     padding-bottom: {{ section.settings.padding_bottom_mobile}}px;
     background: {{ section.settings.bg_color }}
   }
-  @media screen and (max-width: 768px) {
-  .section-{{ section.id }}-padding {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -178,6 +173,26 @@
         {
           "type": "html",
           "id": "icon-5",
+          "label": "Icon for category"
+        },
+        {
+          "type": "text",
+          "id": "tag_name-6",
+          "label": "Tag name of category"
+        },
+        {
+          "type": "html",
+          "id": "icon-6",
+          "label": "Icon for category"
+        },
+        {
+          "type": "text",
+          "id": "tag_name-7",
+          "label": "Tag name of category"
+        },
+        {
+          "type": "html",
+          "id": "icon-7",
           "label": "Icon for category"
         }
       ]

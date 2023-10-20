@@ -1,7 +1,7 @@
 
 .custom-featured-product-grid .loox-rating{
-    text-align: center;
-    margin-top: 20px;
+    justify-content: center;
+    margin-top: 11px;
 }
 .custom-featured-product-grid svg.loox-icon {
     width: 24px;
@@ -140,7 +140,7 @@
     font-weight: 700;
     line-height: 1;
     margin: 0;
-    margin-top: 24px;
+    margin-top: 20px;
     text-transform: uppercase;
 
 }
@@ -221,7 +221,6 @@
     }
     .custom-featured-product-grid .product__title {
         font-size: 38px;
-        margin-top: 20px;
     }
 
     .custom-collection .product-grid {
