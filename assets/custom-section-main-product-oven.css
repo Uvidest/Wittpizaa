@@ -135,7 +135,17 @@
 .main_product .product__column-sticky {
     top: 20rem
 }
-
+.main_product .loox-rating .loox-icon *{
+    color: #FEB739 !important;
+}
+.main_product .loox-rating .loox-rating-content{
+    gap: 2px;
+    margin-bottom: 20px;
+}
+.main_product svg.loox-icon {
+    width: 24px;
+    height: 24px;
+}
 .product__title h1{
     font-size: 56px;
     font-style: normal;

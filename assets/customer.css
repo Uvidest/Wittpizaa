@@ -938,6 +938,7 @@ main {
 .addresses .h2 {
   text-align: center;
   padding-top: 48px;
+  font-size: 24px;
   margin: 0;
   text-transform: uppercase;
 }
@@ -955,6 +956,12 @@ main {
 }
 .butns__reset .button_custom{
   margin-top: 0 !important;
+}
+.reset-password h1{
+  text-transform: uppercase;
+}
+.reset-password p{
+  font-size: 24px;
 }
 @media (max-width: 1440px) {
   .customer__title.h1{
@@ -978,7 +985,7 @@ main {
   }
   .login p {
     padding-top: 24px;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1;
   }
   .customer-account__details.h2{
@@ -1009,6 +1016,13 @@ main {
   }
   .customer .butns__reset{
     padding-top: 45px;
+  }
+  .reset-password h1{
+    font-size: 38px;
+  }
+  .reset-password p{
+    margin-top: 26px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 576px) {

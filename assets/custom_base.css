@@ -304,3 +304,9 @@ localization-form{
 .shopify-payment-button__more-options{
     max-width: none !important;
 }
+.loox-rating .loox-rating-content{
+    gap: 1px
+}
+.loox-rating-label{
+    margin-left: 6px;
+}
