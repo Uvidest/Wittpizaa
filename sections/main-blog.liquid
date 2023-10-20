@@ -29,36 +29,37 @@
           {{ section.settings.description }}
         </p>
       {% endif %}
+      {% if section.settings.show_category == true %}
+        <div class="blog-categories">
+            <ul class="blog-categories__list">
       {% for block in section.blocks %}
         {% if block.type == "categories" %}
-          <div class="blog-categories">
-            <ul class="blog-categories__list">
-              {% for i in (1..5) %}
-                {% assign tagNameSettings = 'tag_name-' | append: i %}
-                {% assign iconNameSettings = 'icon-' | append: i %}
-              {% if block.settings[tagNameSettings] != blank and blog.all_tags contains block.settings[tagNameSettings]  %}
+        
+            
+              {% if block.settings.tag_name != blank and blog.all_tags contains block.settings.tag_name %}
                 {% capture categoryTag %}
-                  <li class="blog-categories__item {% if current_tags contains block.settings[tagNameSettings] %}active{% endif %}">
-                {% if block.settings[iconNameSettings] != blank %}
-                  {{ block.settings[iconNameSettings] }}
+                  <li class="blog-categories__item {% if current_tags contains block.settings.tag_name %}active{% endif %}">
+                {% if block.settings.icon != blank %}
+                  {{ block.settings.icon }}
                 {% endif %}
                 <span class="blog-category__name">
-                  {{ block.settings[tagNameSettings] }}
+                  {{ block.settings.tag_name }}
                 </span>
                   </li>
               {% endcapture %}
-                {%- if current_tags contains block.settings[tagNameSettings] -%}
-                  {{- categoryTag | link_to_remove_tag: block.settings[tagNameSettings] -}}
+                {%- if current_tags contains block.settings.tag_name -%}
+                  {{- categoryTag | link_to_remove_tag: block.settings.tag_name -}}
                 {%- else -%}
-                  {{- categoryTag | link_to_add_tag : block.settings[tagNameSettings] -}}
+                  {{- categoryTag | link_to_add_tag : block.settings.tag_name -}}
                 {%- endif -%}
               {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-          {% break %}
+            
+        
       {% endif %}
       {% endfor %}
+        </ul>
+          </div>
+        {% endif %}
       {%- if section.settings.show_tags and blog.all_tags.size > 0 and section.settings.filters != blank -%}
       <div class="blog-filter-tags">
         <ul class="blog-filter-tags--list">
@@ -127,78 +128,24 @@
       "settings": [
         {
           "type": "text",
-          "id": "tag_name-1",
+          "id": "tag_name",
           "label": "Tag name of category"
         },
         {
           "type": "html",
-          "id": "icon-1",
-          "label": "Icon for category"
-        },
-        {
-          "type": "text",
-          "id": "tag_name-2",
-          "label": "Tag name of category"
-        },
-        {
-          "type": "html",
-          "id": "icon-2",
-          "label": "Icon for category"
-        },
-        {
-          "type": "text",
-          "id": "tag_name-3",
-          "label": "Tag name of category"
-        },
-        {
-          "type": "html",
-          "id": "icon-3",
-          "label": "Icon for category"
-        },
-        {
-          "type": "text",
-          "id": "tag_name-4",
-          "label": "Tag name of category"
-        },
-        {
-          "type": "html",
-          "id": "icon-4",
-          "label": "Icon for category"
-        },
-        {
-          "type": "text",
-          "id": "tag_name-5",
-          "label": "Tag name of category"
-        },
-        {
-          "type": "html",
-          "id": "icon-5",
-          "label": "Icon for category"
-        },
-        {
-          "type": "text",
-          "id": "tag_name-6",
-          "label": "Tag name of category"
-        },
-        {
-          "type": "html",
-          "id": "icon-6",
-          "label": "Icon for category"
-        },
-        {
-          "type": "text",
-          "id": "tag_name-7",
-          "label": "Tag name of category"
-        },
-        {
-          "type": "html",
-          "id": "icon-7",
+          "id": "icon",
           "label": "Icon for category"
         }
       ]
     }
   ],
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_category",
+      "default": true,
+      "label": "Show category"
+    },
     {
       "type": "color",
       "id": "bg_color",
