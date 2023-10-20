@@ -489,6 +489,7 @@
 .card-wrapper .loox-rating{
   justify-content: center;
   margin-bottom: 18px;
+  margin: 0 auto
 }
 .card-wrapper .loox-rating .loox-icon{
   width: 22px;
@@ -500,8 +501,6 @@
 .loox-rating-label{
   margin-left: 6px;
 }
-.card-wrapper .loox-rating .loox-rating-content{
-  margin:0 auto
-}
+
 
 
