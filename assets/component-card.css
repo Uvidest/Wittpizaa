@@ -487,9 +487,8 @@
   overflow: hidden;
 }
 .card-wrapper .loox-rating{
-  text-align: center;
+  justify-content: center;
   margin-bottom: 18px;
-  height: 22px;
 }
 .card-wrapper .loox-rating .loox-icon{
   width: 22px;

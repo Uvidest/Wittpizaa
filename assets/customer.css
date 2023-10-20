@@ -959,6 +959,7 @@ main {
 }
 .reset-password h1{
   text-transform: uppercase;
+  font-weight: 700;
 }
 .reset-password p{
   font-size: 24px;

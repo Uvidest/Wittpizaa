@@ -1,6 +1,7 @@
 
 .product .loox-rating .loox-rating-content{
     gap: 2px;
+    margin-top: 5px;
 }
 .product svg.loox-icon {
     width: 24px;
