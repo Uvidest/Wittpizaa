@@ -21,7 +21,7 @@
 }
 
 .section-recommendations.related-products ul.grid li.swiper-slide {
-    max-width: 50%;
+    max-width:275px;
     width: 100%;
     height: auto;
 }
@@ -223,10 +223,6 @@
 
     .card-information .price__container .price-item {
         font-size: 20px !important;
-    }
-
-    .section-recommendations.related-products.related_products__no-slides ul.grid {
-        justify-content: center;
     }
 
     .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide+.grid__item.swiper-slide:not(:last-child)::after {
