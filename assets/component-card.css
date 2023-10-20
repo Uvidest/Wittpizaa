@@ -502,6 +502,12 @@
 .loox-rating-label{
   margin-left: 6px;
 }
+@media screen and (min-width: 600px){
+  .card-wrapper .loox-rating .loox-icon{
+  width: 14px;
+  height: 14px;
+}
+}
 
 
 
