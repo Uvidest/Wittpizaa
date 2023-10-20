@@ -213,6 +213,7 @@
 }
 
 @media screen and (max-width: 1440px) {
+    
     .related-products__heading {
         font-size: 40px;
         margin-bottom: 47px;
@@ -243,6 +244,9 @@
     }
     .section-recommendations .card--standard>.card__content{
         padding: 26px 23px 19px 23px;
+    }
+    .section-recommendations .ratio:before{
+          padding-bottom: 90.55%;
     }
     .card__content .card__heading a{
         font-size: 20px;
