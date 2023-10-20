@@ -486,12 +486,12 @@
 .quick-add__submit{
   overflow: hidden;
 }
-.card-wrapper .loox-rating{
+.card__inner .loox-rating{
   justify-content: center;
   margin-bottom: 18px;
   margin: 0 auto
 }
-.card-wrapper .loox-rating .loox-icon{
+.card__inner .loox-rating .loox-icon{
   width: 22px;
   height: 22px;
 }
