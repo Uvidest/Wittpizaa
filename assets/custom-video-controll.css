@@ -66,6 +66,9 @@
   .video-controll__video {
     max-height: 493px;
   }
+  .video-controll__content{
+    left: 135px;
+  }
   }
 @media (max-width: 1200px) {
   .video-controll__text-content {
