@@ -500,5 +500,8 @@
 .loox-rating-label{
   margin-left: 6px;
 }
+.card-wrapper .loox-rating .loox-rating-content{
+  margin:0 auto
+}
 
 
