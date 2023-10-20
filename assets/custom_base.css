@@ -315,4 +315,7 @@ localization-form{
     .payment_icons__wrapper{
         flex-direction: column;
     }
+  .loox-rating-label{
+    font-size: 10px
+}
 }
