@@ -93,7 +93,7 @@
   color: #d0672a;
   text-decoration: underline;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .custom-blog-list__title {
     font-size: 60px;
     padding-bottom: 55px;

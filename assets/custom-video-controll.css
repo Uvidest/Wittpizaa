@@ -52,7 +52,7 @@
 }
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .video-controll__text-content {
     font-size: 45px;
     line-height: 132%;

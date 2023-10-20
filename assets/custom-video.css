@@ -18,7 +18,7 @@
   margin: 0;
   font-family: 'Oswald';
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .video-block > video {
     min-height: 324px;
   }

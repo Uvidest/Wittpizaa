@@ -164,7 +164,7 @@ button:not([disabled]):hover:after,
     transform: translate(-50%, -50%);
   }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
     .featured_product-title {
         font-size: 55px;
         margin-bottom: 55px;

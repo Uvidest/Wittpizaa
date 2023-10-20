@@ -68,7 +68,7 @@
     line-height: 130%; /* 26px */
     max-width: 646px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
     .media-with-text__content-block{
         padding: 72px 58px 71px 55px;
     }

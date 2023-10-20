@@ -461,7 +461,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   transition: background-color .3s ease-in;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1920px) {
   .drawer__inner {
     width: 40rem;
   }
