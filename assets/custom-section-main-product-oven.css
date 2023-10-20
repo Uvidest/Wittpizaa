@@ -331,7 +331,7 @@ button.product-form__submit:hover:after,
 }
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
     .main_product{
         max-width: 1365px;
         margin: unset;

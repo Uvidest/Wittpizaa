@@ -144,7 +144,7 @@
 .product-list__product.product{
   padding: 16px 16px 24px 16px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .product-list__wrapper {
     padding: 37px 51px;
     gap: 37px

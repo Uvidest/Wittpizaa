@@ -57,7 +57,7 @@
   object-fit: cover;
   
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .custom-prevProduct-video__wrapper {
     column-gap: 44px;
   }

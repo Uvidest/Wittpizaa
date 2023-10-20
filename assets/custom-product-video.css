@@ -47,7 +47,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
     .product-main-video__wrapper {
         max-width: 1115px;
     }

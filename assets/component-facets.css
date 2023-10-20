@@ -1124,7 +1124,7 @@ input.mobile-facets__checkbox {
     padding: 0 1rem 1rem;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .facet-filters__label,
   .product-count__text{
     font-size: 18px;
