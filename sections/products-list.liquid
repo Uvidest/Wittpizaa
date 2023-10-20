@@ -30,7 +30,7 @@
     }
   }
 {%- endstyle -%}
-
+{% if section.settings.products != blank %}
 <div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden ">
   <div
     class="section-recommendations swiper swiper-{{ section.id }} related-products section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -124,6 +124,7 @@
     })
   })
 </script>
+  {% endif %}
 {% schema %}
 {
   "name": "t:sections.related-products.name",
