@@ -1332,8 +1332,8 @@ class ProductRecommendations extends HTMLElement {
           }
 
           let recommendationsSlider = new Swiper('product-recommendations.swiper', {
-            slidesPerView: 1.14,
-            slidesPerGroup: 1,
+            slidesPerView: "auto",
+          
             spaceBetween: 15,
             navigation: {
               prevEl: '.product-recommendations__arrow-left',
@@ -1343,32 +1343,7 @@ class ProductRecommendations extends HTMLElement {
               el: '.product-rocommendations__pagination',
               clickable: true,
               /* dynamicBullets: true */
-            },
-            breakpoints: {
-              750: {
-                slidesPerView: 2.4,
-                slidesPerGroup: 2,
-                spaceBetween: 15,
-                pagination: false
-              },
-              990: {
-                slidesPerView: 3.4,
-                slidesPerGroup: 2,
-                spaceBetween: 16,
-                pagination: false
-              }, 
-              1250: {
-                slidesPerView: 3.46,
-                slidesPerGroup: 2,
-                spaceBetween: 16,
-                pagination: false
-              },
-              1450: {
-                slidesPerView: 4.65,
-                slidesPerGroup: 2,
-                spaceBetween: 16,
-                pagination: false
-              }
+            }
             }
           })
 
