@@ -289,15 +289,6 @@ localization-form{
         gap: 17px
     }
 }
-
-@media screen and (max-width: 600px){
-    .payment_icons__text {
-        font-size: 18px;
-    }
-    .payment_icons__wrapper{
-        flex-direction: column;
-    }
-}
 .needsclick{
     z-index: 900 !important;
 }
@@ -316,4 +307,12 @@ localization-form{
     margin-left: 6px;
     white-space: nowrap;
     line-height: 1;
+}
+@media screen and (max-width: 600px){
+    .payment_icons__text {
+        font-size: 18px;
+    }
+    .payment_icons__wrapper{
+        flex-direction: column;
+    }
 }
