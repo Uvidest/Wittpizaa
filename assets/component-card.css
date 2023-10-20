@@ -486,4 +486,20 @@
 .quick-add__submit{
   overflow: hidden;
 }
+.card-wrapper .loox-rating{
+  text-align: center;
+  margin-bottom: 18px;
+  height: 22px;
+}
+.card-wrapper .loox-rating .loox-icon{
+  width: 22px;
+  height: 22px;
+}
+.loox-rating .loox-rating-content{
+  gap: 1px
+}
+.loox-rating-label{
+  margin-left: 6px;
+}
+
 

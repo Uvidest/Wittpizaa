@@ -196,6 +196,8 @@
                         </script>
             </variant-radios>
         {%- endunless -%}
+        <div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div>
+
         <div class="product__info-wrapper grid__item">
             <product-info
                     id="ProductInfo-{{ section.id }}"

@@ -96,6 +96,9 @@
     margin: 0 auto;
     padding: 0;
 }
+.blog-categories__list a{
+    text-decoration: none;
+}
 .blog-categories{
     max-width: 1200px;
     margin: 0 auto;
@@ -120,6 +123,9 @@
     background: #FFF;
     box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.10);
     padding: 15px;
+}
+.blog-categories__item.active{
+    border: 1px solid black;
 }
 .blog-categories__item svg{
     max-width: 100px;

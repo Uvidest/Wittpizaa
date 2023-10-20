@@ -31,39 +31,26 @@
   }
 {%- endstyle -%}
 
-
-<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
-  <product-recommendations
-    class="swiper section-recommendations related-products section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden ">
+  <div
+    class="section-recommendations swiper swiper-{{ section.id }} related-products section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
   >
-    {% if recommendations.performed and recommendations.products_count > 0 %}
+    {% if section.settings.heading != blank %}
       <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
         {{ section.settings.heading }}
       </h2>
+    {% endif %}
+
       <ul
         class="swiper-wrapper grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
         role="list"
       >
-        {% for recommendation in recommendations.products %}
-          <li class="grid__item swiper-slide">
-            {% render 'card-product',
-              card_product: recommendation,
-              media_aspect_ratio: section.settings.image_ratio,
-              image_shape: section.settings.image_shape,
-              show_secondary_image: section.settings.show_secondary_image,
-              show_vendor: section.settings.show_vendor,
-              show_rating: section.settings.show_rating,
-              show_quick_add: true,
-            %}
-          </li>
-        {% endfor %}
+        {% for product in section.settings.products %}
 
-        {%- comment -%} For testing purposes. Should be deleted in future
-        {% for recommendation in collections['all'].products %}
           <li class="grid__item swiper-slide">
             {% render 'card-product',
-              card_product: recommendation,
+              card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               image_shape: section.settings.image_shape,
               show_secondary_image: section.settings.show_secondary_image,
@@ -74,20 +61,6 @@
           </li>
         {% endfor %}
 
-        {% for recommendation in collections['all'].products %}
-          <li class="grid__item swiper-slide">
-            {% render 'card-product',
-              card_product: recommendation,
-              media_aspect_ratio: section.settings.image_ratio,
-              image_shape: section.settings.image_shape,
-              show_secondary_image: section.settings.show_secondary_image,
-              show_vendor: section.settings.show_vendor,
-              show_rating: section.settings.show_rating,
-              show_quick_add: true
-            %}
-          </li>
-        {% endfor %}
-        {%- endcomment -%}
       </ul>
       <div class="product-recommendations__navigation">
         <div class="product-recommendations__nav-item product-recommendations__arrow-left" style="transform: rotate(180deg);">
@@ -102,19 +75,66 @@
         </div>
       </div>
       <div class="product-rocommendations__pagination"></div>
-    {% endif %}
-  </product-recommendations>
+  </div>
   {% if section.settings.image_shape == 'arch' %}
     {% render 'mask-arch' %}
   {%- endif -%}
 </div>
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let recommendationsSlider = new Swiper('.swiper-{{ section.id }}', {
+      slidesPerView: 1.14,
+      slidesPerGroup: 1,
+      spaceBetween: 15,
+      navigation: {
+        prevEl: '.product-recommendations__arrow-left',
+        nextEl: '.product-recommendations__arrow-right'
+      },
+      pagination: {
+        el: '.product-rocommendations__pagination',
+        clickable: true,
+        /* dynamicBullets: true */
+      },
+      breakpoints: {
+        750: {
+          slidesPerView: 2.4,
+          slidesPerGroup: 2,
+          spaceBetween: 15,
+          pagination: false
+        },
+        990: {
+          slidesPerView: 3.4,
+          slidesPerGroup: 2,
+          spaceBetween: 16,
+          pagination: false
+        },
+        1250: {
+          slidesPerView: 3.46,
+          slidesPerGroup: 2,
+          spaceBetween: 16,
+          pagination: false
+        },
+        1450: {
+          slidesPerView: 4.65,
+          slidesPerGroup: 2,
+          spaceBetween: 16,
+          pagination: false
+        }
+      }
+    })
+  })
+</script>
 {% schema %}
 {
   "name": "t:sections.related-products.name",
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "product_list",
+      "id": "products",
+      "label": "Products"
+    },
     {
       "type": "paragraph",
       "content": "t:sections.related-products.settings.paragraph__1.content"
@@ -256,7 +276,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.related-products.name"
+      "name": "Product list"
     }
   ]
 }

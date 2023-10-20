@@ -1,3 +1,11 @@
+
+.product .loox-rating .loox-rating-content{
+    gap: 2px;
+}
+.product svg.loox-icon {
+    width: 24px;
+    height: 24px;
+}
 .product_breadcrumbs__wrapper {
     position: absolute;
     top: 16px;
@@ -186,7 +194,6 @@
 
 .advantages__item span {
     color: #171719;
-    font-family: Oswald;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;

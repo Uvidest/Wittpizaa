@@ -1,3 +1,15 @@
+
+.custom-featured-product-grid .loox-rating{
+    text-align: center;
+    margin-top: 20px;
+}
+.custom-featured-product-grid svg.loox-icon {
+    width: 24px;
+    height: 24px;
+}
+.custom-featured-product-grid .loox-rating .loox-rating-content{
+    gap: 2px
+}
 .product__info-container>*+*{
     margin: 0;
 }
