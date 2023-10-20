@@ -1332,7 +1332,7 @@ class ProductRecommendations extends HTMLElement {
           }
 
           let recommendationsSlider = new Swiper('product-recommendations.swiper', {
-            slidesPerView: 1.14,
+                slidesPerView: "auto",
             slidesPerGroup: 1,
             spaceBetween: 15,
             navigation: {
@@ -1346,19 +1346,19 @@ class ProductRecommendations extends HTMLElement {
             },
             breakpoints: {
               750: {
-                slidesPerView: 2.4,
+                slidesPerView: "auto",
                 slidesPerGroup: 2,
                 spaceBetween: 15,
                 pagination: false
               },
               990: {
-                slidesPerView: 3.4,
+                slidesPerView: "auto",
                 slidesPerGroup: 2,
                 spaceBetween: 16,
                 pagination: false
               }, 
               1250: {
-                slidesPerView: 3.46,
+                slidesPerView: "auto",
                 slidesPerGroup: 2,
                 spaceBetween: 16,
                 pagination: false
