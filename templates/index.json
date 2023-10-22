@@ -294,7 +294,7 @@
             "product_handle": "",
             "aggregated": true,
             "data-limit": 20,
-            "maxwidth": 1080
+            "maxwidth": 1400
           }
         }
       },
@@ -302,7 +302,13 @@
         "4692d659-7c47-4ead-84f4-f394c8a8ad50"
       ],
       "settings": {
-        "include_margins": true
+        "badge": "verified reviews",
+        "title": "join our customer community",
+        "include_margins": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 36
       }
     }
   },
