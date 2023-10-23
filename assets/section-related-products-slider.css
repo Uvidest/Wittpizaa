@@ -24,7 +24,6 @@
     width: 100%;
     height: auto;
       max-width: calc(100%/4.45);
-
 }
 
 .section-recommendations.related-products ul.grid li.swiper-slide:last-child {
