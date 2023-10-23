@@ -21,7 +21,6 @@
 }
 
 .section-recommendations.related-products ul.grid li.swiper-slide {
-    max-width:275px;
     width: 100%;
     height: auto;
 }
@@ -30,8 +29,8 @@
     margin-right: 0 !important;
 }
 
-.section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide+.grid__item.swiper-slide:not(:last-child)::after,
-.section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-prev:not(:first-child)::after {
+.section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide+.grid__item.swiper-slide::after,
+.section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-prev::after {
     content: '';
     display: flex;
     width: 100%;
@@ -210,7 +209,9 @@
 }
 
 @media screen and (max-width: 1440px) {
-    
+    .section-recommendations.related-products ul.grid li.swiper-slide{
+        max-width: 275px;
+    }
     .related-products__heading {
         font-size: 40px;
         margin-bottom: 47px;
@@ -223,11 +224,11 @@
         font-size: 20px !important;
     }
 
-    .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide+.grid__item.swiper-slide:not(:last-child)::after {
+    .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide+.grid__item.swiper-slide::after {
         display: none;
     }
 
-    .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide:not(:last-child)::after {
+    .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide +.grid__item.swiper-slide::after {
         content: '';
         display: flex;
         width: 100%;
@@ -240,7 +241,7 @@
         border-radius: 20px;
     }
     .section-recommendations .card--standard>.card__content{
-        padding: 26px 23px 19px 23px;
+        padding: 26px 17px 19px 17px;
     }
     .section-recommendations .ratio:before{
           padding-bottom: 90.55%;
@@ -265,13 +266,28 @@
         padding: 8px 0;
     }
 }
+@media screen and (max-width: 1200px) {
 
-@media screen and (max-width: 989px) {
-    .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide:not(:last-child)::after {
+
+    .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide::after {
+        content: '';
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.50);
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 909px) {
+    .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide+.grid__item.swiper-slide::after {
         display: none;
     }
 
-    .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide:not(:last-child)::after {
+    .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide::after {
         content: '';
         display: flex;
         width: 100%;
@@ -286,7 +302,7 @@
 }
 
 @media screen and (max-width: 749px) {
-    .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide:not(:last-child)::after {
+    .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide::after {
         display: none;
     }
 
@@ -324,5 +340,11 @@
     .product-recommendations__navigation {
         top: 45%;
         width: calc(100% - 30px);
+    }
+    .card__content .card__heading a{
+        font-size: 29px;
+    }
+    .card-information .price__container .price-item{
+        font-size: 19px !important;
     }
 }

@@ -84,8 +84,8 @@
   document.addEventListener('DOMContentLoaded', function() {
     let recommendationsSlider = new Swiper('.swiper-{{ section.id }}', {
       slidesPerView: 1.14,
-      slidesPerGroup: 1,
       spaceBetween: 15,
+      loop: true,
       navigation: {
         prevEl: '.product-recommendations__arrow-left',
         nextEl: '.product-recommendations__arrow-right'
@@ -97,26 +97,22 @@
       },
       breakpoints: {
         750: {
-          slidesPerView: 2.4,
-          slidesPerGroup: 2,
+          slidesPerView: "auto",
           spaceBetween: 15,
           pagination: false
         },
         990: {
-          slidesPerView: 3.4,
-          slidesPerGroup: 2,
+          slidesPerView: "auto",
           spaceBetween: 16,
           pagination: false
         },
         1250: {
-          slidesPerView: 3.46,
-          slidesPerGroup: 2,
+          slidesPerView: "auto",
           spaceBetween: 16,
           pagination: false
         },
-        1450: {
+        1440: {
           slidesPerView: 4.65,
-          slidesPerGroup: 2,
           spaceBetween: 16,
           pagination: false
         }
