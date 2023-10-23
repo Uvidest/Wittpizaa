@@ -30,7 +30,7 @@
     padding: 10px;
     background: #B0ADA6;
     color: #FFF;
-    font-size: 21px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: 130%; /* 27.3px */
@@ -48,7 +48,11 @@
     max-width: 22px;
     display: block;
   }
-
+  @media screen and (max-width: 1440px) {
+    .section-app h2{
+      font-size: 48px;
+    }
+  }
   @media screen and (max-width: 768px) {
     .section-app h2{
       font-size: 32px;
@@ -60,7 +64,7 @@
   }
 </style>
 
-<div class="section-{{ section.id }}-padding section-app {% if section.settings.include_margins %}page-width{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+<div id="reviewsSection" class="section-{{ section.id }}-padding section-app {% if section.settings.include_margins %}page-width{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
   {% if section.settings.badge != blank %}
     <span class="app-badge">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
