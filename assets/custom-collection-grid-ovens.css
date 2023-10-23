@@ -348,6 +348,7 @@
 }
 
 .custom-featured-product-grid::before {
+    pointer-events: none;
   position: absolute;
   top: 0;
   left: -200%;
