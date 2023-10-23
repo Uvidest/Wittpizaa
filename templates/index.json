@@ -70,7 +70,7 @@
             "title": "ʼMUST HAVESʼ",
             "text_button": "All accessories",
             "icon_button": "",
-            "url_button": "shopify:\/\/collections\/accessories"
+            "url_button": "shopify:\/\/collections\/pizza-accessories"
           }
         },
         "2e3f6640-bbad-44e8-b862-46558d94814d": {
@@ -187,7 +187,7 @@
         "cc13a63f-2c85-40f6-8abb-437c5665c0b4": {
           "type": "collection-item",
           "settings": {
-            "collection": "accessories"
+            "collection": "pizza-accessories"
           }
         },
         "425c8a00-f167-4fd4-b5a8-fa6505c80e8d": {
