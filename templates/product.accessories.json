@@ -100,7 +100,13 @@
         "cebaa85a-ff67-4372-8435-a86775ceed34"
       ],
       "settings": {
-        "include_margins": true
+        "badge": "verified reviews",
+        "title": "join our customer community",
+        "include_margins": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 36
       }
     }
   },
