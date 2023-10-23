@@ -312,6 +312,9 @@ localization-form{
 .card-oven-reviews{
     text-align: center;
 }
+button.needsclick span{
+    background: #ed671d !important;
+}
 @media screen and (max-width: 600px){
     .payment_icons__text {
         font-size: 18px;
