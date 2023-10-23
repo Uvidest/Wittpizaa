@@ -3,6 +3,9 @@
     justify-content: center;
     margin-top: 11px;
 }
+.custom-featured-product-grid .loox-rating-label{
+  color: #fff;
+}
 .custom-featured-product-grid svg.loox-icon {
     width: 24px;
     height: 24px;
