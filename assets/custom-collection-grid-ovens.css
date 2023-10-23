@@ -177,7 +177,6 @@
     font-family: var(--font-heading-family);
     max-width: 200px;
     width: 100%;
-    background: #D0672A;
     border-radius: 25px;
     margin-top: 32px;
     margin-right: 0;
@@ -345,10 +344,10 @@
   position: relative;
 }
 
-.product__media.media.media--transparent::before {
+.custom-featured-product-grid::before {
   position: absolute;
   top: 0;
-  left: -75%;
+  left: -200%;
   z-index: 2;
   display: block;
   content: '';
@@ -360,7 +359,7 @@
   transform: skewX(-25deg);
 }
 
-.product__media.media.media--transparent:hover::before {
+.custom-featured-product-grid:hover::before {
   -webkit-animation: shine .75s;
   animation: shine .75s;
 }

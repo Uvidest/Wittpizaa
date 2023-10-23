@@ -253,7 +253,6 @@ button.product-form__submit:hover:after,
     box-shadow: none;
 }
 .product-form__submit{
-    background: #D0672A;
     max-width: 179px;
     width: 100%;
     padding: 10px;
