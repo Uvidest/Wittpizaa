@@ -328,13 +328,19 @@ button.product-form__submit:hover:after,
 .product-form__buttons{
     margin-bottom: 24px;
 }
-
-
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1440px) {
     .main_product{
         max-width: 1365px;
         margin: unset;
     }
+  .main_product{
+        max-width: 1365px;
+        margin: unset;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+  
     .main_product .grid__item.product__media-wrapper {
     max-width: 49.5% !important;
         padding: 0 !important;
