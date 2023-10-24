@@ -21,7 +21,7 @@
         "hide_list_in_description": true,
         "space_top": 54,
         "space_bottom": 48,
-        "space_top_mobile": 0,
+        "space_top_mobile": 22,
         "space_bottom_mobile": 48
       }
     },
@@ -302,6 +302,7 @@
         "4692d659-7c47-4ead-84f4-f394c8a8ad50"
       ],
       "settings": {
+        "sectionId": "",
         "badge": "verified reviews",
         "title": "join our customer community",
         "include_margins": false,
