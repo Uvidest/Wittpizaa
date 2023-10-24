@@ -5,7 +5,7 @@ tabs.forEach(tab => {
     if (el) {
         tab.addEventListener("click", ()=>{
             {
-                const y = el.getBoundingClientRect().top + window.pageYOffset - 150;
+                const y = el.getBoundingClientRect().top + window.pageYOffset - 200;
                 window.scrollTo({top: y, behavior: "smooth"});
             }
         });

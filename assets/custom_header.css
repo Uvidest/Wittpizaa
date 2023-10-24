@@ -242,7 +242,7 @@ details > .header__icon--menu .icon-hamburger{
   .navigation-list-item,
   .product-navigation .product_breadcrumbs__wrapper .breadcrumbs__item{
     font-size: 15px;
-    line-height: 10px;
+    line-height: 12px;
   }
   .navigation-list-item{
     padding: 12px 23px;
