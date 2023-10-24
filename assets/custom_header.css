@@ -181,7 +181,6 @@ details > .header__icon--menu .icon-hamburger{
     justify-content: flex-start;
     align-items: center;
     gap: 5px;
-    justify-content: center;
 }
 
 .product-navigation .product_breadcrumbs__wrapper .breadcrumbs__item {
@@ -258,6 +257,9 @@ details > .header__icon--menu .icon-hamburger{
 @media screen and (max-width: 1100px) {
   .product-navigation__wrapper {
   grid-template-columns: 1fr;
+}
+.product-navigation .product_breadcrumbs__wrapper{
+  justify-content:center
 }
 .breadcrumbs{
   text-align: center;
