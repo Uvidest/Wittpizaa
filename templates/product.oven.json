@@ -197,7 +197,7 @@
         "title": "watch etna rotante in action",
         "video": "shopify:\/\/files\/videos\/fire.mp4",
         "image_bg": "shopify:\/\/shop_images\/2_witt-pizza2304_1.webp",
-        "sectionId": "Accessories",
+        "sectionId": "",
         "st": 60,
         "sb": 68,
         "stm": 48,
@@ -330,7 +330,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "sectionId": "",
+        "sectionId": "Accessories",
         "heading": "related products",
         "products_to_show": 7,
         "color_scheme": "background-1",
