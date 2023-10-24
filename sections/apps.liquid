@@ -64,7 +64,7 @@
   }
 </style>
 
-<div id="reviewsSection" class="section-{{ section.id }}-padding section-app {% if section.settings.include_margins %}page-width{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+<div {%  if section.settings.sectionId != blank %} data-custom-section-id="{{ section.settings.sectionId }}"{% endif %} id="reviewsSection" class="section-{{ section.id }}-padding section-app {% if section.settings.include_margins %}page-width{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
   {% if section.settings.badge != blank %}
     <span class="app-badge">
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -95,6 +95,11 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "sectionId",
+      "label": "Section id for tab"
+    },
     {
       "type": "text",
       "id": "badge",

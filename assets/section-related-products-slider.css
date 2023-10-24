@@ -106,7 +106,7 @@
 .card__information+.quick-add {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 16px;
+    margin-top: 22px;
     gap: 8px;
 }
 
@@ -303,6 +303,9 @@
 }
 
 @media screen and (max-width: 749px) {
+    .card__information+.quick-add{
+        margin-top: 16px;
+    }
     .section-recommendations.related-products ul.grid li.swiper-slide.swiper-slide-next+.grid__item.swiper-slide::after {
         display: none;
     }
@@ -336,6 +339,7 @@
 
     .card__information+.quick-add {
         gap: 10px;
+        margin-top: 16px;
     }
 
     .product-recommendations__navigation {
@@ -346,6 +350,6 @@
         font-size: 29px;
     }
     .card-information .price__container .price-item{
-        font-size: 19px !important;
+        font-size: 16px !important;
     }
 }

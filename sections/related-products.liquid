@@ -32,7 +32,7 @@
 {%- endstyle -%}
 
 
-<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
+<div {%  if section.settings.sectionId != blank %}data-custom-section-id="{{ section.settings.sectionId }}"{% endif %} class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
   <product-recommendations
     class="swiper section-recommendations related-products section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
@@ -115,6 +115,11 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "sectionId",
+      "label": "Section id for tab"
+    },
     {
       "type": "paragraph",
       "content": "t:sections.related-products.settings.paragraph__1.content"
