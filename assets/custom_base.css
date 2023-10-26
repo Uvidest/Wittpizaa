@@ -327,7 +327,7 @@ button.needsclick span{
         height: 20px !important;
     }
 }
-<style>
+
     [data-testid="form-row"]:has(button),
     [data-testid="form-row"]:has(input){
         justify-content: center;
@@ -374,4 +374,4 @@ button.needsclick span{
       }
 
     }
-</style>
+
