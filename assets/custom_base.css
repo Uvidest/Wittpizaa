@@ -157,6 +157,7 @@
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 }
+[data-testid="form-row"]:last-child [component],
 .button_custom::before,
 .shopify-payment-button__button::before {
     background: #fff;
@@ -169,6 +170,7 @@
     width: 50px;
     transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
 }
+[data-testid="form-row"]:last-child [component],
 .button_custom::after,
 .shopify-payment-button__button::after {
     background: #fff;
@@ -181,18 +183,19 @@
     transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
     width: 8rem;
 }
+[data-testid="form-row"]:last-child [component],
 .button_custom::before,
 .shopify-payment-button__button::before {
     left: -50%;
     pointer-events: none;
 }
-
+[data-testid="form-row"]:last-child [component],
 .button_custom::after,
 .shopify-payment-button__button::after {
     left: -100%;
     pointer-events: none;
 }
-
+[data-testid="form-row"]:last-child [component],
 .button_custom:hover,
 .button_custom:active,
 .shopify-payment-button__button:hover,
@@ -201,13 +204,13 @@
     /*color: #fff;*/
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
 }
-
+[data-testid="form-row"]:last-child [component],
 .button_custom:hover::before,
 .shopify-payment-button__button:hover::before {
     left: 120%;
     opacity: 0.5;
 }
-
+[data-testid="form-row"]:last-child [component],
 .button_custom:hover::after,
 .shopify-payment-button__button:hover::after {
     left: 200%;
