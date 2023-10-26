@@ -32,54 +32,7 @@
 }
 
 {%- endstyle -%}
-<style>
-    [data-testid="form-row"]:has(button),
-    [data-testid="form-row"]:has(input){
-        justify-content: center;
-        max-width: 550px;
-        width: 100%;
-        margin: 0 auto;
-    }
 
-    [data-testid="form-row"] svg path{
-        fill: #000;
-    }
-    [data-testid="form-row"] svg{
-        display: block;
-    }
-    [data-testid="form-row"]:nth-child(2){
-      max-width: 683px;
-      margin: 0 auto;
-    }
-    .klaviyo-form-XcMpAu p{
-      line-height: normal !important;
-    }
-
-    @media screen and (max-width: 600px) {
-      .klaviyo-form-XcMpAu form.needsclick{
-        padding: 32px 15px !important;
-      }
-      [data-testid="form-row"]:nth-child(1) span{
-        font-size: 22px !important;
-      }
-      [data-testid="form-row"]:nth-child(1) [component]{
-        padding-bottom: 16px !important;
-      }
-      [data-testid="form-row"]:nth-child(2) [component]{
-        padding-bottom: 32px !important;
-      }
-      [data-testid="form-row"]:last-child{
-        flex-wrap: wrap;
-        row-gap: 8px;
-      }
-      [data-testid="form-row"]:last-child [component]{
-        width: 100% !important;
-        flex: unset !important;
-        padding: 0 !important;
-      }
-
-    }
-</style>
 <div style="z-index: 100; position: relative" class="klaviyo-form-XcMpAu"></div>
 <script async type='text/javascript' src='https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=VqQPGH'></script>
 
