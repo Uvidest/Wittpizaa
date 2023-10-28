@@ -707,7 +707,7 @@
             }
             document.addEventListener('visibilitychange', function() {
                 if (document.hidden) {
-                    let blinkInterval = setInterval(blinkTitle, 2500);
+                    let blinkInterval = setInterval(blinkTitle, 2000);
                     blinkTitle();
                     document.blinkInterval = blinkInterval; 
                 } else {
