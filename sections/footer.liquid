@@ -696,27 +696,3 @@
 }
 
 {% endschema %}
-
-{% raw %}
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        function setupBlinkingTitle() {
-            let originalTitle = document.title;
-            function blinkTitle() {
-                document.title = (document.title === originalTitle) ? "🍕 Pizza's Waiting!" : originalTitle;
-            }
-            document.addEventListener('visibilitychange', function() {
-                if (document.hidden) {
-                    let blinkInterval = setInterval(blinkTitle, 2000);
-                    blinkTitle();
-                    document.blinkInterval = blinkInterval; 
-                } else {
-                    clearInterval(document.blinkInterval); 
-                    document.title = originalTitle; 
-                }
-            });
-        }
-        setupBlinkingTitle();
-    });
-</script>
-{% endraw %}
