@@ -53,13 +53,12 @@
 }
 .slider__button{
   color: #3D3B3B;
-  font-family: var(--font-heading-family);
   background: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   padding: 10px;
-  max-width: 176px;
+  max-width: 183px;
   width: 100%;
   line-height: 1; /* 20.8px */
   text-transform: capitalize;

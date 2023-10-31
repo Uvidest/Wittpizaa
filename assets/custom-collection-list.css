@@ -18,32 +18,30 @@
   flex-basis: calc(33% - 12px);
   transition: transform .3s ease-in-out;
 }
-.custom-collection-list__item:hover{
-  transform: scale(1.05);
-}
+
 .custom-collection-list__item > a > img {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .custom-collection-list__link {
   position: absolute;
   text-decoration: none;
-  left: 24px;
-  bottom: 24px;
+  left: 28px;
+  bottom: 39px;
   color: #171719;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 59px; 
+  line-height: 49px;
   text-transform: uppercase;
   background-color: #fff;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 59px;
+  height: 49px;
   padding: 0 50px;
 }
 
