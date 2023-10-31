@@ -19,7 +19,7 @@
     max-width: 25%;
 }
 .custom-product-media-slide{
-    padding-bottom: 73%;
+    padding-bottom: 100%;
     position: relative;
 }
 .custom-carousel-slide{
@@ -259,7 +259,6 @@ button.product-form__submit:hover:after,
     min-height: 51px;
     border-radius: 50px;
     color: #FFF;
-    font-family: var(--font-heading-family);
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
