@@ -20,6 +20,7 @@ header.header {
 .header__menu-item {
   color: #fff;
 }
+
 .header__menu-item:hover{
   color: #fff;
   text-decoration: none;
@@ -32,7 +33,25 @@ header.header {
   line-height: normal;
   text-transform: uppercase;
   font-family: 'Oswald';
+  position: relative;
 }
+.header__menu-item > span::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff; /* Adjust the color of the underline */
+  height: 2px; /* Adjust the height of the underline */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+.header__menu-item > span:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .menu-drawer__menu-item {
   text-transform: uppercase;
 }
