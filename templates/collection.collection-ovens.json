@@ -80,11 +80,65 @@
         "stm": 24,
         "sbm": 24
       }
+    },
+    "52cac04b-8856-43d8-93f8-bb0b89974c0b": {
+      "type": "custom-slider-forIt",
+      "blocks": {
+        "2284170f-ac04-44f8-91bd-a08b546be593": {
+          "type": "slide",
+          "settings": {
+            "text": "\"We've tested lots of pizza ovens and without doubt, the Witt Rotante is the easiest model in which to cook a pizza\"",
+            "image": "shopify:\/\/shop_images\/Mask_group.svg"
+          }
+        },
+        "c7989b0d-c55c-4fdc-af7b-a6a4b53a47e7": {
+          "type": "slide",
+          "settings": {
+            "text": "“..the new Witt Etna Fermo is a brilliant investment for families and pizza lovers alike.\"",
+            "image": "shopify:\/\/shop_images\/Frame_22.svg"
+          }
+        },
+        "31ad277f-96b5-4c97-bce6-12693c86e209": {
+          "type": "slide",
+          "settings": {
+            "text": "“In the crowded arena of outdoor pizza ovens, the new Witt ETNA Rotate is a game changer that may alter your pizza-making life forever”",
+            "image": "shopify:\/\/shop_images\/image_6.png"
+          }
+        },
+        "cec58928-33ac-42e5-80d5-180f068c5c2c": {
+          "type": "slide",
+          "settings": {
+            "text": "\"It's a game-changing idea, brilliantly executed, and consistently produced the best fresh pizza we've eaten all year at home.\"",
+            "image": "shopify:\/\/shop_images\/Mask_group_1.svg"
+          }
+        },
+        "a9ecb0fc-e1ee-4af9-b18f-d87de8a0a8da": {
+          "type": "slide",
+          "settings": {
+            "text": "\"We've tested lots of pizza ovens and without doubt, the Witt Rotante is the easiest model in which to cook a pizza\"",
+            "image": "shopify:\/\/shop_images\/Mask_group.svg"
+          }
+        }
+      },
+      "block_order": [
+        "2284170f-ac04-44f8-91bd-a08b546be593",
+        "c7989b0d-c55c-4fdc-af7b-a6a4b53a47e7",
+        "31ad277f-96b5-4c97-bce6-12693c86e209",
+        "cec58928-33ac-42e5-80d5-180f068c5c2c",
+        "a9ecb0fc-e1ee-4af9-b18f-d87de8a0a8da"
+      ],
+      "settings": {
+        "title": "DON'T JUST TAKE OUR WORD FOR IT",
+        "button-text": "All Reviews & Awards",
+        "button-url": "shopify:\/\/collections",
+        "controll": "shopify:\/\/shop_images\/Group_27.svg"
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "b8cbf3fc-d380-4376-aab3-fef012f17402"
+    "b8cbf3fc-d380-4376-aab3-fef012f17402",
+    "52cac04b-8856-43d8-93f8-bb0b89974c0b"
   ]
 }
