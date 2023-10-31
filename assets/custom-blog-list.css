@@ -26,9 +26,7 @@
   text-transform: capitalize;
   transition: transform .3s ease-in;
 }
-.custom-blog-list__link:hover{
-  transform: scale(1.1);
-}
+
 .custom-blog-list__wrapper {
   display: flex;
   flex-wrap: wrap;
