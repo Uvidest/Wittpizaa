@@ -79,6 +79,8 @@
   cursor: pointer;
   overflow: hidden;
   transition: all .3s ease-in-out;
+      font-family: var(--font-body-family);
+
 }
 .product__det.regular{
   display: flex;
