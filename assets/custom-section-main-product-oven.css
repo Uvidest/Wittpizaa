@@ -107,6 +107,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 130%; /* 26px */
+    text-decoretion: none;
 }
 .media_button:last-child{
     margin: 0;
