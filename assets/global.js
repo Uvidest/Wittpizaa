@@ -982,7 +982,26 @@ class VariantSelects extends HTMLElement {
 
     }
   }
-
+  updateMediaButtons(){
+    let mediaButtonsData = document.querySelector("#mediaButtonsData")
+    if (!mediaButtonsData || !this.currentVariant.id){
+      return
+    }
+    const mediaButton3d = document.querySelector(".media_button.button3d")
+    const mediaButtonAr = document.querySelector(".media_button.media-button-ar")
+    mediaButtonsData = JSON.parse(mediaButtonsData.innerHTML)
+    console.log(mediaButtonsData[this.currentVariant.id].button3dLink)
+    mediaButtonsData[this.currentVariant.id].buttonArLink != ""
+        ?
+        mediaButtonAr.setAttribute("href", mediaButtonsData[this.currentVariant.id].buttonArLink)
+        :
+        mediaButtonAr.setAttribute("disabled", "")
+    mediaButtonsData[this.currentVariant.id].button3dLink != ""
+        ?
+        mediaButton3d.setAttribute("href", mediaButtonsData[this.currentVariant.id].button3dLink)
+        :
+        mediaButton3d.setAttribute("disabled", "")
+  }
   updateOptions() {
     this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
   }
