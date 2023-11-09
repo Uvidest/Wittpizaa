@@ -687,7 +687,16 @@
             assign seo_media = product.featured_media
         endif
     -%}
-
+<script id="mediaButtonsData" type="application/ld+json">
+        {
+            {% for variant in product.variants %}
+                "{{ variant.id }}": {
+                    "button3dLink": "{{ variant.metafields.custom.link_for_3d }}",
+                    "buttonArLink": "{{ variant.metafields.custom.link_for_view_at_home }}"
+                }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+        }
+    </script>
     <script type="application/ld+json">
     {
       "@context": "http://schema.org/",
