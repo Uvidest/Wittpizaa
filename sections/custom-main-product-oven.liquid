@@ -81,16 +81,13 @@
         <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
             {% render 'custom-product-media-gallery', variant_images: variant_images %}
                 {%- for block in section.blocks -%}
-                    {% assign mediaBlocksType = 'video-button-media,3d-button,view-at-home-button' | split: "," %}
-
-                    {% if mediaBlocksType contains block.type  %}
-                        {% if block.type == "3d-button" %}
-                            {% assign className = "model_button" %}
-                        {% endif %}
-                        <div {% if block.settings.back_img != blank %}
-                            style="background: linear-gradient(0deg, rgba(61, 59, 59, 0.70) 0%, rgba(61, 59, 59, 0.70) 100%), url('{{ block.settings.back_img | img_url: "large" }}') no-repeat"
-                        {% endif %}
-                        {% if block.type == "video-button-media" %} custom-video-button {% endif %} class="media_button {{ className }}">
+                    {% if block.type == "video-button-media" %}
+                        <div
+                            {% if block.settings.back_img != blank %}
+                                style="background: linear-gradient(0deg, rgba(61, 59, 59, 0.70) 0%, rgba(61, 59, 59, 0.70) 100%), url('{{ block.settings.back_img | img_url: "large" }}') no-repeat"
+                            {% endif %}
+                            custom-video-button
+                            class="media_button">
                             {% if block.settings.icon %}
                                 {{ block.settings.icon }}
                             {% endif %}
@@ -98,6 +95,44 @@
                               {{ block.settings.text }}
                             </span>
                         </div>
+                    {% elsif block.type == "3d-button" %}
+                        <a
+                            target="_blank"
+                            {% if block.settings.back_img != blank %}
+                                style="background: linear-gradient(0deg, rgba(61, 59, 59, 0.70) 0%, rgba(61, 59, 59, 0.70) 100%), url('{{ block.settings.back_img | img_url: "large" }}') no-repeat"
+                            {% endif %}
+                            {% if product.selected_or_first_available_variant.metafields.custom.link_for_3d != blank %}
+                                href="{{ product.selected_or_first_available_variant.metafields.custom.link_for_3d }}"
+                            {% else %}
+                                disabled=""
+                            {% endif %}
+                            class="media_button button3d">
+                            {% if block.settings.icon %}
+                                {{ block.settings.icon }}
+                            {% endif %}
+                            <span>
+                              {{ block.settings.text }}
+                            </span>
+                        </a>
+                    {% elsif block.type == "view-at-home-button" %}
+                        <a
+                            target="_blank"
+                            {% if block.settings.back_img != blank %}
+                                style="background: linear-gradient(0deg, rgba(61, 59, 59, 0.70) 0%, rgba(61, 59, 59, 0.70) 100%), url('{{ block.settings.back_img | img_url: "large" }}') no-repeat"
+                            {% endif %}
+                            {% if product.selected_or_first_available_variant.metafields.custom.link_for_view_at_home != blank %}
+                                href="{{ product.selected_or_first_available_variant.metafields.custom.link_for_view_at_home }}"
+                            {% else %}
+                                disabled=""
+                            {% endif %}
+                                class="media_button media-button-ar">
+                            {% if block.settings.icon %}
+                                {{ block.settings.icon }}
+                            {% endif %}
+                            <span>
+                              {{ block.settings.text }}
+                            </span>
+                        </a>
                     {% endif %}
                 {% endfor %}
 
