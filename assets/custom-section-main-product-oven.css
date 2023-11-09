@@ -96,6 +96,7 @@
     border: 5px solid #3D3B3B;
     background: linear-gradient(0deg, rgba(61, 59, 59, 0.70) 0%, rgba(61, 59, 59, 0.70) 100%), #D0672A;
     background-size: cover !important;
+  text-decoration: none;
 }
 .media_button svg{
     width: 24px;

@@ -991,20 +991,16 @@ class VariantSelects extends HTMLElement {
     const mediaButtonAr = document.querySelector(".media_button.media-button-ar")
     mediaButtonsData = JSON.parse(mediaButtonsData.innerHTML)
     console.log(mediaButtonsData[this.currentVariant.id].button3dLink)
-    if(mediaButton3d){
-       mediaButtonsData[this.currentVariant.id].buttonArLink != ""
+    mediaButtonsData[this.currentVariant.id].buttonArLink != ""
         ?
         mediaButtonAr.setAttribute("href", mediaButtonsData[this.currentVariant.id].buttonArLink)
         :
         mediaButtonAr.setAttribute("disabled", "")
-    }
-   if(mediaButtonAr){
     mediaButtonsData[this.currentVariant.id].button3dLink != ""
         ?
         mediaButton3d.setAttribute("href", mediaButtonsData[this.currentVariant.id].button3dLink)
         :
         mediaButton3d.setAttribute("disabled", "")
-   }
   }
   updateOptions() {
     this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
