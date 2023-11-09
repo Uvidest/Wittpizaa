@@ -969,7 +969,7 @@ class VariantSelects extends HTMLElement {
     this.updatePickupAvailability();
     this.removeErrorMessage();
     this.updateVariantStatuses();
-
+    this.updateMediaButtons()
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
